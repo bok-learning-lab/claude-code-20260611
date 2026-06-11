@@ -15,12 +15,12 @@ Two top-level folders carry the substance:
 
 Each example is a standalone project demonstrating one Claude Code move applied to a real teaching, research, or course-development task. They share a structure — `inputs/` (read-only source), `operations/` (the prompt and/or skills that do the work), `outputs/` (generated artifacts), plus `CLAUDE.md` / `summary.md` / `index.md` documentation at the root.
 
-Two new examples sit at the top of [examples/](examples/) as scaffolds awaiting Day 4 content:
+Two examples built live in this series sit at the top of [examples/](examples/):
 
-| Example | The move it will demonstrate |
+| Example | The move it demonstrates |
 |---|---|
-| [handout-formatting](examples/handout-formatting/) | Turning rough workshop material into print-ready, house-style handouts |
-| [admin-email-drafter](examples/admin-email-drafter/) | Drafting routine administrative email from structured source material |
+| [handout-formatting](examples/handout-formatting/) | Reusable skill that turns rough course materials (any format, any subject) into clean, print-ready LaTeX handouts. Splits the house style into a `look` layer and a `behaviour` layer, so one source compiles to student, answer-key, and teacher versions with accessibility built in. Proven on a Spanish reading/vocab sheet and a differential-equations course. |
+| [admin-email-drafter](examples/admin-email-drafter/) | The `/draft-reply` skill drafts an administrator's reply to a student's program-requirements questions, answering each strictly from authoritative sources, citing every claim, and flagging the gaps. Enforces a three-tier source hierarchy (College policy / department operational materials / student-perspective guides) so it never improvises policy. Claude drafts; the administrator sends. |
 
 The worked gallery lives in [examples/more-examples/](examples/more-examples/):
 
