@@ -81,3 +81,9 @@ Many tools orchestrated at scale: subagents, connected data, automation.
 - **Operations:** spawn parallel close-reading subagents, each told to read like a scholar and refuse to grep; aggregate their findings.
 - **Outputs:** one aggregated JSON plus a prose writeup pairing each name with its quoted line.
 - **Best fit:** Code (subagents, scale).
+
+## ?. The Gesamtkunstwerk — *beyond the map*
+
+Every category above ends in a file. This one doesn't. Somewhere past the bottom of the axis is the **total work** — beyond text, beyond code, out into media forms and the world: an installation that listens and answers; a seminar that generates its own archive as it runs; a dataset performed as sound; an instrument, a fabrication, a room. The project where the website, the handouts, the bots, and the physical space are one continuous thing.
+
+**Nobody has a worked example yet.** The spine runs off the edge of the page here — this row is yours to invent.
