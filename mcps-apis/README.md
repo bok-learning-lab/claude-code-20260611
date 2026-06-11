@@ -17,17 +17,19 @@ automatically; the plain API clients are just scripts Claude runs directly.
 
 ## Setup for cloners
 
-The repo ships a working [`.mcp.json`](../.mcp.json) at the root — it holds no secrets (every
-key arrives via an `${ENV_VAR}` reference resolved from your shell environment), so it is
-committed and Claude Code picks it up on startup with no copying step. Two things still won't
-run straight after a `git clone`:
+The repo ships a placeholder [`.mcp.json`](../.mcp.json) at the root. **Workshop participants:**
+replace its entire contents with the configuration from the Day 4 Google Doc (that version
+carries the API keys, which are never published in this public repo), then restart your Claude
+session. Everyone else can start from [`.mcp.json.example`](../.mcp.json.example), which is the
+same configuration with `${ENV_VAR}` placeholders you resolve with your own keys.
 
-- **Your API keys.** Set the env vars the servers need (`GEMINI_API_KEY`,
-  `REPLICATE_API_TOKEN`, `CANVAS_API_TOKEN`, `HAM_API_KEY`) in your shell before launching
-  Claude Code; servers whose key is missing simply fail to connect.
-- **Each server's installed dependencies** (`.venv/`, `node_modules/` — gitignored). A venv in
-  particular hardcodes absolute paths and platform-specific binaries, so it could never be
-  shared anyway; you rebuild it from the committed manifest (`pyproject.toml` / `package.json`).
+One more thing won't run straight after a `git clone`:
+
+- **Each Python server's installed dependencies** (`.venv/` — gitignored). A venv hardcodes
+  absolute paths and platform-specific binaries, so it could never be shared; you rebuild it
+  from the committed manifest. Easiest route, no terminal needed: in a Claude session at the
+  repo root, ask Claude to run `bash mcps-apis/setup.sh`. (The Node server needs no build —
+  its `dist/` ships committed.)
 
 ### 1. Build each server's environment
 
@@ -57,11 +59,11 @@ pnpm i
 pnpm build   # if it compiles TypeScript → dist/
 ```
 
-### 2. Check `.mcp.json` (already committed)
+### 2. Fill in `.mcp.json`
 
-Nothing to copy — the repo root's `.mcp.json` is committed and ready
-([`.mcp.json.example`](../.mcp.json.example) remains as an identical reference).
-It already points `arxiv` at the in-repo copy using paths relative to the repo root:
+Replace the placeholder `.mcp.json` at the repo root with the workshop configuration from
+the Google Doc (or build your own from [`.mcp.json.example`](../.mcp.json.example)).
+The configuration points `arxiv` at the in-repo copy using paths relative to the repo root:
 
 ```json
 "arxiv": {

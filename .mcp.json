@@ -1,43 +1,4 @@
 {
-  "mcpServers": {
-    "academic-search": {
-      "command": "mcps-apis/academic-search/.venv/bin/python",
-      "args": ["mcps-apis/academic-search/server.py"]
-    },
-    "arxiv": {
-      "command": "mcps-apis/arxiv/.venv/bin/python",
-      "args": ["mcps-apis/arxiv/server.py"]
-    },
-    "gemini-vision": {
-      "command": "mcps-apis/gemini-vision/.venv/bin/python",
-      "args": ["mcps-apis/gemini-vision/server.py"],
-      "env": {
-        "GEMINI_API_KEY": "${GEMINI_API_KEY}",
-        "GEMINI_MODEL": "gemini-3.5-flash"
-      }
-    },
-    "replicate-image": {
-      "command": "mcps-apis/replicate-image/.venv/bin/python",
-      "args": ["mcps-apis/replicate-image/server.py"],
-      "env": {
-        "REPLICATE_API_TOKEN": "${REPLICATE_API_TOKEN}"
-      }
-    },
-    "Canvas": {
-      "type": "http",
-      "url": "https://canvas-mcp.ai.huit.harvard.edu/mcp",
-      "headers": {
-        "X-Canvas-API-Token": "${CANVAS_API_TOKEN}",
-        "X-Canvas-API-URL": "https://harvard.beta.instructure.com"
-      }
-    },
-    "harvard-art-museums": {
-      "type": "stdio",
-      "command": "node",
-      "args": ["mcps-apis/harvard-art-museums-mcp/dist/index.js"],
-      "env": {
-        "HAM_API_KEY": "${HAM_API_KEY}"
-      }
-    }
-  }
+  "_instructions": "WORKSHOP SETUP: replace this file's entire contents with the configuration from the Day 4 Google Doc (it contains the API keys, which we never publish in the repo). Then restart your Claude session, approve the servers when prompted, and run /mcp to confirm. The Python servers also need a one-time build: just ask Claude to run 'bash mcps-apis/setup.sh'.",
+  "mcpServers": {}
 }
