@@ -84,8 +84,4 @@ Many tools orchestrated at scale: subagents, connected data, automation.
 
 ## ?. The Gesamtkunstwerk — *beyond the map*
 
-Wagner, 1849: the **Gesamtkunstwerk** — every medium under one composition. Music, image, poetry, architecture, a single designed experience. The opera house was engineered for it. The ambition outlived its instruments.
-
-The instruments have changed. Each category on this axis is a medium one person can now compose — document, page, application, visualization, system. Past the bottom edge lies their unification: the course whose site, handouts, archive, and room operate as one designed system; the exhibition that computes; the seminar whose documentation is itself the work. Mixed media. Single composition. Real space.
-
-**No worked example exists.** The category is open.
+The term is Wagner's: every medium in a single work. Past the bottom of this axis are **combinations of the rows above** — text, application, visualization, sound, physical space in one project — that become buildable as the remaining technical barriers come down. Too early to catalogue.

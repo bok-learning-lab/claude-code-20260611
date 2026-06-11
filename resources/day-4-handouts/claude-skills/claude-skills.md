@@ -71,6 +71,15 @@ description: Formats class notes into the course handout style
 - **No time-sensitive instructions.** "Before August, use the old API" rots; write the current way only.
 - **Test and iterate.** Run real tasks, watch what Claude actually does with the skill, and edit. A skill is a living document — open it, argue with it, revise it.
 
+## What "firing" means
+
+At session start, only the headers load: Claude reads every skill's name and description — the map of your prompt library — and none of the bodies. A skill **fires** when its full body is loaded into the conversation and its instructions take effect. There are two routes:
+
+1. **You fire it.** Type the slash command (`/making-handouts`) or name it in a prompt ("run the syllabus-redesign skill on this file"). The body loads because you said so.
+2. **Claude fires it.** You describe what you want in plain language ("I need help redesigning my syllabus"); Claude matches the request against the descriptions on its map, proposes the skill, and loads the body once you confirm. You don't need to know the skill exists.
+
+The description is the entire trigger surface for route two. A vague one ("helps with documents") matches nothing, so the skill only ever runs when called by name — the #1 reason skills sit unused. (Claude Code adds frontmatter switches for both routes: `disable-model-invocation: true` blocks route two for side-effect skills you want to trigger only by hand; `user-invocable: false` hides a skill from the slash menu and leaves only route two.)
+
 ## The rule of thumb
 
 If you'd paste the same prompt twice, make it a skill. If the skill needs the same code twice, give it a script. If the body grows past a screen or two, split it into reference files. The header is the hook; everything else is staged so it costs nothing until used.

@@ -13,12 +13,13 @@
   .footer { bottom:0.34in; }
 
   /* ---- handout-local diagram components (house tokens only) ---- */
+  .lede { font-size:14px; margin:12px 0 0; }
   .duo { display:grid; grid-template-columns: 1fr 1fr; gap:18px; align-items:start; }
 
   /* panel matrix: cloud vs local across Chat / Cowork / Code */
   .matrix { border:2px solid var(--ink); border-radius:8px; overflow:hidden; margin:10px 0 4px; }
   .mx-row { display:grid; grid-template-columns: 2.6fr 1fr 1fr 1fr; }
-  .mx-row > div { padding:9px 12px; border-top:1.5px solid var(--rule); border-left:1.5px solid var(--rule); font-size:12.5px; font-weight:600; line-height:1.35; }
+  .mx-row > div { padding:7px 12px; border-top:1.5px solid var(--rule); border-left:1.5px solid var(--rule); font-size:12.5px; font-weight:600; line-height:1.35; }
   .mx-row > div:first-child { border-left:none; }
   .mx-head > div { border-top:none; background:var(--ink); color:#fff; font-weight:800; text-transform:uppercase; letter-spacing:.07em; font-size:11px; text-align:center; }
   .mx-head > div:first-child { background:#fff; }
@@ -154,10 +155,27 @@
     </div>
   </div>
 
-  <p class="takehome" style="margin-top:14px"><b>Rule of thumb:</b> paste the same prompt twice &rarr; make it a
-    skill. The skill needs the same code twice &rarr; give it a script. The body outgrows a screen or two &rarr;
-    split into reference files. The header is the hook; everything else is staged so it costs nothing until used.
-    Vague descriptions ("helps with documents") are the #1 reason skills never fire.</p>
+  <div class="beat" style="margin-top:10px">
+    <p class="beat-h">4 · What "firing" means</p>
+    <p class="intro">At session start only the headers load — every name and description, none of the bodies.
+      A skill <b>fires</b> when its full body is loaded into the conversation and its instructions take effect.
+      Two routes in:</p>
+    <div class="duo" style="gap:14px; margin-top:8px">
+      <div style="border:1.5px solid var(--ink); border-radius:6px; padding:8px 12px; font-size:12px; font-weight:600; line-height:1.4">
+        <b style="color:var(--accent)">You fire it.</b> Type the slash command (<i>/making-handouts</i>) or name
+        it in a prompt ("run the syllabus-redesign skill on this file"). The body loads because you said so.
+      </div>
+      <div style="border:1.5px solid var(--ink); border-radius:6px; padding:8px 12px; font-size:12px; font-weight:600; line-height:1.4">
+        <b style="color:var(--accent)">Claude fires it.</b> You describe the task in plain language; Claude
+        matches it against the descriptions on its map and proposes the skill. You don't need to know it exists.
+      </div>
+    </div>
+  </div>
+
+  <p class="takehome" style="margin-top:8px"><b>Rule of thumb:</b> paste the same prompt twice &rarr; make it a
+    skill. Same code twice &rarr; give it a script. Body outgrows a screen &rarr; split into reference files. And
+    write the description for route two: a vague one ("helps with documents") matches nothing, so the skill only
+    ever runs when called by name.</p>
 
   <div class="footer">
     <span>Summer of Claude · Faculty Workshop</span>
