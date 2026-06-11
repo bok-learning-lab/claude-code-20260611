@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Skills: A Field Guide</title>
+<style>
+/*__FONTS__*/
+/*__HOUSE_STYLE__*/
+/*__PATTERNS__*/
+  /* ---- PAGE SETUP: portrait 11x17 ---- */
+  @page { size: 11in 17in; margin: 0.5in; }
+  .sheet { width:10in; height:16in; padding:0.55in 0.6in 0.8in; display:flex; flex-direction:column; }
+  .footer { bottom:0.34in; }
+
+  /* ---- handout-local diagram components (house tokens only) ---- */
+  .duo { display:grid; grid-template-columns: 1fr 1fr; gap:18px; align-items:start; }
+
+  /* panel matrix: cloud vs local across Chat / Cowork / Code */
+  .matrix { border:2px solid var(--ink); border-radius:8px; overflow:hidden; margin:10px 0 4px; }
+  .mx-row { display:grid; grid-template-columns: 2.6fr 1fr 1fr 1fr; }
+  .mx-row > div { padding:9px 12px; border-top:1.5px solid var(--rule); border-left:1.5px solid var(--rule); font-size:12.5px; font-weight:600; line-height:1.35; }
+  .mx-row > div:first-child { border-left:none; }
+  .mx-head > div { border-top:none; background:var(--ink); color:#fff; font-weight:800; text-transform:uppercase; letter-spacing:.07em; font-size:11px; text-align:center; }
+  .mx-head > div:first-child { background:#fff; }
+  .mx-src .src-name { font-weight:800; }
+  .mx-src .src-path { color:var(--muted); font-size:11px; font-weight:600; display:block; }
+  .mx-cell { text-align:center; }
+  .mx-yes { color:var(--accent); font-weight:900; font-size:13px; text-transform:uppercase; letter-spacing:.05em; }
+  .mx-no  { color:var(--rule); font-weight:800; font-size:13px; text-transform:uppercase; letter-spacing:.05em; }
+  .mx-note { font-size:11px; color:var(--muted); font-weight:600; font-style:italic; display:block; }
+
+  /* folder tree: nested boxes */
+  .tree { border:2px solid var(--ink); border-radius:8px; padding:12px 14px; }
+  .tr-root { font-weight:900; font-size:13px; margin:0 0 8px; }
+  .tr-root span { color:var(--muted); font-weight:600; font-size:11.5px; }
+  .tr-box { border:1.5px solid var(--ink); border-radius:6px; padding:9px 11px; margin:0 0 0 14px; }
+  .tr-box + .tr-box, .tr-file + .tr-box { margin-top:7px; }
+  .tr-label { font-weight:800; font-size:12.5px; margin:0 0 6px; }
+  .tr-label.red { color:var(--accent); }
+  .tr-file { display:grid; grid-template-columns: 7.2em 1fr; gap:8px; padding:4px 0 4px 12px; font-size:12px; line-height:1.35; border-left:2px solid var(--rule); margin-left:2px; }
+  .tr-file .fn { font-weight:800; }
+  .tr-file .fn.red { color:var(--accent); }
+  .tr-file .fd { color:var(--muted); font-weight:600; }
+  .tr-sib { padding:5px 0 0 14px; font-size:11.5px; color:var(--muted); font-weight:600; }
+
+  /* SKILL.md page mock */
+  .docmock { border:2px solid var(--ink); border-radius:8px; overflow:hidden; }
+  .dm-zone { padding:11px 13px; }
+  .dm-zone + .dm-zone { border-top:2px solid var(--ink); }
+  .dm-tag { font-size:10px; font-weight:900; text-transform:uppercase; letter-spacing:.08em; color:var(--accent); margin:0 0 7px; }
+  .dm-tag b { color:var(--ink); }
+  .dm-line { display:grid; grid-template-columns: 13em 1fr; gap:10px; font-size:12px; line-height:1.4; padding:2.5px 0; }
+  .dm-line .code { font-weight:800; }
+  .dm-line .code i { color:var(--muted); font-weight:600; }
+  .dm-line .ann { color:var(--muted); font-weight:600; }
+  .dm-line .ann b { color:var(--accent); font-weight:800; }
+  .dm-body li { font-size:12px; }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <p class="kicker">Day 4 · Skills</p>
+  <h1>Skills: A Field Guide
+    <span class="sub">where they live, how to arrange one in a repo, and how to write the SKILL.md</span>
+  </h1>
+
+  <p class="lede">
+    A <b>skill</b> is a folder containing a file named <b>SKILL.md</b> — a conditional prompt with a
+    header. Every session, Claude loads just the headers of every skill it can see (a map of your prompt
+    library); when your request matches a description, the full body is read in and followed. Header
+    always, body on trigger, bundled files only if needed: <b>progressive disclosure</b>.
+  </p>
+
+  <div class="beat">
+    <p class="beat-h">1 · Where skills live — the cloud-vs-local quirk</p>
+    <p class="intro">Two completely separate stores, and <b>they do not sync</b>. One follows your claude.ai
+      account in the cloud; the other is plain folders on your computer.</p>
+    <div class="matrix">
+      <div class="mx-row mx-head">
+        <div></div><div>Chat</div><div>Cowork</div><div>Code</div>
+      </div>
+      <div class="mx-row">
+        <div class="mx-src"><span class="src-name">Cloud skills</span>
+          <span class="src-path">uploaded to your claude.ai account · Settings &rarr; Capabilities</span></div>
+        <div class="mx-cell"><span class="mx-yes">yes</span></div>
+        <div class="mx-cell"><span class="mx-yes">yes</span></div>
+        <div class="mx-cell"><span class="mx-no">no</span></div>
+      </div>
+      <div class="mx-row">
+        <div class="mx-src"><span class="src-name">Local skills</span>
+          <span class="src-path">~/.claude/skills (personal, every project) &middot; .claude/skills (inside a repo)</span></div>
+        <div class="mx-cell"><span class="mx-no">no</span></div>
+        <div class="mx-cell"><span class="mx-yes">yes</span></div>
+        <div class="mx-cell"><span class="mx-yes">yes</span></div>
+      </div>
+    </div>
+    <p class="takehome"><b>The quirk:</b> a skill uploaded to claude.ai does not exist on your machine, and a
+      skill in <b>~/.claude/skills</b> does not exist in the Chat panel. If a skill "disappears" when you switch
+      panels, this split is why. Keep the canonical copy in a repo; treat any cloud upload as a copy.</p>
+  </div>
+
+  <div class="duo">
+    <div class="beat">
+      <p class="beat-h">2 · How a skill sits in a repo</p>
+      <p class="intro">One folder per skill, lowercase-with-hyphens (gerunds read well: <i>making-handouts</i>,
+        <i>processing-pdfs</i>).</p>
+      <div class="tree">
+        <p class="tr-root">your-project/</p>
+        <div class="tr-box">
+          <p class="tr-label">.claude/ &rsaquo; skills/</p>
+          <div class="tr-box">
+            <p class="tr-label red">making-handouts/</p>
+            <div class="tr-file"><span class="fn red">SKILL.md</span>
+              <span class="fd">required — the skill itself</span></div>
+            <div class="tr-file"><span class="fn">reference.md</span>
+              <span class="fd">optional detail, read only when the task needs it</span></div>
+            <div class="tr-file"><span class="fn">assets/</span>
+              <span class="fd">templates, CSS, fonts the output uses</span></div>
+            <div class="tr-file"><span class="fn">scripts/</span>
+              <span class="fd">known-good code Claude <b>runs</b> — never loaded as text</span></div>
+          </div>
+        </div>
+        <p class="tr-sib">inputs/ &middot; operations/ &middot; outputs/ &mdash; the rest of the project; the skill travels with the repo</p>
+      </div>
+      <ul class="list" style="margin-top:10px">
+        <li><b>SKILL.md is the only required file.</b> Everything else is optional support.</li>
+        <li><b>Link reference files from SKILL.md</b> ("See reference.md") and keep them <b>one level deep</b> — don't chain file &rarr; file &rarr; file.</li>
+        <li><b>scripts/ is for consistency.</b> Code you've gotten working once runs identically every time, instead of being re-invented per session.</li>
+      </ul>
+    </div>
+
+    <div class="beat">
+      <p class="beat-h">3 · Anatomy of the SKILL.md</p>
+      <p class="intro">Two zones: a YAML header between <i>---</i> lines, then a markdown body.</p>
+      <div class="docmock">
+        <div class="dm-zone">
+          <p class="dm-tag">YAML frontmatter — <b>always loaded</b></p>
+          <div class="dm-line"><span class="code">name: making-handouts</span>
+            <span class="ann"><b>required</b> · &le;64 chars · lowercase + hyphens</span></div>
+          <div class="dm-line"><span class="code">description: <i>Formats class notes into the course handout style. Use when the user asks for a handout, printable, or one-pager.</i></span>
+            <span class="ann"><b>required</b> · &le;1,024 chars · third person · must say <b>what it does and when to use it</b> — this is all Claude sees before deciding to open the skill</span></div>
+        </div>
+        <div class="dm-zone">
+          <p class="dm-tag" style="color:var(--ink)">Markdown body — <b>loaded only when triggered</b></p>
+          <ul class="list dm-body">
+            <li><b>Keep it under ~500 lines</b>; past that, split into reference files.</li>
+            <li><b>Assume Claude is already smart.</b> Write only what it doesn't know: your preferences, conventions, domain specifics.</li>
+            <li><b>Set the degree of freedom.</b> Judgment helps &rarr; prose steps. Fragile operation &rarr; "run exactly <i>scripts/build.py</i>, do not modify."</li>
+            <li><b>One term per concept</b>, no time-sensitive instructions.</li>
+            <li><b>Iterate.</b> Watch what Claude does with it; open it, argue with it, edit.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="takehome" style="margin-top:14px"><b>Rule of thumb:</b> paste the same prompt twice &rarr; make it a
+    skill. The skill needs the same code twice &rarr; give it a script. The body outgrows a screen or two &rarr;
+    split into reference files. The header is the hook; everything else is staged so it costs nothing until used.
+    Vague descriptions ("helps with documents") are the #1 reason skills never fire.</p>
+
+  <div class="footer">
+    <span>Summer of Claude · Faculty Workshop</span>
+    <span>Bok Center · Learning Lab</span>
+  </div>
+</div>
+</body>
+</html>
