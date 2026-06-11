@@ -2,7 +2,7 @@
 
 *A gallery of faculty projects, ordered from familiar text toward unfamiliar code.*
 
-**How to read this.** The spine runs from what you already do every day — writing — toward things you may never have built before. Each category names a *kind* of thing you can make: quick examples first, then one unpacked fully — the situation, the inputs, the operations, the outputs, and which Claude interface fits best (Chat / Cowork / Code). Start where you have expertise; climb when you're ready.
+**How to read this.** A review of what faculty are building, arranged on one axis. It begins in the writing you already command and descends toward forms that did not exist two years ago. Each row is a genre of output: quick examples first, then one project unpacked — situation, inputs, operations, outputs, and the interface suited to it (Chat / Cowork / Code). The loop is constant — inputs, operations, outputs. Only the medium changes. Begin where you are fluent. Descend.
 
 ## 1. Structured Text & Documents — *most familiar*
 
@@ -49,12 +49,12 @@ Claude wired to live data and other services.
 
 **Examples:** Claude connected to Semantic Scholar for live literature search · an art-history lecture pulling live images from Harvard Art Museums · a Slack bot that answers from your course materials · an oral-exam practice bot · Claude connected to your Google Drive.
 
-**Unpacked: live literature search via the Semantic Scholar MCP**
-- **Situation:** you want real papers with real citation counts and DOIs — not citations the model might invent.
-- **Inputs:** your research question; a free API key in `.mcp.json`.
-- **Operations:** "Find recent papers on X, get details, find related work, save." Claude chains `academic_search` → `academic_get_paper` → `academic_recommend`.
-- **Outputs:** a markdown literature summary in `output/` with real DOIs.
-- **Best fit:** Code (MCP servers run here).
+**Unpacked: an art-history lecture, illustrated from the museum's own records**
+- **Situation:** plain lecture notes name a dozen works. The illustrated page must show the real objects — fetched, not remembered.
+- **Inputs:** the lecture notes; a free Harvard Art Museums API key in `.mcp.json`.
+- **Operations:** a custom MCP gives Claude the museum's search and object tools. It looks up each work, pulls images and tombstone metadata, builds the page.
+- **Outputs:** an illustrated lecture page where every image and caption traces to an accession record.
+- **Best fit:** Code (MCP servers run here). The worked version is this repo's `simple-art-history-lecture` example.
 
 ## 5. Data Visualizations (d3, three.js) — *even more complex*
 
@@ -84,6 +84,8 @@ Many tools orchestrated at scale: subagents, connected data, automation.
 
 ## ?. The Gesamtkunstwerk — *beyond the map*
 
-Every category above ends in a file. This one doesn't. Somewhere past the bottom of the axis is the **total work** — beyond text, beyond code, out into media forms and the world: an installation that listens and answers; a seminar that generates its own archive as it runs; a dataset performed as sound; an instrument, a fabrication, a room. The project where the website, the handouts, the bots, and the physical space are one continuous thing.
+Wagner, 1849: the **Gesamtkunstwerk** — every medium under one composition. Music, image, poetry, architecture, a single designed experience. The opera house was engineered for it. The ambition outlived its instruments.
 
-**Nobody has a worked example yet.** The spine runs off the edge of the page here — this row is yours to invent.
+The instruments have changed. Each category on this axis is a medium one person can now compose — document, page, application, visualization, system. Past the bottom edge lies their unification: the course whose site, handouts, archive, and room operate as one designed system; the exhibition that computes; the seminar whose documentation is itself the work. Mixed media. Single composition. Real space.
+
+**No worked example exists.** The category is open.
