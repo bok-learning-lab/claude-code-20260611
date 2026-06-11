@@ -32,7 +32,7 @@ pnpm install   # fetch dependencies
 pnpm build     # compile src/ -> dist/ (what .mcp.json launches)
 ```
 
-The repo's `_mcps/setup.sh` runs both of these for you automatically. During
+The repo's `mcps-apis/setup.sh` runs both of these for you automatically. During
 development you can skip the build and run straight from TypeScript with
 `pnpm dev` (tsx watch).
 
@@ -82,7 +82,7 @@ run it by hand. Its entry looks like:
 "harvard-art-museums": {
   "type": "stdio",
   "command": "node",
-  "args": ["_mcps/harvard-art-museums-mcp/dist/index.js"],
+  "args": ["mcps-apis/harvard-art-museums-mcp/dist/index.js"],
   "env": { "HAM_API_KEY": "..." }
 }
 ```

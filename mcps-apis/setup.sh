@@ -12,7 +12,7 @@
 # Missing a toolchain doesn't abort the run: servers that need it are skipped
 # with an install suggestion, and everything else still gets set up.
 #
-# Usage:  bash _mcps/setup.sh    (from anywhere — paths are resolved internally)
+# Usage:  bash mcps-apis/setup.sh    (from anywhere — paths are resolved internally)
 
 set -u
 
@@ -127,5 +127,5 @@ echo "    then run /mcp to confirm each one is connected."
 if [ "$SKIPPED_ANY" -eq 1 ]; then
   echo
   echo "  Note: one or more servers were skipped (see above). Install the"
-  echo "  missing toolchain and re-run 'bash _mcps/setup.sh' to finish them."
+  echo "  missing toolchain and re-run 'bash mcps-apis/setup.sh' to finish them."
 fi

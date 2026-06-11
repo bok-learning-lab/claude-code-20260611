@@ -24,7 +24,7 @@ The lecturer's source material — plain text, no images.
 - [operations/harvard-art-museums-mcp.md](operations/harvard-art-museums-mcp.md) — how the Harvard
   Art Museums MCP works, how it was built, and the exact move we made with it (resolve every
   `SHOW:` against the real collection, then compose one self-contained page). The server itself
-  lives at [`_mcps/harvard-art-museums-mcp/`](../../_mcps/harvard-art-museums-mcp/), wired in via
+  lives at [`mcps-apis/harvard-art-museums-mcp/`](../../mcps-apis/harvard-art-museums-mcp/), wired in via
   the repo-root [`.mcp.json`](../../.mcp.json).
 
 ## outputs/

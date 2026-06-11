@@ -1,0 +1,386 @@
+---
+openapi: "3.0.1"
+info:
+  version: "1.0"
+  title: "Ex Libris APIs"
+  description: "
+      
+       The <i>Ex Libris Primo API</i> provides a means of obtaining catalog and other information from Harvard Library resources. 
+       <br>
+       <br>
+       For more information on how to use these APIs, 
+       please reach out to the Library Operations team and/or see the <a href='https://developers.exlibrisgroup.com/alma/apis'>Ex Libris REST API documentation</a>. Please note the Ex Libris documentation refers to an API key acquisition process which <strong>does not</strong> apply to Harvard, since the API keys for new consumers are now managed through this API portal.
+       <br>
+       <br>
+       
+       <strong>GETTING STARTED</strong>
+       
+       
+       __What is the onboarding process?__ 
+       <ul>
+         <li><i>Step 1:</i> Register your app here in the stage portal.
+         <li><i>Step 2:</i> Select 'request' next to the Ex Libris Primo API in your app.
+         <li><i>Step 3:</i> Contact the Library Operations team, to let them know you've registered your app and have requested API access. They will provide further instructions. 
+       </ul>
+       
+       
+       <strong>How do I use this API?</strong>
+       <div class='over-content-requests'>
+       
+       \ - <i>Base request url:</i> <br><code>https://go.stage.apis.huit.harvard.edu/lts-exlibris-primo </code> \n
+       \ </div> \n
+       
+       
+       <div class='over-content-requests'>
+       
+       
+       \ - <i>Authorization:</i> 
+       <br>
+       <ul>
+         <li>Type: API Key
+         <li>Header key = 'X-Api-Key'
+         <li>Header value = <i>your key</i>
+         <li> <i>Note</i>: Please be sure to use the API Key in the header and not the query parameter string. For security we've blocked requests that use the API Key in the query parameter string.
+       </ul>
+
+       </div>
+  
+  
+       <div class='over-content-requests'>
+  
+        
+       \ - <i>Sample request URL:</i> 
+       <br>
+       <code>'curl --location --request GET https://go.stage.apis.huit.harvard.edu/lts-exlibris-primo/primo/v1/search?vid=Auto1&tab=default_tab&scope=default_scope\
+  &q=title,contains,home&lang=eng&offset=0&limit=10&sort=rank&pcAvailability=true&getMore=0&conVoc=true \
+        --header 'x-api-key: app-key' </code> \n
+        \ </div> \n
+        
+        \ - <i>Limits:</i> 
+        <br>
+        Rate limiting currently set to 10 requests per minute
+       <br>
+       <br>
+       
+       
+       <a name='faqs' id='faqs'></a>
+       <strong>FREQUENTLY ASKED QUESTIONS</strong>
+      
+       <br>
+       
+       \ * __I received access to this API. What do I do next?__  \n
+       \ 
+       \ * If you have received notice that you've been granted access to the API and you are able to see your API Keys, you are ready to start using the API in your application. To test that your API Key works or to walk through a simple example, follow the Postman guide page on this portal and refer to the Getting Started section of this page for API-specific information. \n
+       \ * __Where can I find more information on the Ex Libris - Primo API?__  \n
+       \ 
+       \ * The API specs in this portal should provide you with all the information you need to get started. If you need additional information, please reach out to Library Operations. \n
+       \ \n
+       \ <br> \
+       \ __SERVICE LEVEL AGREEMENT__ \n
+       \ \n
+       \ * This service is available 24/7, based on availability of the Ex Libris vendor's API solutions. \n
+       \ \n
+       \ <br> \
+       \ __REQUEST ACCESS__ \n
+       \ * To access this API, please register your app here in the API portal. To do so you can select 'apps' from the developer dropdown in the upper right of the portal, then select '+New App', and create your app by following the instructions in the guides section. Once you've registered your app, the Product Owner for Primo will be notified and will review your request. If you need any support, please reach out to Library Operations. \n
+       \ * For further information, please refer to the 'Getting Started' section above. \n
+       \ \n
+       \ <br> \
+       \ __TERMS OF USE__ \n
+       \ \n
+       \ All existing, University-wide policies regarding data usage have been reviewed and _MUST_ be followed as documented: \n
+       \ * [Harvard Information Security Policy](https://policy.security.harvard.edu/) \n
+       \ * [Policy on Access to Electronic Information](https://hwpi.harvard.edu/files/provost/files/policy_on_access_to_electronic_information.pdf) \n
+       \ * [IT Professional Code of Conduct](https://huit.harvard.edu/it-professional-code-conduct-protect-electronic-information) \n
+       \ * [Confidentiality Agreement and Training](https://policy.security.harvard.edu/u15--Confidentiality-agreement-and-training) \n
+       \ * [Data Breach Policy](https://ogc.harvard.edu/book/breach-data-security-what-do) \n
+       \ * All application infrastructure receiving data must conform to [Harvard Information Security Policy for Level 3 Data](https://policy.security.harvard.edu/level-3) \n
+       \ * Equivalent security, NDA, [Contract Riders](https://hwpi.harvard.edu/it-security-new/node/55246) and other relevant requirements are in place for Contractors/Vendors/3rd Parties \n
+       \ * Redistribution of data is strictly prohibited without written consent. \n
+       "
+  termsOfService: "https://developers.exlibrisgroup.com/about/terms"
+externalDocs:
+  description: "Detailed documentation on these APIs at the Ex Libris Developer Network."
+  url: "https://developers.exlibrisgroup.com/alma/apis/"
+servers:
+- url: "https://go.stage.apis.huit.harvard.edu/lts-exlibris-primo"
+tags: []
+paths:
+  /primo/v1/search:
+    get:
+      tags:
+      - ""
+      description: "This service implements Primo's main search service and returns\
+        \ a list of results based on the specified search query and also information\
+        \ about the total results number, the list of the facets for all exists results\
+        \ etc.)."
+      summary: "Brief Search"
+      operationId: "get/primo/v1/search"
+      parameters:
+      - name: "vid"
+        in: "query"
+        required: true
+        schema:
+          type: "string"
+        description: "The view ID. \n\nExample: vid=Auto1."
+      - name: "tab"
+        in: "query"
+        required: true
+        schema:
+          type: "string"
+        description: "The name of the tab.\n\nExample: tab=default_tab."
+      - name: "scope"
+        in: "query"
+        required: true
+        schema:
+          type: "string"
+        description: "The scope name.\n\nExample: scope=default_scope."
+      - name: "q"
+        in: "query"
+        required: true
+        schema:
+          type: "string"
+        description: "The query string that you want to use to perform a search. \n\
+          \nThe query string uses the following format:\n\n    q=<field_1>,<precision_1>,<value_1>[,<operator_1>;<field_n>,<precision_n>,<value_n>...]\n\
+          \n*    field - The data field that you want to search within. The following\
+          \ fields are valid: any (for any field), title, creator (for author), sub\
+          \ (for subject), and usertag (for tag).\n\n*    precision - The precision\
+          \ operation that you want to apply to the field. The following precision\
+          \ operators are valid: exact (value must match the data in the field exactly),\
+          \ begins_with (the value must be found at the beginning of the field), and\
+          \ contains (the value must be found anywhere in the field).\n\n*    value\
+          \ - The search terms, which can be a word, phrase, or exact phrase (group\
+          \ of words enclosed by quotes), and can include the following logical operators:\
+          \ AND, OR, and NOT. For more information regarding search terms, see [Performing\
+          \ Basic Searches](https://knowledge.exlibrisgroup.com/Primo/Product_Documentation/New_Primo_User_Interface/End_User_Help/010Performing_Basic_Searches)\n\
+          \n*    field - The data field that you want to search within. The following\
+          \ fields are valid: any (for any field), title, creator (for author), sub\
+          \ (for subject), and usertag (for tag).\n\n*    precision - The precision\
+          \ operation that you want to apply to the field. The following precision\
+          \ operators are valid: exact (value must match the data in the field exactly),\
+          \ begins_with (the value must be found at the beginning of the field), and\
+          \ contains (the value must be found anywhere in the field).\n\n*    value\
+          \ - The search terms, which can be a word, phrase, or exact phrase (group\
+          \ of words enclosed by quotes), and can include the following logical operators:\
+          \ AND, OR, and NOT. For more information regarding search terms, see [Performing\
+          \ Basic Searches](https://knowledge.exlibrisgroup.com/Primo/Product_Documentation/New_Primo_User_Interface/End_User_Help/010Performing_Basic_Searches).\n\
+          \n*    operator - When specifying multiple search fields for advanced searches,\
+          \ this parameter applies the following logical operations between fields:\
+          \ AND (specified values must be found in both fields), OR (specified values\
+          \ must be found in at least one of the fields), NOT (the specified value\
+          \ of the next field must not be found). If no operator is specified, the\
+          \ system defaults to AND.\n\n\n\nNote: Multiple fields are delimited by\
+          \ a semicolon.\n\nLimitation: The value must not include a semicolon character.\n\
+          \nIn the following example, the system searches for all records in which\
+          \ the word home is found anywhere within the record's title:\n\n    q=title,contains,home\n\
+          \n\n\nIn the following example, the system searches for all records in which\
+          \ the title field contains the words pop and music and the subject field\
+          \ contains the word korean:\n\n    q=title,contains,pop music,AND;sub,contains,korean"
+      - name: "qInclude"
+        in: "query"
+        required: false
+        schema:
+          default: ""
+          type: "string"
+        description: "Filters the results by the facets that you want to include.\
+          \ The logical AND operation is applied between the facets.\n\nThis filter\
+          \ uses the following format:\n\n    qInclude=<facet_category_1>,exact,<facet_name_1>[|,|<facet_category_n>,exact,<facet_name_n>...]\n\
+          \n\n\nNote: Multiple categories are delimited by the following string of\
+          \ characters: |,|\n\n\n\n*    facet_category - The facet category that you\
+          \ want to include. The following categories are valid: facet_rtype (Resources\
+          \ Type), facet_topic (Subject), facet_creator (Author), facet_tlevel (Availability),\
+          \ facet_domain (Collection), facet_library (library name), facet_lang (language),\
+          \ facet_lcc (LCC classification).\n\n*    facet_name - The name of the facet\
+          \ to include (such as Journals if facet_rtype was selected)."
+      - name: "qExclude"
+        in: "query"
+        required: false
+        schema:
+          default: ""
+          type: "string"
+        description: "Filters the results by the facets that you want to exclude.\
+          \ The logical AND operation is applied between the facets.\n\nThis parameter\
+          \ uses the following format:\n\n    qExclude=<facet_category_1>,exact,<facet_name_1>[|,|<facet_category_n>,exact,<facet_name_n>...]\n\
+          \n\n\nNote: Multiple categories are delimited by the following string of\
+          \ characters: |,|\n\n\n\n*    facet_category - The facet category that you\
+          \ want to exclude. The following categories are valid: facet_rtype (Resources\
+          \ Type), facet_topic (Subject), facet_creator (Author), facet_tlevel (Availability),\
+          \ facet_domain (Collection), facet_library (library name), facet_lang (language),\
+          \ facet_lcc (LCC classification)\n\n*    facet_name - The name of the facet\
+          \ to exclude (such as Journals if facet_rtype was selected)."
+      - name: "multiFacets"
+        in: "query"
+        required: false
+        schema:
+          default: ""
+          type: "string"
+        description: "Filter the results by including and excluding facets. The main\
+          \ difference between this parameter and the qInclude and qExclude parameters\
+          \ is that this parameter uses OR logic between facet values and AND logic\
+          \ between facet categories. This parameter uses the following format:multiFacets=<facet_category_1>,<facet_operator_1>,<facet_name_1>[|,|<facet_category_n>,<facet_operator_n>,<facet_name_n>...]\n\
+          \n\n\n*    facet_category - The facet category that you want to include\
+          \ or exclude. The following categories are valid: facet_rtype (Resources\
+          \ Type), facet_topic (Subject), facet_creator (Author), facet_tlevel (Availability),\
+          \ facet_domain (Collection), facet_library (library name), facet_lang (language),\
+          \ facet_lcc (LCC classification)\n\n*    facet_operator - The operator to\
+          \ apply to the facet. The valid values are include or exclude.\n\n*    facet_name\
+          \ - The name of the facet to exclude (such as Journals if facet_rtype was\
+          \ selected).\n\n\n\nNote: Multiple categories are delimited by the following\
+          \ string of characters: |,|\n\n\n\nExample: multiFacets=facet_rtype,include,books|,|facet_lang,exclude,spa"
+      - name: "journals"
+        in: "query"
+        required: false
+        schema:
+          default: ""
+          type: "string"
+        description: "The query string used to search specifically for journals. (Relevant\
+          \ for Alma customers only). This parameter uses the following format:\n\n\
+          journals=<operator>,<value>\n\n\n\n*    type - The type of search to perform.\
+          \ The valid values are any (search using free text or ISSN) or letter (search\
+          \ using the first letter of the journal).\n\n*    value - Depending on the\
+          \ search type, the search string can be free text, ISSN, or a letter.\n\n\
+          \n\nThe following example returns all journals that have the word nature\
+          \ in any of its data fields: journals=any,natureThe following example returns\
+          \ all journals that begin with the letter N: journals=letter,N"
+      - name: "databases"
+        in: "query"
+        required: false
+        schema:
+          default: ""
+          type: "string"
+        description: "The query string used to search specifically for databases.\
+          \ (Relevant for Alma customers only). This parameter uses the following\
+          \ format:\n\ndatabases=<operator>,<value>\n\n\n\n*    type - The type of\
+          \ search to perform. The valid values are any (search using free text or\
+          \ ISSN) or letter (search using the first letter of the journal).\n\n* \
+          \   value - Depending on the search type, the search string can be free\
+          \ text, ISSN, or a letter.\n\nThe following example returns all databases\
+          \ that have the word law in any of its data fields: journals=any,law\n\n\
+          The following example returns all databases that begin with the letter L:\
+          \ journals=letter,L"
+      - name: "lang"
+        in: "query"
+        required: false
+        schema:
+          default: "eng"
+          type: "string"
+        description: "The Language. \n\nFor Primo - use the locale format language.\
+          \ \n\nFor example: lang=en_US. \n\nFor Primo VE - use the two letters format\
+          \ language. \n\nFor example: lang=en."
+      - name: "fromDate"
+        in: "query"
+        required: false
+        schema:
+          default: ""
+          type: "string"
+        description: "This parameter gives results which updated in the library data\
+          \ base from certain date. . \n\nThe following date example represent 12.1.2018\
+          \ 15:21:28 Example: fromDate=20180128152128."
+      - name: "offset"
+        in: "query"
+        required: false
+        schema:
+          default: "0"
+          type: "integer"
+        description: "The offset of the results from which to start displaying the\
+          \ results.\n\n\n\nThe following example skips the first bulk and displays\
+          \ the remaining results up to the specified limit: offset=10."
+      - name: "limit"
+        in: "query"
+        required: false
+        schema:
+          default: "10"
+          type: "integer"
+        description: "The maximum number of results in the response\n\nExample: limit=5."
+      - name: "sort"
+        in: "query"
+        required: false
+        schema:
+          default: "rank"
+          type: "string"
+        description: "The type of sort to perform on the results, which can be based\
+          \ on relevance or a specific field: rank, title, author, or date.\n\nExample:\
+          \ sort=rank"
+      - name: "personalization"
+        in: "query"
+        required: false
+        schema:
+          default: ""
+          type: "string"
+        description: "The disciplines to apply to your search query. (Relevant for\
+          \ Primo Central searches only).When applied, records marked with the specified\
+          \ disciplines are boosted in the results.\n\nThe valid disciplines are defined\
+          \ in the Personalize Your Results Disciplines mapping table in the Back\
+          \ Office. This parameter uses the following format: \n    personalization=<discipline_1>[;<discipline_2>...;<discipline_5]\n\
+          Note: Multiple disciplines are delimited by a semicolon. A maximum of five\
+          \ disciplines are supported. You cannot specify a discipline and its sub-discipline,\
+          \ but you can specify either the discipline or up to five of its sub-disciplines.\n\
+          Example: personalization=biology;chemistry;medicine"
+      - name: "pcAvailability"
+        in: "query"
+        required: false
+        schema:
+          default: "true"
+          type: "boolean"
+        description: "Indicates whether PC records that do not have full text are\
+          \ displayed in the results. The valid values are true (display all records\
+          \ even if they do not have full text) or false (display full text records\
+          \ only)\n\nExample: pcAvailability=false."
+      - name: "getMore"
+        in: "query"
+        required: false
+        schema:
+          default: "0"
+          type: "string"
+        description: "Relevant for searches in Metalib. \n\nIndicates whether to expand\
+          \ the number of results in Metalib searches. The valid values are 0 (false)\
+          \ or 1 (true).\n\nExample: getMore=0."
+      - name: "conVoc"
+        in: "query"
+        required: false
+        schema:
+          default: "true"
+          type: "boolean"
+        description: "Indicates whether the controlled vocabulary service is enabled\
+          \ to add synonyms to queries. The valid values are true or false.\n\nExample:\
+          \ conVoc=true."
+      - name: "inst"
+        in: "query"
+        required: true
+        schema:
+          type: "string"
+        description: "The Institution code, which is required for on-premises (non-hosted)\
+          \ Primo customers only.\nExample: inst=VOLCANO."
+      responses:
+        "200":
+          description: "OK"
+          headers:
+            X-Exl-Api-Remaining:
+              $ref: "#/components/headers/remaining"
+          content:
+            application/json:
+              schema:
+                type: "object"
+            application/xml:
+              schema:
+                type: "object"
+        "400":
+          description: "Bad Request\n\n"
+        "500":
+          description: "Internal Server Error"
+security:
+- ApiKeyAuth: []
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: "apiKey"
+      in: "header"
+      name: "X-API-KEY"
+      description: "API key used to authorize requests. Learn about how to create\
+        \ API keys at [Harvard API Portal Guides - API Keys](https://portal.stage.apis.huit.harvard.edu/access-api-keys)"
+  headers:
+    remaining:
+      description: "The number of remaining calls according to the [Governance Threshold](https://developers.exlibrisgroup.com/alma/apis/#threshold)"
+      schema:
+        type: "integer"
+

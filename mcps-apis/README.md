@@ -1,9 +1,10 @@
-# _mcps
+# mcps-apis
 
-Sample MCP (Model Context Protocol) servers built for this gallery. Each subfolder is a
-self-contained server with its own dependencies and its own native toolchain (Python venv,
-Node `node_modules`, etc.). They are wired into the repo through the project-scoped
-[`.mcp.json`](../.mcp.json) at the repo root, which Claude Code loads automatically.
+Sample MCP (Model Context Protocol) servers and plain API clients built for this gallery.
+Each subfolder is self-contained with its own dependencies and its own native toolchain
+(Python venv, Node `node_modules`, etc.). The MCP servers are wired into the repo through
+the project-scoped [`.mcp.json`](../.mcp.json) at the repo root, which Claude Code loads
+automatically; the plain API clients are just scripts Claude runs directly.
 
 | Server | Language | Entry | What it does |
 |---|---|---|---|
@@ -11,6 +12,7 @@ Node `node_modules`, etc.). They are wired into the repo through the project-sco
 | [gemini-vision](gemini-vision/) | Python | `gemini-vision/server.py` | Send images to Google Gemini for vision/description (needs `GEMINI_API_KEY`) |
 | [replicate-image](replicate-image/) | Python | `replicate-image/server.py` | Generate images via Replicate models (needs `REPLICATE_API_TOKEN`) |
 | [harvard-art-museums-mcp](harvard-art-museums-mcp/) | Node | `harvard-art-museums-mcp/dist/index.js` | Search the Harvard Art Museums collection (needs `HAM_API_KEY`) |
+| [hollis-connections](hollis-connections/) | Python (API client, no MCP) | `hollis-connections/primo_search.py` | Search HOLLIS (Harvard Library catalog + article index) via the Primo API (needs `HARVARD_API_KEY` — see its [getting-an-api-key.md](hollis-connections/getting-an-api-key.md)) |
 
 ## Setup for cloners
 
@@ -27,13 +29,13 @@ Nothing here runs straight after a `git clone`. Two things are deliberately **no
 **Python servers (e.g. `arxiv`):**
 
 ```bash
-cd _mcps/arxiv
+cd mcps-apis/arxiv
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -e .
 ```
 
-This reproduces the environment from `pyproject.toml` and creates `_mcps/arxiv/.venv/`.
+This reproduces the environment from `pyproject.toml` and creates `mcps-apis/arxiv/.venv/`.
 
 Servers that ship a `requirements.txt` instead of a `pyproject.toml` (e.g. `gemini-vision`,
 `replicate-image`) install with `pip install -r requirements.txt` after creating the venv. The
@@ -43,7 +45,7 @@ servers needing API keys read them from the `env` block in `.mcp.json` (see step
 `pnpm i` will **not** reach subfolders; this repo is not a pnpm workspace):
 
 ```bash
-cd _mcps/<server-name>
+cd mcps-apis/<server-name>
 pnpm i
 pnpm build   # if it compiles TypeScript → dist/
 ```
@@ -60,8 +62,8 @@ The example already points `arxiv` at the in-repo copy using paths relative to t
 
 ```json
 "arxiv": {
-  "command": "_mcps/arxiv/.venv/bin/python",
-  "args": ["_mcps/arxiv/server.py"]
+  "command": "mcps-apis/arxiv/.venv/bin/python",
+  "args": ["mcps-apis/arxiv/server.py"]
 }
 ```
 
@@ -88,14 +90,14 @@ differences:
   the Windows paths:
 
   ```powershell
-  cd _mcps\arxiv
+  cd mcps-apis\arxiv
   python -m venv .venv
   .venv\Scripts\activate
   pip install -e .
   ```
 
   Then in `.mcp.json`, the Python `command` becomes
-  `_mcps/arxiv/.venv/Scripts/python.exe` (the committed example uses the macOS/Linux
+  `mcps-apis/arxiv/.venv/Scripts/python.exe` (the committed example uses the macOS/Linux
   `.venv/bin/python` path — edit it to match your OS). Forward slashes are fine on Windows.
 - **The Node server (`harvard-art-museums-mcp`) is already cross-platform.** Its `.mcp.json`
   entry uses `node` + `dist/index.js`, which runs identically on macOS and Windows once you've

@@ -43,6 +43,6 @@ and ends with a thumbnail index of every work.
 - **One page, regenerated in place.** `outputs/index.html` is the artifact; overwrite it rather
   than creating parallel copies.
 
-The MCP server itself lives at [`_mcps/harvard-art-museums-mcp/`](../../_mcps/harvard-art-museums-mcp/)
+The MCP server itself lives at [`mcps-apis/harvard-art-museums-mcp/`](../../mcps-apis/harvard-art-museums-mcp/)
 and is wired in through the repo-root [`.mcp.json`](../../.mcp.json); run `/mcp` to confirm it is
 connected before starting.

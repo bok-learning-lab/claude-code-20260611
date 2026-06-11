@@ -28,7 +28,7 @@ closes with a twelve-thumbnail "plate index." Every image streams live from the 
 service; nothing is downloaded. Inline CSS, no external assets, so it survives being posted to a
 course site or emailed.
 
-In between sits the [Harvard Art Museums MCP server](../../_mcps/harvard-art-museums-mcp/), wired
+In between sits the [Harvard Art Museums MCP server](../../mcps-apis/harvard-art-museums-mcp/), wired
 into Claude Code through the repo-root [`.mcp.json`](../../.mcp.json). The full account of how it
 works, how it was built, and the exact instruction we gave is in
 [operations/harvard-art-museums-mcp.md](operations/harvard-art-museums-mcp.md).

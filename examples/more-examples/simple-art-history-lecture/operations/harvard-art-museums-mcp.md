@@ -12,7 +12,7 @@ we made with it here.
 
 ## 1. How the Harvard Art Museums MCP works
 
-The server lives at [`_mcps/harvard-art-museums-mcp/`](../../../_mcps/harvard-art-museums-mcp/)
+The server lives at [`mcps-apis/harvard-art-museums-mcp/`](../../../mcps-apis/harvard-art-museums-mcp/)
 at the repo root and is wired into Claude Code through the project-scoped
 [`.mcp.json`](../../../.mcp.json). When you start `claude` anywhere in this repo, the server
 launches automatically and its tools appear with a `mcp__harvard-art-museums__` prefix. Run
@@ -44,7 +44,7 @@ memory. That is the entire point of using a tool instead of asking the model to 
 the collection: **the facts are sourced, and the model can't hallucinate an accession number.**
 
 A few constraints inherited from the API (all spelled out in the server's
-[README](../../../_mcps/harvard-art-museums-mcp/README.md)):
+[README](../../../mcps-apis/harvard-art-museums-mcp/README.md)):
 
 - A free API key is required; it's supplied via `.mcp.json` (`env.HAM_API_KEY`).
 - Courtesy rate limit ~2,500 requests/day — prefer a larger `size` over repeated paging.
@@ -57,7 +57,7 @@ A few constraints inherited from the API (all spelled out in the server's
 
 It is a small TypeScript MCP server built with the official
 [MCP SDK](https://modelcontextprotocol.io), following the same pattern the repo's
-[`mcp-builder`](../../../_mcps/) skill encourages. The shape, for anyone who wants to build
+[`mcp-builder`](../../../mcps-apis/) skill encourages. The shape, for anyone who wants to build
 their own against a different collection or API:
 
 ```
@@ -87,8 +87,8 @@ The design choices that make it pleasant for an LLM to drive:
 - **Actionable errors** — a 401 says "check your API key," a 429 says "rate limited, slow
   down" — so failures are self-correcting in conversation.
 
-The companion server [`_mcps/replicate-image/`](../../../_mcps/replicate-image/) ships a
-longer write-up, [`how-to-build-an-mcp.md`](../../../_mcps/replicate-image/how-to-build-an-mcp.md),
+The companion server [`mcps-apis/replicate-image/`](../../../mcps-apis/replicate-image/) ships a
+longer write-up, [`how-to-build-an-mcp.md`](../../../mcps-apis/replicate-image/how-to-build-an-mcp.md),
 if you want a full from-scratch walkthrough of the same pattern.
 
 ## 3. What we did with it (this example's move)

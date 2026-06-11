@@ -1,20 +1,20 @@
 {
   "mcpServers": {
     "arxiv": {
-      "command": "_mcps/arxiv/.venv/bin/python",
-      "args": ["_mcps/arxiv/server.py"]
+      "command": "mcps-apis/arxiv/.venv/bin/python",
+      "args": ["mcps-apis/arxiv/server.py"]
     },
     "gemini-vision": {
-      "command": "_mcps/gemini-vision/.venv/bin/python",
-      "args": ["_mcps/gemini-vision/server.py"],
+      "command": "mcps-apis/gemini-vision/.venv/bin/python",
+      "args": ["mcps-apis/gemini-vision/server.py"],
       "env": {
         "GEMINI_API_KEY": "${GEMINI_API_KEY}",
         "GEMINI_MODEL": "gemini-3.5-flash"
       }
     },
     "replicate-image": {
-      "command": "_mcps/replicate-image/.venv/bin/python",
-      "args": ["_mcps/replicate-image/server.py"],
+      "command": "mcps-apis/replicate-image/.venv/bin/python",
+      "args": ["mcps-apis/replicate-image/server.py"],
       "env": {
         "REPLICATE_API_TOKEN": "${REPLICATE_API_TOKEN}"
       }
@@ -30,7 +30,7 @@
     "harvard-art-museums": {
       "type": "stdio",
       "command": "node",
-      "args": ["_mcps/harvard-art-museums-mcp/dist/index.js"],
+      "args": ["mcps-apis/harvard-art-museums-mcp/dist/index.js"],
       "env": {
         "HAM_API_KEY": "${HAM_API_KEY}"
       }

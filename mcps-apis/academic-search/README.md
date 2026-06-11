@@ -24,8 +24,8 @@ The point of this example isn't just "Claude can search papers now." It's that *
 
    ```json
    "academic_search": {
-     "command": "_mcps/academic_search/.venv/bin/python",
-     "args": ["_mcps/academic_search/server.py"],
+     "command": "mcps-apis/academic_search/.venv/bin/python",
+     "args": ["mcps-apis/academic_search/server.py"],
      "env": {
        "SEMANTIC_SCHOLAR_API_KEY": "PASTE_YOUR_KEY_HERE"
      }
