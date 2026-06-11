@@ -82,6 +82,6 @@ Many tools orchestrated at scale: subagents, connected data, automation.
 - **Outputs:** one aggregated JSON plus a prose writeup pairing each name with its quoted line.
 - **Best fit:** Code (subagents, scale).
 
-## ?. The Gesamtkunstwerk — *beyond the map*
+## ?. Unknown ??? — *beyond the map*
 
-The term is Wagner's: every medium in a single work. Past the bottom of this axis are **combinations of the rows above** — text, application, visualization, sound, physical space in one project — that become buildable as the remaining technical barriers come down. Too early to catalogue.
+One day, a sort of Gesamtkunstwerk. Past the bottom: potentially new mediums, or new combinations of the rows above — text, application, visualization, sound, physical space in one project — buildable as the remaining technical barriers come down. Too early to catalogue.
