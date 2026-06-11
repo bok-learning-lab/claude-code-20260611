@@ -1,0 +1,30 @@
+{
+  "chunk": "chunk_18",
+  "global_line_offset": 10800,
+  "matches": [
+    {
+      "global_line": 10859,
+      "matched_text": "Finntown",
+      "snippet": "ribbon development, from contact bridge to lease lapse, only two millium two humbered and eighty thausig nine humbered and sixty radiolumin lines to the wustworts of a Finntown's generous poet's office.",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct reference to Finntown, invoking Finn in a place-name. Joyce places Finntown in Dublin topography, literalizing the Finn/Dublin geography conflation.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 10837,
+      "matched_text": "Rolf the Ganger, Rough the Gangster",
+      "snippet": "Hispano-Cathayan-Euxine, Castillian - Emeratic - Hebridian, Espanol - Cymric-Smithy no home, Helleniky. Rolf the Ganger, Rough the Gangster, not a feature alike and the face the same.",
+      "variant_type": "avatar-epithet",
+      "reasoning": "Rolf the Ganger (a Scandinavian/Viking figure) paired with Rough the Gangster in a list of historical/mythic avatars. Joyce conflates different culture-heroes and trickster figures; these may represent alternative avatars of the eternal return motif (like Finn/Finnegan).",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 10815,
+      "matched_text": "byg eat",
+      "snippet": "To house as wise fool ages builded. Sow byg eat.",
+      "variant_type": "pun",
+      "reasoning": "Homophonic pun on 'big' — the sleeping giant HCE is the 'big' man/macintosh figure. 'Byg' echoes the giant motif while 'eat' puns on 'ate' (consumed/fallen).",
+      "confidence": "low"
+    }
+  ]
+}

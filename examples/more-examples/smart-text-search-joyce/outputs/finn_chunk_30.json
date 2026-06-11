@@ -1,0 +1,30 @@
+{
+  "chunk": "chunk_30",
+  "global_line_offset": 18000,
+  "matches": [
+    {
+      "global_line": 18080,
+      "matched_text": "Finnan baddies",
+      "snippet": "where first I met thee oldpoetryck flied from may, and the Finnan baddies and the Noal Sharks",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct variant of 'Finnegan'; 'Finnan' is a Joycean spelling of Finn, here modifying 'baddies' (fish); pun on smoked haddock (finnan haddie)",
+      "confidence": "high"
+    },
+    {
+      "global_line": 18125,
+      "matched_text": "good old Foehn again",
+      "snippet": "around the waists of the ships, in the wake of their good old Foehn again, as tyred as they were",
+      "variant_type": "pun",
+      "reasoning": "Foehn (warm wind) is phonetically 'Finn' + 'again' split across words; echoes 'Finnegan' and the resurrection motif; 'again' suggests repetition/cyclical return",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 18297,
+      "matched_text": "Fionnachan sea",
+      "snippet": "to Peregrine and Michael and Farfassa and Peregrine, for navigants et peregrinantibus, in all the old imperial and Fionnachan sea",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct Gaelic variant of Fionn; 'Fionnachan' preserves Irish 'Fionn' morphology; in a list of sacred/canonical places suggesting mythic register",
+      "confidence": "high"
+    }
+  ]
+}

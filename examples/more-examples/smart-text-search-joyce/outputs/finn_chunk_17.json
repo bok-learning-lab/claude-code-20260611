@@ -1,0 +1,30 @@
+{
+  "chunk": "chunk_17",
+  "global_line_offset": 10200,
+  "matches": [
+    {
+      "global_line": 10224,
+      "matched_text": "all Finnyland",
+      "snippet": "a flip flap in all Finnyland. Witchman, watch of your night.",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct spelling of 'Finnyland' - place name derived from Finn, the landscape of his body or realm",
+      "confidence": "high"
+    },
+    {
+      "global_line": 10268,
+      "matched_text": "Like a Finn at a fair",
+      "snippet": "for who is to wear the lily of Bohemey, Florestan, Thaddeus, Hardress or Myles. And lead raptivity captive. Ready! Like a Finn at a fair.",
+      "variant_type": "direct-spelling",
+      "reasoning": "Explicit 'Finn' in common phrase 'Like a Finn at a fair' - Finn MacCool figure invoked colloquially",
+      "confidence": "high"
+    },
+    {
+      "global_line": 10438,
+      "matched_text": "Finnfinn the Faineant",
+      "snippet": "Only the caul knows his thousandfirst name. Hocus Crocus, Esquilocus, Finnfinn the Faineant, how feel full foes in furrinarr!",
+      "variant_type": "avatar-epithet",
+      "reasoning": "Doubled 'Finnfinn' epithet with 'Faineant' (the idle/lazy one) - avatar name for HCE/Finn, possibly alluding to Finn MacCool's sloth or hibernation",
+      "confidence": "high"
+    }
+  ]
+}

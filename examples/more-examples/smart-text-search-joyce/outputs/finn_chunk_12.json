@@ -1,0 +1,22 @@
+{
+  "chunk": "chunk_12",
+  "global_line_offset": 7200,
+  "matches": [
+    {
+      "global_line": 7500,
+      "matched_text": "Finnados",
+      "snippet": "the only once (dia dose Finnados !) he did take a tompip",
+      "variant_type": "direct-spelling",
+      "reasoning": "Archaic/garbled spelling of Finnegan(s) with divine invocation 'dia dose' (God willing), evokes the ballad's opening 'Finnegan'; the name folded into Irish exclamation",
+      "confidence": "high"
+    },
+    {
+      "global_line": 7536,
+      "matched_text": "Tumult, son of Thunder",
+      "snippet": "the whirling dervish. Tumult, son of Thunder, self exiled in upon his ego",
+      "variant_type": "avatar-epithet",
+      "reasoning": "Tumult as avatar of Finnegan/HCE through thunder (the thunderwords marking Finnegan's fall); 'son of Thunder' echoes the Thunderbird motif and mythic paternity; linked to the Shaping fall",
+      "confidence": "medium"
+    }
+  ]
+}

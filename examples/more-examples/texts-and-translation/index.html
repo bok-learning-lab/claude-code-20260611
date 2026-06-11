@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>texts-and-translation — folder index</title>
+<style>
+  :root { --ink:#1a1a1a; --muted:#5a5a5a; --rule:#e4e4e4; --accent:#c8102e; --bg:#ffffff; }
+  * { box-sizing: border-box; }
+  html, body { margin:0; padding:0; background:var(--bg); color:var(--ink); }
+  body { font-family:-apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Arial, sans-serif; font-size:16px; line-height:1.55; -webkit-font-smoothing:antialiased; }
+  main { max-width:760px; margin:0 auto; padding:56px 32px 96px; }
+  h1 { font-size:30px; font-weight:700; letter-spacing:-0.01em; margin:0 0 8px; }
+  h1 .crumb { color:var(--muted); font-weight:500; }
+  .lede { color:var(--muted); margin:0 0 36px; font-size:17px; }
+  h2 { font-size:17px; font-weight:700; margin:32px 0 10px; padding-bottom:6px; border-bottom:1px solid var(--rule); text-transform:lowercase; }
+  p { margin:0 0 12px; }
+  ul { margin:0 0 16px; padding-left:22px; }
+  ul ul { margin:4px 0 8px; }
+  li { margin:3px 0; }
+  a { color:var(--accent); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  code { font-family:ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size:0.92em; }
+  .note { color:var(--muted); font-size:14px; margin-top:36px; padding-top:18px; border-top:1px solid var(--rule); font-style:italic; }
+  .desc { color:var(--muted); }
+</style>
+</head>
+<body>
+<main>
+
+<h1>texts-and-translation <span class="crumb">/ folder index</span></h1>
+<p class="lede">A scaffolded demonstration of LLM-assisted close work for disciplines whose primary sources are not in English. Start with <a href="summary.md">summary.md</a>; everything else is here for browsing.</p>
+
+<h2>Top-level</h2>
+<ul>
+  <li><a href="summary.md">summary.md</a> <span class="desc">— what this project is, how we built it, what you can translate it to</span></li>
+  <li><a href="CLAUDE.md">CLAUDE.md</a> <span class="desc">— project-level instructions loaded by Claude Code on session start</span></li>
+  <li><a href="index.md">index.md</a> / <a href="index.html">index.html</a> <span class="desc">— this file</span></li>
+</ul>
+
+<h2>inputs/</h2>
+<p class="desc">Two demo corpora, each set up as a standalone target.</p>
+<ul>
+  <li>inputs/the-odyssey/
+    <ul>
+      <li><a href="inputs/the-odyssey/odyssey_homeric_greek.xml">odyssey_homeric_greek.xml</a> <span class="desc">— Homeric Greek in TEI/XML (PerseusDL, Murray edition)</span></li>
+      <li>inputs/the-odyssey/translations/ <span class="desc">— 14 translations across 6 languages</span>
+        <ul>
+          <li>English: <a href="inputs/the-odyssey/translations/odyssey_bryant_book1.txt">Bryant</a>, <a href="inputs/the-odyssey/translations/Odyssey_Butcher_Lang.txt">Butcher/Lang</a>, <a href="inputs/the-odyssey/translations/Odyssey_translated_by_Samuel_Butler.txt">Butler</a>, <a href="inputs/the-odyssey/translations/odyssey_cotterill.txt">Cotterill</a>, <a href="inputs/the-odyssey/translations/The-Odyssey-William_Cowper_J_Johnson.txt">Cowper</a>, <a href="inputs/the-odyssey/translations/Odyssey_Merry_Riddell.txt">Merry/Riddell</a>, <a href="inputs/the-odyssey/translations/Odyssey_David_Monro.txt">Monro</a>, <a href="inputs/the-odyssey/translations/odyssey_pope.txt">Pope</a>, <a href="inputs/the-odyssey/translations/Odyssey_hendecasyllable_alford.txt">Alford</a></li>
+          <li>Greek: <a href="inputs/the-odyssey/translations/odyssey_greek_Iakovos_Polylas.txt">Polylas (Modern Greek)</a></li>
+          <li>Latin: <a href="inputs/the-odyssey/translations/odyssea-latin.txt">odyssea-latin</a></li>
+          <li>French: <a href="inputs/the-odyssey/translations/lodyssee_french_calbet.txt">Calbet</a></li>
+          <li>Spanish: <a href="inputs/the-odyssey/translations/la_odisea_spanish_Segala_Estalella.txt">Segala Estalella</a></li>
+          <li>Swedish: <a href="inputs/the-odyssey/translations/Odysseia_swedish_sjostrom.txt">Sjöström</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>inputs/early-modern-sanskrit/
+    <ul>
+      <li><a href="inputs/early-modern-sanskrit/jagannatha-rasagangadhara.htm">jagannatha-rasagangadhara.htm</a> <span class="desc">— Ānana 1 of the <em>Rasagaṅgādhara</em> (17th c.) in Devanāgarī from GRETIL</span></li>
+    </ul>
+  </li>
+</ul>
+
+<h2>operations/</h2>
+<p class="desc">Prompts and skills.</p>
+<ul>
+  <li><a href="operations/deep-research-prompt.md">operations/deep-research-prompt.md</a> <span class="desc">— prompt that commissioned the background research at <code>outputs/research-result.md</code></span></li>
+  <li>operations/skills/
+    <ul>
+      <li><a href="operations/skills/split-into-books/">split-into-books/</a> <span class="desc">— utility: pre-splits translation files into per-book files</span></li>
+      <li><a href="operations/skills/show-passage/">show-passage/</a> <span class="desc">— display a passage with Greek original + chosen translations</span></li>
+      <li><a href="operations/skills/identify-figures-greek/">identify-figures-greek/</a> <span class="desc">— identify rhetorical figures in a Homeric Greek passage</span></li>
+      <li><a href="operations/skills/identify-figures-sanskrit/">identify-figures-sanskrit/</a> <span class="desc">— identify candidate <em>alaṃkāras</em> in a <em>Rasagaṅgādhara</em> passage</span></li>
+    </ul>
+  </li>
+</ul>
+
+<h2>outputs/</h2>
+<p class="desc">Produced artifacts. Skill outputs preserve the corpus nesting used in <code>inputs/</code>.</p>
+<ul>
+  <li>outputs/the-odyssey/
+    <ul>
+      <li>figures-greek/ <span class="desc">— figure-identification outputs against the Homeric Greek corpus</span></li>
+      <li>passages/ <span class="desc">— <code>/show-passage</code> outputs</span></li>
+    </ul>
+  </li>
+  <li><a href="outputs/research-result.md">outputs/research-result.md</a> <span class="desc">— background research on the project's place in the philological / translation-theory traditions</span></li>
+</ul>
+
+<p class="note">To run end-to-end: open this folder in Claude Code, run <code>/split-into-books all</code> once to pre-split the translation files, then <code>/show-passage 1.1-10</code> on the proem to see Wilson next to Lattimore next to Pope; then <code>/identify-figures-sanskrit</code> on an illustrative verse from the <em>Rasagaṅgādhara</em> whose alaṃkāra Jagannātha himself names.</p>
+
+</main>
+</body>
+</html>

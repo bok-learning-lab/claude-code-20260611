@@ -1,0 +1,62 @@
+{
+  "chunk": "chunk_16",
+  "global_line_offset": 9600,
+  "matches": [
+    {
+      "global_line": 9647,
+      "matched_text": "Dinny Finneen",
+      "snippet": "With Dinny Finneen, me canty, ho! In the lost of the gleamens.",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct variant of Finnegan; 'Dinny' is diminutive, 'Finneen' a garbled form maintaining the Finn root",
+      "confidence": "high"
+    },
+    {
+      "global_line": 9664,
+      "matched_text": "Hetman MacCumhal",
+      "snippet": "it's Hetman MacCumhal foots the funeral. Mealwhile she",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct reference to MacCumhal (mac Cumhaill), Fionn mac Cumhaill's father in Irish mythology; Hetman is a mock-heroic title",
+      "confidence": "high"
+    },
+    {
+      "global_line": 9623,
+      "matched_text": "feastking of shellies",
+      "snippet": "him a Fonar all, feastking of shellies by googling Lovvey",
+      "variant_type": "avatar-epithet",
+      "reasoning": "Finn is associated with feasting and kingship; 'feastking' echoes his role as hero-leader of the Fianna",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 9641,
+      "matched_text": "Joshua Croesus, son of Nunn",
+      "snippet": "of a Haveajube Sillayass. Joshua Croesus, son of Nunn!",
+      "variant_type": "pun",
+      "reasoning": "Possible allusion to genealogical claims: 'Nunn' echoes the Irish father-son relationship naming patterns (mac = son); Joshua suggests biblical kingship conflated with mythological hero",
+      "confidence": "low"
+    },
+    {
+      "global_line": 9673,
+      "matched_text": "chip of old Flinn the Flinter",
+      "snippet": "boy of potter and mudder, chip of old Flinn the Flinter, twig of the hider",
+      "variant_type": "direct-spelling",
+      "reasoning": "Explicit reference to 'Flinn' (variant spelling of Finn); 'Flinter' may echo flint/hardness; describes genealogical descent as 'chip' of the father",
+      "confidence": "high"
+    },
+    {
+      "global_line": 9674,
+      "matched_text": "twig of the hider that tanned him",
+      "snippet": "twig of the hider that tanned him. He go calaboosh all same he tell him out.",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Finn-eces (the druid) 'hid' Fionn in childhood and trained him; 'hider' and 'tanned' (hardened/trained) evoke this mythic tutelage motif",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 9598,
+      "matched_text": "errorooth of his wisdom",
+      "snippet": "shot pinging up through the errorooth of his wisdom (who thought",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Allusion to the Salmon of Knowledge and the 'tooth of wisdom' (Fionn gained wisdom by eating the salmon); 'error-ooth' is pun-garbled form",
+      "confidence": "medium"
+    }
+  ]
+}

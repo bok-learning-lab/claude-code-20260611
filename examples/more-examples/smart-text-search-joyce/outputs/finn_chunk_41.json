@@ -1,0 +1,70 @@
+{
+  "chunk": "chunk_41",
+  "global_line_offset": 24600,
+  "matches": [
+    {
+      "global_line": 24635,
+      "matched_text": "comes out aich Fanagan's Week",
+      "snippet": "Mons Meg's Monthly, comes out aich Fanagan's Week, to bray at by clownsillies",
+      "variant_type": "direct-spelling",
+      "reasoning": "Fanagan's = Finnegan's, directly garbled spelling of the ballad and Finnegan(s) motif; phonetically 'Finn' audible in the name",
+      "confidence": "high"
+    },
+    {
+      "global_line": 24744,
+      "matched_text": "your sleeping giant",
+      "snippet": "On me, your sleeping giant. Estoesto! Estote sunto! From the hold of my capt",
+      "variant_type": "giant-landscape",
+      "reasoning": "Speaker claims to be 'your sleeping giant' — directly invokes the HCE-as-Finn motif of the sleeping giant whose body is the Dublin landscape",
+      "confidence": "high"
+    },
+    {
+      "global_line": 24791,
+      "matched_text": "Braid Blackfordrock, the Calton, the Liberton, Craig and Lockhart's",
+      "snippet": "hill prospect. Braid Blackfordrock, the Calton, the Liberton, Craig and Lockhart's, A. Costofino",
+      "variant_type": "giant-landscape",
+      "reasoning": "Enumeration of Dublin hills and geographic features (seven ills, centripunts) — part of the landscape-as-sleeping-giant trope where Finn's recumbent body maps onto terrain",
+      "confidence": "high"
+    },
+    {
+      "global_line": 24871,
+      "matched_text": "my pumpadears in their easancies and my drummers",
+      "snippet": "Struggling forlongs I have livramentoed, milles on milles of mancipelles. Lo, I have looked upon my pumpadears",
+      "variant_type": "avatar-epithet",
+      "reasoning": "Drummer epithet; Finn in mythology had druids/wise men; 'drummers' may allude to his retinue or attribute, though pun-oblique",
+      "confidence": "low"
+    },
+    {
+      "global_line": 24881,
+      "matched_text": "drug-tails in my petty-courts and domstered dusty-feets",
+      "snippet": "I deemed the drugtails in my pettycourts and domstered dustyfeets in my husinclose",
+      "variant_type": "fall-resurrection",
+      "reasoning": "Drugtails + dustyfeet suggest degradation/fall of a mighty figure; pun-like echo of Finn's fallen state before resurrection",
+      "confidence": "low"
+    },
+    {
+      "global_line": 24919,
+      "matched_text": "two young frish, etoiled, flappant, devoiled",
+      "snippet": "At the crest, two young frish, etoiled, flappant, devoiled of their habiliments, vested sable",
+      "variant_type": "direct-spelling",
+      "reasoning": "Frish = fish, but phonetically suggests Fionn/Finn; heraldic coat-of-arms context fits mythic hero register",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 24997,
+      "matched_text": "Till daybowbreak and showshadows flee",
+      "snippet": "By my natural born freeman's journeymanright and my otherchurch's inher light, in so and such a manner as me it so besitteth, most surely I pretend and reclam to opt for simultaneous. Till daybowbreak and showshadows flee.",
+      "variant_type": "fall-resurrection",
+      "reasoning": "Daybowbreak = Finn's dawn re-arising; shadowflight = darkness of death/sleep departing; part of the Finnegan wake-resurrection motif",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 25098,
+      "matched_text": "I thumbed her with iern of Erin",
+      "snippet": "so streng we were in one, malestream in shegulf: and  to rings tresse I thumbed her with iern of Erin",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Thumb of wisdom (Finn's magical thumb) directly referenced in 'thumbed her'; Erin adds Ireland/Finnian context",
+      "confidence": "high"
+    }
+  ]
+}

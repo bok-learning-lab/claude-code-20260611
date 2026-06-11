@@ -1,0 +1,46 @@
+{
+  "chunk": "chunk_04",
+  "global_line_offset": 2400,
+  "matches": [
+    {
+      "global_line": 2450,
+      "matched_text": "the Finner Camps",
+      "snippet": "on either wide {pardonnei/\\ nodding, all the Finner Camps concurred",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct anagram/wordplay: 'Finner' contains 'Finn' and echoes Fenians/Fianna; 'Camps' suggests the military band",
+      "confidence": "high"
+    },
+    {
+      "global_line": 2473,
+      "matched_text": "our own little Graunya",
+      "snippet": "which our own little Graunya of the chilired cheeks dished up to the greatsire",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Graunya (Gráinne) is the wife of Diarmuid in the Finn legend cycle, 'Pursuit of Diarmuid and Gráinne'; directly evokes Finn's mythic world",
+      "confidence": "high"
+    },
+    {
+      "global_line": 2477,
+      "matched_text": "dotter of a dearmud",
+      "snippet": "come leinster's even, true dotter of a dearmud, (her pitch was Forty Steps",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Garbled/phonetic spelling of Diarmuid (Dearmud=Dear-mud); another reference to the Finn cycle's hero-lover Diarmuid",
+      "confidence": "high"
+    },
+    {
+      "global_line": 2513,
+      "matched_text": "Gyant Blyant fronts Peannlueamoore",
+      "snippet": "Now by memory inspired, turn wheel again to the whole of the wall. Where Gyant Blyant fronts Peannlueamoore",
+      "variant_type": "giant-landscape",
+      "reasoning": "'Gyant Blyant' (Giant Bliant) invokes the giant-as-landscape motif, with 'Peannlueamoore' possibly evoking geographical features; Finn-as-sleeping-giant theme",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 2598,
+      "matched_text": "foinne loidies",
+      "snippet": "we have been compelled for the rejoicement of foinne loidies ind the humours",
+      "variant_type": "direct-spelling",
+      "reasoning": "Anagram of 'Finn' embedded in 'foinne'; phonetically echoes 'Fianna' and old Irish mystique; 'loidies' corrupts Irish 'laoidhe' (poem/lay)",
+      "confidence": "low"
+    }
+  ]
+}

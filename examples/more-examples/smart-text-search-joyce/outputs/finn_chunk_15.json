@@ -1,0 +1,38 @@
+{
+  "chunk": "chunk_15",
+  "global_line_offset": 9000,
+  "matches": [
+    {
+      "global_line": 9011,
+      "matched_text": "fingalls",
+      "snippet": "Dear Dirty Dumpling, foostherfather of fingalls and dotthergills.",
+      "variant_type": "direct-spelling",
+      "reasoning": "Fingal is a variant/epithet name for Finn MacCool in Gaelic tradition; Joyce's 'fingalls' echoes this directly",
+      "confidence": "high"
+    },
+    {
+      "global_line": 9057,
+      "matched_text": "Feenichts Playhouse",
+      "snippet": "Every evening at lighting up o'clock sharp and until further notice in Feenichts Playhouse.",
+      "variant_type": "direct-spelling",
+      "reasoning": "Feenichts is a garbled spelling of Fenians/Fionn; invokes both the mythic Fianna warriors and the Finn/Fionn name",
+      "confidence": "high"
+    },
+    {
+      "global_line": 9072,
+      "matched_text": "fern may cald us until firn make cold",
+      "snippet": "While fern may cald us until firn make cold. The Mime of Micky Nick and the Maggies",
+      "variant_type": "direct-spelling",
+      "reasoning": "Cryptic doubling of Finn-like elements: 'fern' and 'firn' echo 'Finn'; the phrasing suggests cyclical time/fall-and-resurrection",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 9157,
+      "matched_text": "Mr T. M. Finnegan R.I.C.",
+      "snippet": "Jests, jokes, jigs and jorums for the Wake lent from the properties of the late cemented Mr T. M. Finnegan R.I.C.",
+      "variant_type": "avatar-epithet",
+      "reasoning": "Finnegan is the hod-carrier/bricklayer hero explicitly named; 'T. M.' initials; R.I.C. (Royal Irish Constabulary) suggests Irish context and law/authority figure merging with Finn",
+      "confidence": "high"
+    }
+  ]
+}

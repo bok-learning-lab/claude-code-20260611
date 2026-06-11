@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>joyce — folder index</title>
+<style>
+  :root { --ink:#1a1a1a; --muted:#5a5a5a; --rule:#e4e4e4; --accent:#c8102e; --bg:#ffffff; }
+  * { box-sizing: border-box; }
+  html, body { margin:0; padding:0; background:var(--bg); color:var(--ink); }
+  body { font-family:-apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Arial, sans-serif; font-size:16px; line-height:1.55; -webkit-font-smoothing:antialiased; }
+  main { max-width:760px; margin:0 auto; padding:56px 32px 96px; }
+  h1 { font-size:30px; font-weight:700; letter-spacing:-0.01em; margin:0 0 8px; }
+  h1 .crumb { color:var(--muted); font-weight:500; }
+  .lede { color:var(--muted); margin:0 0 36px; font-size:17px; }
+  h2 { font-size:17px; font-weight:700; margin:32px 0 10px; padding-bottom:6px; border-bottom:1px solid var(--rule); text-transform:lowercase; }
+  p { margin:0 0 12px; }
+  ul { margin:0 0 16px; padding-left:22px; }
+  ul ul { margin:4px 0 8px; }
+  li { margin:3px 0; }
+  a { color:var(--accent); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  code { font-family:ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size:0.92em; }
+  .note { color:var(--muted); font-size:14px; margin-top:36px; padding-top:18px; border-top:1px solid var(--rule); font-style:italic; }
+  .desc { color:var(--muted); }
+</style>
+</head>
+<body>
+<main>
+
+<h1>joyce <span class="crumb">/ folder index</span></h1>
+<p class="lede">A worked Claude Code example built around a single research task in Prof. Natasha Sumner's territory: <em>where does Fionn mac Cumhaill actually appear in James Joyce's</em> Finnegans Wake? The hero arrives in misspellings, puns, avatars, body-as-landscape, and mythic attributes with no letters in common with his name — so <code>grep</code> can't find him. The project breaks the book into 48 chunks, points one Claude subagent at each as a close reader, and pools the structured findings. Start with <a href="summary.md">summary.md</a>; everything else is here for browsing.</p>
+
+<h2>Top-level</h2>
+<ul>
+  <li><a href="summary.md">summary.md</a> / <a href="summary.html">summary.html</a> <span class="desc">— what this project is, the research question, the method (48 close-readers in parallel), and what it shows about literary work an LLM can and cannot do</span></li>
+  <li><a href="index.md">index.md</a> / <a href="index.html">index.html</a> <span class="desc">— this file</span></li>
+</ul>
+
+<h2>inputs/</h2>
+<ul>
+  <li><a href="inputs/finnegans_wake.md">finnegans_wake.md</a> <span class="desc">— the OCR'd full text of <em>Finnegans Wake</em> (~28,500 lines), with stable line numbers used throughout the operations and outputs</span></li>
+</ul>
+
+<h2>operations/</h2>
+<ul>
+  <li>operations/chunks/ <span class="desc">— 48 ~600-line slices of the source text (<code>chunk_00</code> through <code>chunk_47</code>), each sized so a single subagent can read it word-by-word. Each chunk preserves a known line offset so findings map back to the source text by global line number</span></li>
+</ul>
+
+<h2>outputs/</h2>
+<p class="desc">One JSON per chunk plus an aggregate.</p>
+<ul>
+  <li>outputs/finn_chunk_00.json through outputs/finn_chunk_47.json <span class="desc">— one close-reader's structured findings per slice. Each finding is <code>{global_line, matched_text, snippet, variant_type, reasoning}</code> — a small structured judgment, not just a location</span></li>
+  <li><a href="outputs/finn_references_aggregated.json">outputs/finn_references_aggregated.json</a> <span class="desc">— all 48 files merged into one master list of Finn-references across the book</span></li>
+</ul>
+
+<p class="note">To re-run: invoke a close-reading subagent on each chunk (<code>operations/chunks/chunk_NN</code>) with the instruction to read every word, judge candidates with its Joyce knowledge, and write findings as JSON to <code>outputs/finn_chunk_NN.json</code>. Then concatenate into <code>finn_references_aggregated.json</code>.</p>
+
+</main>
+</body>
+</html>

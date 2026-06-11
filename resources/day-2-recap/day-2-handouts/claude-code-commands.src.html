@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Claude Code — Commands Worth Knowing</title>
+<style>
+/*__FONTS__*/
+/*__HOUSE_STYLE__*/
+/*__PATTERNS__*/
+  /* ---- PAGE SETUP: portrait 11x17 ---- */
+  @page { size: 11in 17in; margin: 0.5in; }
+  .sheet { width:10in; height:16in; padding:0.55in 0.6in 0.8in; display:flex; flex-direction:column; }
+  .footer { bottom:0.34in; }
+
+  /* command names in the red key column become monospace */
+  table.glance td.key {
+    font-family:"SFMono-Regular","Menlo","Consolas",monospace;
+    font-size:15px; letter-spacing:-0.01em; padding-right:20px;
+  }
+  table.glance td.key .opt { color:var(--muted); font-weight:700; }
+  table.glance td.key .req { color:var(--accent); font-weight:800; font-style:italic; }
+  table.glance td { font-size:14.5px; line-height:1.5; padding:14px 12px; }
+  table.glance td b { color:var(--accent); font-weight:800; }
+  table.glance .alias { color:var(--muted); font-weight:600; font-size:12.5px; display:block; margin-top:4px; }
+  table.glance .alias code { font-family:"SFMono-Regular","Menlo","Consolas",monospace; font-weight:700; color:var(--ink); }
+
+  /* inline code in body text */
+  code {
+    font-family:"SFMono-Regular","Menlo","Consolas",monospace;
+    font-size:0.92em; font-weight:800; color:var(--accent);
+    letter-spacing:-0.01em;
+  }
+  .lede code, .takehome code { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <p class="kicker">Day 2 · Reference</p>
+  <h1>Claude Code — commands worth knowing
+    <span class="sub">A short reference to the commands most useful in everyday work.</span>
+  </h1>
+
+  <p class="lede">
+    Type <code>/</code> in a session to see what's available. A command is only recognized
+    at the <b>start</b> of a message; text after it is passed as arguments.
+  </p>
+
+  <p class="takehome">
+    <b>Notation:</b> <code>&lt;arg&gt;</code> = required &nbsp;·&nbsp; <code>[arg]</code> = optional.
+  </p>
+
+  <table class="glance">
+    <thead>
+      <tr>
+        <th style="width:2.6in;">Command</th>
+        <th>What it does</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="key">/init</td>
+        <td>Generate a starter <code>CLAUDE.md</code> for a repo so Claude understands the project. <b>Run this first in any new codebase.</b></td>
+      </tr>
+      <tr>
+        <td class="key">/compact <span class="opt">[instructions]</span></td>
+        <td>Summarize the conversation to free up context <b>without losing the thread</b>. Optionally focus the summary.</td>
+      </tr>
+      <tr>
+        <td class="key">/context <span class="opt">[all]</span></td>
+        <td>Visualize where your context window is going, with warnings and optimization tips. Pair with <code>/compact</code>.</td>
+      </tr>
+      <tr>
+        <td class="key">/rewind</td>
+        <td>Roll code and/or conversation back to an earlier checkpoint, or summarize from a point.
+          <span class="alias">aliases: <code>/checkpoint</code> · <code>/undo</code></span>
+        </td>
+      </tr>
+      <tr>
+        <td class="key">/resume <span class="opt">[session]</span></td>
+        <td>Return to an earlier conversation by ID/name, or open the picker.
+          <span class="alias">alias: <code>/continue</code></span>
+        </td>
+      </tr>
+      <tr>
+        <td class="key">/branch <span class="opt">[name]</span></td>
+        <td>Fork the current conversation, preserving the original to return to later.
+          <span class="alias">alias: <code>/fork</code></span>
+        </td>
+      </tr>
+      <tr>
+        <td class="key">/btw <span class="req">&lt;question&gt;</span></td>
+        <td>Ask a quick side question <b>without</b> bloating the main conversation history.</td>
+      </tr>
+      <tr>
+        <td class="key">/usage</td>
+        <td>Session cost, plan limits, and activity stats.
+          <span class="alias">aliases: <code>/cost</code> · <code>/stats</code></span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="closing">
+    Source: Claude Code command reference — <i>code.claude.com/docs/llms.txt</i>
+  </p>
+
+  <div class="footer">
+    <span>Summer of Claude · Faculty Workshop</span>
+    <span>Bok Center · Learning Lab</span>
+  </div>
+</div>
+</body>
+</html>

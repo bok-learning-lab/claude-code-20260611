@@ -1,0 +1,174 @@
+[
+  {
+    "song": "As I Went Out One Morning",
+    "index": 25,
+    "writers": [
+      {
+        "name": "Tom Paine",
+        "quote": "As I went out one morning to breathe the air around Tom Paine's,"
+      },
+      {
+        "name": "Tom Paine",
+        "quote": "Just then Tom Paine himself came running from across the field,"
+      }
+    ]
+  },
+  {
+    "song": "Ballad of a Thin Man",
+    "index": 31,
+    "writers": [
+      {
+        "name": "F. Scott Fitzgerald",
+        "quote": "You been through all of F. Scott Fitzgerald's books,"
+      }
+    ]
+  },
+  {
+    "song": "Ballad of a Thin Man",
+    "index": 32,
+    "writers": [
+      {
+        "name": "F. Scott Fitzgerald",
+        "quote": "You've been through all of F. Scott Fitzgerald's books,"
+      }
+    ]
+  },
+  {
+    "song": "Ballad of a Thin Man",
+    "index": 35,
+    "writers": [
+      {
+        "name": "F. Scott Fitzgerald",
+        "quote": "You been through all of F. Scott Fitzgerald's books,"
+      }
+    ]
+  },
+  {
+    "song": "Desolation Row",
+    "index": 87,
+    "writers": [
+      {
+        "name": "Ezra Pound",
+        "quote": "And Ezra Pound and T.S. Eliot fighting in the captain's tower"
+      },
+      {
+        "name": "T.S. Eliot",
+        "quote": "And Ezra Pound and T.S. Eliot fighting in the captain's tower"
+      }
+    ]
+  },
+  {
+    "song": "Desolation Row",
+    "index": 89,
+    "writers": [
+      {
+        "name": "Ezra Pound",
+        "quote": "And Ezra Pound and T.S. Eliot fighting in the captain's tower"
+      },
+      {
+        "name": "T.S. Eliot",
+        "quote": "And Ezra Pound and T.S. Eliot fighting in the captain's tower"
+      }
+    ]
+  },
+  {
+    "song": "Highlands",
+    "index": 153,
+    "writers": [
+      {
+        "name": "Neil Young",
+        "quote": "I'm listening to Neil Young, I gotta turn up the sound,"
+      },
+      {
+        "name": "Erica Jong",
+        "quote": "She says, \"Which ones have you read then?\" I say, \"I've read Erica Jong.\""
+      }
+    ]
+  },
+  {
+    "song": "Joey",
+    "index": 226,
+    "writers": [
+      {
+        "name": "Friedrich Nietzsche",
+        "quote": "He did ten years in Attica, reading Nietzsche and Wilhelm Reich,"
+      },
+      {
+        "name": "Wilhelm Reich",
+        "quote": "He did ten years in Attica, reading Nietzsche and Wilhelm Reich,"
+      }
+    ]
+  },
+  {
+    "song": "Last Thoughts on Woody Guthrie",
+    "index": 245,
+    "writers": [
+      {
+        "name": "Woody Guthrie",
+        "quote": "There's this book coming out and they asked me to write, uh, something about Woody, uh, sort of like, \"What does Woody Guthrie mean to you in 25 words?\""
+      },
+      {
+        "name": "Woody Guthrie",
+        "quote": "You find Woody Guthrie in Brooklyn State Hospital"
+      }
+    ]
+  },
+  {
+    "song": "Song to Woody",
+    "index": 414,
+    "writers": [
+      {
+        "name": "Woody Guthrie",
+        "quote": "Hey, hey, Woody Guthrie, I wrote you a song"
+      },
+      {
+        "name": "Lead Belly",
+        "quote": "Here's to Cisco, and Sonny, and Leadbelly too,"
+      }
+    ]
+  },
+  {
+    "song": "Stuck inside of Mobile with the Memphis Blues Again",
+    "index": 421,
+    "writers": [
+      {
+        "name": "William Shakespeare",
+        "quote": "Well, Shakespeare, he's in the alley with his pointed shoes and his bells"
+      }
+    ]
+  },
+  {
+    "song": "Stuck inside of Mobile with the Memphis Blues Again",
+    "index": 422,
+    "writers": [
+      {
+        "name": "William Shakespeare",
+        "quote": "Shakespeare, he's in the alley"
+      }
+    ]
+  },
+  {
+    "song": "When You Gonna Wake Up",
+    "index": 514,
+    "writers": [
+      {
+        "name": "Karl Marx",
+        "quote": "Karl Marx has got you by the throat and Henry Kissinger's got you tied up into knots."
+      }
+    ]
+  },
+  {
+    "song": "You're Gonna Make Me Lonesome When You Go",
+    "index": 535,
+    "writers": [
+      {
+        "name": "Paul Verlaine",
+        "quote": "Mine've been like Verlaine's and Rimbaud's,"
+      },
+      {
+        "name": "Arthur Rimbaud",
+        "quote": "Mine've been like Verlaine's and Rimbaud's,"
+      }
+    ]
+  }
+]

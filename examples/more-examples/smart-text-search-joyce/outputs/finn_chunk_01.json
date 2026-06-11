@@ -1,0 +1,86 @@
+{
+  "chunk": "chunk_01",
+  "global_line_offset": 600,
+  "matches": [
+    {
+      "global_line": 604,
+      "matched_text": "Lave a whale a while in a whillbarrow (isn't it the truath Fm tallin ye?) to have fins and flippers",
+      "snippet": "Lave a whale a while in a whillbarrow to have fins and flippers that shimmy",
+      "variant_type": "direct-spelling",
+      "reasoning": "Fm is abbreviated form of Finn; 'fins' pun on Finn's name",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 709,
+      "matched_text": "icefloe was from his Inn the Byggning to whose Finishthere Punct",
+      "snippet": "icefloe was from his Inn the Byggning to whose Finishthere Punct",
+      "variant_type": "direct-spelling",
+      "reasoning": "Finishthere contains Finish/Finishe, likely garbled Finn variant; context of 'Inn' (Finnegan's Inn motif)",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 740,
+      "matched_text": "The gyant Forficules with Amni the fay",
+      "snippet": "The gyant Forficules with Amni the fay",
+      "variant_type": "giant-landscape",
+      "reasoning": "Gyant/giant; Forficules may contain garbled Fin element; part of the giant-as-landscape motif",
+      "confidence": "low"
+    },
+    {
+      "global_line": 814,
+      "matched_text": "Mr Finnimore, sir. And take your laysure like a god on pension",
+      "snippet": "Now be aisy, good Mr Finnimore, sir. And take your laysure like a god on pension",
+      "variant_type": "direct-spelling",
+      "reasoning": "Finnimore is direct variant of Finnegan/Finn; explicit address with 'Mr'",
+      "confidence": "high"
+    },
+    {
+      "global_line": 847,
+      "matched_text": "Your fame is spreading like Basilico's ointment since the Fintan Lalors piped you overborder",
+      "snippet": "Your fame is spreading like Basilico's ointment since the Fintan Lalors piped you overborder",
+      "variant_type": "direct-spelling",
+      "reasoning": "Fintan is Irish saint name but echoes Fin; in context of spreading fame/legend of the dead hero",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 852,
+      "matched_text": "in the Salmon House. And admiring to our supershillelagh",
+      "snippet": "in the Salmon House. And admiring to our supershillelagh where the palmsweat on high",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Salmon House explicitly evokes Salmon of Knowledge; major mythic attribute of Fionn mac Cumhaill",
+      "confidence": "high"
+    },
+    {
+      "global_line": 869,
+      "matched_text": "Who but a Maccullaghmore the reise of our fortunes and the faunayman at the funeral",
+      "snippet": "Who but a Maccullaghmore the reise of our fortunes and the faunayman at the funeral",
+      "variant_type": "direct-spelling",
+      "reasoning": "Maccullaghmore contains Mac element; near MacCool pattern; 'reise of our fortunes' = rise/reisn suggests Finn as founder",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 976,
+      "matched_text": "As when you drove with her to Findrinny Fair",
+      "snippet": "As when you drove with her to Findrinny Fair. What with reins here and ribbons",
+      "variant_type": "direct-spelling",
+      "reasoning": "Findrinny is direct garbled spelling mixing Finn + drinny (drinking); Finn again motif",
+      "confidence": "high"
+    },
+    {
+      "global_line": 998,
+      "matched_text": "Finn no more!",
+      "snippet": "Repose you now! Finn no more!",
+      "variant_type": "direct-spelling",
+      "reasoning": "Explicit direct spelling of 'Finn'; end-of-episode marker playing on 'Finn again' resurrection theme",
+      "confidence": "high"
+    },
+    {
+      "global_line": 1000,
+      "matched_text": "For, be that samesake sibsubstitute of a hooky salmon",
+      "snippet": "For, be that samesake sibsubstitute of a hooky salmon, there's",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Hooky salmon = Salmon of Knowledge; 'samesake' puns on Finn's identity; resurrection/cyclical theme ('for')",
+      "confidence": "high"
+    }
+  ]
+}

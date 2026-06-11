@@ -1,0 +1,70 @@
+{
+  "chunk": "chunk_25",
+  "global_line_offset": 15000,
+  "matches": [
+    {
+      "global_line": 15022,
+      "matched_text": "finnisch",
+      "snippet": "Whilesd this pellover his finnisch.",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct reference to 'Finnish' qualities, but in Joycean portmanteau reflecting Finn + Finnish; contextually applied to a character in descent",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 15195,
+      "matched_text": "Fingal",
+      "snippet": "And Dub did glow that night. In Fingal of victories.",
+      "variant_type": "direct-spelling",
+      "reasoning": "Fingal is an Ossianic/Fenian heroic figure; variant spelling/name for Finn mac Cumhaill. Ossianic mythology deeply woven into FW. Reference to victories suggests heroic martial context.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 15239,
+      "matched_text": "Coyle-Finns",
+      "snippet": "The Burke-Lees and Coyle-Finns paid full feines for their sinns",
+      "variant_type": "direct-spelling",
+      "reasoning": "Explicit surname compound containing 'Finns'; also puns on 'feines/sins' playing with Fenian associations. Finn surname embedded in Dublin family names.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 15247,
+      "matched_text": "Finn's Hotel",
+      "snippet": "see the Bolche your pictures motion and Kitzy Kleinsuessmein eloping for that holm in Finn's Hotel Fiord",
+      "variant_type": "direct-spelling",
+      "reasoning": "Finn's Hotel is a real Dublin location; Joyce references it by name. The 'Fiord' adds Scandinavian/Northern mythic dimension to Finn.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 15297,
+      "matched_text": "fin above wave",
+      "snippet": "eira area round wantanajocky, fin above wave after ducky do wndivvy",
+      "variant_type": "giant-landscape",
+      "reasoning": "Finn as recumbent landscape figure; his body parts become geographic features. 'fin above wave' suggests head/extremity rising above aquatic terrain.",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 15317,
+      "matched_text": "finnd",
+      "snippet": "For hanigen with hunigen still haunt ahunt to finnd their hinnigen",
+      "variant_type": "direct-spelling",
+      "reasoning": "Garbled spelling 'finnd' (find/Finn) in mythic/haunting context; suggests Finn as elusive presence to be discovered, tied to Fenian hunting/searching.",
+      "confidence": "low"
+    },
+    {
+      "global_line": 15342,
+      "matched_text": "fenians",
+      "snippet": "the fiounaregal gaames of those oathmassed fenians for whome he's forcecaused",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Direct reference to Fenians/Fianna (Finn's warrior band). Central to Ossian cycle and Fenian mythology. 'oathmassed' suggests sworn followers, military fraternity.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 15448,
+      "matched_text": "Finndlader's",
+      "snippet": "Yes, we've conned thon print in its gloss so gay how it came from Finndlader's Yule to die day",
+      "variant_type": "direct-spelling",
+      "reasoning": "Portmanteau: 'Finndlader' combines Finn + 'lader' (leader/loader); 'Yule' evokes celebration and cyclical return. Finn as cultural/temporal origin point.",
+      "confidence": "high"
+    }
+  ]
+}

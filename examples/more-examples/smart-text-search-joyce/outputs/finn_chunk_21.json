@@ -1,0 +1,78 @@
+{
+  "chunk": "chunk_21",
+  "global_line_offset": 12600,
+  "matches": [
+    {
+      "global_line": 12670,
+      "matched_text": "Finnfinnotus of",
+      "snippet": "Finnfinnotus of / .incinnatu / nirthurgink's / lussies and",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct compound spelling of Finn with 'finnotus'; reduplicated/garbled form echoes Finnegan's multiplicity and transformations",
+      "confidence": "high"
+    },
+    {
+      "global_line": 12870,
+      "matched_text": "Finnican",
+      "snippet": "Basqueesh, Finnican, Hungulash and Old Teangtaggle, the only pure",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct garbled spelling of Finnegan/Finnican; listed among linguistic variants for curses, suggesting linguistic regeneration/resurrection",
+      "confidence": "high"
+    },
+    {
+      "global_line": 12675,
+      "matched_text": "incinnatu",
+      "snippet": ".incinnatu / nirthurgink's",
+      "variant_type": "pun",
+      "reasoning": "Pun on 'in-cinnamon' or variant of Cincinnati; fragment following 'Finnfinnotus'; suggests coloring/transformation of Finn figure",
+      "confidence": "low"
+    },
+    {
+      "global_line": 12819,
+      "matched_text": "brood",
+      "snippet": "retelling humself by the math hour, long as he's brood, a reel of",
+      "variant_type": "pun",
+      "reasoning": "Homophone/pun on 'Bran' (Irish mythology); also suggests brooding/contemplation; contextually near dwelling on 'funnish ficts'",
+      "confidence": "low"
+    },
+    {
+      "global_line": 12822,
+      "matched_text": "funnish ficts apout the shee",
+      "snippet": "retelling humself by the math hour, long as he's brood, a reel of / funnish ficts apout the shee",
+      "variant_type": "pun",
+      "reasoning": "Pun: 'funnish ficts' echoes Finn phonetically; 'shee' (fairy folk) connects to Irish mythology; suggests Finn's legendary tales being recounted",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 12876,
+      "matched_text": "dioremes",
+      "snippet": "mark mo, if the so greatly displeaced / dioremes in the Saint Lubbock's Day number",
+      "variant_type": "pun",
+      "reasoning": "Potential anagram/pun fragment containing 'di-' + 'or-em' + Dioremes; obscure but may relate to Diarmait (Diarmuid) of Irish mythology, Finn's Fenian companion",
+      "confidence": "low"
+    },
+    {
+      "global_line": 12941,
+      "matched_text": "diarmuee",
+      "snippet": "were a wrigular writher neonovene babe ! — well, diarmuee and",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Direct reference to Diarmait/Diarmuid, Finn's legendary warrior companion in the Fianna; signals Fenian myth layer",
+      "confidence": "high"
+    },
+    {
+      "global_line": 12884,
+      "matched_text": "Fennella",
+      "snippet": "See the freeman's cuticatura by Fennella.",
+      "variant_type": "direct-spelling",
+      "reasoning": "Name form with Finn-root (Fen-); appears in footnote context of authorship; possible feminine echo of Finn name",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 12929,
+      "matched_text": "Huggin Green",
+      "snippet": "claspers of young catholick throats on Huggin Green to take",
+      "variant_type": "giant-landscape",
+      "reasoning": "Possible reference to 'Howth' (Dublin headland = Finn's head in landscape myth); 'Huggin' may pun on 'Howth' or refer to landscape feature with Finn-body associations",
+      "confidence": "low"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "chunk": "chunk_44",
+  "global_line_offset": 26400,
+  "matches": [
+    {
+      "global_line": 26491,
+      "matched_text": "to Finnegan",
+      "snippet": "flispering in the nightleaves flattery, dinsiduously, to Finnegan, to sin again",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct reference to Finnegan, the eponymous figure; part of the wake ballad structure invoking the hero by name",
+      "confidence": "high"
+    },
+    {
+      "global_line": 26492,
+      "matched_text": "to sin again",
+      "snippet": "to Finnegan, to sin again and to make grim grandma grunt and grin again",
+      "variant_type": "pun",
+      "reasoning": "Homophones 'sin/Finn' and 'again/again' + 'Finnegan' = Finn-again; the wake ballad refrain structure invoking resurrection through repetition",
+      "confidence": "high"
+    },
+    {
+      "global_line": 26579,
+      "matched_text": "Finner",
+      "snippet": "our hugest commercial emporialist, with his sons booing home from afar and his daughters bridling up at his side. Finner!",
+      "variant_type": "direct-spelling",
+      "reasoning": "Variant spelling of Finnegan/Finn; apostrophe-like exclamation at climax of HCE's commercial/empire-building narrative, avatar epithet",
+      "confidence": "high"
+    },
+    {
+      "global_line": 26684,
+      "matched_text": "Foyn MacHooligan",
+      "snippet": "The old breeding bradsted culminwillth of natures to Foyn MacHooligan. The leader, the leader!",
+      "variant_type": "direct-spelling",
+      "reasoning": "Garbled spelling: 'Foyn' (Fionn) + 'MacHooligan' (MacCool + Irish -igan suffix); direct avatar of the Finn/HCE figure, invoked as 'the leader'",
+      "confidence": "high"
+    },
+    {
+      "global_line": 26685,
+      "matched_text": "Billey Feghin",
+      "snippet": "wook doom for husky! And let Billey Feghin be baallad out of his humuluation.",
+      "variant_type": "avatar-epithet",
+      "reasoning": "Possible pun: 'Billey' (billow, bill, barrel—the barrel/cask in HCE's pub) + 'Feghin' (Finn sound); cryptic epithet; 'baallad out' echoes ballad form of Finnegan's Wake tradition",
+      "confidence": "low"
+    },
+    {
+      "global_line": 26101,
+      "matched_text": "fenian's bark",
+      "snippet": "busynext man that came on the cop with the fenian's bark that pickled his widow",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Reference to the Fenians/Fianna (Finn's legendary warrior band); mythic attribute of the Finn cycle; 'fenian' carries the legendary warrior associations",
+      "confidence": "high"
+    }
+  ]
+}

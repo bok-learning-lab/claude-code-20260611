@@ -1,0 +1,30 @@
+{
+  "chunk": "chunk_39",
+  "global_line_offset": 23400,
+  "matches": [
+    {
+      "global_line": 23423,
+      "matched_text": "Fairplay for Finnians!",
+      "snippet": "do the cowardly thing and moll me roon? Tell Queen's road I am seilling. Fairplay for Finnians! I will have my humours.",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Direct reference to the Fianna/Fenians (warriors of Finn MacCool). 'Finnians' = followers of Finn, his warrior band.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 23390,
+      "matched_text": "Finny. Vary vary finny!",
+      "snippet": "the second foot of the fourth man to the first one on the first. That's right. Finny. Vary vary finny! It may look funny but fere it is.",
+      "variant_type": "pun",
+      "reasoning": "Word-play on 'funny' (homophone with pun potential) and 'Finny' (Finn-like/Finnegan-like). Joycean pun merging adjective with the hero's name.",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 23353,
+      "matched_text": "in finnish",
+      "snippet": "I mean the Morgans and the Dorans, in finnish. I know you don't, in Feeney's.",
+      "variant_type": "pun",
+      "reasoning": "Possible pun: 'finnish' (the language) echoes 'Finnishe' or 'Finn-ish' (like Finn), especially in context of Irish references (Morgans, Dorans, Feeney's).",
+      "confidence": "low"
+    }
+  ]
+}

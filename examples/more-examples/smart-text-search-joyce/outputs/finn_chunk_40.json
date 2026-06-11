@@ -1,0 +1,38 @@
+{
+  "chunk": "chunk_40",
+  "global_line_offset": 24000,
+  "matches": [
+    {
+      "global_line": 24050,
+      "matched_text": "finicky about Finnegan and fiddling with his faddles",
+      "snippet": "That's enough, genral, of finicking about Finnegan and fiddling with his faddles",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct naming of Finnegan, the hod-carrier/bricklayer figure central to Finnegans Wake, the ballad and the wake motif",
+      "confidence": "high"
+    },
+    {
+      "global_line": 24101,
+      "matched_text": "great fin may cumule! Three threeth o'er the wild!",
+      "snippet": "The great fin rnay cumule! Three threeth o'er the wild! Manu ware!",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct 'fin' (likely Finn) with 'cumule' (Cumhal/cumhaill garbled), echoing mac Cumhaill/Fionn mac Cumhaill and the three-fold motif",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 24381,
+      "matched_text": "Search ye the Finn! The sinder's under shriving sheet.",
+      "snippet": "Search ye the Finn! The sinder's under shriving sheet. Fa Fe Fi Fo Fum!",
+      "variant_type": "direct-spelling",
+      "reasoning": "Explicit command 'Search ye the Finn' followed by 'Fa Fe Fi Fo Fum' thunderword pattern evoking fall/resurrection and the giant motif",
+      "confidence": "high"
+    },
+    {
+      "global_line": 24547,
+      "matched_text": "Old Whitehowth he is speaking again",
+      "snippet": "Old Whitehowth iie is speaking again. Ope Eustace tube!",
+      "variant_type": "giant-landscape",
+      "reasoning": "Howth is the giant's head in the Finn/HCE landscape motif of Finnegans Wake; Whitehowth echoes Whitelaw, Dublin terrain, the recumbent body",
+      "confidence": "high"
+    }
+  ]
+}

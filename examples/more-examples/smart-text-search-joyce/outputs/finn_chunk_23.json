@@ -1,0 +1,30 @@
+{
+  "chunk": "chunk_23",
+  "global_line_offset": 13800,
+  "matches": [
+    {
+      "global_line": 13851,
+      "matched_text": "Finnfannfawners",
+      "snippet": "with Finnfannfawners, ruric or cospolite, for much or moment",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct garbled spelling of Finn/Finnegan embedded in neologism 'Finnfannfawners' - playful permutation mixing Finn with fawn/fanner suffixes",
+      "confidence": "high"
+    },
+    {
+      "global_line": 13797,
+      "matched_text": "Diarmuid and Grania",
+      "snippet": "can be drawn from Diarmuid and Grania? Do",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Diarmuid and Gráinia are key characters in Irish mythology linked to Fionn mac Cumhaill's Fianna cycle - Diarmuid was Fionn's warrior and lover of Gráinia, central to Fionn mythology",
+      "confidence": "high"
+    },
+    {
+      "global_line": 13810,
+      "matched_text": "Standing Stones",
+      "snippet": "If Standing Stones Could Speak, Devotion to the Feast of",
+      "variant_type": "giant-landscape",
+      "reasoning": "In Finnegans Wake, standing stones evoke the landscape-as-giant motif; standing stones in Irish mythology connect to Fionn and landscape. Tentative pun on the 'standing' giant/HCE recumbent on the Dublin landscape",
+      "confidence": "low"
+    }
+  ]
+}

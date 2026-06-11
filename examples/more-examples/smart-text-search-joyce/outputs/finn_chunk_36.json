@@ -1,0 +1,38 @@
+{
+  "chunk": "chunk_36",
+  "global_line_offset": 21600,
+  "matches": [
+    {
+      "global_line": 21832,
+      "matched_text": "Finnsen Faynean",
+      "snippet": "coming nown from the asphalt to the concrete, from the human historic brute, Finnsen Faynean, occeanyclived, to this same vulganized hillsir",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct garbled spelling of Finnegan/Finn; 'Finnsen' echoes Finnegan with phonetic distortion, 'Faynean' sounds like Fionn/Fain",
+      "confidence": "high"
+    },
+    {
+      "global_line": 21780,
+      "matched_text": "fingall harriers",
+      "snippet": "The animal jangs again! Find the fingall harriers! Here howl me wiseacre's hat",
+      "variant_type": "direct-spelling",
+      "reasoning": "Fingall/Fingal is direct variant of Finn; 'fingall harriers' invokes the hunt motif associated with Fianna/Fenians and Finn's warriors",
+      "confidence": "high"
+    },
+    {
+      "global_line": 21780,
+      "matched_text": "Find the fingall harriers",
+      "snippet": "The animal jangs again! Find the fingall harriers! Here howl me wiseacre's hat",
+      "variant_type": "mythic-attribute",
+      "reasoning": "References Fianna/Fenian warriors under Finn's command; the hunting harriers connect to Finn's role as leader of the Fianna",
+      "confidence": "high"
+    },
+    {
+      "global_line": 21760,
+      "matched_text": "Felin make Call",
+      "snippet": "One might hear in their beyond that lionroar in the air again, the zoohoohoom of Felin make Call",
+      "variant_type": "pun",
+      "reasoning": "Felin/Fionn+ 'make Call' = Fionn mac Cumhaill; obscured phonetically; 'lionroar' fits Finn mythology's heroic associations",
+      "confidence": "medium"
+    }
+  ]
+}

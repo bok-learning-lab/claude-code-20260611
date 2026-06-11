@@ -1,0 +1,42 @@
+{
+  "chunk": "chunk_42",
+  "global_line_offset": 25200,
+  "matches": [
+    {
+      "global_line": 25323,
+      "local_line": 123,
+      "matched_text": "Finmark's Howe",
+      "snippet": "pons for aguaducks: a hawthorndene, a feyrieglenn, the hallaw vail, the dyrchace, Finmark's Howe, against lickybudmonth",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct reference to Finmark/Finn combining place name (Howe = hill/mound) with Irish topography. Finn's body-as-landscape motif.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 25554,
+      "local_line": 354,
+      "matched_text": "Finn his park",
+      "snippet": "from beauhind this park? Finn his park has been much the admiration of all the stranger ones, grekish and romanos, who arrive to here.",
+      "variant_type": "direct-spelling",
+      "reasoning": "Explicit reference to 'Finn his park' describing Phoenix Park (Dublin's major park, traditional association with Finn MacCool's territory and recumbent giant body). Central to Finnegan/Finn identity in Wake.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 25576,
+      "local_line": 376,
+      "matched_text": "By feud fionghalian",
+      "snippet": "mules the mound where anciently first murders were wanted to take root. By feud fionghalian. Talkingtree and sinningstone stay on either hand.",
+      "variant_type": "direct-spelling",
+      "reasoning": "Cryptic compound combining 'feud' (feudal echoes) with 'fionghalian' (Fionn + Irish suffix -ghalian). Archaic/garbled spelling evoking Fionn mac Cumhaill directly. Reference to ancient murders on the mound suggests Finn-as-killed-giant.",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 25370,
+      "local_line": 170,
+      "matched_text": "Finnuala",
+      "snippet": "By the sinewy forequarters of the mare Pocahontas and by the white shoulders of Finnuala you should have seen how that smart sallowlass just hopped",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Finnuala (The Four Branches of the Mabinogion / Irish Swan motif). While not Finn directly, this is the female counterpart/lover figure in Irish mythology cycles. Appears in Wake often paired with Finn contexts. Mythic-adjacent reference to the Fenian tradition.",
+      "confidence": "medium"
+    }
+  ]
+}

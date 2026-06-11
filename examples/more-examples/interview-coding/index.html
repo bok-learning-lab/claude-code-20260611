@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>interview-coding — folder index</title>
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --muted: #5a5a5a;
+    --rule: #e4e4e4;
+    --accent: #c8102e;
+    --bg: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 56px 32px 96px;
+  }
+  h1 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0 0 8px;
+  }
+  h1 .crumb { color: var(--muted); font-weight: 500; }
+  .lede {
+    color: var(--muted);
+    margin: 0 0 36px;
+    font-size: 17px;
+  }
+  h2 {
+    font-size: 17px;
+    font-weight: 700;
+    margin: 32px 0 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--rule);
+    text-transform: lowercase;
+  }
+  p { margin: 0 0 12px; }
+  ul { margin: 0 0 16px; padding-left: 22px; }
+  ul ul { margin: 4px 0 8px; }
+  li { margin: 3px 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code, .path {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.92em;
+    color: var(--ink);
+  }
+  .note {
+    color: var(--muted);
+    font-size: 14px;
+    margin-top: 36px;
+    padding-top: 18px;
+    border-top: 1px solid var(--rule);
+    font-style: italic;
+  }
+  .desc { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+
+<h1>interview-coding <span class="crumb">/ folder index</span></h1>
+<p class="lede">A worked example of LLM-assisted qualitative interview coding (Deterding &amp; Waters 2018). Start with <a href="summary.md">summary.md</a> for context; everything else is here for browsing.</p>
+
+<h2>Top-level</h2>
+<ul>
+  <li><a href="summary.md">summary.md</a> <span class="desc">— what this project is, how we built it, what you can translate it to</span></li>
+  <li><a href="CLAUDE.md">CLAUDE.md</a> <span class="desc">— project-level instructions loaded by Claude Code on session start</span></li>
+  <li><a href="index.md">index.md</a> / <a href="index.html">index.html</a> <span class="desc">— this file</span></li>
+</ul>
+
+<h2>inputs/</h2>
+<p class="desc">The synthetic four-respondent corpus and the interview protocol.</p>
+<ul>
+  <li><a href="inputs/README.md">inputs/README.md</a> <span class="desc">— design rationale for the synthetic corpus</span></li>
+  <li><a href="inputs/protocol.md">inputs/protocol.md</a> <span class="desc">— semistructured interview guide</span></li>
+  <li><a href="inputs/attributes.csv">inputs/attributes.csv</a> <span class="desc">— demographic/contextual attributes spreadsheet</span></li>
+  <li>inputs/transcripts/
+    <ul>
+      <li><a href="inputs/transcripts/R001-Transcript.md">R001-Transcript.md</a> <span class="desc">— Tasha (textbook instrumental)</span></li>
+      <li><a href="inputs/transcripts/R002-Transcript.md">R002-Transcript.md</a> <span class="desc">— Marisol (textbook expressive)</span></li>
+      <li><a href="inputs/transcripts/R003-Transcript.md">R003-Transcript.md</a> <span class="desc">— Carla (mixed, self-aware)</span></li>
+      <li><a href="inputs/transcripts/R004-Transcript.md">R004-Transcript.md</a> <span class="desc">— Denise (construct-validity stress test)</span></li>
+    </ul>
+  </li>
+</ul>
+
+<h2>operations/</h2>
+<p class="desc">Prompts and skills that run against <code>inputs/</code>.</p>
+<ul>
+  <li><a href="operations/deep-research-prompt.md">operations/deep-research-prompt.md</a> <span class="desc">— prompt used to commission the background research in <code>outputs/research-result.md</code></span></li>
+  <li>operations/skills/
+    <ul>
+      <li><a href="operations/skills/index-transcript/">index-transcript/</a> <span class="desc">— Waters' Stage 1 indexing</span>
+        <ul>
+          <li><a href="operations/skills/index-transcript/SKILL.md">SKILL.md</a></li>
+          <li><a href="operations/skills/index-transcript/reference/protocol-mapping.md">reference/protocol-mapping.md</a></li>
+          <li><a href="operations/skills/index-transcript/reference/diff-check.md">reference/diff-check.md</a></li>
+          <li>examples/ <span class="desc">— four indexed transcripts + four coverage reports</span></li>
+        </ul>
+      </li>
+      <li><a href="operations/skills/find-negative-cases/">find-negative-cases/</a> <span class="desc">— Waters' Stage 3 validation</span>
+        <ul>
+          <li><a href="operations/skills/find-negative-cases/SKILL.md">SKILL.md</a></li>
+          <li><a href="operations/skills/find-negative-cases/reasoning-guide.md">reasoning-guide.md</a></li>
+          <li><a href="operations/skills/find-negative-cases/memo-template.md">memo-template.md</a></li>
+          <li>examples/ <span class="desc">— worked memos for the two demo claims</span></li>
+        </ul>
+      </li>
+      <li><a href="operations/skills/methods-paragraph/">methods-paragraph/</a> <span class="desc">— transparency artifact generator</span>
+        <ul>
+          <li><a href="operations/skills/methods-paragraph/SKILL.md">SKILL.md</a></li>
+          <li>examples/ <span class="desc">— empty-project and full-project sample outputs</span></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2>outputs/</h2>
+<p class="desc">Produced artifacts. Generated by running the skills against the corpus, or by deep research.</p>
+<ul>
+  <li><a href="outputs/research-result.md">outputs/research-result.md</a> <span class="desc">— background research on Deterding &amp; Waters' position in the qualitative-methods literature (markdown)</span></li>
+  <li><a href="outputs/research-result.html">outputs/research-result.html</a> <span class="desc">— same, as a styled HTML page</span></li>
+</ul>
+
+<p class="note">To run the demo end-to-end: open this folder in Claude Code, then <code>/index-transcript</code> on each transcript, <code>/find-negative-cases</code> on the demo claim about instrumental mothers, <code>/methods-paragraph</code> against the project state.</p>
+
+</main>
+</body>
+</html>

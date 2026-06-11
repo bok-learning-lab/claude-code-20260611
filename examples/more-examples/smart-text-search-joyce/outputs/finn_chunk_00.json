@@ -1,0 +1,174 @@
+{
+  "chunk": "chunk_00",
+  "global_line_offset": 0,
+  "matches": [
+    {
+      "global_line": 24,
+      "matched_text": "FINNEGANS  WAKE",
+      "snippet": "Title page: FINNEGANS WAKE",
+      "variant_type": "direct-spelling",
+      "reasoning": "Finnegans is the direct English garbled form of Fionn mac Cumhaill; the title announces Finn's balladic wake.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 44,
+      "matched_text": "FINNEGANS",
+      "snippet": "FINNEGANS WAKE - title reproduction",
+      "variant_type": "direct-spelling",
+      "reasoning": "Repeated title form establishing Finnegan/Finn as central figure.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 75,
+      "matched_text": "FINNEGANS  WAKE",
+      "snippet": "Book opening: FINNEGANS WAKE",
+      "variant_type": "direct-spelling",
+      "reasoning": "Title repeated at book opening, marking Finn as hero of the narrative.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 89,
+      "matched_text": "Howth  Castle  and  Environs",
+      "snippet": "riverrun, past Eve and Adam's, from swerve of shore to bend of bay, brings us by a commodius vicus of recirculation back to Howth Castle and Environs.",
+      "variant_type": "giant-landscape",
+      "reasoning": "Howth is explicitly the sleeping giant's head in Wake mythology; the recirculation motif echoes the cyclical fall-and-rise of the hero.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 103,
+      "matched_text": "The  fall  (bababadalgharaghtakamminarronnkonnbronntqnner-ronntuonnthunntrovarrhounawnskawntoohoohoordenenthurnuk!)",
+      "snippet": "The fall (bababadalgharaghtakamminarronnkonnbronntqnner-ronntuonnthunntrovarrhounawnskawntoohoohoordenenthurnuk!) of a once wallstrait oldparr",
+      "variant_type": "fall-resurrection",
+      "reasoning": "The thunderword represents Finnegan's/HCE's great fall, the cosmic collapse that is the mythic center of the work.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 107,
+      "matched_text": "the  pftjschute  of  Finnegan",
+      "snippet": "The great fall of the offwall entailed at such short notice the pftjschute of Finnegan, erse solid man",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct naming of Finnegan as the fallen figure; 'erse solid man' alludes to his Irish/earthy nature and corporeality.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 108,
+      "matched_text": "the  humptyhillhead  of  humself",
+      "snippet": "the humptyhillhead of humself prumptly sends an unquiring one well to the west",
+      "variant_type": "giant-landscape",
+      "reasoning": "Humpty = Humpty Dumpty fused with the giant's humped head; hillhead suggests Howth or the sleeping giant's topography.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 133,
+      "matched_text": "Bygmester  Finnegan,  of  the  Stuttering  Hand,  freemen's  maurer",
+      "snippet": "Bygmester Finnegan, of the Stuttering Hand, freemen's maurer, lived in the broadest way immarginable",
+      "variant_type": "avatar-epithet",
+      "reasoning": "'Bygmester' = builder/master builder (Norwegian/Danish); Finnegan is explicitly identified as the builder/hod-carrier figure; 'freemen's maurer' = mason/bricklayer.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 141,
+      "matched_text": "this  man  of  hod,  cement  and  edifices",
+      "snippet": "during mighty odd years this man of hod, cement and edifices in Toper's Thorp piled buildung supra buildung",
+      "variant_type": "avatar-epithet",
+      "reasoning": "'man of hod' explicitly identifies Finnegan as the hod-carrier/bricklayer avatar; cement and edifices confirm his builder role.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 143,
+      "matched_text": "He  addle  liddle  phifie  Annie",
+      "snippet": "He addle liddle phifie Annie ugged the little craythur",
+      "variant_type": "pun",
+      "reasoning": "'liddle' puns on 'little' and echoes 'Lilith'; 'phifie' may play on 'wife' or 'fife'; fragmentary language suggests Finn's speech distortion or the stuttering epithet.",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 169,
+      "matched_text": "Mister  Finn,  you're  going  to  be  Mister  Finnagain!",
+      "snippet": "Hootch is for husbandman handling his hoe. Hohohoho, Mister Finn, you're going to be Mister Finnagain! Comeday morm and, O, you're vine!",
+      "variant_type": "direct-spelling",
+      "reasoning": "'Mister Finn' direct form; 'Finnagain' = Finn again, the resurrection pun that encodes the cyclical return of the hero.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 171,
+      "matched_text": "Hahahaha,  Mister  Funn,  you're  going  to  be  fined  again!",
+      "snippet": "Sendday's eve and, ah, you're vinegar! Hahahaha, Mister Funn, you're going to be fined again!",
+      "variant_type": "pun",
+      "reasoning": "'Funn' variant spelling of Finn; 'fined' puns on 'Finn' + 'fine' (penalty); suggests Finn's transgression and legal consequences.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 214,
+      "matched_text": "Macool,  Macool,  orra  whyi  deed  ye  diie",
+      "snippet": "Shize. I should shee! Macool, Macool, orra whyi deed ye diie. of a trying thirstay mournin.",
+      "variant_type": "direct-spelling",
+      "reasoning": "Macool is the direct Anglicized form of Mac Cumhaill (son of Cumhall); the repeated invocation and funeral context evoke the balladic mourning for Finnegan.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 215,
+      "matched_text": "Fillagain's  chrissormiss  wake",
+      "snippet": "of a trying thirstay mournin. Sobs they sighdid at Fillagain's chrissormiss wake, all the hoolivans of the nation",
+      "variant_type": "direct-spelling",
+      "reasoning": "'Fillagain' = Finn + 'again' variant; 'chrissormiss wake' = Christmas mass wake; the funeral gathering mourns the fallen hero.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 232,
+      "matched_text": "well,  Him  a  being  so  on  the  flounder  of  his  bulk  like  an  overgrown  babeling",
+      "snippet": "Well, Him a being so on the flounder of his bulk like an overgrown babeling, let wee peep, see, at Hom",
+      "variant_type": "pun",
+      "reasoning": "'bulk' and 'babeling' suggest the giant's immense recumbent body; 'floundering' alludes to his helpless state.",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 251,
+      "matched_text": "Finfoefom  the  Fush",
+      "snippet": "Whase on the joint of a desh. Finfoefom the Fush. Whase be his baken head.",
+      "variant_type": "pun",
+      "reasoning": "'Finfoefom' echoes 'Finn' with Joycean wordplay; 'Fush' = Fish, possibly evoking the Salmon of Knowledge (Finn's mythic attribute); the fragmentary form obscures its mythological roots.",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 257,
+      "matched_text": "Finiche  !  Only  a  fadograph  of  a  yestern  scene.",
+      "snippet": "But, lo, as you would quaffoff his fraudstuff and sink teeth through that pyth of a flowerwhite bodey behold of him as behemoth for he is noewhemoe. Finiche ! Only a fadograph of a yestern scene.",
+      "variant_type": "pun",
+      "reasoning": "'Finiche' = Fin + 'iche' (suffix); the word fades/dies ('Finiche') as the corpse dissolves into memory; the photograph captures the past hero.",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 258,
+      "matched_text": "Salmosalar,  ancient  fromout  the  ages",
+      "snippet": "Almost rubicund Salmosalar, ancient fromout the ages of the Agapemonides, he is smolten in our mist",
+      "variant_type": "mythic-attribute",
+      "reasoning": "'Salmosalar' = Salmon of Knowledge (Irish: an Bradán Feasa); the mythic fish is Finn's wisdom-bestowing attribute; here it merges with the sleeping giant.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 263,
+      "matched_text": "the  brontoichthyan  form",
+      "snippet": "Yet may we not see still the brontoichthyan form outlined aslumbered, even in our own nighttime by the sedge",
+      "variant_type": "giant-landscape",
+      "reasoning": "'Brontoichthyan' = bronto (giant) + ichthyan (fish); fuses the giant and the salmon, two Finn avatars, in one recumbent form.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 273,
+      "matched_text": "His  clay  feet,  swarded  in  verdigrass,  stick  up  starck  where  he  last  fellonem",
+      "snippet": "The cranic head on him, caster of his reasons, peer yuthner in yondmist. Whooth. His clay feet, swarded in verdigrass, stick up starck where he last fellonem",
+      "variant_type": "giant-landscape",
+      "reasoning": "The feet sticking up evoke the sleeping giant's recumbent body as Dublin landscape; 'clay feet' suggest earth-bound mortality.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 352,
+      "matched_text": "strip  Finnlambs  !",
+      "snippet": "Underwetter! Goat strip Finnlambs! This is jinnies rinning away to their ousterlists dowan a bunkersheels.",
+      "variant_type": "direct-spelling",
+      "reasoning": "'Finnlambs' = Finn + lambs; fragmented form embedded in warfare narrative; the hero's name is scattered through battle descriptions.",
+      "confidence": "medium"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "chunk": "chunk_37",
+  "global_line_offset": 22200,
+  "matches": [
+    {
+      "global_line": 22490,
+      "matched_text": "orange fin with a mosaic",
+      "snippet": "orange fin with a mosaic of dispensations and a froren black patata",
+      "variant_type": "pun",
+      "reasoning": "Pun on 'fin' sounding like 'Finn'; in context of enumeration of gifts/adornments at ceremonial gathering, evokes Finnegan as the central figure being honored",
+      "confidence": "low"
+    },
+    {
+      "global_line": 22501,
+      "matched_text": "Finnyking he's so joyant",
+      "snippet": "He cawls to me Granny-stream-Auborne when I am hiding under my hair from him and I cool him my Finnyking he's so joyant a bounder.",
+      "variant_type": "avatar-epithet",
+      "reasoning": "Direct avatar epithet for the hero; 'Finnyking' is a term of endearment/epithet applied to the beloved figure, fusing Finn with royalty/kingship",
+      "confidence": "high"
+    },
+    {
+      "global_line": 22544,
+      "matched_text": "fingall's ends",
+      "snippet": "I have it here to my fingall's ends. This liggy piggy wanted to go to the jampot.",
+      "variant_type": "pun",
+      "reasoning": "Compound pun: 'fingall' evokes both 'fingernail' and 'Fin' + 'gall'; 'gall' recalls the stone/gall of Finnegan's Wake ballad. Wordplay suggests Finn's tactile/physical presence ('to my fingall's ends' = within my grasp/control, Finn's reach)",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 22675,
+      "matched_text": "Funnycoon's Wick",
+      "snippet": "But there's leps of flam in Funnycoon's Wick. The keyn has passed. Lung lift the keying!",
+      "variant_type": "pun",
+      "reasoning": "Pun on 'Funny' (Finn) disguised in proper noun 'Funnycoon's'; 'Wick' (dwelling/place) suggests Finnegan's locale. Plays on the phonetic proximity to 'Funny' / 'Finn' while obscuring direct reference",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 22682,
+      "matched_text": "Finnk. Fime. Fudd?",
+      "snippet": "do ye. Finnk. Fime. Fudd?",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct garbled spelling variants of Finn: 'Finnk' (Finn + k), 'Fime' (Finn variant with 'me'), 'Fudd' (Finn variant with 'dd'). Part of enumeration/listing of names, suggesting Finnegan in corrupted form",
+      "confidence": "high"
+    },
+    {
+      "global_line": 22715,
+      "matched_text": "finshark",
+      "snippet": "Dovegall and finshark, they are ring to the rescune!",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct spelling 'finshark' contains 'fin' in compound; unclear meaning intensifies the Joycean obfuscation. 'Fin' + 'shark' may evoke predatory/mythic power (Salmon of Knowledge association?)",
+      "confidence": "medium"
+    }
+  ]
+}

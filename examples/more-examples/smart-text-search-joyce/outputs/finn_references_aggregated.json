@@ -1,0 +1,2240 @@
+{
+  "source": "inputs/finnegans_wake.md",
+  "method": "48 chunks of ~600 lines, one LLM subagent read every word of each chunk (no regex) and judged Finn MacCool / Finnegan references",
+  "total_matches": 277,
+  "by_variant_type": {
+    "direct-spelling": 116,
+    "giant-landscape": 38,
+    "fall-resurrection": 24,
+    "avatar-epithet": 25,
+    "pun": 40,
+    "mythic-attribute": 34
+  },
+  "by_confidence": {
+    "high": 157,
+    "medium": 82,
+    "low": 38
+  },
+  "matches": [
+    {
+      "global_line": 24,
+      "matched_text": "FINNEGANS  WAKE",
+      "snippet": "Title page: FINNEGANS WAKE",
+      "variant_type": "direct-spelling",
+      "reasoning": "Finnegans is the direct English garbled form of Fionn mac Cumhaill; the title announces Finn's balladic wake.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 44,
+      "matched_text": "FINNEGANS",
+      "snippet": "FINNEGANS WAKE - title reproduction",
+      "variant_type": "direct-spelling",
+      "reasoning": "Repeated title form establishing Finnegan/Finn as central figure.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 75,
+      "matched_text": "FINNEGANS  WAKE",
+      "snippet": "Book opening: FINNEGANS WAKE",
+      "variant_type": "direct-spelling",
+      "reasoning": "Title repeated at book opening, marking Finn as hero of the narrative.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 89,
+      "matched_text": "Howth  Castle  and  Environs",
+      "snippet": "riverrun, past Eve and Adam's, from swerve of shore to bend of bay, brings us by a commodius vicus of recirculation back to Howth Castle and Environs.",
+      "variant_type": "giant-landscape",
+      "reasoning": "Howth is explicitly the sleeping giant's head in Wake mythology; the recirculation motif echoes the cyclical fall-and-rise of the hero.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 103,
+      "matched_text": "The  fall  (bababadalgharaghtakamminarronnkonnbronntqnner-ronntuonnthunntrovarrhounawnskawntoohoohoordenenthurnuk!)",
+      "snippet": "The fall (bababadalgharaghtakamminarronnkonnbronntqnner-ronntuonnthunntrovarrhounawnskawntoohoohoordenenthurnuk!) of a once wallstrait oldparr",
+      "variant_type": "fall-resurrection",
+      "reasoning": "The thunderword represents Finnegan's/HCE's great fall, the cosmic collapse that is the mythic center of the work.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 107,
+      "matched_text": "the  pftjschute  of  Finnegan",
+      "snippet": "The great fall of the offwall entailed at such short notice the pftjschute of Finnegan, erse solid man",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct naming of Finnegan as the fallen figure; 'erse solid man' alludes to his Irish/earthy nature and corporeality.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 108,
+      "matched_text": "the  humptyhillhead  of  humself",
+      "snippet": "the humptyhillhead of humself prumptly sends an unquiring one well to the west",
+      "variant_type": "giant-landscape",
+      "reasoning": "Humpty = Humpty Dumpty fused with the giant's humped head; hillhead suggests Howth or the sleeping giant's topography.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 133,
+      "matched_text": "Bygmester  Finnegan,  of  the  Stuttering  Hand,  freemen's  maurer",
+      "snippet": "Bygmester Finnegan, of the Stuttering Hand, freemen's maurer, lived in the broadest way immarginable",
+      "variant_type": "avatar-epithet",
+      "reasoning": "'Bygmester' = builder/master builder (Norwegian/Danish); Finnegan is explicitly identified as the builder/hod-carrier figure; 'freemen's maurer' = mason/bricklayer.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 141,
+      "matched_text": "this  man  of  hod,  cement  and  edifices",
+      "snippet": "during mighty odd years this man of hod, cement and edifices in Toper's Thorp piled buildung supra buildung",
+      "variant_type": "avatar-epithet",
+      "reasoning": "'man of hod' explicitly identifies Finnegan as the hod-carrier/bricklayer avatar; cement and edifices confirm his builder role.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 143,
+      "matched_text": "He  addle  liddle  phifie  Annie",
+      "snippet": "He addle liddle phifie Annie ugged the little craythur",
+      "variant_type": "pun",
+      "reasoning": "'liddle' puns on 'little' and echoes 'Lilith'; 'phifie' may play on 'wife' or 'fife'; fragmentary language suggests Finn's speech distortion or the stuttering epithet.",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 169,
+      "matched_text": "Mister  Finn,  you're  going  to  be  Mister  Finnagain!",
+      "snippet": "Hootch is for husbandman handling his hoe. Hohohoho, Mister Finn, you're going to be Mister Finnagain! Comeday morm and, O, you're vine!",
+      "variant_type": "direct-spelling",
+      "reasoning": "'Mister Finn' direct form; 'Finnagain' = Finn again, the resurrection pun that encodes the cyclical return of the hero.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 171,
+      "matched_text": "Hahahaha,  Mister  Funn,  you're  going  to  be  fined  again!",
+      "snippet": "Sendday's eve and, ah, you're vinegar! Hahahaha, Mister Funn, you're going to be fined again!",
+      "variant_type": "pun",
+      "reasoning": "'Funn' variant spelling of Finn; 'fined' puns on 'Finn' + 'fine' (penalty); suggests Finn's transgression and legal consequences.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 214,
+      "matched_text": "Macool,  Macool,  orra  whyi  deed  ye  diie",
+      "snippet": "Shize. I should shee! Macool, Macool, orra whyi deed ye diie. of a trying thirstay mournin.",
+      "variant_type": "direct-spelling",
+      "reasoning": "Macool is the direct Anglicized form of Mac Cumhaill (son of Cumhall); the repeated invocation and funeral context evoke the balladic mourning for Finnegan.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 215,
+      "matched_text": "Fillagain's  chrissormiss  wake",
+      "snippet": "of a trying thirstay mournin. Sobs they sighdid at Fillagain's chrissormiss wake, all the hoolivans of the nation",
+      "variant_type": "direct-spelling",
+      "reasoning": "'Fillagain' = Finn + 'again' variant; 'chrissormiss wake' = Christmas mass wake; the funeral gathering mourns the fallen hero.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 232,
+      "matched_text": "well,  Him  a  being  so  on  the  flounder  of  his  bulk  like  an  overgrown  babeling",
+      "snippet": "Well, Him a being so on the flounder of his bulk like an overgrown babeling, let wee peep, see, at Hom",
+      "variant_type": "pun",
+      "reasoning": "'bulk' and 'babeling' suggest the giant's immense recumbent body; 'floundering' alludes to his helpless state.",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 251,
+      "matched_text": "Finfoefom  the  Fush",
+      "snippet": "Whase on the joint of a desh. Finfoefom the Fush. Whase be his baken head.",
+      "variant_type": "pun",
+      "reasoning": "'Finfoefom' echoes 'Finn' with Joycean wordplay; 'Fush' = Fish, possibly evoking the Salmon of Knowledge (Finn's mythic attribute); the fragmentary form obscures its mythological roots.",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 257,
+      "matched_text": "Finiche  !  Only  a  fadograph  of  a  yestern  scene.",
+      "snippet": "But, lo, as you would quaffoff his fraudstuff and sink teeth through that pyth of a flowerwhite bodey behold of him as behemoth for he is noewhemoe. Finiche ! Only a fadograph of a yestern scene.",
+      "variant_type": "pun",
+      "reasoning": "'Finiche' = Fin + 'iche' (suffix); the word fades/dies ('Finiche') as the corpse dissolves into memory; the photograph captures the past hero.",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 258,
+      "matched_text": "Salmosalar,  ancient  fromout  the  ages",
+      "snippet": "Almost rubicund Salmosalar, ancient fromout the ages of the Agapemonides, he is smolten in our mist",
+      "variant_type": "mythic-attribute",
+      "reasoning": "'Salmosalar' = Salmon of Knowledge (Irish: an Bradán Feasa); the mythic fish is Finn's wisdom-bestowing attribute; here it merges with the sleeping giant.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 263,
+      "matched_text": "the  brontoichthyan  form",
+      "snippet": "Yet may we not see still the brontoichthyan form outlined aslumbered, even in our own nighttime by the sedge",
+      "variant_type": "giant-landscape",
+      "reasoning": "'Brontoichthyan' = bronto (giant) + ichthyan (fish); fuses the giant and the salmon, two Finn avatars, in one recumbent form.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 273,
+      "matched_text": "His  clay  feet,  swarded  in  verdigrass,  stick  up  starck  where  he  last  fellonem",
+      "snippet": "The cranic head on him, caster of his reasons, peer yuthner in yondmist. Whooth. His clay feet, swarded in verdigrass, stick up starck where he last fellonem",
+      "variant_type": "giant-landscape",
+      "reasoning": "The feet sticking up evoke the sleeping giant's recumbent body as Dublin landscape; 'clay feet' suggest earth-bound mortality.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 352,
+      "matched_text": "strip  Finnlambs  !",
+      "snippet": "Underwetter! Goat strip Finnlambs! This is jinnies rinning away to their ousterlists dowan a bunkersheels.",
+      "variant_type": "direct-spelling",
+      "reasoning": "'Finnlambs' = Finn + lambs; fragmented form embedded in warfare narrative; the hero's name is scattered through battle descriptions.",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 604,
+      "matched_text": "Lave a whale a while in a whillbarrow (isn't it the truath Fm tallin ye?) to have fins and flippers",
+      "snippet": "Lave a whale a while in a whillbarrow to have fins and flippers that shimmy",
+      "variant_type": "direct-spelling",
+      "reasoning": "Fm is abbreviated form of Finn; 'fins' pun on Finn's name",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 709,
+      "matched_text": "icefloe was from his Inn the Byggning to whose Finishthere Punct",
+      "snippet": "icefloe was from his Inn the Byggning to whose Finishthere Punct",
+      "variant_type": "direct-spelling",
+      "reasoning": "Finishthere contains Finish/Finishe, likely garbled Finn variant; context of 'Inn' (Finnegan's Inn motif)",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 740,
+      "matched_text": "The gyant Forficules with Amni the fay",
+      "snippet": "The gyant Forficules with Amni the fay",
+      "variant_type": "giant-landscape",
+      "reasoning": "Gyant/giant; Forficules may contain garbled Fin element; part of the giant-as-landscape motif",
+      "confidence": "low"
+    },
+    {
+      "global_line": 814,
+      "matched_text": "Mr Finnimore, sir. And take your laysure like a god on pension",
+      "snippet": "Now be aisy, good Mr Finnimore, sir. And take your laysure like a god on pension",
+      "variant_type": "direct-spelling",
+      "reasoning": "Finnimore is direct variant of Finnegan/Finn; explicit address with 'Mr'",
+      "confidence": "high"
+    },
+    {
+      "global_line": 847,
+      "matched_text": "Your fame is spreading like Basilico's ointment since the Fintan Lalors piped you overborder",
+      "snippet": "Your fame is spreading like Basilico's ointment since the Fintan Lalors piped you overborder",
+      "variant_type": "direct-spelling",
+      "reasoning": "Fintan is Irish saint name but echoes Fin; in context of spreading fame/legend of the dead hero",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 852,
+      "matched_text": "in the Salmon House. And admiring to our supershillelagh",
+      "snippet": "in the Salmon House. And admiring to our supershillelagh where the palmsweat on high",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Salmon House explicitly evokes Salmon of Knowledge; major mythic attribute of Fionn mac Cumhaill",
+      "confidence": "high"
+    },
+    {
+      "global_line": 869,
+      "matched_text": "Who but a Maccullaghmore the reise of our fortunes and the faunayman at the funeral",
+      "snippet": "Who but a Maccullaghmore the reise of our fortunes and the faunayman at the funeral",
+      "variant_type": "direct-spelling",
+      "reasoning": "Maccullaghmore contains Mac element; near MacCool pattern; 'reise of our fortunes' = rise/reisn suggests Finn as founder",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 976,
+      "matched_text": "As when you drove with her to Findrinny Fair",
+      "snippet": "As when you drove with her to Findrinny Fair. What with reins here and ribbons",
+      "variant_type": "direct-spelling",
+      "reasoning": "Findrinny is direct garbled spelling mixing Finn + drinny (drinking); Finn again motif",
+      "confidence": "high"
+    },
+    {
+      "global_line": 998,
+      "matched_text": "Finn no more!",
+      "snippet": "Repose you now! Finn no more!",
+      "variant_type": "direct-spelling",
+      "reasoning": "Explicit direct spelling of 'Finn'; end-of-episode marker playing on 'Finn again' resurrection theme",
+      "confidence": "high"
+    },
+    {
+      "global_line": 1000,
+      "matched_text": "For, be that samesake sibsubstitute of a hooky salmon",
+      "snippet": "For, be that samesake sibsubstitute of a hooky salmon, there's",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Hooky salmon = Salmon of Knowledge; 'samesake' puns on Finn's identity; resurrection/cyclical theme ('for')",
+      "confidence": "high"
+    },
+    {
+      "global_line": 1213,
+      "matched_text": "the height of Brewery's chimpney and as broad below as Phineas Barnum",
+      "snippet": "shopfellow flourishing...the height of Brewery's chimpney and as broad below as Phineas Barnum; humphing his share",
+      "variant_type": "giant-landscape",
+      "reasoning": "'broad' and 'height' connote HCE as giant; Barnum reference suggests comparative enormity; proto-landscape description of the big man",
+      "confidence": "low"
+    },
+    {
+      "global_line": 1509,
+      "matched_text": "King Saint Finnerty the Festive",
+      "snippet": "to the thrum-mings of a crewth fiddle...subjects of King Saint Finnerty the Festive who, in brick homes of their own",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct spelling: 'Finnerty' is barely masked variant of Finnegan/Finn; 'the Festive' echoes wake celebration/resurrection motif",
+      "confidence": "high"
+    },
+    {
+      "global_line": 1536,
+      "matched_text": "seinn fion, seinn fion's araun",
+      "snippet": "the bouckaleens shout their roscan generally (seinn fion, seinn fion's araun.)",
+      "variant_type": "direct-spelling",
+      "reasoning": "'seinn fion' = Irish 'seinn fiont' (sing fawn/light); 'fion' echoes 'Fionn'; repeated incantation reinforces ritual/wake song element",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 1541,
+      "matched_text": "the vilest bogeyer but most attractionable avatar the world has ever had to explain for",
+      "snippet": "the world of cumannity singing owes a tribute for having placed on the planet's melomap his lay of the vilest bogeyer but most attractionable avatar",
+      "variant_type": "fall-resurrection",
+      "reasoning": "'avatar' explicitly acknowledges mythic recurrence/metamorphosis central to Finn mythology; 'vilest bogeyer' suggests fallen/corrupted form requiring explanation",
+      "confidence": "high"
+    },
+    {
+      "global_line": 1818,
+      "matched_text": "Some vote him Vike, some mote him Mike, some dub him Llyn and Phin",
+      "snippet": "Some vote him Vike, some mote him Mike, some dub him Llyn and Phin while others hail him Lug",
+      "variant_type": "direct-spelling",
+      "reasoning": "Phin is a direct garbled variant of Finn; appears in a catalogue of names for the hero HCE",
+      "confidence": "high"
+    },
+    {
+      "global_line": 1841,
+      "matched_text": "Fingal Mac Oscar",
+      "snippet": "Where from? roars Poolbeg. Fingal Mac Oscar Onesine Bargearse Boniface",
+      "variant_type": "direct-spelling",
+      "reasoning": "Fingal is direct variant of Fionn/Finn (Irish Fionngheal); Mac Oscar invokes Finn's son Oisin/Ossian from Fenian tradition",
+      "confidence": "high"
+    },
+    {
+      "global_line": 1854,
+      "matched_text": "Humpty Dumpty... fell with a roll and a rumble... curled up like Lord Olofa Crumple By the butt of the Magazine Wall",
+      "snippet": "Have you heard of one Humpty Dumpty How he fell with a roll and a rumble And curled up like Lord Olofa Crumple By the butt of the Magazine Wall",
+      "variant_type": "fall-resurrection",
+      "reasoning": "The ballad of Humpty Dumpty mirrors Finnegan's Fall; the great man falling, recumbent by a wall (Dublin terrain motif); implies resurrection/wake",
+      "confidence": "high"
+    },
+    {
+      "global_line": 1859,
+      "matched_text": "He was one time our King of the Castle Now he's kicked about like a rotten old parsnip",
+      "snippet": "He was one time our King of the Castle Now he's kicked about like a rotten old parsnip",
+      "variant_type": "fall-resurrection",
+      "reasoning": "Fall from kingship and degradation; Finnegan/HCE motif of former greatness now diminished",
+      "confidence": "high"
+    },
+    {
+      "global_line": 1875,
+      "matched_text": "He was fafafather of all schemes",
+      "snippet": "He was fafafather of all schemes for to bother us Slow coaches and immaculate contraceptives",
+      "variant_type": "avatar-epithet",
+      "reasoning": "fafafather invokes Finn/father archetype; the generative, world-making ancestor figure",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 1907,
+      "matched_text": "Bygning",
+      "snippet": "Not olderwise Inn the days of the Bygning would our Traveller remote",
+      "variant_type": "avatar-epithet",
+      "reasoning": "Bygning echoes Bygmester Finnegan (the bricklayer/builder from Finnegan's Wake opening); builder archetype",
+      "confidence": "high"
+    },
+    {
+      "global_line": 1932,
+      "matched_text": "Fenn Mac Call",
+      "snippet": "choir of the O'Daley O'Doyles doublesixing the chorus in Fenn Mac Call and the Serven Feeries",
+      "variant_type": "direct-spelling",
+      "reasoning": "Fenn Mac Call is garbled form of Finn MacCool; appears as title of mythic tale-fragment",
+      "confidence": "high"
+    },
+    {
+      "global_line": 1933,
+      "matched_text": "Serven Feeries of Loch Neach",
+      "snippet": "doublesixing the chorus in Fenn Mac Call and the Serven Feeries of Loch Neach Galloper Troppler",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Fianna/Fenians motif: the warrior band and magical dwelling; Seven Feeries = Fenian tradition of Otherworld helpers",
+      "confidence": "high"
+    },
+    {
+      "global_line": 2009,
+      "matched_text": "Before he fell hill he filled heaven: a stream, alplapping streamlet, coyly coiled um, cool of her curls",
+      "snippet": "Before he fell hill he filled heaven: a stream, alplapping streamlet, coyly coiled um, cool of her curls",
+      "variant_type": "fall-resurrection",
+      "reasoning": "Fall motif (before he fell); hill/terrain metamorphosis; paradoxical cosmic filling (before falling) invokes Finn's cosmic/landscape body",
+      "confidence": "high"
+    },
+    {
+      "global_line": 2010,
+      "matched_text": "Hill of Allen... Jotnursfjaell",
+      "snippet": "Our antheap we sensed as a Hill of Allen, the Barrow for an People, one Jotnursfjaell",
+      "variant_type": "giant-landscape",
+      "reasoning": "Hill of Allen: Finn's seat in Irish mythology; Jotnursfjaell: giant's mountain (Norse); metonymic landscape body of the sleeping giant",
+      "confidence": "high"
+    },
+    {
+      "global_line": 2450,
+      "matched_text": "the Finner Camps",
+      "snippet": "on either wide {pardonnei/\\ nodding, all the Finner Camps concurred",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct anagram/wordplay: 'Finner' contains 'Finn' and echoes Fenians/Fianna; 'Camps' suggests the military band",
+      "confidence": "high"
+    },
+    {
+      "global_line": 2473,
+      "matched_text": "our own little Graunya",
+      "snippet": "which our own little Graunya of the chilired cheeks dished up to the greatsire",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Graunya (Gráinne) is the wife of Diarmuid in the Finn legend cycle, 'Pursuit of Diarmuid and Gráinne'; directly evokes Finn's mythic world",
+      "confidence": "high"
+    },
+    {
+      "global_line": 2477,
+      "matched_text": "dotter of a dearmud",
+      "snippet": "come leinster's even, true dotter of a dearmud, (her pitch was Forty Steps",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Garbled/phonetic spelling of Diarmuid (Dearmud=Dear-mud); another reference to the Finn cycle's hero-lover Diarmuid",
+      "confidence": "high"
+    },
+    {
+      "global_line": 2513,
+      "matched_text": "Gyant Blyant fronts Peannlueamoore",
+      "snippet": "Now by memory inspired, turn wheel again to the whole of the wall. Where Gyant Blyant fronts Peannlueamoore",
+      "variant_type": "giant-landscape",
+      "reasoning": "'Gyant Blyant' (Giant Bliant) invokes the giant-as-landscape motif, with 'Peannlueamoore' possibly evoking geographical features; Finn-as-sleeping-giant theme",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 2598,
+      "matched_text": "foinne loidies",
+      "snippet": "we have been compelled for the rejoicement of foinne loidies ind the humours",
+      "variant_type": "direct-spelling",
+      "reasoning": "Anagram of 'Finn' embedded in 'foinne'; phonetically echoes 'Fianna' and old Irish mystique; 'loidies' corrupts Irish 'laoidhe' (poem/lay)",
+      "confidence": "low"
+    },
+    {
+      "global_line": 3038,
+      "matched_text": "find the Sons of Fingal",
+      "snippet": "Swayed in his Falling, Wants a Wife and find the Sons of Fingal, Swayed in his Falling, Wants a Wife and",
+      "variant_type": "direct-spelling",
+      "reasoning": "'Fingal' is direct reference to Finn/Fionn mac Cumhaill (Fin-gal = White/Fair Finn); Fingal was an Irish legendary hero also associated with the Fianna",
+      "confidence": "high"
+    },
+    {
+      "global_line": 3119,
+      "matched_text": "some Finn, some Finn avant",
+      "snippet": "honoured (some Finn, some Finn avant), he skall wake from earthsleep, haught crested elmer, in his valle of briers of Greenman's Rise O, (lost leaders live!",
+      "variant_type": "direct-spelling",
+      "reasoning": "Explicit doubles: 'some Finn, some Finn avant' - direct naming of Finn with 'avant' (Fr. 'before') suggesting both past and future iterations; follows resurrection/wake motif ('wake from earthsleep')",
+      "confidence": "high"
+    },
+    {
+      "global_line": 3160,
+      "matched_text": "Finglas mill",
+      "snippet": "a kingbilly whitehorsed in a Finglas mill, prayed, as he sat pn anxious seat, (kunt ye neat gift mey toe bout a peer saft eyballds !)",
+      "variant_type": "pun",
+      "reasoning": "'Finglas' (Dublin location) contains 'Fin-glas' (Fin + glas/green); conflates geographical place with Finn's presence in Dublin terrain",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 3197,
+      "matched_text": "Fianna's foreman",
+      "snippet": "after the Fianna's foreman had taken his handful, enriched with ancient woods and dear dutchy deeplinns mid which were an old knoll",
+      "variant_type": "mythic-attribute",
+      "reasoning": "'Fianna' references the legendary warrior band of Finn mac Cumhaill; 'foreman' is hod-carrier/bricklayer avatar of HCE/Finnegan",
+      "confidence": "high"
+    },
+    {
+      "global_line": 3311,
+      "matched_text": "salmon of his ladderleap",
+      "snippet": "like the salmon of his ladderleap all this time of totality secretly and by suckage feeding on his own misplaced fat",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Salmon of Knowledge allusion - Finn mac Cumhaill in legend acquired wisdom from the Salmon of Knowledge (via his thumb burning on it)",
+      "confidence": "high"
+    },
+    {
+      "global_line": 3486,
+      "matched_text": "a chip off the old Flint",
+      "snippet": "but he would go good to him suntime marx my word fort, for a chip off the old Flint, (in the Nichtian glossery which purveys aprioric roots",
+      "variant_type": "pun",
+      "reasoning": "'Flint' echoes 'Finn' phonetically; 'chip off the old block' becomes 'chip off the old Flint' - Finn disguised as stone/flint (hardness, primordial quality)",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 3516,
+      "matched_text": "S.S. Finlandia",
+      "snippet": "stowed away and ankered in a dutch bottom tank the Arsa, hod S.S. Finlandia, and was",
+      "variant_type": "direct-spelling",
+      "reasoning": "Ship name embedding 'Finlandia'; hero flees in exile and assumes new bodily form in Asia Major; echoes Finn's magical transformations and recurrence",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 3763,
+      "matched_text": "up Finn, threehatted ladder",
+      "snippet": "a shirt of two shifts macoghamade or up Finn, threehatted ladder? That a head in thighs",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct invocation of 'Finn' in context of riddle and wordplay; unclear referent but strong phonetic match",
+      "confidence": "high"
+    },
+    {
+      "global_line": 3857,
+      "matched_text": "Hg C Eg that would take a township's breath",
+      "snippet": "Sure, 'tis well I can telesmell him Hg C Eg that would take a township's breath away",
+      "variant_type": "pun",
+      "reasoning": "Cryptic initials; 'H' may invoke HCE (the protagonist fused with Finn); elixir/breath imagery echoes Salmon of Knowledge and magical regeneration",
+      "confidence": "low"
+    },
+    {
+      "global_line": 3892,
+      "matched_text": "halfkneed castleknocker's",
+      "snippet": "upon the halfkneed castleknocker's attempting kithoguishly to lilt his holymess",
+      "variant_type": "pun",
+      "reasoning": "Castleknock is a Dublin locality associated with Howth/giant-landscape motif; 'halfkneed' suggests kneeling/fallen posture and bodily corruption; Finn's recumbent form spans Dublin",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 3925,
+      "matched_text": "great Howdoyoucallem",
+      "snippet": "Ah ho! And do you remember, Singabob, the badfather, the same, the great Howdoyoucallem, and his old nickname",
+      "variant_type": "avatar-epithet",
+      "reasoning": "HCE 'Howdoyoucallem' conflates identity; 'badfather' and epithetic naming strategy aligns with Finnegan's sleep-death-resurrection and avatar-shifting",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 3935,
+      "matched_text": "Timm Finn again's weak tribes",
+      "snippet": "from Timm Finn again's weak tribes loss of strenghth to his sowheel, from the wedding",
+      "variant_type": "direct-spelling",
+      "reasoning": "Explicit 'Finn again' variant; suggests resurrection/recurrence motif; 'weak tribes' alludes to Fianna; plays on homophony of 'Finn' and 'again'",
+      "confidence": "high"
+    },
+    {
+      "global_line": 3958,
+      "matched_text": "finfin funfun, a sitting arrows",
+      "snippet": "and that was how framm Sin fromm Son, acity arose, finfin funfun, a sitting arrows",
+      "variant_type": "pun",
+      "reasoning": "Repetitive 'finfin' echoes Finn's name doubled; situated near wordplay about city origins; suggests cyclical/recursive Finnic presence in Dublin's founding",
+      "confidence": "high"
+    },
+    {
+      "global_line": 3958,
+      "matched_text": "framm Sin fromm Son",
+      "snippet": "and that was how framm Sin fromm Son, acity arose, finfin funfun, a sitting arrows",
+      "variant_type": "pun",
+      "reasoning": "Pun on Sinn/Sin (Irish identity/sin); proximity to 'finfin' and city origin myth; Finn-like recurrence in generational cycle",
+      "confidence": "low"
+    },
+    {
+      "global_line": 4075,
+      "matched_text": "her enormousness",
+      "snippet": "hiding the crumbends of his enormousness in the areyou looking-for Pearlfar sea",
+      "variant_type": "giant-landscape",
+      "reasoning": "'enormousness' applied to male figure (HCE/Finn); scale suggests giant motif",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 4078,
+      "matched_text": "she who shuttered him after his fall",
+      "snippet": "cadet and prim, the hungray and anngreen...she who shuttered him after his fall and waked him widowt sparing",
+      "variant_type": "fall-resurrection",
+      "reasoning": "Fall motif linked to female figure's redemptive acts; wake/resurrection sequence",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 4084,
+      "matched_text": "waked him widowt sparing",
+      "snippet": "she who shuttered him after his fall and waked him widowt sparing and gave him keen",
+      "variant_type": "fall-resurrection",
+      "reasoning": "Waking the corpse; parallel to Finnegan's wake where whiskey revives; part of resurrection cycle",
+      "confidence": "high"
+    },
+    {
+      "global_line": 4085,
+      "matched_text": "gave him keen",
+      "snippet": "waked him widowt sparing and gave him keen and made him able",
+      "variant_type": "fall-resurrection",
+      "reasoning": "Keen = Irish funeral lament; giving/making 'keen' suggests ritual wake mourning",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 4127,
+      "matched_text": "The Fin had a flux and his Ehha a ride",
+      "snippet": "At Island Bridge she met her tide. Attahom, attahom, attahomhomhoom! The Fin had a flux and his Ehha a ride.",
+      "variant_type": "direct-spelling",
+      "reasoning": "'The Fin' = direct reference to the hero; 'flux' suggests bodily evacuation/fall motif; Ehha = variant of Ewa (ALP)",
+      "confidence": "high"
+    },
+    {
+      "global_line": 4195,
+      "matched_text": "Lapps for Finns",
+      "snippet": "Ophelia!'s Culpreints, Hear Hubty Hublin, My Old Dansh, I am Older northe Rogues among Whisht I Slips and He Calls Me his Dual of Ayessha, Suppotes a Ventriliquorst Merries a Corpse, Lapps for Finns This Funnycoons Week",
+      "variant_type": "direct-spelling",
+      "reasoning": "Finns appears in catalogue of exotic/mythic peoples; phonetic proximity to Finn",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 4203,
+      "matched_text": "Fiounnisgehaven",
+      "snippet": "Tri Paisdinernes Eventyr Med Lochlanner Fathach I Fiounnisgehaven",
+      "variant_type": "direct-spelling",
+      "reasoning": "Fionn garbled into 'Fiounnisgehaven' with Norse/Scandinavian suffix; clear Finn allusion",
+      "confidence": "high"
+    },
+    {
+      "global_line": 4231,
+      "matched_text": "The Last of the Fingallians",
+      "snippet": "Way for Wet Week Welikins Douchka Marianne; The Last of the Fingallians; It Was",
+      "variant_type": "direct-spelling",
+      "reasoning": "Fingallians = Fin + gallians; Fingal is Fingalian name associated with Ossian and Fionn mac Cumhaill tradition",
+      "confidence": "high"
+    },
+    {
+      "global_line": 4327,
+      "matched_text": "the ear of Fionn Earwicker",
+      "snippet": "that the ear of Fionn Earwicker aforetime was the trademark of a broadcaster",
+      "variant_type": "direct-spelling",
+      "reasoning": "Explicit naming: Fionn as direct avatar of HCE/Earwicker, fused heroic identity",
+      "confidence": "high"
+    },
+    {
+      "global_line": 4850,
+      "matched_text": "Finnegan",
+      "snippet": "the letter making of the explots of Fjorgn Camhelsson when he was in the Kvinnes country",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct reference to the hero in 'Finnegan' within the Fjorgn variant name (Fjorgn sounds like 'Fionn'; Camhelsson evokes 'mac Cumhaill')",
+      "confidence": "high"
+    },
+    {
+      "global_line": 4903,
+      "matched_text": "MacHooley",
+      "snippet": "leaving by him to oceanic society in his old man without a thing, Tulko MacHooley",
+      "variant_type": "direct-spelling",
+      "reasoning": "MacHooley as variant of MacCool/Mac Cumhaill, similar patronymic structure. Associated with 'old man' figure recalling the sleeping giant",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 4937,
+      "matched_text": "secondtonone myther rector",
+      "snippet": "What secondtonone myther rector and maximost bridgesmaker was the first to rise taller",
+      "variant_type": "giant-landscape",
+      "reasoning": "Figure who 'rose taller' than giant trees (bluegum, Wellingtonia), establishing the physical enormity/landscape motif of the sleeping giant",
+      "confidence": "high"
+    },
+    {
+      "global_line": 4939,
+      "matched_text": "beanstale",
+      "snippet": "first to rise taller through his beanstale than the bluegum buaboababbaun",
+      "variant_type": "giant-landscape",
+      "reasoning": "Evokes Jack's beanstalk and also 'bean' (grain), suggesting the fertility/growth myth associated with Finn; Finn as oversized agricultural figure",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 4944,
+      "matched_text": "esker of his booth",
+      "snippet": "was well known to claud a conciliation cap onto the esker of his booth",
+      "variant_type": "giant-landscape",
+      "reasoning": "Esker is a geological ridge formation in Irish landscape; placing it on his booth/head suggests the body-as-landscape motif of Finn recumbent over Dublin",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 4947,
+      "matched_text": "thought he weighed a new ton when there felled his first lapapple",
+      "snippet": "thought he weighed a new ton when there felled his first lapapple",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Apple-eating recalls the Salmon of Knowledge mythology (Finn gained wisdom from a magical salmon); lapapple suggests both apple and the thumb of wisdom",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 4953,
+      "matched_text": "pumped the catholick wartrey and shocked the prodestung boyne",
+      "snippet": "pumped the catholick wartrey and shocked the prodestung boyne",
+      "variant_type": "mythic-attribute",
+      "reasoning": "The Boyne (Battle of the Boyne) is historically Irish; 'shocked the boyne' may evoke the watery threshold in Finn mythology; 'wartrey' suggests warfare and water/trey",
+      "confidence": "low"
+    },
+    {
+      "global_line": 4962,
+      "matched_text": "walked as far as the Head where he sat in state as the Rump",
+      "snippet": "walked as far as the Head where he sat in state as the Rump",
+      "variant_type": "giant-landscape",
+      "reasoning": "Howth=Head (Finn's head in Wake geography); the body extended from head to rump over Dublin terrain strongly echoes Finn's recumbent form",
+      "confidence": "high"
+    },
+    {
+      "global_line": 4963,
+      "matched_text": "shows Early English tracemarks and a marigold window",
+      "snippet": "shows Early English tracemarks and a marigold window with manigilt lights",
+      "variant_type": "avatar-epithet",
+      "reasoning": "Architectural details (marigold window, ambries, arches) describe the body-as-monument/building, conflating the giant HCE-Finn figure with ecclesiastical structure",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 4965,
+      "matched_text": "horologe unstoppable and the Benn of all bells",
+      "snippet": "is a horologe unstoppable and the Benn of all bells",
+      "variant_type": "avatar-epithet",
+      "reasoning": "'Benn' evokes 'ben' (Irish for woman/peak) but also suggests the eternal measuring of time; Finn as cosmic timekeeper and source of all resonance",
+      "confidence": "low"
+    },
+    {
+      "global_line": 4972,
+      "matched_text": "hidal, in carucates he is enumerated, hold as an earl, he counts",
+      "snippet": "hidal, in carucates he is enumerated, hold as an earl, he counts",
+      "variant_type": "giant-landscape",
+      "reasoning": "Carucates are land measures; the figure is measured in terms of territory, reinforcing Finn-as-landscape whose body is quantified in land divisions",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 4983,
+      "matched_text": "gave his mundyfoot to Miserius, her pinch to Anna Livia",
+      "snippet": "gave his mundyfoot to Miserius, her pinch to Anna Livia",
+      "variant_type": "mythic-attribute",
+      "reasoning": "'mundyfoot' puns on 'foot' (Finn's foot at Phoenix Park) and 'Mundy'; Anna Livia is Liffey (the river flowing past Finn's recumbent body)",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 4987,
+      "matched_text": "cleared out three hundred sixty five idles to set up one all khalassal",
+      "snippet": "cleared out three hundred sixty five idles to set up one all khalassal for henwives hoping to have males",
+      "variant_type": "fall-resurrection",
+      "reasoning": "The cyclical reference (365 days/year) suggests temporal resurrection and renewal; clearing and restoration evoke Finnegan's wake and reviving fall",
+      "confidence": "low"
+    },
+    {
+      "global_line": 4989,
+      "matched_text": "the flawhoolagh, the grasping one, the kindler of paschal fire",
+      "snippet": "the flawhoolagh, the grasping one, the kindler of paschal fire",
+      "variant_type": "mythic-attribute",
+      "reasoning": "'flawhoolagh' echoes 'flaming' and 'whoo' (hawk); 'kindler of paschal fire' suggests the Fenian Finn and the sacred fire-keeper role; resurrection through fire",
+      "confidence": "low"
+    },
+    {
+      "global_line": 4991,
+      "matched_text": "the phoenix be his pyre, the cineres his sire",
+      "snippet": "the phoenix be his pyre, the cineres his sire",
+      "variant_type": "fall-resurrection",
+      "reasoning": "Phoenix mythology directly parallels Finnegan's fall and resurrection; 'pyre' evokes both cremation and the whiskey/fire that revives the corpse in the ballad",
+      "confidence": "high"
+    },
+    {
+      "global_line": 4993,
+      "matched_text": "piles big pelium on little ossas like the pilluls of hirculeads",
+      "snippet": "piles big pelium on little ossas like the pilluls of hirculeads",
+      "variant_type": "giant-landscape",
+      "reasoning": "Pelion/Ossa reference to giant figures stacking mountains; suggests the colossal body-as-terrain and Finn as a figure of epic proportions built from landscape",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 5408,
+      "matched_text": "with  one  touch  of  nature  set  a  veiled  world  agrin",
+      "snippet": "who  could  see  at  one  blick  a  saumon  taken  with  a  lance,  hunters  pursuing  a  doe,  a  swallowship  in  full  sail",
+      "variant_type": "mythic-attribute",
+      "reasoning": "The immediate context of line 5410—seeing in one glance multiple scenes (hunters, doe, ship, host)—recalls the druidic/prophetic powers associated with Fionn mac Cumhaill and his supernatural sight. The Salmon scene is explicitly about acquired wisdom/vision.",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 5409,
+      "matched_text": "a  saumon  taken  with  a  lance",
+      "snippet": "who  could  see  at  one  blick  a  saumon  taken  with  a  lance,  hunters  pursuing  a  doe",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Reference to the Salmon of Knowledge (saumon = salmon), the central mythic attribute of Fionn mac Cumhaill, who gains wisdom by cooking/consuming the salmon. Directly evokes Finn's legendary encounter.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 5422,
+      "matched_text": "Answer: Finn MacCool!",
+      "snippet": "was  lost  for  the  want  of  his  wan  wubblin  wall? Answer: Finn MacCool!",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct explicit naming of Finn MacCool as the answer to the riddle. The entire preceding passage (lines 5401-5421) is an exhaustive catalogue of attributes describing HCE as Finn.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 5496,
+      "matched_text": "Holy  eel  and  Sainted  Salmon",
+      "snippet": "Tuam  I  take,  Sligo's  sleek  but  Galway's  grace.  Holy  eel  and  Sainted  Salmon,",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Salmon again invoked in sacred/elevated language (sainted), reinforcing Fionn's mythic connection to the Salmon of Knowledge as a sanctified figure.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 5553,
+      "matched_text": "Finglas  fields",
+      "snippet": "Ashtown  fields  and  Cabra  fields  and  Finglas  fields  and  Santry  fields",
+      "variant_type": "pun",
+      "reasoning": "Finglas (Fingall in Irish, meaning 'fair/bright hair') echoes 'Fingal,' an Old Norse name for Ireland and a direct alias of Fionn. The field location also suggests Finn-as-landscape, though subtle here.",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 5567,
+      "matched_text": "Jakes  Mac  Carty",
+      "snippet": "Philly,  Jamesy  Mor  and  Tom,  Matt  and  Jakes  Mac  Carty",
+      "variant_type": "avatar-epithet",
+      "reasoning": "'Mac Carty' (Mac Carthaigh) is an Irish surname, but in Joyce's onomastic method, this may echo 'MacCool' / 'mac Cumhaill' genealogies. Jakes is a common man's name suggesting everyman/HCE fusion. Low confidence due to distance from clear Finn markers.",
+      "confidence": "low"
+    },
+    {
+      "global_line": 6070,
+      "matched_text": "Funny spot to have a fingey!",
+      "snippet": "Sail I puhim in momou. Mummum. Funny spot to have a fingey! I'm terribly sorry, I swear to you I am!",
+      "variant_type": "mythic-attribute",
+      "reasoning": "\"fingey\" (finger) alludes to Finn's thumb of wisdom, the magical digit that granted him knowledge when he bit it. The casual mention of 'finger' in this intimate/confessional context invokes the mythic attribute of Finn's wisdom-bearing thumb.",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 6220,
+      "matched_text": "MacHammud's",
+      "snippet": "Ofter thousand yores, amsered Gripes the gregary, be the goat of MacHammud's, yours may be still, O Mookse, more botheared.",
+      "variant_type": "pun",
+      "reasoning": "\"MacHammud's\" is a pun on 'Mac-' (Irish 'son of') merged with 'Hammed' or 'Hammud'. While ostensibly referencing Muhammad, the 'Mac-' prefix specifically evokes Mac Cumhaill / MacCool, the patronymic structure of Finn's name. Joyce layers multiple mythologies by using the Mac- formant.",
+      "confidence": "low"
+    },
+    {
+      "global_line": 6832,
+      "matched_text": "salmonkelt's",
+      "snippet": "eelsblood in his cold toes, a salmonkelt's thinskin",
+      "variant_type": "mythic-attribute",
+      "reasoning": "salmon reference evokes Salmon of Knowledge, Finn's signature mythic object; 'kelt' adds double meaning (exhausted salmon post-spawning, alluding to Shem's degradation)",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 7500,
+      "matched_text": "Finnados",
+      "snippet": "the only once (dia dose Finnados !) he did take a tompip",
+      "variant_type": "direct-spelling",
+      "reasoning": "Archaic/garbled spelling of Finnegan(s) with divine invocation 'dia dose' (God willing), evokes the ballad's opening 'Finnegan'; the name folded into Irish exclamation",
+      "confidence": "high"
+    },
+    {
+      "global_line": 7536,
+      "matched_text": "Tumult, son of Thunder",
+      "snippet": "the whirling dervish. Tumult, son of Thunder, self exiled in upon his ego",
+      "variant_type": "avatar-epithet",
+      "reasoning": "Tumult as avatar of Finnegan/HCE through thunder (the thunderwords marking Finnegan's fall); 'son of Thunder' echoes the Thunderbird motif and mythic paternity; linked to the Shaping fall",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 7841,
+      "matched_text": "howeth",
+      "snippet": "as  high  as  a  howeth,  the  famous  eld  duke  alien,  with  a  hump",
+      "variant_type": "giant-landscape",
+      "reasoning": "Howth (Dublin landmark = Finn's head in the giant-as-landscape motif). 'Howeth' is a garbled spelling that evokes this.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 7875,
+      "matched_text": "Humber",
+      "snippet": "Well,  old  Humber  was  as  glommen  as  grampus,  with  the  tares  at  his  thor",
+      "variant_type": "giant-landscape",
+      "reasoning": "Humber (river in England) as geographical body; part of the recumbent giant landscape motif associated with Finn/HCE. 'Old Humber' echoes 'old Finnegan.'",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 7878,
+      "matched_text": "giant's  holes  in  Grafton's  causeway",
+      "snippet": "bales  allbrant  on  the  crests  of  rockies  and  nera  lamp  in  kitchen  or church  and  giant's  holes  in  Grafton's  causeway",
+      "variant_type": "giant-landscape",
+      "reasoning": "Direct reference to 'giant's holes'—part of the physical Dublin terrain as Finn's body, his traces left in the landscape.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 7886,
+      "matched_text": "his  sett",
+      "snippet": "sittang  sambre  on  his  sett,  drammen  and  drommen,  usking  queasy",
+      "variant_type": "giant-landscape",
+      "reasoning": "Sett = seat or dwelling; part of the sleeping giant HCE/Finn as landscape feature, sitting on his 'sett' in the Dublin terrain.",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 7938,
+      "matched_text": "H.C.E.  has  a  codfisck  ee",
+      "snippet": "Don't  you  know  he  was  kaldt  a  bairn  of  the  brine,  Wasserbourne  the  waterbaby?  Havemmarea,  so  he  was!  H.C.E.  has  a  codfisck  ee.",
+      "variant_type": "avatar-epithet",
+      "reasoning": "HCE is explicitly Joyce's main avatar for Finn MacCool/Finnegan. This is the direct statement that HCE (Here Comes Everybody / the sleeping giant) has certain characteristics.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 8493,
+      "matched_text": "where the Finn fits into the Mourne",
+      "snippet": "Not where the Finn fits into the Mourne, not where the Nore takes lieve of Blcem",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct reference to river Finn in Ireland; within geography pattern of FW; Finn = river or mythic figure",
+      "confidence": "high"
+    },
+    {
+      "global_line": 8961,
+      "matched_text": "great Finnleader himself in his joakimono on his statue",
+      "snippet": "Is that the great Finnleader himself in his joakimono on his statue riding the high horse",
+      "variant_type": "avatar-epithet",
+      "reasoning": "Finnleader = Finn as leader figure; joakimono (Japanese robe) suggests Finn in exotic/monumental form; riding high horse invokes giant figure; compound with Finn prefix",
+      "confidence": "high"
+    },
+    {
+      "global_line": 9011,
+      "matched_text": "fingalls",
+      "snippet": "Dear Dirty Dumpling, foostherfather of fingalls and dotthergills.",
+      "variant_type": "direct-spelling",
+      "reasoning": "Fingal is a variant/epithet name for Finn MacCool in Gaelic tradition; Joyce's 'fingalls' echoes this directly",
+      "confidence": "high"
+    },
+    {
+      "global_line": 9057,
+      "matched_text": "Feenichts Playhouse",
+      "snippet": "Every evening at lighting up o'clock sharp and until further notice in Feenichts Playhouse.",
+      "variant_type": "direct-spelling",
+      "reasoning": "Feenichts is a garbled spelling of Fenians/Fionn; invokes both the mythic Fianna warriors and the Finn/Fionn name",
+      "confidence": "high"
+    },
+    {
+      "global_line": 9072,
+      "matched_text": "fern may cald us until firn make cold",
+      "snippet": "While fern may cald us until firn make cold. The Mime of Micky Nick and the Maggies",
+      "variant_type": "direct-spelling",
+      "reasoning": "Cryptic doubling of Finn-like elements: 'fern' and 'firn' echo 'Finn'; the phrasing suggests cyclical time/fall-and-resurrection",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 9157,
+      "matched_text": "Mr T. M. Finnegan R.I.C.",
+      "snippet": "Jests, jokes, jigs and jorums for the Wake lent from the properties of the late cemented Mr T. M. Finnegan R.I.C.",
+      "variant_type": "avatar-epithet",
+      "reasoning": "Finnegan is the hod-carrier/bricklayer hero explicitly named; 'T. M.' initials; R.I.C. (Royal Irish Constabulary) suggests Irish context and law/authority figure merging with Finn",
+      "confidence": "high"
+    },
+    {
+      "global_line": 9598,
+      "matched_text": "errorooth of his wisdom",
+      "snippet": "shot pinging up through the errorooth of his wisdom (who thought",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Allusion to the Salmon of Knowledge and the 'tooth of wisdom' (Fionn gained wisdom by eating the salmon); 'error-ooth' is pun-garbled form",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 9623,
+      "matched_text": "feastking of shellies",
+      "snippet": "him a Fonar all, feastking of shellies by googling Lovvey",
+      "variant_type": "avatar-epithet",
+      "reasoning": "Finn is associated with feasting and kingship; 'feastking' echoes his role as hero-leader of the Fianna",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 9641,
+      "matched_text": "Joshua Croesus, son of Nunn",
+      "snippet": "of a Haveajube Sillayass. Joshua Croesus, son of Nunn!",
+      "variant_type": "pun",
+      "reasoning": "Possible allusion to genealogical claims: 'Nunn' echoes the Irish father-son relationship naming patterns (mac = son); Joshua suggests biblical kingship conflated with mythological hero",
+      "confidence": "low"
+    },
+    {
+      "global_line": 9647,
+      "matched_text": "Dinny Finneen",
+      "snippet": "With Dinny Finneen, me canty, ho! In the lost of the gleamens.",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct variant of Finnegan; 'Dinny' is diminutive, 'Finneen' a garbled form maintaining the Finn root",
+      "confidence": "high"
+    },
+    {
+      "global_line": 9664,
+      "matched_text": "Hetman MacCumhal",
+      "snippet": "it's Hetman MacCumhal foots the funeral. Mealwhile she",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct reference to MacCumhal (mac Cumhaill), Fionn mac Cumhaill's father in Irish mythology; Hetman is a mock-heroic title",
+      "confidence": "high"
+    },
+    {
+      "global_line": 9673,
+      "matched_text": "chip of old Flinn the Flinter",
+      "snippet": "boy of potter and mudder, chip of old Flinn the Flinter, twig of the hider",
+      "variant_type": "direct-spelling",
+      "reasoning": "Explicit reference to 'Flinn' (variant spelling of Finn); 'Flinter' may echo flint/hardness; describes genealogical descent as 'chip' of the father",
+      "confidence": "high"
+    },
+    {
+      "global_line": 9674,
+      "matched_text": "twig of the hider that tanned him",
+      "snippet": "twig of the hider that tanned him. He go calaboosh all same he tell him out.",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Finn-eces (the druid) 'hid' Fionn in childhood and trained him; 'hider' and 'tanned' (hardened/trained) evoke this mythic tutelage motif",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 10224,
+      "matched_text": "all Finnyland",
+      "snippet": "a flip flap in all Finnyland. Witchman, watch of your night.",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct spelling of 'Finnyland' - place name derived from Finn, the landscape of his body or realm",
+      "confidence": "high"
+    },
+    {
+      "global_line": 10268,
+      "matched_text": "Like a Finn at a fair",
+      "snippet": "for who is to wear the lily of Bohemey, Florestan, Thaddeus, Hardress or Myles. And lead raptivity captive. Ready! Like a Finn at a fair.",
+      "variant_type": "direct-spelling",
+      "reasoning": "Explicit 'Finn' in common phrase 'Like a Finn at a fair' - Finn MacCool figure invoked colloquially",
+      "confidence": "high"
+    },
+    {
+      "global_line": 10438,
+      "matched_text": "Finnfinn the Faineant",
+      "snippet": "Only the caul knows his thousandfirst name. Hocus Crocus, Esquilocus, Finnfinn the Faineant, how feel full foes in furrinarr!",
+      "variant_type": "avatar-epithet",
+      "reasoning": "Doubled 'Finnfinn' epithet with 'Faineant' (the idle/lazy one) - avatar name for HCE/Finn, possibly alluding to Finn MacCool's sloth or hibernation",
+      "confidence": "high"
+    },
+    {
+      "global_line": 10815,
+      "matched_text": "byg eat",
+      "snippet": "To house as wise fool ages builded. Sow byg eat.",
+      "variant_type": "pun",
+      "reasoning": "Homophonic pun on 'big' — the sleeping giant HCE is the 'big' man/macintosh figure. 'Byg' echoes the giant motif while 'eat' puns on 'ate' (consumed/fallen).",
+      "confidence": "low"
+    },
+    {
+      "global_line": 10837,
+      "matched_text": "Rolf the Ganger, Rough the Gangster",
+      "snippet": "Hispano-Cathayan-Euxine, Castillian - Emeratic - Hebridian, Espanol - Cymric-Smithy no home, Helleniky. Rolf the Ganger, Rough the Gangster, not a feature alike and the face the same.",
+      "variant_type": "avatar-epithet",
+      "reasoning": "Rolf the Ganger (a Scandinavian/Viking figure) paired with Rough the Gangster in a list of historical/mythic avatars. Joyce conflates different culture-heroes and trickster figures; these may represent alternative avatars of the eternal return motif (like Finn/Finnegan).",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 10859,
+      "matched_text": "Finntown",
+      "snippet": "ribbon development, from contact bridge to lease lapse, only two millium two humbered and eighty thausig nine humbered and sixty radiolumin lines to the wustworts of a Finntown's generous poet's office.",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct reference to Finntown, invoking Finn in a place-name. Joyce places Finntown in Dublin topography, literalizing the Finn/Dublin geography conflation.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 11480,
+      "matched_text": "Hannibal mac Hamiltan the Hegerite",
+      "snippet": "daring Dunderhead to shiver his timbers and Hannibal mac Hamiltan the Hegerite (more livepower elbow him !)",
+      "variant_type": "direct-spelling",
+      "reasoning": "mac Hamiltan echoes mac Cumhaill / 'mac' (son of) marker from Fionn mac Cumhaill; Joyce obscures via Hannibal/Hamiltan but the genealogical marker persists",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 11520,
+      "matched_text": "Dagobert is in Clane's clean hometown prepping up his prepueratory",
+      "snippet": "years Dagobert is in Clane's clean hometown prepping up his prepueratory and learning how to put",
+      "variant_type": "avatar-epithet",
+      "reasoning": "Dagobert is a historical king; 'Clane' is a townland in Co. Kildare near the Pale; the entire passage (lines 476-504) evokes HCE as a recumbent giant figure ('datetree doloriferous,' 'frayed nerves,' architectural and geographical references) fusing hero and landscape in Finnegan wake idiom",
+      "confidence": "low"
+    },
+    {
+      "global_line": 11559,
+      "matched_text": "Standfest, our topiocal sagon hero, or any otther macotther",
+      "snippet": "Standfest, our topiocal sagon hero, or any otther macotther, signs is on the bellyguds bastille",
+      "variant_type": "direct-spelling",
+      "reasoning": "macotther is a scrambled/garbled 'mac' construction; sagon (saga + on) evokes the Finn legend cycles; 'topical' hero puns on Finn as the recumbent giant whose body is the landscape",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 12023,
+      "matched_text": "For all us kids under his aegis.",
+      "snippet": "For all us kids under his aegis.",
+      "variant_type": "giant-landscape",
+      "reasoning": "'his' refers to HCE/the sleeping giant; 'aegis' (protection/rule) suggests the paternal authority of the recumbent hero whose body encompasses Dublin",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 12056,
+      "matched_text": "At Tam Fanagan's weak yat his still's going Strang.",
+      "snippet": "At Tam Fanagan's weak yat his still's going Strang.",
+      "variant_type": "pun",
+      "reasoning": "'Fanagan' echoes Finnegan; 'Tam' (Tom) appears elsewhere; 'still' evokes whiskey (the wake reviver); running/going suggests Finnegan's mobility in the nocturnal/magical space",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 12135,
+      "matched_text": "fiannians all.",
+      "snippet": "where every feaster's a Foster's other, fiannians all.",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Direct reference to 'Fianna' or Fenians—Finn's legendary warrior band; conflates them into the democratic feast of HCE's world",
+      "confidence": "high"
+    },
+    {
+      "global_line": 12136,
+      "matched_text": "the willing giant,",
+      "snippet": "The wellingbreast, he willing giant, the mountain mourning his duggedy dew.",
+      "variant_type": "giant-landscape",
+      "reasoning": "The 'willing giant' is the sleeping form in landscape; 'mountain mourning' echoes the giant's body as terrain; 'duggedy dew' suggests the water/fluid that falls from this recumbent form",
+      "confidence": "high"
+    },
+    {
+      "global_line": 12138,
+      "matched_text": "the mountain mourning his duggedy dew",
+      "snippet": "The wellingbreast, he willing giant, the mountain mourning his duggedy dew.",
+      "variant_type": "giant-landscape",
+      "reasoning": "Mountain = the sleeping giant's body; 'mourning' suggests the wake; dew/water = tears/fluids flowing from his form",
+      "confidence": "high"
+    },
+    {
+      "global_line": 12143,
+      "matched_text": "Anna was at the beginning lives yet and will return after great deap sleap rerising",
+      "snippet": "For as Anna was at the beginning lives yet and will return after great deap sleap rerising",
+      "variant_type": "fall-resurrection",
+      "reasoning": "ALP (Anna Livia Plurabelle) parallels the eternal female; 'rerising' after 'great deep sleep' echoes the fall-and-resurrection motif; 'deap sleap' are garbled/onomatopoetic like thunderwords",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 12148,
+      "matched_text": "We drames our dreams tell Bappy returns.",
+      "snippet": "We drames our dreams tell Bappy returns. And Sein annews.",
+      "variant_type": "fall-resurrection",
+      "reasoning": "'Bappy' may echo Finnegan-as-baby or the sleeping giant awaiting revival; 'returns' = resurrection; 'Sein annews' (being/existence renews) suggests cyclical rebirth",
+      "confidence": "low"
+    },
+    {
+      "global_line": 12153,
+      "matched_text": "Eric aboy!",
+      "snippet": "So shuttle the pipers done. Eric aboy!",
+      "variant_type": "pun",
+      "reasoning": "'Eric aboy' plays on 'Erica' or 'I wreck a boy' or 'airíonn' (Gaelic); unclear direct Finn link but cryptic wake-motif language",
+      "confidence": "low"
+    },
+    {
+      "global_line": 12268,
+      "matched_text": "Pot price pon patrilinear plop, if the osseletion of the onkring gives omen nome.",
+      "snippet": "But Erigureen is ever. Pot price pon patrilinear plop, if the osseletion of the onkring gives omen nome.",
+      "variant_type": "pun",
+      "reasoning": "'onkring' may pun on 'oncoming' or 'omen' itself; cryptic phrasing typical of Joycean wordplay but Finn connection indirect",
+      "confidence": "low"
+    },
+    {
+      "global_line": 12670,
+      "matched_text": "Finnfinnotus of",
+      "snippet": "Finnfinnotus of / .incinnatu / nirthurgink's / lussies and",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct compound spelling of Finn with 'finnotus'; reduplicated/garbled form echoes Finnegan's multiplicity and transformations",
+      "confidence": "high"
+    },
+    {
+      "global_line": 12675,
+      "matched_text": "incinnatu",
+      "snippet": ".incinnatu / nirthurgink's",
+      "variant_type": "pun",
+      "reasoning": "Pun on 'in-cinnamon' or variant of Cincinnati; fragment following 'Finnfinnotus'; suggests coloring/transformation of Finn figure",
+      "confidence": "low"
+    },
+    {
+      "global_line": 12819,
+      "matched_text": "brood",
+      "snippet": "retelling humself by the math hour, long as he's brood, a reel of",
+      "variant_type": "pun",
+      "reasoning": "Homophone/pun on 'Bran' (Irish mythology); also suggests brooding/contemplation; contextually near dwelling on 'funnish ficts'",
+      "confidence": "low"
+    },
+    {
+      "global_line": 12822,
+      "matched_text": "funnish ficts apout the shee",
+      "snippet": "retelling humself by the math hour, long as he's brood, a reel of / funnish ficts apout the shee",
+      "variant_type": "pun",
+      "reasoning": "Pun: 'funnish ficts' echoes Finn phonetically; 'shee' (fairy folk) connects to Irish mythology; suggests Finn's legendary tales being recounted",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 12870,
+      "matched_text": "Finnican",
+      "snippet": "Basqueesh, Finnican, Hungulash and Old Teangtaggle, the only pure",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct garbled spelling of Finnegan/Finnican; listed among linguistic variants for curses, suggesting linguistic regeneration/resurrection",
+      "confidence": "high"
+    },
+    {
+      "global_line": 12876,
+      "matched_text": "dioremes",
+      "snippet": "mark mo, if the so greatly displeaced / dioremes in the Saint Lubbock's Day number",
+      "variant_type": "pun",
+      "reasoning": "Potential anagram/pun fragment containing 'di-' + 'or-em' + Dioremes; obscure but may relate to Diarmait (Diarmuid) of Irish mythology, Finn's Fenian companion",
+      "confidence": "low"
+    },
+    {
+      "global_line": 12884,
+      "matched_text": "Fennella",
+      "snippet": "See the freeman's cuticatura by Fennella.",
+      "variant_type": "direct-spelling",
+      "reasoning": "Name form with Finn-root (Fen-); appears in footnote context of authorship; possible feminine echo of Finn name",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 12929,
+      "matched_text": "Huggin Green",
+      "snippet": "claspers of young catholick throats on Huggin Green to take",
+      "variant_type": "giant-landscape",
+      "reasoning": "Possible reference to 'Howth' (Dublin headland = Finn's head in landscape myth); 'Huggin' may pun on 'Howth' or refer to landscape feature with Finn-body associations",
+      "confidence": "low"
+    },
+    {
+      "global_line": 12941,
+      "matched_text": "diarmuee",
+      "snippet": "were a wrigular writher neonovene babe ! — well, diarmuee and",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Direct reference to Diarmait/Diarmuid, Finn's legendary warrior companion in the Fianna; signals Fenian myth layer",
+      "confidence": "high"
+    },
+    {
+      "global_line": 13341,
+      "matched_text": "Fin for fun!",
+      "snippet": "Hissssl, Arrah, go on! Fin for fun! You've spat your shower",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct use of 'Fin' as pun on 'fun' — evokes Finn/finish while maintaining wordplay on fin/fun homophone",
+      "confidence": "high"
+    },
+    {
+      "global_line": 13356,
+      "matched_text": "Hurdlebury Fenn",
+      "snippet": "fastness firm of Hurdlebury Fenn, discinct and isoplural in its",
+      "variant_type": "direct-spelling",
+      "reasoning": "'Fenn' variant spelling of Finn embedded in place-name; describes a 'firm fastness' suggesting landscape/terrain (giant-as-geography motif)",
+      "confidence": "high"
+    },
+    {
+      "global_line": 13356,
+      "matched_text": "fastness firm of Hurdlebury Fenn, discinct and isoplural",
+      "snippet": "fastness firm of Hurdlebury Fenn, discinct and isoplural in its (your sow to the duble)",
+      "variant_type": "giant-landscape",
+      "reasoning": "Fenn as recumbent landscape; 'fastness firm' = stronghold/solid body; 'discinct and isoplural in its...sixuous parts, flument, fluvey and fluteous, midden wedge of the stream' explicitly renders the female-as-terrain as Finn's body with rivers/water as anatomy",
+      "confidence": "high"
+    },
+    {
+      "global_line": 13797,
+      "matched_text": "Diarmuid and Grania",
+      "snippet": "can be drawn from Diarmuid and Grania? Do",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Diarmuid and Gráinia are key characters in Irish mythology linked to Fionn mac Cumhaill's Fianna cycle - Diarmuid was Fionn's warrior and lover of Gráinia, central to Fionn mythology",
+      "confidence": "high"
+    },
+    {
+      "global_line": 13810,
+      "matched_text": "Standing Stones",
+      "snippet": "If Standing Stones Could Speak, Devotion to the Feast of",
+      "variant_type": "giant-landscape",
+      "reasoning": "In Finnegans Wake, standing stones evoke the landscape-as-giant motif; standing stones in Irish mythology connect to Fionn and landscape. Tentative pun on the 'standing' giant/HCE recumbent on the Dublin landscape",
+      "confidence": "low"
+    },
+    {
+      "global_line": 13851,
+      "matched_text": "Finnfannfawners",
+      "snippet": "with Finnfannfawners, ruric or cospolite, for much or moment",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct garbled spelling of Finn/Finnegan embedded in neologism 'Finnfannfawners' - playful permutation mixing Finn with fawn/fanner suffixes",
+      "confidence": "high"
+    },
+    {
+      "global_line": 14469,
+      "matched_text": "finnence",
+      "snippet": "a buUyon gauger, stowed stivers pengapung in bulk in hold (fight great finnence!",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct garbling of 'Finn' + 'essence/finance' pun. The 'finnence' evokes Finn + finance/essence; placed in commercial/material context",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 14477,
+      "matched_text": "hodden son of a pookal",
+      "snippet": "rubbing the hodden son of a pookal, leaden be light, lather be dry",
+      "variant_type": "avatar-epithet",
+      "reasoning": "Obscure avatar reference: 'hodden' (hard/solid) + 'pookal' echoes 'Pooka' (Irish folklore), composite epithet for a fallen giant figure",
+      "confidence": "low"
+    },
+    {
+      "global_line": 14480,
+      "matched_text": "funicking or finicking",
+      "snippet": "how the camel and where the deiffel or when the finicking or why the funicking",
+      "variant_type": "pun",
+      "reasoning": "Playful paronyms: 'finicking' and 'funicking' echo 'Finn' while meaning fussy/delicate; double alliteration masks a Finn-name reference",
+      "confidence": "low"
+    },
+    {
+      "global_line": 14577,
+      "matched_text": "Finucane-Lee, Finucane-Law",
+      "snippet": "callen hom: Finucane-Lee, Finucane-Law",
+      "variant_type": "direct-spelling",
+      "reasoning": "Clear direct reference: 'Finucane' contains 'Fin' and evokes Finnegan; surname garbled as law/legal terms, linking fall and judgment",
+      "confidence": "high"
+    },
+    {
+      "global_line": 15022,
+      "matched_text": "finnisch",
+      "snippet": "Whilesd this pellover his finnisch.",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct reference to 'Finnish' qualities, but in Joycean portmanteau reflecting Finn + Finnish; contextually applied to a character in descent",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 15195,
+      "matched_text": "Fingal",
+      "snippet": "And Dub did glow that night. In Fingal of victories.",
+      "variant_type": "direct-spelling",
+      "reasoning": "Fingal is an Ossianic/Fenian heroic figure; variant spelling/name for Finn mac Cumhaill. Ossianic mythology deeply woven into FW. Reference to victories suggests heroic martial context.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 15239,
+      "matched_text": "Coyle-Finns",
+      "snippet": "The Burke-Lees and Coyle-Finns paid full feines for their sinns",
+      "variant_type": "direct-spelling",
+      "reasoning": "Explicit surname compound containing 'Finns'; also puns on 'feines/sins' playing with Fenian associations. Finn surname embedded in Dublin family names.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 15247,
+      "matched_text": "Finn's Hotel",
+      "snippet": "see the Bolche your pictures motion and Kitzy Kleinsuessmein eloping for that holm in Finn's Hotel Fiord",
+      "variant_type": "direct-spelling",
+      "reasoning": "Finn's Hotel is a real Dublin location; Joyce references it by name. The 'Fiord' adds Scandinavian/Northern mythic dimension to Finn.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 15297,
+      "matched_text": "fin above wave",
+      "snippet": "eira area round wantanajocky, fin above wave after ducky do wndivvy",
+      "variant_type": "giant-landscape",
+      "reasoning": "Finn as recumbent landscape figure; his body parts become geographic features. 'fin above wave' suggests head/extremity rising above aquatic terrain.",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 15317,
+      "matched_text": "finnd",
+      "snippet": "For hanigen with hunigen still haunt ahunt to finnd their hinnigen",
+      "variant_type": "direct-spelling",
+      "reasoning": "Garbled spelling 'finnd' (find/Finn) in mythic/haunting context; suggests Finn as elusive presence to be discovered, tied to Fenian hunting/searching.",
+      "confidence": "low"
+    },
+    {
+      "global_line": 15342,
+      "matched_text": "fenians",
+      "snippet": "the fiounaregal gaames of those oathmassed fenians for whome he's forcecaused",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Direct reference to Fenians/Fianna (Finn's warrior band). Central to Ossian cycle and Fenian mythology. 'oathmassed' suggests sworn followers, military fraternity.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 15448,
+      "matched_text": "Finndlader's",
+      "snippet": "Yes, we've conned thon print in its gloss so gay how it came from Finndlader's Yule to die day",
+      "variant_type": "direct-spelling",
+      "reasoning": "Portmanteau: 'Finndlader' combines Finn + 'lader' (leader/loader); 'Yule' evokes celebration and cyclical return. Finn as cultural/temporal origin point.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 15723,
+      "matched_text": "Foinn duhans!",
+      "snippet": "with his sabaothsopolettes, smooking his scandleloose at botthends of him! Foinn duhans! I grandthinked after his obras",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct garbled spelling of 'Finn' with Irish/Joycean corruption (duhans may echo 'dun' or phonetic distortion)",
+      "confidence": "high"
+    },
+    {
+      "global_line": 15723,
+      "matched_text": "his obras / his egondoom / pulversporochs",
+      "snippet": "after his obras / after another time about the itch in his egondoom he was legging boldylugged from some pulversporochs",
+      "variant_type": "fall-resurrection",
+      "reasoning": "Echoes the mythic attributes of Finn: 'egondoom' suggests ego/self-undoing (fall motif), 'boldylugged' suggests body-dragging, 'pulversporochs' suggests dust/powder of an old tale—Finnegan's fall and recumbent state",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 15723,
+      "matched_text": "nemesisplotsch",
+      "snippet": "for to nemesisplotsch allafranka and for to salubrate himself / with an ultradungs heavenly mass",
+      "variant_type": "fall-resurrection",
+      "reasoning": "Pun on 'nemesis' + '-plotsch' (splash/plot): suggests Finnegan's fall (nemesis) and the whiskey/water splash that revives the corpse in the ballad",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 15727,
+      "matched_text": "Vott Fonn!",
+      "snippet": "Grot Zot! You hidn't the hurts? Vott Fonn!",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct spelling 'Fonn' (alternate form of Finn) with onomatopoetic exclamation 'Vott' suggesting colloquial Irish-English",
+      "confidence": "high"
+    },
+    {
+      "global_line": 15735,
+      "matched_text": "stool-eazy / nemesis",
+      "snippet": "from some pulversporochs and lyoking for a stool-eazy for to nemesisplotsch allafranka",
+      "variant_type": "fall-resurrection",
+      "reasoning": "'Stool' suggests chair/seat of authority (Finn's seat) or the bodily collapse; 'eazy' suggests ease/ease of fall; combined with nemesis pun = Finnegan's toppling and revivification cycle",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 15766,
+      "matched_text": "his boney bogey braggs",
+      "snippet": "The lyewdsky so so sewn of a fitchid! With his walshbrushup. And his boney bogey braggs.",
+      "variant_type": "giant-landscape",
+      "reasoning": "'Boney bogey' evokes bog and bone—the corpse-like giant; 'braggs' suggests bones sticking up from the landscape of Dublin terrain",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 15789,
+      "matched_text": "pollex priced",
+      "snippet": "where he sees Bishop Ribboncake plus his pollex priced going forth on his visitations of mirrage",
+      "variant_type": "mythic-attribute",
+      "reasoning": "'Pollex' = thumb in Latin; direct reference to Finn's thumb of wisdom and knowledge (Salmon of Knowledge myth); 'priced' may suggest its value/sacred status",
+      "confidence": "high"
+    },
+    {
+      "global_line": 15797,
+      "matched_text": "bones / ivory girl and ebony boy",
+      "snippet": "obliges with a two stopyogacoga sumphoiyon the bones for ivory girl and ebony boy",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Musical reference to 'bones' suggests Fianna warriors' instrumental/martial context; 'ivory and ebony' may evoke the cosmic duality of the hero's world",
+      "confidence": "low"
+    },
+    {
+      "global_line": 15820,
+      "matched_text": "his tommuck and rueckenased the fates of a bosser",
+      "snippet": "with die weight of his arge fullin upon him from the travaillings of his tommuck and rueckenased the fates of a bosser",
+      "variant_type": "giant-landscape",
+      "reasoning": "'arge' (arg/large) = giant's size; 'tommuck' = stomach; 'weight falling upon him' and 'fates of a bosser' suggest the recumbent giant-as-landscape motif; body burdened under travails",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 15824,
+      "matched_text": "Finnland / serf Finnland",
+      "snippet": "and he conforted samp, tramp and marchint out of the drumbume of a narse. Guards, serf Finnland, serve we all!",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct spelling 'Finnland' (Finn + land): likely a pun conflating Finn (the hero) with Ireland itself or 'Finland'; 'serf' suggests servitude and service motif",
+      "confidence": "high"
+    },
+    {
+      "global_line": 16230,
+      "matched_text": "Like Faun MacGhoul!",
+      "snippet": "Shurenoff! Like Faun MacGhoul!",
+      "variant_type": "direct-spelling",
+      "reasoning": "Garbled spelling of Finn MacCool; 'Faun' echoes 'Finn' and 'MacGhoul' is 'MacCool' distorted. Direct avatar reference in dramatic monologue.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 16303,
+      "matched_text": "what has justly said of old Flannagan, a wake",
+      "snippet": "sometimes, maybe, what has justly said of old Flannagan, a wake from this or huntsfurwards",
+      "variant_type": "direct-spelling",
+      "reasoning": "'Flannagan' is variant spelling close to Finnegan; 'a wake' immediately follows, invoking both the ballad ('Finnegan's Wake') and the central motif of the novel.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 16361,
+      "matched_text": "he was like Fintan fore flood and after",
+      "snippet": "4) he was like Fintan fore flood and after sometimes too damned",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Fintan mac Bochra is the mythic salmon-figure and flood survivor in Irish mythology, intimately linked to Finn MacCool's Salmon of Knowledge myth. Suggests the resurrection/cyclical rebirth motif.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 16500,
+      "matched_text": "he, that hun of a horde, is a finn as she, his tent wife, is a lap",
+      "snippet": "what he gave was as a pattern, he, that hun of a horde, is a finn as she, his tent wife, is a lap",
+      "variant_type": "direct-spelling",
+      "reasoning": "Explicit statement 'is a finn' applied to the male figure; plays on fin/Finn as both fish and proper name, embedding it in the metonymic landscape.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 16841,
+      "matched_text": "the fionnling and dubhlet",
+      "snippet": "seized his pullets and primed their plumages, the fionnling and dubhlet, the dun and the fire",
+      "variant_type": "direct-spelling",
+      "reasoning": "fionnling is diminutive/variant of Fionn; appears with dubhlet (dub = dark, dialectal for 'black'), reinforcing the binary structure of Fianna warrior pairs",
+      "confidence": "high"
+    },
+    {
+      "global_line": 16891,
+      "matched_text": "The Fenn, the Fenn, the finn of all Fenns",
+      "snippet": "Clanruckard for ever! The Fenn, the Fenn, the finn of all Fenns! Deaf to the winds",
+      "variant_type": "direct-spelling",
+      "reasoning": "Explicit invocation of Fenn/Fenns (the Fianna band); 'finn of all Fenns' is direct reference to Fionn as chief of the Fianna; triple repetition emphasizes mythic status",
+      "confidence": "high"
+    },
+    {
+      "global_line": 16891,
+      "matched_text": "finnecies of poetry",
+      "snippet": "Drawg us out Ivy Eve in the Hall of Alum! The finnecies of poetry wed music. Feeling the jitters?",
+      "variant_type": "pun",
+      "reasoning": "finnecies puns on Finn + finesse/fancies; in context of poetry/music/wedding, invokes Finn's role as poet-warrior and courtly figure",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 16932,
+      "matched_text": "Fingool MacKishgmard",
+      "snippet": "Fingool MacKishgmard Obesume Burgearse Benefice, He was bowen hem and scrapin him",
+      "variant_type": "direct-spelling",
+      "reasoning": "Fingool is transparent garbling of Fingal/Finn + MacCool; the patronymic structure (Mac+) invokes Fionn mac Cumhaill directly",
+      "confidence": "high"
+    },
+    {
+      "global_line": 16963,
+      "matched_text": "Finnish Make Goal!",
+      "snippet": "Two stick hoist. Lucky! Finnish Make Goal! First you were Nomad, next you were Namar",
+      "variant_type": "direct-spelling",
+      "reasoning": "Finnish invokes Finn directly; Make Goal likely puns on MacCool/Mac + goal; part of series of identity transformations (Nomad/Namar/Numah/Nomon)",
+      "confidence": "high"
+    },
+    {
+      "global_line": 16970,
+      "matched_text": "Finsbury Follies",
+      "snippet": "He knows his Finsbury Follies backwoods so you batter see to your regent refutation",
+      "variant_type": "pun",
+      "reasoning": "Finsbury (London street/area) puns on Finn + bury; follies compound the pun (follies = jester's pranks, Finn's trickster aspect)",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 17419,
+      "matched_text": "the mannork of Arrahland oversense he horrhorrd his name in thuthunder",
+      "snippet": "he's the mannork of Arrahland oversense he horrhorrd his name in thuthunder. Rrrwwwkkkrrr",
+      "variant_type": "fall-resurrection",
+      "reasoning": "Thunder-word (thuthunder/Rrrwwwkkkrrr) echoing the thunderclap of Finnegan's fall; 'mannork' = man-work/giant figure",
+      "confidence": "high"
+    },
+    {
+      "global_line": 17421,
+      "matched_text": "fusefiressence",
+      "snippet": "seen it rudden up in fusefiressence on the flashmurket",
+      "variant_type": "fall-resurrection",
+      "reasoning": "Fire-essence suggests the reviving element (whiskey/fire imagery) of the Finnegan wake motif",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 17458,
+      "matched_text": "Fin.",
+      "snippet": "So mulct per wenche is Elsker woed. Ne hath his thrysting. Fin.",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct spelling of Fin; marks a narrative conclusion/ending reminiscent of the ballad's cyclic structure",
+      "confidence": "high"
+    },
+    {
+      "global_line": 17460,
+      "matched_text": "Fing.",
+      "snippet": "Jazzaphoney and Mirillovis and Nippy she nets best. Fing. Ay, ay! Sobbos.",
+      "variant_type": "direct-spelling",
+      "reasoning": "Garbled direct spelling Fing (Finn); placed at narrative inflection point",
+      "confidence": "high"
+    },
+    {
+      "global_line": 17479,
+      "matched_text": "Arrah-na-Poghue",
+      "snippet": "gallowsbirds in Arrah-na-Poghue, so silvestrious, neer the Queen's Colleges",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Reference to Irish legend of Diarmuid and Gráinne (Arrah-na-Pogue = Aran-na-Pogue); related Fenian cycle where Finn is central figure",
+      "confidence": "high"
+    },
+    {
+      "global_line": 17579,
+      "matched_text": "Goold Fins",
+      "snippet": "when Carpery of the Goold Fins was in the kingship of Poolland",
+      "variant_type": "avatar-epithet",
+      "reasoning": "Goold Fins = Finn; kingship reference suggests giant/leader figure; Poolland (Dublin/Phoenix Park terrain mapping)",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 18080,
+      "matched_text": "Finnan baddies",
+      "snippet": "where first I met thee oldpoetryck flied from may, and the Finnan baddies and the Noal Sharks",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct variant of 'Finnegan'; 'Finnan' is a Joycean spelling of Finn, here modifying 'baddies' (fish); pun on smoked haddock (finnan haddie)",
+      "confidence": "high"
+    },
+    {
+      "global_line": 18125,
+      "matched_text": "good old Foehn again",
+      "snippet": "around the waists of the ships, in the wake of their good old Foehn again, as tyred as they were",
+      "variant_type": "pun",
+      "reasoning": "Foehn (warm wind) is phonetically 'Finn' + 'again' split across words; echoes 'Finnegan' and the resurrection motif; 'again' suggests repetition/cyclical return",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 18297,
+      "matched_text": "Fionnachan sea",
+      "snippet": "to Peregrine and Michael and Farfassa and Peregrine, for navigants et peregrinantibus, in all the old imperial and Fionnachan sea",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct Gaelic variant of Fionn; 'Fionnachan' preserves Irish 'Fionn' morphology; in a list of sacred/canonical places suggesting mythic register",
+      "confidence": "high"
+    },
+    {
+      "global_line": 18697,
+      "matched_text": "Finn's Hot",
+      "snippet": "Exbelled from 1014 d. Pull- down. Fearview. Opened by Miss Take. 965 nighumpledan sexti- ffits. Shout at Site. Roofloss. Fit Dunlop and Be Satisfied. Mr. Domnall O'Domnally. Q.V. 8 Royal Terrors. None so strait. Finn's Hot",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct spelling of Finn in address notation. In Finnegans Wake, Finn references often appear in lists, letters, and marginal annotations. Finn's Hot is a Dublin location reference tied to the Finnegan figure.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 19217,
+      "matched_text": "Finfria's fairest",
+      "snippet": "all, but that one; Finfria's fairest, done in loveletters like a trayful of cloudberry tartlets",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct garbled spelling of Fionn/Fin with 'fria' suffix, preserving the core Fin- morpheme in the context of feminine beauty (girls rushing toward Jaun). Fionn was associated with nobility and excellence.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 19242,
+      "matched_text": "fond Fuinn feels",
+      "snippet": "Countenance whose disparition afflictedly fond Fuinn feels. Winner of the gamings",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct misspelling/garbling of Finn as 'Fuinn'—the Irish genitive/possessive form of Fionn (Fhinn). Appears in context of mourning/loss ('disparition afflictedly'), evoking the fall-and-loss motif central to Finnegan's wake.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 19542,
+      "matched_text": "a hog of the howth",
+      "snippet": "Never let a hog of the howth trample underfoot your linen of Killiney.",
+      "variant_type": "giant-landscape",
+      "reasoning": "Howth is the famous Dublin headland that Joyce identifies as the Finn-giant's head in FW. 'Hog' may be colloquial/derogatory reference to the sleeping giant himself, or an avatar. Howth = Howth Head = Fionn mac Cumhaill's head in the landscape topology.",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 19836,
+      "matched_text": "S. J. Finn's",
+      "snippet": "Swear aloud by pious fiction the like of Lentil Lore by Carnival Cullen or that Percy Wynns of our S. J. Finn's or Pease in Plenty",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct reference to Finn in a list of recommended religious reading; Joyce names a fictional book as 'S. J. Finn's'",
+      "confidence": "high"
+    },
+    {
+      "global_line": 19883,
+      "matched_text": "hoyth",
+      "snippet": "let us say, the hoyth of number eleven, Kane or Keogh's, and in the course",
+      "variant_type": "giant-landscape",
+      "reasoning": "Garbled spelling of 'Howth,' the Dublin headland that represents Finn MacCool's head in FW's giant-as-landscape motif. Joyce intentionally misspells it within mundane shopkeeping instructions to invoke the sleeping giant subtext.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 20430,
+      "matched_text": "don't be all the night",
+      "snippet": "don't be all the night. And this. Joke, a sprig of blue speedwell",
+      "variant_type": "pun",
+      "reasoning": "Possible echo of 'Finnegan' sleep/resurrection motif; 'be all the night' suggests nocturnal awareness",
+      "confidence": "low"
+    },
+    {
+      "global_line": 20436,
+      "matched_text": "floral ora so you'll mind your veronique",
+      "snippet": "a spell of floral ora so you'll mind your veronique. Of course, Jer, I know",
+      "variant_type": "pun",
+      "reasoning": "Veronique contains Finn-esque phonetic echo; 'floral ora' suggests the supernatural knowledge/wisdom motif",
+      "confidence": "low"
+    },
+    {
+      "global_line": 20526,
+      "matched_text": "frondoak rushes to the ask",
+      "snippet": "sickamours, the cyprissis and babilonias, where the frondoak rushes to the ask",
+      "variant_type": "pun",
+      "reasoning": "Frondoak may contain 'Finn' + 'oak' (Finn associated with trees/druids); morphed spelling",
+      "confidence": "low"
+    },
+    {
+      "global_line": 20530,
+      "matched_text": "Splesh of hiss splash springs your salmon",
+      "snippet": "Splesh of hiss splash springs your salmon. Twick twick, twinkle twings my twilight",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Salmon of Knowledge—fundamental Finn myth; 'springs your salmon' evokes wisdom/power acquisition",
+      "confidence": "high"
+    },
+    {
+      "global_line": 20551,
+      "matched_text": "dusess of yore",
+      "snippet": "I always had a crush on heliotrope since the dusess of yore cycled round the",
+      "variant_type": "pun",
+      "reasoning": "Obscure but possible 'duess' = 'dues' + archaic 'ess' formations; 'dusess' contains Finn-like consonant clustering",
+      "confidence": "low"
+    },
+    {
+      "global_line": 20552,
+      "matched_text": "Finest Park",
+      "snippet": "cycled round the Finest Park, and listen. And never mind me laughing at what's",
+      "variant_type": "giant-landscape",
+      "reasoning": "Phoenix Park (Dublin terrain, Finnegan's body as landscape); 'Finest' = phonetic disguise of 'Phoenix' or Finn reference",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 20567,
+      "matched_text": "Shane will come forth",
+      "snippet": "night's foreign males and your name of Shane will come forth between my shamefaced",
+      "variant_type": "pun",
+      "reasoning": "Shane (Irish for 'old'/'ancient') + Finn mythology; suggests Finnian temporal echoes",
+      "confidence": "low"
+    },
+    {
+      "global_line": 21301,
+      "matched_text": "Seaborne Fingale",
+      "snippet": "And the bould one that quickened her the seaborne Fingale.",
+      "variant_type": "direct-spelling",
+      "reasoning": "Fingale is a direct variant of Fingal, a garbled form of Fionn; this references Finn in the context of a seaborne figure",
+      "confidence": "high"
+    },
+    {
+      "global_line": 21429,
+      "matched_text": "Hauneen",
+      "snippet": "had you but been spared to us, Hauneen lad, but sure where's the use",
+      "variant_type": "avatar-epithet",
+      "reasoning": "Hauneen is a diminutive of Haun/Jhaun, which is an avatar of HCE and Finn; the context of 'spared to us' and resurrection echoes the wake motif",
+      "confidence": "high"
+    },
+    {
+      "global_line": 21431,
+      "matched_text": "Gone is Haun",
+      "snippet": "Gone is Haun! My grief, my ruin! Our Joss-el-Jovan!",
+      "variant_type": "fall-resurrection",
+      "reasoning": "The lamentation over Haun's departure and resurrection is central to the Finnegan wake motif; Haun represents the fallen hero",
+      "confidence": "high"
+    },
+    {
+      "global_line": 21493,
+      "matched_text": "Pure Yawn lay low",
+      "snippet": "Lowly, longly, a wail went forth. Pure Yawn lay low. On the mead of the hillock lay",
+      "variant_type": "giant-landscape",
+      "reasoning": "Yawn's recumbent form on the mead/hillock echoes the sleeping giant motif of Finn as Dublin landscape; the 'hillock' evokes Howth",
+      "confidence": "high"
+    },
+    {
+      "global_line": 21529,
+      "matched_text": "Conn's half...Owenmore's five quarters",
+      "snippet": "length by breadth nonplussing his thickness...one half of him in Conn's half but the whole of him nevertheless in Owenmore's five quarters",
+      "variant_type": "giant-landscape",
+      "reasoning": "The recumbent giant's body spans multiple Irish territorial divisions (Conn, Owenmore), placing him as landscape—a Finn avatar as Dublin terrain",
+      "confidence": "high"
+    },
+    {
+      "global_line": 21760,
+      "matched_text": "Felin make Call",
+      "snippet": "One might hear in their beyond that lionroar in the air again, the zoohoohoom of Felin make Call",
+      "variant_type": "pun",
+      "reasoning": "Felin/Fionn+ 'make Call' = Fionn mac Cumhaill; obscured phonetically; 'lionroar' fits Finn mythology's heroic associations",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 21780,
+      "matched_text": "fingall harriers",
+      "snippet": "The animal jangs again! Find the fingall harriers! Here howl me wiseacre's hat",
+      "variant_type": "direct-spelling",
+      "reasoning": "Fingall/Fingal is direct variant of Finn; 'fingall harriers' invokes the hunt motif associated with Fianna/Fenians and Finn's warriors",
+      "confidence": "high"
+    },
+    {
+      "global_line": 21780,
+      "matched_text": "Find the fingall harriers",
+      "snippet": "The animal jangs again! Find the fingall harriers! Here howl me wiseacre's hat",
+      "variant_type": "mythic-attribute",
+      "reasoning": "References Fianna/Fenian warriors under Finn's command; the hunting harriers connect to Finn's role as leader of the Fianna",
+      "confidence": "high"
+    },
+    {
+      "global_line": 21832,
+      "matched_text": "Finnsen Faynean",
+      "snippet": "coming nown from the asphalt to the concrete, from the human historic brute, Finnsen Faynean, occeanyclived, to this same vulganized hillsir",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct garbled spelling of Finnegan/Finn; 'Finnsen' echoes Finnegan with phonetic distortion, 'Faynean' sounds like Fionn/Fain",
+      "confidence": "high"
+    },
+    {
+      "global_line": 22261,
+      "matched_text": "Finlay's",
+      "snippet": "Oh Finlay's coldpalled!",
+      "variant_type": "direct-spelling",
+      "reasoning": "Finlay is a variant name derived from Finn/Finlay, surname form of the hero",
+      "confidence": "high"
+    },
+    {
+      "global_line": 22490,
+      "matched_text": "orange fin with a mosaic",
+      "snippet": "orange fin with a mosaic of dispensations and a froren black patata",
+      "variant_type": "pun",
+      "reasoning": "Pun on 'fin' sounding like 'Finn'; in context of enumeration of gifts/adornments at ceremonial gathering, evokes Finnegan as the central figure being honored",
+      "confidence": "low"
+    },
+    {
+      "global_line": 22501,
+      "matched_text": "Finnyking he's so joyant",
+      "snippet": "He cawls to me Granny-stream-Auborne when I am hiding under my hair from him and I cool him my Finnyking he's so joyant a bounder.",
+      "variant_type": "avatar-epithet",
+      "reasoning": "Direct avatar epithet for the hero; 'Finnyking' is a term of endearment/epithet applied to the beloved figure, fusing Finn with royalty/kingship",
+      "confidence": "high"
+    },
+    {
+      "global_line": 22544,
+      "matched_text": "fingall's ends",
+      "snippet": "I have it here to my fingall's ends. This liggy piggy wanted to go to the jampot.",
+      "variant_type": "pun",
+      "reasoning": "Compound pun: 'fingall' evokes both 'fingernail' and 'Fin' + 'gall'; 'gall' recalls the stone/gall of Finnegan's Wake ballad. Wordplay suggests Finn's tactile/physical presence ('to my fingall's ends' = within my grasp/control, Finn's reach)",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 22675,
+      "matched_text": "Funnycoon's Wick",
+      "snippet": "But there's leps of flam in Funnycoon's Wick. The keyn has passed. Lung lift the keying!",
+      "variant_type": "pun",
+      "reasoning": "Pun on 'Funny' (Finn) disguised in proper noun 'Funnycoon's'; 'Wick' (dwelling/place) suggests Finnegan's locale. Plays on the phonetic proximity to 'Funny' / 'Finn' while obscuring direct reference",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 22682,
+      "matched_text": "Finnk. Fime. Fudd?",
+      "snippet": "do ye. Finnk. Fime. Fudd?",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct garbled spelling variants of Finn: 'Finnk' (Finn + k), 'Fime' (Finn variant with 'me'), 'Fudd' (Finn variant with 'dd'). Part of enumeration/listing of names, suggesting Finnegan in corrupted form",
+      "confidence": "high"
+    },
+    {
+      "global_line": 22715,
+      "matched_text": "finshark",
+      "snippet": "Dovegall and finshark, they are ring to the rescune!",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct spelling 'finshark' contains 'fin' in compound; unclear meaning intensifies the Joycean obfuscation. 'Fin' + 'shark' may evoke predatory/mythic power (Salmon of Knowledge association?)",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 22778,
+      "matched_text": "Fyn's",
+      "snippet": "for the ehren of Fyn's Insul",
+      "variant_type": "direct-spelling",
+      "reasoning": "Abbreviated spelling 'Fyn' echoes Fin/Fionn; 'Insul' may hint at island/isle associations",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 22834,
+      "matched_text": "giant",
+      "snippet": "Just how grand in cardinal rounders is this preeminent giant, sir Arber.",
+      "variant_type": "giant-landscape",
+      "reasoning": "HCE explicitly called 'preeminent giant'; context of landscape/terrain description invokes the giant-as-Dublin motif central to Finn mythology",
+      "confidence": "high"
+    },
+    {
+      "global_line": 22862,
+      "matched_text": "fenians",
+      "snippet": "Tyburn fenians snoring in his quickenbole",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Direct reference to the Fianna/Fenians, Finn's warrior band in Irish mythology",
+      "confidence": "high"
+    },
+    {
+      "global_line": 22878,
+      "matched_text": "Fanagan",
+      "snippet": "The place where Ealdermann Fanagan. The time when Junkermenn Funagin.",
+      "variant_type": "direct-spelling",
+      "reasoning": "Garbled spelling of Finnegan/Finnagan; appears paired with Funagin (variant of same)",
+      "confidence": "high"
+    },
+    {
+      "global_line": 22879,
+      "matched_text": "Funagin",
+      "snippet": "The time when Junkermenn Funagin.",
+      "variant_type": "direct-spelling",
+      "reasoning": "Variant spelling of Finnegan, phonetically echoes the name with F-n pattern",
+      "confidence": "high"
+    },
+    {
+      "global_line": 22883,
+      "matched_text": "Fingal",
+      "snippet": "In Fingal too they met at Littlepeace aneath the bidetree",
+      "variant_type": "direct-spelling",
+      "reasoning": "Fingal is a direct variant of Finn MacCool's name; also a county north of Dublin with legendary associations",
+      "confidence": "high"
+    },
+    {
+      "global_line": 22929,
+      "matched_text": "Finoglam",
+      "snippet": "I suggest Finoglam as his habitat",
+      "variant_type": "direct-spelling",
+      "reasoning": "Garbled compound containing 'Fin-' root; variant spelling evoking Finnegan/Fingal",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 23353,
+      "matched_text": "in finnish",
+      "snippet": "I mean the Morgans and the Dorans, in finnish. I know you don't, in Feeney's.",
+      "variant_type": "pun",
+      "reasoning": "Possible pun: 'finnish' (the language) echoes 'Finnishe' or 'Finn-ish' (like Finn), especially in context of Irish references (Morgans, Dorans, Feeney's).",
+      "confidence": "low"
+    },
+    {
+      "global_line": 23390,
+      "matched_text": "Finny. Vary vary finny!",
+      "snippet": "the second foot of the fourth man to the first one on the first. That's right. Finny. Vary vary finny! It may look funny but fere it is.",
+      "variant_type": "pun",
+      "reasoning": "Word-play on 'funny' (homophone with pun potential) and 'Finny' (Finn-like/Finnegan-like). Joycean pun merging adjective with the hero's name.",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 23423,
+      "matched_text": "Fairplay for Finnians!",
+      "snippet": "do the cowardly thing and moll me roon? Tell Queen's road I am seilling. Fairplay for Finnians! I will have my humours.",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Direct reference to the Fianna/Fenians (warriors of Finn MacCool). 'Finnians' = followers of Finn, his warrior band.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 24050,
+      "matched_text": "finicky about Finnegan and fiddling with his faddles",
+      "snippet": "That's enough, genral, of finicking about Finnegan and fiddling with his faddles",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct naming of Finnegan, the hod-carrier/bricklayer figure central to Finnegans Wake, the ballad and the wake motif",
+      "confidence": "high"
+    },
+    {
+      "global_line": 24101,
+      "matched_text": "great fin may cumule! Three threeth o'er the wild!",
+      "snippet": "The great fin rnay cumule! Three threeth o'er the wild! Manu ware!",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct 'fin' (likely Finn) with 'cumule' (Cumhal/cumhaill garbled), echoing mac Cumhaill/Fionn mac Cumhaill and the three-fold motif",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 24381,
+      "matched_text": "Search ye the Finn! The sinder's under shriving sheet.",
+      "snippet": "Search ye the Finn! The sinder's under shriving sheet. Fa Fe Fi Fo Fum!",
+      "variant_type": "direct-spelling",
+      "reasoning": "Explicit command 'Search ye the Finn' followed by 'Fa Fe Fi Fo Fum' thunderword pattern evoking fall/resurrection and the giant motif",
+      "confidence": "high"
+    },
+    {
+      "global_line": 24547,
+      "matched_text": "Old Whitehowth he is speaking again",
+      "snippet": "Old Whitehowth iie is speaking again. Ope Eustace tube!",
+      "variant_type": "giant-landscape",
+      "reasoning": "Howth is the giant's head in the Finn/HCE landscape motif of Finnegans Wake; Whitehowth echoes Whitelaw, Dublin terrain, the recumbent body",
+      "confidence": "high"
+    },
+    {
+      "global_line": 24635,
+      "matched_text": "comes out aich Fanagan's Week",
+      "snippet": "Mons Meg's Monthly, comes out aich Fanagan's Week, to bray at by clownsillies",
+      "variant_type": "direct-spelling",
+      "reasoning": "Fanagan's = Finnegan's, directly garbled spelling of the ballad and Finnegan(s) motif; phonetically 'Finn' audible in the name",
+      "confidence": "high"
+    },
+    {
+      "global_line": 24744,
+      "matched_text": "your sleeping giant",
+      "snippet": "On me, your sleeping giant. Estoesto! Estote sunto! From the hold of my capt",
+      "variant_type": "giant-landscape",
+      "reasoning": "Speaker claims to be 'your sleeping giant' — directly invokes the HCE-as-Finn motif of the sleeping giant whose body is the Dublin landscape",
+      "confidence": "high"
+    },
+    {
+      "global_line": 24791,
+      "matched_text": "Braid Blackfordrock, the Calton, the Liberton, Craig and Lockhart's",
+      "snippet": "hill prospect. Braid Blackfordrock, the Calton, the Liberton, Craig and Lockhart's, A. Costofino",
+      "variant_type": "giant-landscape",
+      "reasoning": "Enumeration of Dublin hills and geographic features (seven ills, centripunts) — part of the landscape-as-sleeping-giant trope where Finn's recumbent body maps onto terrain",
+      "confidence": "high"
+    },
+    {
+      "global_line": 24871,
+      "matched_text": "my pumpadears in their easancies and my drummers",
+      "snippet": "Struggling forlongs I have livramentoed, milles on milles of mancipelles. Lo, I have looked upon my pumpadears",
+      "variant_type": "avatar-epithet",
+      "reasoning": "Drummer epithet; Finn in mythology had druids/wise men; 'drummers' may allude to his retinue or attribute, though pun-oblique",
+      "confidence": "low"
+    },
+    {
+      "global_line": 24881,
+      "matched_text": "drug-tails in my petty-courts and domstered dusty-feets",
+      "snippet": "I deemed the drugtails in my pettycourts and domstered dustyfeets in my husinclose",
+      "variant_type": "fall-resurrection",
+      "reasoning": "Drugtails + dustyfeet suggest degradation/fall of a mighty figure; pun-like echo of Finn's fallen state before resurrection",
+      "confidence": "low"
+    },
+    {
+      "global_line": 24919,
+      "matched_text": "two young frish, etoiled, flappant, devoiled",
+      "snippet": "At the crest, two young frish, etoiled, flappant, devoiled of their habiliments, vested sable",
+      "variant_type": "direct-spelling",
+      "reasoning": "Frish = fish, but phonetically suggests Fionn/Finn; heraldic coat-of-arms context fits mythic hero register",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 24997,
+      "matched_text": "Till daybowbreak and showshadows flee",
+      "snippet": "By my natural born freeman's journeymanright and my otherchurch's inher light, in so and such a manner as me it so besitteth, most surely I pretend and reclam to opt for simultaneous. Till daybowbreak and showshadows flee.",
+      "variant_type": "fall-resurrection",
+      "reasoning": "Daybowbreak = Finn's dawn re-arising; shadowflight = darkness of death/sleep departing; part of the Finnegan wake-resurrection motif",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 25098,
+      "matched_text": "I thumbed her with iern of Erin",
+      "snippet": "so streng we were in one, malestream in shegulf: and  to rings tresse I thumbed her with iern of Erin",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Thumb of wisdom (Finn's magical thumb) directly referenced in 'thumbed her'; Erin adds Ireland/Finnian context",
+      "confidence": "high"
+    },
+    {
+      "global_line": 25323,
+      "local_line": 123,
+      "matched_text": "Finmark's Howe",
+      "snippet": "pons for aguaducks: a hawthorndene, a feyrieglenn, the hallaw vail, the dyrchace, Finmark's Howe, against lickybudmonth",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct reference to Finmark/Finn combining place name (Howe = hill/mound) with Irish topography. Finn's body-as-landscape motif.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 25370,
+      "local_line": 170,
+      "matched_text": "Finnuala",
+      "snippet": "By the sinewy forequarters of the mare Pocahontas and by the white shoulders of Finnuala you should have seen how that smart sallowlass just hopped",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Finnuala (The Four Branches of the Mabinogion / Irish Swan motif). While not Finn directly, this is the female counterpart/lover figure in Irish mythology cycles. Appears in Wake often paired with Finn contexts. Mythic-adjacent reference to the Fenian tradition.",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 25554,
+      "local_line": 354,
+      "matched_text": "Finn his park",
+      "snippet": "from beauhind this park? Finn his park has been much the admiration of all the stranger ones, grekish and romanos, who arrive to here.",
+      "variant_type": "direct-spelling",
+      "reasoning": "Explicit reference to 'Finn his park' describing Phoenix Park (Dublin's major park, traditional association with Finn MacCool's territory and recumbent giant body). Central to Finnegan/Finn identity in Wake.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 25576,
+      "local_line": 376,
+      "matched_text": "By feud fionghalian",
+      "snippet": "mules the mound where anciently first murders were wanted to take root. By feud fionghalian. Talkingtree and sinningstone stay on either hand.",
+      "variant_type": "direct-spelling",
+      "reasoning": "Cryptic compound combining 'feud' (feudal echoes) with 'fionghalian' (Fionn + Irish suffix -ghalian). Archaic/garbled spelling evoking Fionn mac Cumhaill directly. Reference to ancient murders on the mound suggests Finn-as-killed-giant.",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 25990,
+      "matched_text": "Old Finncoole, he's a mellow old saoul when he swills with his fuddlers free!",
+      "snippet": "Sing: Old Finncoole, he's a mellow old saoul when he swills with his fuddlers free! Poppop array!",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct reference to Finnegans—Finncoole is a garbled/poetic variant of the Finnegan/Finn MacCool name; context of drinking, conviviality, and sociability evokes the ballad's wake-drinking motif",
+      "confidence": "high"
+    },
+    {
+      "global_line": 26101,
+      "matched_text": "fenian's bark",
+      "snippet": "busynext man that came on the cop with the fenian's bark that pickled his widow",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Reference to the Fenians/Fianna (Finn's legendary warrior band); mythic attribute of the Finn cycle; 'fenian' carries the legendary warrior associations",
+      "confidence": "high"
+    },
+    {
+      "global_line": 26198,
+      "matched_text": "Macfinnan's cool Harryng",
+      "snippet": "Dik Gill, Tum Lung or Macfinnan's cool Harryng? He has only his hedcosycasket on",
+      "variant_type": "direct-spelling",
+      "reasoning": "Macfinnan is a transparent garbling of MacCool/Mac-Cumhaill; 'cool' puns on both temperature and the MacCool element; context of sleeping giant with cosycasket reinforces the recumbent figure motif",
+      "confidence": "high"
+    },
+    {
+      "global_line": 26204,
+      "matched_text": "finnoc in a cauwl",
+      "snippet": "socks for he always must to insure warm sleep between a pair of fullyfleeced bankers like a finnoc in a cauwl",
+      "variant_type": "direct-spelling",
+      "reasoning": "finnoc echoes Finn; comparison to a small fish (finnoc = Irish for small fish) wrapped in bedding (cauwl = cowl/enclosure) plays on Finn as sleeping giant cocooned in landscape",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 26320,
+      "matched_text": "Big Maester Finnykin with Phenicia Parkes",
+      "snippet": "Big Maester Finnykin with Phenicia Parkes, lame of his ear and gape of her leg, most correctingly",
+      "variant_type": "avatar-epithet",
+      "reasoning": "Finnykin is a diminutive avatar of Finnegan/Finn; 'Maester' (master/builder/craftsman) echoes Bygmester Finnegan the hod-carrier; paired description of physical characteristics suggests the giant-figure motif",
+      "confidence": "high"
+    },
+    {
+      "global_line": 26398,
+      "matched_text": "Finn Magnusson",
+      "snippet": "D'Oyly Owens holds (though Finn Magnusson of himself holds also) that so long as there is a joint deposit account",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct name Finn in legal/contractual context; appears as a legal authority figure, though this may reference an actual historical figure (Finn Magnusson was a real 19th-century scholar), the presence in this Joycean passage suggests intentional dual evocation",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 26491,
+      "matched_text": "to Finnegan",
+      "snippet": "flispering in the nightleaves flattery, dinsiduously, to Finnegan, to sin again",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct reference to Finnegan, the eponymous figure; part of the wake ballad structure invoking the hero by name",
+      "confidence": "high"
+    },
+    {
+      "global_line": 26492,
+      "matched_text": "to sin again",
+      "snippet": "to Finnegan, to sin again and to make grim grandma grunt and grin again",
+      "variant_type": "pun",
+      "reasoning": "Homophones 'sin/Finn' and 'again/again' + 'Finnegan' = Finn-again; the wake ballad refrain structure invoking resurrection through repetition",
+      "confidence": "high"
+    },
+    {
+      "global_line": 26579,
+      "matched_text": "Finner",
+      "snippet": "our hugest commercial emporialist, with his sons booing home from afar and his daughters bridling up at his side. Finner!",
+      "variant_type": "direct-spelling",
+      "reasoning": "Variant spelling of Finnegan/Finn; apostrophe-like exclamation at climax of HCE's commercial/empire-building narrative, avatar epithet",
+      "confidence": "high"
+    },
+    {
+      "global_line": 26684,
+      "matched_text": "Foyn MacHooligan",
+      "snippet": "The old breeding bradsted culminwillth of natures to Foyn MacHooligan. The leader, the leader!",
+      "variant_type": "direct-spelling",
+      "reasoning": "Garbled spelling: 'Foyn' (Fionn) + 'MacHooligan' (MacCool + Irish -igan suffix); direct avatar of the Finn/HCE figure, invoked as 'the leader'",
+      "confidence": "high"
+    },
+    {
+      "global_line": 26685,
+      "matched_text": "Billey Feghin",
+      "snippet": "wook doom for husky! And let Billey Feghin be baallad out of his humuluation.",
+      "variant_type": "avatar-epithet",
+      "reasoning": "Possible pun: 'Billey' (billow, bill, barrel—the barrel/cask in HCE's pub) + 'Feghin' (Finn sound); cryptic epithet; 'baallad out' echoes ballad form of Finnegan's Wake tradition",
+      "confidence": "low"
+    },
+    {
+      "global_line": 27025,
+      "matched_text": "Fangaluvu",
+      "snippet": "Helusbelus in the boshiman brush on this our peneplain by Fangaluvu Bight whence the horned",
+      "variant_type": "pun",
+      "reasoning": "Disguised Finn reference via sound-play: Fangaluvu contains 'Fang' + 'aluvu', echoing the Irish 'Fionn' and the landscape-giant motif (boshiman brush, peneplain as HCE's body)",
+      "confidence": "low"
+    },
+    {
+      "global_line": 27048,
+      "matched_text": "Hill of Hafid",
+      "snippet": "But Hfe wends and the dombs spake! Whake? Hill of Hafid, knock and knock, nachasach, gives relief",
+      "variant_type": "giant-landscape",
+      "reasoning": "Hafid appears to reference Howth (HCE as recumbent giant); 'knock and knock' echoes knocking/striking, the fall-motif; Hafid may contain 'Ha' (laughter/exclamation) + landscape",
+      "confidence": "low"
+    },
+    {
+      "global_line": 27126,
+      "matched_text": "Fingal",
+      "snippet": "inherited wish. The drops upon that mantle rained never around Fingal. Goute! Loughlin's",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct reference to Fingal (Irish: Fionn mac Cumhaill), the mythological Finn; the mantle/drops evoke the Salmon of Knowledge (mythic attribute)",
+      "confidence": "high"
+    },
+    {
+      "global_line": 27271,
+      "matched_text": "Funn and Nin",
+      "snippet": "of the incarnations of the emanations of the apparentations of Funn and Nin in Cleethabala, the",
+      "variant_type": "direct-spelling",
+      "reasoning": "Garbled Finn (Funn); paired with Nin (feminine principle); suggests a bifurcated/emanative version of Finnegan's dual nature",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 27584,
+      "matched_text": "Finnegan's Wake",
+      "snippet": "their partners lovesoftfun at Finnegan's Wake.",
+      "variant_type": "fall-resurrection",
+      "reasoning": "Direct explicit reference to 'Finnegan's Wake'—the ballad's wake motif and the hero's resurrection; this is the eponymous title event of the book",
+      "confidence": "high"
+    },
+    {
+      "global_line": 27865,
+      "matched_text": "all theMacCrawls",
+      "snippet": "...If all theMacCrawls would only handle virgils like Armsworks, Limited!",
+      "variant_type": "direct-spelling",
+      "reasoning": "MacCrawl = garbled MacCool. Used as a plural family name, echoing the extended clan/warrior band of Finn and the Fianna.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 27902,
+      "matched_text": "wake",
+      "snippet": "...In the wake of the blackshape, Nattenden Sone; whenat, hindled firth and bundled furth, the week of wakes is out and over...",
+      "variant_type": "fall-resurrection",
+      "reasoning": "The 'wake' motif is central: the corpse-watching ritual that frames Finnegan's resurrection. 'Week of wakes' puns on Finnegans Wake itself.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 27904,
+      "matched_text": "Phoenican wakes",
+      "snippet": "...the Phoenican wakes.",
+      "variant_type": "fall-resurrection",
+      "reasoning": "Phoenix (Phoenix Park, associated with HCE's recumbent body) waking/rising. Evokes resurrection and cyclical renewal tied to the Finn/HCE figure.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 27911,
+      "matched_text": "Finnius the old One",
+      "snippet": "...the sameold gamebold adomic structure of our Finnius the old One, as highly charged with electrons...",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct variant of Finn/Finnegan. Finnius is the Latinate form of the hero's name, representing the ancient/primordial figure.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 27931,
+      "matched_text": "the rise of the man, of the booths",
+      "snippet": "Away! Rise up, man of the booths, you have slept so long!",
+      "variant_type": "fall-resurrection",
+      "reasoning": "The sleeping giant awakening after the fall/death. 'Booths' may echo HCE the publican. Central to Finnegan's wake narrative of fall and resurrection.",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 27957,
+      "matched_text": "Fennsense, finnsonse",
+      "snippet": "Fennsense, finnsonse, awom! Tuck upp those wide shorts.",
+      "variant_type": "pun",
+      "reasoning": "Playful garbling mixing Fenian/Fenn + sense, then finn + sonse (obsolete form of prosperity). Evokes both Finn and the Fianna (Fenians).",
+      "confidence": "high"
+    },
+    {
+      "global_line": 27974,
+      "matched_text": "Finnlatter",
+      "snippet": "...to Adam, our former first Finnlatter and our grocerest churcher...",
+      "variant_type": "avatar-epithet",
+      "reasoning": "Compound epithet: 'Finnlatter' combines Finn + later/latter, suggesting Finn as the foundational/ancient figure ('Adam, our former first'), an avatar of primal man.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 27995,
+      "matched_text": "old Fintona",
+      "snippet": "...We are all at home in old Fintona, thank Danis, for ourselfsake...",
+      "variant_type": "direct-spelling",
+      "reasoning": "Fintona is a Dublin place name containing Fin-. Also echoes both Finn and Finnegan, situating the hero in the landscape.",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 28009,
+      "matched_text": "funn make called Foon MacCrawl",
+      "snippet": "...like funn make called Foon MacCrawl brothers, mystery man of the pork martyrs?",
+      "variant_type": "direct-spelling",
+      "reasoning": "Garbled variant of MacCool/Finn MacCool. 'Foon' phonetically echoes Finn, 'MacCrawl' is deformed MacCool. The 'brothers' reference suggests the Fianna warrior band.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 28010,
+      "matched_text": "Fing! One must simply laugh. Fing him aging!",
+      "snippet": "...Music, me ouldstrow, please! We'll have a brand rehearsal. Fing! One must simply laugh. Fing him aging!",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct shortening of Finn. 'Fing him aging' contains the pun 'Finn again', invoking the cyclical resurrection/aging motif central to the wake.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 28208,
+      "matched_text": "Finvara",
+      "snippet": "Still I'll take me owld Finvara for my shawlders.",
+      "variant_type": "avatar-epithet",
+      "reasoning": "Finvara is a fairy king in Irish mythology, and Joyce conflates this with Finn; the 'owld' (old) epithet connects to the ancient hero trope",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 28291,
+      "matched_text": "Finn, again!",
+      "snippet": "End here. Us then. Finn, again! Take. Bussoftlhee, mememormee!",
+      "variant_type": "direct-spelling",
+      "reasoning": "Explicit invocation of Finn with 'again' - the cyclical return motif; final pages of Finnegans Wake where the narrative loops back; this is THE key cyclical moment",
+      "confidence": "high"
+    },
+    {
+      "global_line": 28345,
+      "matched_text": "Captain Fin sen",
+      "snippet": "When that hark from the air said it was Captain Fin sen makes cumhelments",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct invocation of 'Fin' as a character name; 'sen' could be a variant suffix or epithet",
+      "confidence": "high"
+    },
+    {
+      "global_line": 28370,
+      "matched_text": "Finglas",
+      "snippet": "saying they're the best relicts of Conal O'Daniel and writing Finglas since the Flood",
+      "variant_type": "direct-spelling",
+      "reasoning": "Finglas is a Dublin locality but also contains 'Fing-' root; Joyce often uses place names to invoke Finn; 'since the Flood' suggests mythic antiquity",
+      "confidence": "medium"
+    }
+  ]
+}

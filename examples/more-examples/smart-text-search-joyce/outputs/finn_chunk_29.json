@@ -1,0 +1,54 @@
+{
+  "chunk": "chunk_29",
+  "global_line_offset": 17400,
+  "matches": [
+    {
+      "global_line": 17419,
+      "matched_text": "the mannork of Arrahland oversense he horrhorrd his name in thuthunder",
+      "snippet": "he's the mannork of Arrahland oversense he horrhorrd his name in thuthunder. Rrrwwwkkkrrr",
+      "variant_type": "fall-resurrection",
+      "reasoning": "Thunder-word (thuthunder/Rrrwwwkkkrrr) echoing the thunderclap of Finnegan's fall; 'mannork' = man-work/giant figure",
+      "confidence": "high"
+    },
+    {
+      "global_line": 17421,
+      "matched_text": "fusefiressence",
+      "snippet": "seen it rudden up in fusefiressence on the flashmurket",
+      "variant_type": "fall-resurrection",
+      "reasoning": "Fire-essence suggests the reviving element (whiskey/fire imagery) of the Finnegan wake motif",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 17458,
+      "matched_text": "Fin.",
+      "snippet": "So mulct per wenche is Elsker woed. Ne hath his thrysting. Fin.",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct spelling of Fin; marks a narrative conclusion/ending reminiscent of the ballad's cyclic structure",
+      "confidence": "high"
+    },
+    {
+      "global_line": 17460,
+      "matched_text": "Fing.",
+      "snippet": "Jazzaphoney and Mirillovis and Nippy she nets best. Fing. Ay, ay! Sobbos.",
+      "variant_type": "direct-spelling",
+      "reasoning": "Garbled direct spelling Fing (Finn); placed at narrative inflection point",
+      "confidence": "high"
+    },
+    {
+      "global_line": 17479,
+      "matched_text": "Arrah-na-Poghue",
+      "snippet": "gallowsbirds in Arrah-na-Poghue, so silvestrious, neer the Queen's Colleges",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Reference to Irish legend of Diarmuid and Gráinne (Arrah-na-Pogue = Aran-na-Pogue); related Fenian cycle where Finn is central figure",
+      "confidence": "high"
+    },
+    {
+      "global_line": 17579,
+      "matched_text": "Goold Fins",
+      "snippet": "when Carpery of the Goold Fins was in the kingship of Poolland",
+      "variant_type": "avatar-epithet",
+      "reasoning": "Goold Fins = Finn; kingship reference suggests giant/leader figure; Poolland (Dublin/Phoenix Park terrain mapping)",
+      "confidence": "medium"
+    }
+  ]
+}

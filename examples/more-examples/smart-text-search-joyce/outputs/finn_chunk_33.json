@@ -1,0 +1,22 @@
+{
+  "chunk": "chunk_33",
+  "global_line_offset": 19800,
+  "matches": [
+    {
+      "global_line": 19836,
+      "matched_text": "S. J. Finn's",
+      "snippet": "Swear aloud by pious fiction the like of Lentil Lore by Carnival Cullen or that Percy Wynns of our S. J. Finn's or Pease in Plenty",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct reference to Finn in a list of recommended religious reading; Joyce names a fictional book as 'S. J. Finn's'",
+      "confidence": "high"
+    },
+    {
+      "global_line": 19883,
+      "matched_text": "hoyth",
+      "snippet": "let us say, the hoyth of number eleven, Kane or Keogh's, and in the course",
+      "variant_type": "giant-landscape",
+      "reasoning": "Garbled spelling of 'Howth,' the Dublin headland that represents Finn MacCool's head in FW's giant-as-landscape motif. Joyce intentionally misspells it within mundane shopkeeping instructions to invoke the sleeping giant subtext.",
+      "confidence": "high"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "chunk": "chunk_34",
+  "global_line_offset": 20400,
+  "matches": [
+    {
+      "global_line": 20436,
+      "matched_text": "floral ora so you'll mind your veronique",
+      "snippet": "a spell of floral ora so you'll mind your veronique. Of course, Jer, I know",
+      "variant_type": "pun",
+      "reasoning": "Veronique contains Finn-esque phonetic echo; 'floral ora' suggests the supernatural knowledge/wisdom motif",
+      "confidence": "low"
+    },
+    {
+      "global_line": 20430,
+      "matched_text": "don't be all the night",
+      "snippet": "don't be all the night. And this. Joke, a sprig of blue speedwell",
+      "variant_type": "pun",
+      "reasoning": "Possible echo of 'Finnegan' sleep/resurrection motif; 'be all the night' suggests nocturnal awareness",
+      "confidence": "low"
+    },
+    {
+      "global_line": 20526,
+      "matched_text": "frondoak rushes to the ask",
+      "snippet": "sickamours, the cyprissis and babilonias, where the frondoak rushes to the ask",
+      "variant_type": "pun",
+      "reasoning": "Frondoak may contain 'Finn' + 'oak' (Finn associated with trees/druids); morphed spelling",
+      "confidence": "low"
+    },
+    {
+      "global_line": 20530,
+      "matched_text": "Splesh of hiss splash springs your salmon",
+      "snippet": "Splesh of hiss splash springs your salmon. Twick twick, twinkle twings my twilight",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Salmon of Knowledge—fundamental Finn myth; 'springs your salmon' evokes wisdom/power acquisition",
+      "confidence": "high"
+    },
+    {
+      "global_line": 20552,
+      "matched_text": "Finest Park",
+      "snippet": "cycled round the Finest Park, and listen. And never mind me laughing at what's",
+      "variant_type": "giant-landscape",
+      "reasoning": "Phoenix Park (Dublin terrain, Finnegan's body as landscape); 'Finest' = phonetic disguise of 'Phoenix' or Finn reference",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 20551,
+      "matched_text": "dusess of yore",
+      "snippet": "I always had a crush on heliotrope since the dusess of yore cycled round the",
+      "variant_type": "pun",
+      "reasoning": "Obscure but possible 'duess' = 'dues' + archaic 'ess' formations; 'dusess' contains Finn-like consonant clustering",
+      "confidence": "low"
+    },
+    {
+      "global_line": 20567,
+      "matched_text": "Shane will come forth",
+      "snippet": "night's foreign males and your name of Shane will come forth between my shamefaced",
+      "variant_type": "pun",
+      "reasoning": "Shane (Irish for 'old'/'ancient') + Finn mythology; suggests Finnian temporal echoes",
+      "confidence": "low"
+    }
+  ]
+}

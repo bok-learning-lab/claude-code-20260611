@@ -1,0 +1,30 @@
+{
+  "chunk": "chunk_32",
+  "global_line_offset": 19200,
+  "matches": [
+    {
+      "global_line": 19217,
+      "matched_text": "Finfria's fairest",
+      "snippet": "all, but that one; Finfria's fairest, done in loveletters like a trayful of cloudberry tartlets",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct garbled spelling of Fionn/Fin with 'fria' suffix, preserving the core Fin- morpheme in the context of feminine beauty (girls rushing toward Jaun). Fionn was associated with nobility and excellence.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 19242,
+      "matched_text": "fond Fuinn feels",
+      "snippet": "Countenance whose disparition afflictedly fond Fuinn feels. Winner of the gamings",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct misspelling/garbling of Finn as 'Fuinn'—the Irish genitive/possessive form of Fionn (Fhinn). Appears in context of mourning/loss ('disparition afflictedly'), evoking the fall-and-loss motif central to Finnegan's wake.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 19542,
+      "matched_text": "a hog of the howth",
+      "snippet": "Never let a hog of the howth trample underfoot your linen of Killiney.",
+      "variant_type": "giant-landscape",
+      "reasoning": "Howth is the famous Dublin headland that Joyce identifies as the Finn-giant's head in FW. 'Hog' may be colloquial/derogatory reference to the sleeping giant himself, or an avatar. Howth = Howth Head = Fionn mac Cumhaill's head in the landscape topology.",
+      "confidence": "medium"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "chunk": "chunk_13",
+  "global_line_offset": 7800,
+  "matches": [
+    {
+      "global_line": 7841,
+      "matched_text": "howeth",
+      "snippet": "as  high  as  a  howeth,  the  famous  eld  duke  alien,  with  a  hump",
+      "variant_type": "giant-landscape",
+      "reasoning": "Howth (Dublin landmark = Finn's head in the giant-as-landscape motif). 'Howeth' is a garbled spelling that evokes this.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 7875,
+      "matched_text": "Humber",
+      "snippet": "Well,  old  Humber  was  as  glommen  as  grampus,  with  the  tares  at  his  thor",
+      "variant_type": "giant-landscape",
+      "reasoning": "Humber (river in England) as geographical body; part of the recumbent giant landscape motif associated with Finn/HCE. 'Old Humber' echoes 'old Finnegan.'",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 7878,
+      "matched_text": "giant's  holes  in  Grafton's  causeway",
+      "snippet": "bales  allbrant  on  the  crests  of  rockies  and  nera  lamp  in  kitchen  or church  and  giant's  holes  in  Grafton's  causeway",
+      "variant_type": "giant-landscape",
+      "reasoning": "Direct reference to 'giant's holes'—part of the physical Dublin terrain as Finn's body, his traces left in the landscape.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 7886,
+      "matched_text": "his  sett",
+      "snippet": "sittang  sambre  on  his  sett,  drammen  and  drommen,  usking  queasy",
+      "variant_type": "giant-landscape",
+      "reasoning": "Sett = seat or dwelling; part of the sleeping giant HCE/Finn as landscape feature, sitting on his 'sett' in the Dublin terrain.",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 7938,
+      "matched_text": "H.C.E.  has  a  codfisck  ee",
+      "snippet": "Don't  you  know  he  was  kaldt  a  bairn  of  the  brine,  Wasserbourne  the  waterbaby?  Havemmarea,  so  he  was!  H.C.E.  has  a  codfisck  ee.",
+      "variant_type": "avatar-epithet",
+      "reasoning": "HCE is explicitly Joyce's main avatar for Finn MacCool/Finnegan. This is the direct statement that HCE (Here Comes Everybody / the sleeping giant) has certain characteristics.",
+      "confidence": "high"
+    }
+  ]
+}

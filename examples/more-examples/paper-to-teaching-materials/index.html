@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>paper-to-teaching-materials — folder index</title>
+<style>
+  :root { --ink:#1a1a1a; --muted:#5a5a5a; --rule:#e4e4e4; --accent:#c8102e; --bg:#ffffff; }
+  * { box-sizing: border-box; }
+  html, body { margin:0; padding:0; background:var(--bg); color:var(--ink); }
+  body { font-family:-apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Arial, sans-serif; font-size:16px; line-height:1.55; -webkit-font-smoothing:antialiased; }
+  main { max-width:760px; margin:0 auto; padding:56px 32px 96px; }
+  h1 { font-size:30px; font-weight:700; letter-spacing:-0.01em; margin:0 0 8px; }
+  h1 .crumb { color:var(--muted); font-weight:500; }
+  .lede { color:var(--muted); margin:0 0 36px; font-size:17px; }
+  h2 { font-size:17px; font-weight:700; margin:32px 0 10px; padding-bottom:6px; border-bottom:1px solid var(--rule); text-transform:lowercase; }
+  p { margin:0 0 12px; }
+  ul { margin:0 0 16px; padding-left:22px; }
+  ul ul { margin:4px 0 8px; }
+  li { margin:3px 0; }
+  a { color:var(--accent); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  code { font-family:ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size:0.92em; }
+  .note { color:var(--muted); font-size:14px; margin-top:36px; padding-top:18px; border-top:1px solid var(--rule); font-style:italic; }
+  .desc { color:var(--muted); }
+</style>
+</head>
+<body>
+<main>
+
+<h1>paper-to-teaching-materials <span class="crumb">/ folder index</span></h1>
+<p class="lede">A worked example of using Claude Code to build and run teaching material for an ethics-of-AI session, grounded in Grant, Behrends &amp; Basl (2025) on decision-subject ethics. Start with <a href="summary.md">summary.md</a>; everything else is here for browsing. For a polished walkthrough suitable for sharing with colleagues, see <a href="outputs/case-study.html">outputs/case-study.html</a>.</p>
+
+<h2>Top-level</h2>
+<ul>
+  <li><a href="summary.md">summary.md</a> <span class="desc">— what this project is, the framework it applies, how we built it, what you can translate it to</span></li>
+  <li><a href="CLAUDE.md">CLAUDE.md</a> <span class="desc">— project-level instructions loaded by Claude Code on session start</span></li>
+  <li><a href="index.md">index.md</a> / <a href="index.html">index.html</a> <span class="desc">— this file</span></li>
+</ul>
+
+<h2>inputs/</h2>
+<p class="desc">The source paper, in two forms.</p>
+<ul>
+  <li><a href="inputs/grant_behrends_basl.pdf">grant_behrends_basl.pdf</a> <span class="desc">— the source paper (open access, CC BY 4.0)</span></li>
+  <li><a href="inputs/grant_behrends_basl.md">grant_behrends_basl.md</a> <span class="desc">— markdown digest for fast reading and citation lookup</span></li>
+</ul>
+
+<h2>operations/</h2>
+<p class="desc">The Deep Research prompt that produced the contextualizing essay, plus the skills that operate on the paper.</p>
+<ul>
+  <li><a href="operations/deep-research-prompt.md">deep-research-prompt.md</a> <span class="desc">— the prompt for an LLM Deep Research tool (Claude Deep Research, ChatGPT Deep Research, Perplexity Deep Research). Produces a 2,500–3,500-word contextualizing essay on decision-subject ethics, the Grant-Behrends-Basl framework, and how it lands across adjacent fields</span></li>
+  <li>operations/skills/
+    <ul>
+      <li><a href="operations/skills/teaching-case/">teaching-case/</a> <span class="desc">— generate a student-facing case + instructor notes, engineered to surface a specific move</span>
+        <ul>
+          <li><a href="operations/skills/teaching-case/SKILL.md">SKILL.md</a></li>
+          <li>examples/ — <code>case-medical-bail-5.2.md</code> (a §5.2 case) and <code>case-decoy-admissions.md</code> (the construct-validity stress test, designed to pass)</li>
+        </ul>
+      </li>
+      <li><a href="operations/skills/discussion-plan/">discussion-plan/</a> <span class="desc">— Socratic sequence around a case</span>
+        <ul>
+          <li><a href="operations/skills/discussion-plan/SKILL.md">SKILL.md</a></li>
+          <li>examples/ — <code>discussion-plan-C1.md</code> (a plan built around the C1 recidivism case)</li>
+        </ul>
+      </li>
+      <li><a href="operations/skills/objection-audit/">objection-audit/</a> <span class="desc">— steelman a student argument, then diagnose against the framework</span>
+        <ul>
+          <li><a href="operations/skills/objection-audit/SKILL.md">SKILL.md</a></li>
+          <li>examples/ — <code>audit-S1.md</code>, <code>audit-S2.md</code>, <code>audit-S3.md</code></li>
+        </ul>
+      </li>
+      <li><a href="operations/skills/quiz/">quiz/</a> <span class="desc">— short-answer comprehension check on the core argument</span>
+        <ul>
+          <li><a href="operations/skills/quiz/SKILL.md">SKILL.md</a></li>
+          <li>examples/ — <code>end-of-class-quiz.md</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2>outputs/</h2>
+<p class="desc">Produced artifacts — the published landing page, the synthetic case &amp; student-argument corpus, and the demo runs of the skills against that corpus.</p>
+<ul>
+  <li><a href="outputs/case-study.html">case-study.html</a> <span class="desc">— the published landing page; one-page document with anchor navigation, suitable for sharing with a colleague who is not going to clone the folder</span></li>
+  <li><a href="outputs/README.md">README.md</a> <span class="desc">— design rationale for the synthetic corpus</span></li>
+  <li><a href="outputs/walkthrough.md">walkthrough.md</a> <span class="desc">— conversational steps that produced this project</span></li>
+  <li>outputs/cases/ — four cases: <a href="outputs/cases/C1-recidivism.md">C1 recidivism</a>, <a href="outputs/cases/C2-resume-screener.md">C2 resume screener</a>, <a href="outputs/cases/C3-interpretable-alt.md">C3 interpretable alt</a> (the construct-validity stress test), <a href="outputs/cases/C4-juror-model.md">C4 juror model</a></li>
+  <li>outputs/student-arguments/ — three engineered-wrong arguments: <a href="outputs/student-arguments/S1-accuracy-is-all.md">S1</a>, <a href="outputs/student-arguments/S2-humans-too.md">S2</a>, <a href="outputs/student-arguments/S3-human-in-the-loop.md">S3</a></li>
+  <li>outputs/discussion-plans/ — <a href="outputs/discussion-plans/discussion-plan-C1.md">discussion-plan-C1.md</a></li>
+  <li>outputs/objection-audits/ — <a href="outputs/objection-audits/audit-S1.md">audit-S1.md</a>, <a href="outputs/objection-audits/audit-S2.md">audit-S2.md</a>, <a href="outputs/objection-audits/audit-S3.md">audit-S3.md</a></li>
+  <li><a href="outputs/end-of-class-quiz.md">end-of-class-quiz.md</a></li>
+</ul>
+
+<p class="note">To run the demo: open this folder in Claude Code, then <code>/teaching-case</code> for a §5.2 case → <code>/discussion-plan</code> around that case → <code>/objection-audit</code> on a student argument that picks up the missed distinction → <code>/quiz</code> for the comprehension check. The throughline to show the room: at every step Claude is augmenting the teacher's reasoning, never deciding — which is the paper's own thesis, demonstrated rather than asserted.</p>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,70 @@
+{
+  "chunk": "chunk_38",
+  "global_line_offset": 22800,
+  "matches": [
+    {
+      "global_line": 22883,
+      "matched_text": "Fingal",
+      "snippet": "In Fingal too they met at Littlepeace aneath the bidetree",
+      "variant_type": "direct-spelling",
+      "reasoning": "Fingal is a direct variant of Finn MacCool's name; also a county north of Dublin with legendary associations",
+      "confidence": "high"
+    },
+    {
+      "global_line": 22878,
+      "matched_text": "Fanagan",
+      "snippet": "The place where Ealdermann Fanagan. The time when Junkermenn Funagin.",
+      "variant_type": "direct-spelling",
+      "reasoning": "Garbled spelling of Finnegan/Finnagan; appears paired with Funagin (variant of same)",
+      "confidence": "high"
+    },
+    {
+      "global_line": 22879,
+      "matched_text": "Funagin",
+      "snippet": "The time when Junkermenn Funagin.",
+      "variant_type": "direct-spelling",
+      "reasoning": "Variant spelling of Finnegan, phonetically echoes the name with F-n pattern",
+      "confidence": "high"
+    },
+    {
+      "global_line": 22834,
+      "matched_text": "giant",
+      "snippet": "Just how grand in cardinal rounders is this preeminent giant, sir Arber.",
+      "variant_type": "giant-landscape",
+      "reasoning": "HCE explicitly called 'preeminent giant'; context of landscape/terrain description invokes the giant-as-Dublin motif central to Finn mythology",
+      "confidence": "high"
+    },
+    {
+      "global_line": 22862,
+      "matched_text": "fenians",
+      "snippet": "Tyburn fenians snoring in his quickenbole",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Direct reference to the Fianna/Fenians, Finn's warrior band in Irish mythology",
+      "confidence": "high"
+    },
+    {
+      "global_line": 22929,
+      "matched_text": "Finoglam",
+      "snippet": "I suggest Finoglam as his habitat",
+      "variant_type": "direct-spelling",
+      "reasoning": "Garbled compound containing 'Fin-' root; variant spelling evoking Finnegan/Fingal",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 22778,
+      "matched_text": "Fyn's",
+      "snippet": "for the ehren of Fyn's Insul",
+      "variant_type": "direct-spelling",
+      "reasoning": "Abbreviated spelling 'Fyn' echoes Fin/Fionn; 'Insul' may hint at island/isle associations",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 22261,
+      "matched_text": "Finlay's",
+      "snippet": "Oh Finlay's coldpalled!",
+      "variant_type": "direct-spelling",
+      "reasoning": "Finlay is a variant name derived from Finn/Finlay, surname form of the hero",
+      "confidence": "high"
+    }
+  ]
+}

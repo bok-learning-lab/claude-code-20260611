@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Finding Finn: reading Finnegans Wake for a hero who is never spelled the same way twice — Bok Center</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <style>
+/* Standalone "Deep thoughts" essay styling.
+   Mirrors components/essay-layout.module.css from
+   /Users/mk/Development/ai-enhancement-stories (screen + mobile + print)
+   with the TOC sidebar and footer-links stripped, plus a floating
+   Print/Copy-MD control pair in the header. Light-mode only. */
+
+:root {
+  --bg: rgb(240, 238, 230);
+  --fg: rgb(31, 30, 29);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Newsreader", "Times New Roman", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px 32px;
+  position: relative;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.15);
+}
+
+.author-name {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.header-controls {
+  position: absolute;
+  right: 32px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.ctrl-btn {
+  background: none;
+  border: 1px solid var(--fg);
+  color: var(--fg);
+  font-family: "Newsreader", "Times New Roman", serif;
+  font-size: 13px;
+  padding: 4px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.2s ease;
+}
+
+.ctrl-btn:hover {
+  opacity: 1;
+}
+
+/* Layout */
+.essay-layout {
+  display: flex;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 32px;
+  gap: 64px;
+}
+
+/* Main content */
+.essay-content {
+  flex: 1;
+  max-width: 680px;
+}
+
+.essay-content h1 {
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 0 0 12px 0;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-style: italic;
+  margin: 0 0 12px 0;
+  opacity: 0.8;
+}
+
+.date {
+  font-size: 16px;
+  margin: 0 0 32px 0;
+  opacity: 0.6;
+}
+
+.essay-content h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 48px 0 16px 0;
+  line-height: 1.3;
+}
+
+.essay-content h3 {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 36px 0 12px 0;
+  line-height: 1.3;
+}
+
+.essay-content h4 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 32px 0 12px 0;
+  line-height: 1.3;
+  font-style: italic;
+}
+
+.essay-content p {
+  margin: 0 0 20px 0;
+}
+
+.essay-content em {
+  font-style: italic;
+}
+
+.essay-content strong {
+  font-weight: 600;
+}
+
+.essay-content ul,
+.essay-content ol {
+  margin: 0 0 20px 0;
+  padding-left: 24px;
+}
+
+.essay-content li {
+  margin-bottom: 8px;
+}
+
+.essay-content blockquote {
+  border-left: 3px solid var(--fg);
+  margin: 24px 0;
+  padding: 0 0 0 20px;
+  opacity: 0.85;
+}
+
+.essay-content a {
+  color: var(--fg);
+  text-decoration: underline;
+}
+
+.essay-content hr {
+  border: none;
+  border-top: 1px solid rgba(128, 128, 128, 0.3);
+  margin: 40px 0;
+}
+
+.essay-content pre {
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  padding: 16px 20px;
+  overflow-x: auto;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+}
+
+.essay-content code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9em;
+}
+
+.essay-content :not(pre) > code {
+  background: rgba(0, 0, 0, 0.06);
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+
+.essay-content table {
+  border-collapse: collapse;
+  margin: 0 0 20px 0;
+  width: 100%;
+  font-size: 17px;
+}
+
+.essay-content th,
+.essay-content td {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+  padding: 8px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.essay-content th {
+  font-weight: 600;
+}
+
+.footnotes {
+  font-size: 16px;
+  opacity: 0.85;
+  margin-top: 32px;
+}
+
+.footnotes li {
+  margin-bottom: 6px;
+}
+
+/* Mobile */
+@media (max-width: 860px) {
+  .essay-layout {
+    padding: 32px 20px;
+    gap: 0;
+  }
+
+  .essay-content {
+    max-width: 100%;
+  }
+
+  .essay-content h1 {
+    font-size: 36px;
+  }
+
+  .site-header {
+    padding: 16px 20px;
+  }
+
+  .header-controls {
+    right: 20px;
+    gap: 10px;
+  }
+}
+
+/* Print */
+@media print {
+  @page {
+    margin: 0.75in;
+  }
+
+  body {
+    background: none;
+    color: #000;
+    font-size: 11pt;
+    line-height: 1.45;
+    min-height: 0;
+  }
+
+  .site-header,
+  .header-controls {
+    display: none !important;
+  }
+
+  .essay-layout {
+    display: block;
+    max-width: none;
+    padding: 0;
+    gap: 0;
+  }
+
+  .essay-content {
+    max-width: 6.5in;
+    margin: 0 auto;
+  }
+
+  .essay-content h1 {
+    font-size: 22pt;
+    line-height: 1.15;
+    margin: 0 0 6pt 0;
+  }
+
+  .subtitle {
+    font-size: 12pt;
+    margin: 0 0 6pt 0;
+    opacity: 1;
+  }
+
+  .date {
+    font-size: 10pt;
+    margin: 0 0 18pt 0;
+    opacity: 1;
+  }
+
+  .essay-content h2 {
+    font-size: 16pt;
+    margin: 20pt 0 6pt 0;
+    line-height: 1.25;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .essay-content h3 {
+    font-size: 13pt;
+    margin: 16pt 0 4pt 0;
+    line-height: 1.25;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .essay-content h4 {
+    font-size: 12pt;
+    margin: 14pt 0 4pt 0;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .essay-content p {
+    margin: 0 0 8pt 0;
+    orphans: 3;
+    widows: 3;
+  }
+
+  .essay-content ul,
+  .essay-content ol {
+    margin: 0 0 8pt 0;
+  }
+
+  .essay-content li {
+    margin-bottom: 3pt;
+  }
+
+  .essay-content blockquote {
+    margin: 10pt 0;
+    padding-left: 14pt;
+    border-left-color: #000;
+    opacity: 1;
+  }
+
+  .essay-content hr {
+    margin: 18pt 0;
+  }
+
+  .essay-content a {
+    color: #000;
+  }
+}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <span class="author-name">Bok Center</span>
+    <div class="header-controls">
+      <button type="button" class="ctrl-btn" id="print-btn">Print</button>
+      <button type="button" class="ctrl-btn" id="copy-btn">Copy MD</button>
+    </div>
+  </header>
+
+  <main class="essay-layout">
+    <article class="essay-content">
+      <h1>Finding Finn: reading <em>Finnegans Wake</em> for a hero who is never spelled the same way twice</h1>
+      <p class="subtitle">A worked Claude Code example, built to support Prof. Natasha Sumner's research on the Fenian tradition</p>
+
+      <hr>
+
+      <h2>The research question behind the demo</h2>
+
+      <p>Prof. Natasha Sumner's <em>Heroes of the Gael: A History of Fionn and the Fianna</em> (Harvard, Feb. 2026) traces stories of <strong>Fionn mac Cumhaill</strong> — Finn McCool — and his roving warrior band the Fianna across 1,400 years of Gaelic oral and written tradition. One late, strange, and very dense node in that tradition is James Joyce's <em>Finnegans Wake</em> (1939), a book whose very title puns on <strong>Finn-again</strong> — the hero who falls and rises.</p>
+
+      <p>So here is a concrete research task in Sumner's territory: <strong>Where does Fionn actually appear in <em>Finnegans Wake</em>?</strong></p>
+
+      <p>That turns out to be a surprisingly hard question, and the reason it's hard is exactly what makes it a good teaching example.</p>
+
+      <h2>Why you can't just search for "Finn"</h2>
+
+      <p>If you load the 28,000-line text into a word processor and search for <code>Finn</code>, you will find a few dozen hits and miss most of the book. Joyce almost never names his hero plainly. Fionn arrives instead as:</p>
+
+      <ul>
+        <li><strong>Misspellings and foreign-language puns</strong> — <code>Fjorgn Camhelsson</code> (Fjorgn &asymp; Fionn, Camhelsson &asymp; mac Cumhaill), <code>Tulko MacHooley</code>, <code>Finnfannfawners</code>.</li>
+        <li><strong>Avatars and epithets</strong> — the hod-carrier Tim Finnegan of the ballad, the giant <code>Bygmester</code>, <code>the flawhoolagh, the grasping one, the kindler of paschal fire</code>.</li>
+        <li><strong>The body-as-landscape</strong> — Finn lies asleep under Dublin: his head is the Hill of Howth (<code>the Head where he sat in state as the Rump</code>), his body the terrain measured <code>in carucates</code>, the Liffey running past him.</li>
+        <li><strong>Mythic attributes with no letters in common with his name</strong> — the Salmon of Knowledge, the thumb of wisdom (<code>his first lapapple</code>), the phoenix fall-and-rise (<code>the phoenix be his pyre, the cineres his sire</code>).</li>
+      </ul>
+
+      <p>A keyword search — a <em>concordance</em> — can only find strings you already know to type. It is blind to the pun, the misspelling, the metaphor, and the structural allusion. But those are <strong>where Fionn actually lives in this book.</strong> Finding them is an act of <em>reading and interpretation</em>, not string-matching.</p>
+
+      <p>That is the pedagogical pivot of this example: <strong>the task requires literary judgment, and that is precisely what a language model can bring to it that <code>grep</code> cannot.</strong></p>
+
+      <h2>The method: many close readers, each judging, then pooled</h2>
+
+      <p>Rather than one search pass, we ran the text past <strong>dozens of independent close readers</strong> — Claude subagents — and had each one <em>read every word</em> of a small slice and decide, using its knowledge of Joyce and of the Fenian tradition, whether a passage gestures at Fionn. The design went through three deliberate refinements, and the refinements are part of the lesson:</p>
+
+      <ol>
+        <li><strong>First instinct — split and grep.</strong> Eight large chunks, each agent using keyword search as a first net. <em>Problem:</em> this only resurfaces strings containing the seed letters. It misses the puns. Search alone defeats the purpose.</li>
+        <li><strong>Read, don't just match.</strong> Re-emphasize that each agent should <em>judge</em> candidates with its Joyce knowledge, using search only as a starting hint.</li>
+        <li><strong>Drop search entirely; shrink the chunks.</strong> Re-split into ~600-line pieces — <strong>48 chunks</strong> — small enough that a single agent can genuinely read the whole slice closely, word by word, the way a scholar would. No keyword filter stands between the reader and the text.</li>
+      </ol>
+
+      <p>Each agent writes its findings to <strong>its own JSON file</strong> (<code>outputs/finn_chunk_NN.json</code>). Because the files are independent, the agents run in parallel and nothing collides. We then <strong>aggregate</strong> the 48 files into one master list.</p>
+
+      <pre><code>inputs/finnegans_wake.md          the OCR'd full text (~28,500 lines)
+operations/chunks/chunk_NN        48 ~600-line slices, each with a known line offset
+outputs/finn_chunk_NN.json        one reader's annotated findings per slice</code></pre>
+
+      <h3>What each finding records</h3>
+
+      <p>Every hit is a small structured judgment, not just a location — and that structure is what makes the output <em>researchable</em>:</p>
+
+      <pre><code>{
+  "global_line": 4991,
+  "matched_text": "the phoenix be his pyre, the cineres his sire",
+  "snippet": "...",
+  "variant_type": "fall-resurrection",
+  "reasoning": "Phoenix mythology directly parallels Finnegan's fall and
+                resurrection; 'pyre' evokes the whiskey/fire that revives
+                the corpse in the ballad",
+  "confidence": "high"
+}</code></pre>
+
+      <p>Three fields do the scholarly work:</p>
+
+      <ul>
+        <li><strong><code>variant_type</code></strong> — <em>how</em> Fionn appears: <code>direct-spelling</code>, <code>avatar-epithet</code>, <code>giant-landscape</code>, <code>mythic-attribute</code>, <code>fall-resurrection</code>. This is a coding scheme a literary scholar can argue with, refine, and build on.</li>
+        <li><strong><code>reasoning</code></strong> — the agent's <em>case</em> for the reading, in plain language. A researcher can read it and agree, disagree, or follow it up. The interpretation is on the table, not hidden.</li>
+        <li><strong><code>confidence</code></strong> — <code>high</code> / <code>medium</code> / <code>low</code>, so you can separate the obvious from the speculative and decide where to spend your own attention.</li>
+      </ul>
+
+      <h2>What it found — 277 references</h2>
+
+      <p>Across the 48 chunks the readers surfaced <strong>277 references</strong>, sorted into the coding scheme:</p>
+
+      <table>
+        <thead>
+          <tr><th>variant_type</th><th>count</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>direct-spelling</code></td><td>116</td></tr>
+          <tr><td><code>pun</code></td><td>40</td></tr>
+          <tr><td><code>giant-landscape</code></td><td>38</td></tr>
+          <tr><td><code>mythic-attribute</code> (salmon, Fianna, Diarmuid&hellip;)</td><td>34</td></tr>
+          <tr><td><code>avatar-epithet</code></td><td>25</td></tr>
+          <tr><td><code>fall-resurrection</code></td><td>24</td></tr>
+        </tbody>
+      </table>
+
+      <p>By confidence: <strong>157 high &middot; 82 medium &middot; 38 low.</strong></p>
+
+      <p>A few representative hits the close reading caught — the kind a keyword search for "Finn" would never assemble together:</p>
+
+      <ul>
+        <li><em>"Mister Finn, you're going to be Mister Finnagain!"</em> (L169) — the resurrection pun stated outright</li>
+        <li><em>"Macool, Macool, orra whyi deed ye diie?"</em> (L214) — the wake-lament over the fallen hero</li>
+        <li><strong>Foon MacCrawl</strong> / <strong>Fing him aging</strong> — garbled MacCool plus a buried "Finn again" in the closing pages</li>
+        <li><strong>salmonkelt</strong> — the spent Salmon of Knowledge transferred onto Shem</li>
+        <li>the final cyclical <em>"Finn, again!"</em> (L28491), just before the book loops back to <code>riverrun</code></li>
+      </ul>
+
+      <p>The aggregated file leads with the counts, then lists every match in order. One record looks like this:</p>
+
+      <pre><code>{
+  "global_line": 169,
+  "matched_text": "Mister  Finn,  you're  going  to  be  Mister  Finnagain!",
+  "snippet": "Hohohoho, Mister Finn, you're going to be Mister Finnagain! Comeday morm and, O, you're vine!",
+  "variant_type": "direct-spelling",
+  "reasoning": "'Mister Finn' direct form; 'Finnagain' = Finn again, the resurrection pun that encodes the cyclical return of the hero.",
+  "confidence": "high"
+}</code></pre>
+
+      <p><strong>A caveat worth stating plainly:</strong> the per-chunk readers here were a smaller, faster model (Haiku) reading independently, so coverage of the most oblique puns is uneven. The high- and medium-confidence direct and avatar references are solid; the <code>low</code> puns are suggestive, not authoritative. A natural follow-up is a second pass with stronger models over the densest sections — the opening, the wake scene, and the closing loop — which is exactly the kind of targeted deepening the structured output makes easy.</p>
+
+      <h2>Why this is better than a word search — the takeaway for faculty</h2>
+
+      <table>
+        <thead>
+          <tr><th>Plain keyword search</th><th>This approach</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Finds only strings you can spell in advance</td><td>Finds puns, misspellings, foreign cognates, metaphors</td></tr>
+          <tr><td>One hit = one location, no interpretation</td><td>Each hit carries a <em>reading</em>, a <em>category</em>, and a <em>confidence</em></td></tr>
+          <tr><td>Blind to "Howth = Finn's head"</td><td>Catches structural/landscape allusions a reader would</td></tr>
+          <tr><td>Misses what it doesn't know to look for</td><td>Brings literary and mythological knowledge to bear</td></tr>
+          <tr><td>Fast but shallow</td><td>Parallelized across many readers, yet genuinely close</td></tr>
+        </tbody>
+      </table>
+
+      <p>The output is not a final answer. It is a <strong>first-pass scholarly apparatus</strong> — a categorized, reasoned, confidence-rated inventory that a researcher like Prof. Sumner can verify, prune, and extend. Claude does the exhausting part (reading all 28,500 lines closely and proposing readings); the scholar does the part that matters (judging which readings hold).</p>
+
+      <p>That division of labor — <strong>machine does the tireless close reading at scale, human does the authoritative judgment</strong> — is the model this example is meant to teach.</p>
+
+      <h2>How you'd run it yourself</h2>
+
+      <p>The whole thing is a sequence of plain-English instructions to Claude Code:</p>
+
+      <ol>
+        <li><em>"The text is in <code>inputs/</code>. Split it into ~600-line chunks under <code>operations/chunks/</code>, and record each chunk's starting line number so we can map findings back to the original."</em></li>
+        <li><em>"Spawn one subagent per chunk. Each one reads every word — no keyword search — and judges whether each passage references Fionn / Finn MacCool / Finnegan, including puns, misspellings, avatars, and landscape allusions. Write findings to <code>outputs/finn_chunk_NN.json</code> with <code>variant_type</code>, <code>reasoning</code>, and <code>confidence</code>."</em></li>
+        <li><em>"When all chunks are done, aggregate the JSON files into one master list, sorted by line number."</em></li>
+      </ol>
+
+      <p>No coding required from the faculty member — just a clear research question and a clear sense of what counts as a "find."</p>
+
+      <hr>
+
+      <p><em>Inputs: the public-domain text of </em>Finnegans Wake<em>. This example was built to accompany Prof. Natasha Sumner's </em>Heroes of the Gael: A History of Fionn and the Fianna<em> (Harvard University Press, 2026).</em></p>
+    </article>
+  </main>
+
+  <script type="text/x-markdown-source" id="source-md"># Finding Finn: reading *Finnegans Wake* for a hero who is never spelled the same way twice
+
+*A worked Claude Code example, built to support Prof. Natasha Sumner's research on the Fenian tradition*
+
+---
+
+## The research question behind the demo
+
+Prof. Natasha Sumner's *Heroes of the Gael: A History of Fionn and the Fianna* (Harvard, Feb. 2026) traces stories of **Fionn mac Cumhaill** — Finn McCool — and his roving warrior band the Fianna across 1,400 years of Gaelic oral and written tradition. One late, strange, and very dense node in that tradition is James Joyce's *Finnegans Wake* (1939), a book whose very title puns on **Finn-again** — the hero who falls and rises.
+
+So here is a concrete research task in Sumner's territory: **Where does Fionn actually appear in *Finnegans Wake*?**
+
+That turns out to be a surprisingly hard question, and the reason it's hard is exactly what makes it a good teaching example.
+
+---
+
+## Why you can't just search for "Finn"
+
+If you load the 28,000-line text into a word processor and search for `Finn`, you will find a few dozen hits and miss most of the book. Joyce almost never names his hero plainly. Fionn arrives instead as:
+
+- **Misspellings and foreign-language puns** — `Fjorgn Camhelsson` (Fjorgn ≈ Fionn, Camhelsson ≈ mac Cumhaill), `Tulko MacHooley`, `Finnfannfawners`.
+- **Avatars and epithets** — the hod-carrier Tim Finnegan of the ballad, the giant `Bygmester`, `the flawhoolagh, the grasping one, the kindler of paschal fire`.
+- **The body-as-landscape** — Finn lies asleep under Dublin: his head is the Hill of Howth (`the Head where he sat in state as the Rump`), his body the terrain measured `in carucates`, the Liffey running past him.
+- **Mythic attributes with no letters in common with his name** — the Salmon of Knowledge, the thumb of wisdom (`his first lapapple`), the phoenix fall-and-rise (`the phoenix be his pyre, the cineres his sire`).
+
+A keyword search — a *concordance* — can only find strings you already know to type. It is blind to the pun, the misspelling, the metaphor, and the structural allusion. But those are **where Fionn actually lives in this book.** Finding them is an act of *reading and interpretation*, not string-matching.
+
+That is the pedagogical pivot of this example: **the task requires literary judgment, and that is precisely what a language model can bring to it that `grep` cannot.**
+
+---
+
+## The method: many close readers, each judging, then pooled
+
+Rather than one search pass, we ran the text past **dozens of independent close readers** — Claude subagents — and had each one *read every word* of a small slice and decide, using its knowledge of Joyce and of the Fenian tradition, whether a passage gestures at Fionn. The design went through three deliberate refinements, and the refinements are part of the lesson:
+
+1. **First instinct — split and grep.** Eight large chunks, each agent using keyword search as a first net. *Problem:* this only resurfaces strings containing the seed letters. It misses the puns. Search alone defeats the purpose.
+
+2. **Read, don't just match.** Re-emphasize that each agent should *judge* candidates with its Joyce knowledge, using search only as a starting hint.
+
+3. **Drop search entirely; shrink the chunks.** Re-split into ~600-line pieces — **48 chunks** — small enough that a single agent can genuinely read the whole slice closely, word by word, the way a scholar would. No keyword filter stands between the reader and the text.
+
+Each agent writes its findings to **its own JSON file** (`outputs/finn_chunk_NN.json`). Because the files are independent, the agents run in parallel and nothing collides. We then **aggregate** the 48 files into one master list.
+
+```
+inputs/finnegans_wake.md          the OCR'd full text (~28,500 lines)
+operations/chunks/chunk_NN        48 ~600-line slices, each with a known line offset
+outputs/finn_chunk_NN.json        one reader's annotated findings per slice
+```
+
+### What each finding records
+
+Every hit is a small structured judgment, not just a location — and that structure is what makes the output *researchable*:
+
+```json
+{
+  "global_line": 4991,
+  "matched_text": "the phoenix be his pyre, the cineres his sire",
+  "snippet": "...",
+  "variant_type": "fall-resurrection",
+  "reasoning": "Phoenix mythology directly parallels Finnegan's fall and
+                resurrection; 'pyre' evokes the whiskey/fire that revives
+                the corpse in the ballad",
+  "confidence": "high"
+}
+```
+
+Three fields do the scholarly work:
+
+- **`variant_type`** — *how* Fionn appears: `direct-spelling`, `avatar-epithet`, `giant-landscape`, `mythic-attribute`, `fall-resurrection`. This is a coding scheme a literary scholar can argue with, refine, and build on.
+- **`reasoning`** — the agent's *case* for the reading, in plain language. A researcher can read it and agree, disagree, or follow it up. The interpretation is on the table, not hidden.
+- **`confidence`** — `high` / `medium` / `low`, so you can separate the obvious from the speculative and decide where to spend your own attention.
+
+---
+
+## What it found — 277 references
+
+Across the 48 chunks the readers surfaced **277 references**, sorted into the coding scheme:
+
+| variant_type | count |
+| --- | --- |
+| `direct-spelling` | 116 |
+| `pun` | 40 |
+| `giant-landscape` | 38 |
+| `mythic-attribute` (salmon, Fianna, Diarmuid…) | 34 |
+| `avatar-epithet` | 25 |
+| `fall-resurrection` | 24 |
+
+By confidence: **157 high · 82 medium · 38 low.**
+
+A few representative hits the close reading caught — the kind a keyword search for "Finn" would never assemble together:
+
+- *"Mister Finn, you're going to be Mister Finnagain!"* (L169) — the resurrection pun stated outright
+- *"Macool, Macool, orra whyi deed ye diie?"* (L214) — the wake-lament over the fallen hero
+- **Foon MacCrawl** / **Fing him aging** — garbled MacCool plus a buried "Finn again" in the closing pages
+- **salmonkelt** — the spent Salmon of Knowledge transferred onto Shem
+- the final cyclical *"Finn, again!"* (L28491), just before the book loops back to `riverrun`
+
+The aggregated file leads with the counts, then lists every match in order. One record looks like this:
+
+```json
+{
+  "global_line": 169,
+  "matched_text": "Mister  Finn,  you're  going  to  be  Mister  Finnagain!",
+  "snippet": "Hohohoho, Mister Finn, you're going to be Mister Finnagain! Comeday morm and, O, you're vine!",
+  "variant_type": "direct-spelling",
+  "reasoning": "'Mister Finn' direct form; 'Finnagain' = Finn again, the resurrection pun that encodes the cyclical return of the hero.",
+  "confidence": "high"
+}
+```
+
+**A caveat worth stating plainly:** the per-chunk readers here were a smaller, faster model (Haiku) reading independently, so coverage of the most oblique puns is uneven. The high- and medium-confidence direct and avatar references are solid; the `low` puns are suggestive, not authoritative. A natural follow-up is a second pass with stronger models over the densest sections — the opening, the wake scene, and the closing loop — which is exactly the kind of targeted deepening the structured output makes easy.
+
+---
+
+## Why this is better than a word search — the takeaway for faculty
+
+| Plain keyword search | This approach |
+| --- | --- |
+| Finds only strings you can spell in advance | Finds puns, misspellings, foreign cognates, metaphors |
+| One hit = one location, no interpretation | Each hit carries a *reading*, a *category*, and a *confidence* |
+| Blind to "Howth = Finn's head" | Catches structural/landscape allusions a reader would |
+| Misses what it doesn't know to look for | Brings literary and mythological knowledge to bear |
+| Fast but shallow | Parallelized across many readers, yet genuinely close |
+
+The output is not a final answer. It is a **first-pass scholarly apparatus** — a categorized, reasoned, confidence-rated inventory that a researcher like Prof. Sumner can verify, prune, and extend. Claude does the exhausting part (reading all 28,500 lines closely and proposing readings); the scholar does the part that matters (judging which readings hold).
+
+That division of labor — **machine does the tireless close reading at scale, human does the authoritative judgment** — is the model this example is meant to teach.
+
+---
+
+## How you'd run it yourself
+
+The whole thing is a sequence of plain-English instructions to Claude Code:
+
+1. *"The text is in `inputs/`. Split it into ~600-line chunks under `operations/chunks/`, and record each chunk's starting line number so we can map findings back to the original."*
+2. *"Spawn one subagent per chunk. Each one reads every word — no keyword search — and judges whether each passage references Fionn / Finn MacCool / Finnegan, including puns, misspellings, avatars, and landscape allusions. Write findings to `outputs/finn_chunk_NN.json` with `variant_type`, `reasoning`, and `confidence`."*
+3. *"When all chunks are done, aggregate the JSON files into one master list, sorted by line number."*
+
+No coding required from the faculty member — just a clear research question and a clear sense of what counts as a "find."
+
+---
+
+*Inputs: the public-domain text of *Finnegans Wake*. This example was built to accompany Prof. Natasha Sumner's *Heroes of the Gael: A History of Fionn and the Fianna* (Harvard University Press, 2026).*</script>
+
+  <script>
+    (function () {
+      var copyBtn = document.getElementById('copy-btn');
+      var printBtn = document.getElementById('print-btn');
+      var src = document.getElementById('source-md');
+
+      printBtn.addEventListener('click', function () {
+        window.print();
+      });
+
+      copyBtn.addEventListener('click', function () {
+        var text = src.textContent;
+        var done = function () {
+          var prev = copyBtn.textContent;
+          copyBtn.textContent = 'Copied';
+          setTimeout(function () { copyBtn.textContent = prev === 'Copied' ? 'Copy MD' : prev; }, 2000);
+        };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(done, function () {
+            fallbackCopy(text); done();
+          });
+        } else {
+          fallbackCopy(text); done();
+        }
+      });
+
+      function fallbackCopy(text) {
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.setAttribute('readonly', '');
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); } catch (e) {}
+        document.body.removeChild(ta);
+      }
+    })();
+  </script>
+</body>
+</html>

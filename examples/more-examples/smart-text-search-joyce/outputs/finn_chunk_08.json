@@ -1,0 +1,134 @@
+{
+  "chunk": "chunk_08",
+  "global_line_offset": 4800,
+  "matches": [
+    {
+      "global_line": 4850,
+      "matched_text": "Finnegan",
+      "snippet": "the letter making of the explots of Fjorgn Camhelsson when he was in the Kvinnes country",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct reference to the hero in 'Finnegan' within the Fjorgn variant name (Fjorgn sounds like 'Fionn'; Camhelsson evokes 'mac Cumhaill')",
+      "confidence": "high"
+    },
+    {
+      "global_line": 4903,
+      "matched_text": "MacHooley",
+      "snippet": "leaving by him to oceanic society in his old man without a thing, Tulko MacHooley",
+      "variant_type": "direct-spelling",
+      "reasoning": "MacHooley as variant of MacCool/Mac Cumhaill, similar patronymic structure. Associated with 'old man' figure recalling the sleeping giant",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 4937,
+      "matched_text": "secondtonone myther rector",
+      "snippet": "What secondtonone myther rector and maximost bridgesmaker was the first to rise taller",
+      "variant_type": "giant-landscape",
+      "reasoning": "Figure who 'rose taller' than giant trees (bluegum, Wellingtonia), establishing the physical enormity/landscape motif of the sleeping giant",
+      "confidence": "high"
+    },
+    {
+      "global_line": 4939,
+      "matched_text": "beanstale",
+      "snippet": "first to rise taller through his beanstale than the bluegum buaboababbaun",
+      "variant_type": "giant-landscape",
+      "reasoning": "Evokes Jack's beanstalk and also 'bean' (grain), suggesting the fertility/growth myth associated with Finn; Finn as oversized agricultural figure",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 4944,
+      "matched_text": "esker of his booth",
+      "snippet": "was well known to claud a conciliation cap onto the esker of his booth",
+      "variant_type": "giant-landscape",
+      "reasoning": "Esker is a geological ridge formation in Irish landscape; placing it on his booth/head suggests the body-as-landscape motif of Finn recumbent over Dublin",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 4947,
+      "matched_text": "thought he weighed a new ton when there felled his first lapapple",
+      "snippet": "thought he weighed a new ton when there felled his first lapapple",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Apple-eating recalls the Salmon of Knowledge mythology (Finn gained wisdom from a magical salmon); lapapple suggests both apple and the thumb of wisdom",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 4953,
+      "matched_text": "pumped the catholick wartrey and shocked the prodestung boyne",
+      "snippet": "pumped the catholick wartrey and shocked the prodestung boyne",
+      "variant_type": "mythic-attribute",
+      "reasoning": "The Boyne (Battle of the Boyne) is historically Irish; 'shocked the boyne' may evoke the watery threshold in Finn mythology; 'wartrey' suggests warfare and water/trey",
+      "confidence": "low"
+    },
+    {
+      "global_line": 4962,
+      "matched_text": "walked as far as the Head where he sat in state as the Rump",
+      "snippet": "walked as far as the Head where he sat in state as the Rump",
+      "variant_type": "giant-landscape",
+      "reasoning": "Howth=Head (Finn's head in Wake geography); the body extended from head to rump over Dublin terrain strongly echoes Finn's recumbent form",
+      "confidence": "high"
+    },
+    {
+      "global_line": 4963,
+      "matched_text": "shows Early English tracemarks and a marigold window",
+      "snippet": "shows Early English tracemarks and a marigold window with manigilt lights",
+      "variant_type": "avatar-epithet",
+      "reasoning": "Architectural details (marigold window, ambries, arches) describe the body-as-monument/building, conflating the giant HCE-Finn figure with ecclesiastical structure",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 4965,
+      "matched_text": "horologe unstoppable and the Benn of all bells",
+      "snippet": "is a horologe unstoppable and the Benn of all bells",
+      "variant_type": "avatar-epithet",
+      "reasoning": "'Benn' evokes 'ben' (Irish for woman/peak) but also suggests the eternal measuring of time; Finn as cosmic timekeeper and source of all resonance",
+      "confidence": "low"
+    },
+    {
+      "global_line": 4972,
+      "matched_text": "hidal, in carucates he is enumerated, hold as an earl, he counts",
+      "snippet": "hidal, in carucates he is enumerated, hold as an earl, he counts",
+      "variant_type": "giant-landscape",
+      "reasoning": "Carucates are land measures; the figure is measured in terms of territory, reinforcing Finn-as-landscape whose body is quantified in land divisions",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 4983,
+      "matched_text": "gave his mundyfoot to Miserius, her pinch to Anna Livia",
+      "snippet": "gave his mundyfoot to Miserius, her pinch to Anna Livia",
+      "variant_type": "mythic-attribute",
+      "reasoning": "'mundyfoot' puns on 'foot' (Finn's foot at Phoenix Park) and 'Mundy'; Anna Livia is Liffey (the river flowing past Finn's recumbent body)",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 4987,
+      "matched_text": "cleared out three hundred sixty five idles to set up one all khalassal",
+      "snippet": "cleared out three hundred sixty five idles to set up one all khalassal for henwives hoping to have males",
+      "variant_type": "fall-resurrection",
+      "reasoning": "The cyclical reference (365 days/year) suggests temporal resurrection and renewal; clearing and restoration evoke Finnegan's wake and reviving fall",
+      "confidence": "low"
+    },
+    {
+      "global_line": 4989,
+      "matched_text": "the flawhoolagh, the grasping one, the kindler of paschal fire",
+      "snippet": "the flawhoolagh, the grasping one, the kindler of paschal fire",
+      "variant_type": "mythic-attribute",
+      "reasoning": "'flawhoolagh' echoes 'flaming' and 'whoo' (hawk); 'kindler of paschal fire' suggests the Fenian Finn and the sacred fire-keeper role; resurrection through fire",
+      "confidence": "low"
+    },
+    {
+      "global_line": 4991,
+      "matched_text": "the phoenix be his pyre, the cineres his sire",
+      "snippet": "the phoenix be his pyre, the cineres his sire",
+      "variant_type": "fall-resurrection",
+      "reasoning": "Phoenix mythology directly parallels Finnegan's fall and resurrection; 'pyre' evokes both cremation and the whiskey/fire that revives the corpse in the ballad",
+      "confidence": "high"
+    },
+    {
+      "global_line": 4993,
+      "matched_text": "piles big pelium on little ossas like the pilluls of hirculeads",
+      "snippet": "piles big pelium on little ossas like the pilluls of hirculeads",
+      "variant_type": "giant-landscape",
+      "reasoning": "Pelion/Ossa reference to giant figures stacking mountains; suggests the colossal body-as-terrain and Finn as a figure of epic proportions built from landscape",
+      "confidence": "medium"
+    }
+  ]
+}

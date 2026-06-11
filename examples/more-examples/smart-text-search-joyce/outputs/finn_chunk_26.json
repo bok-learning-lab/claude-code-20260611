@@ -1,0 +1,86 @@
+{
+  "chunk": "chunk_26",
+  "global_line_offset": 15600,
+  "matches": [
+    {
+      "global_line": 15723,
+      "matched_text": "Foinn duhans!",
+      "snippet": "with his sabaothsopolettes, smooking his scandleloose at botthends of him! Foinn duhans! I grandthinked after his obras",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct garbled spelling of 'Finn' with Irish/Joycean corruption (duhans may echo 'dun' or phonetic distortion)",
+      "confidence": "high"
+    },
+    {
+      "global_line": 15727,
+      "matched_text": "Vott Fonn!",
+      "snippet": "Grot Zot! You hidn't the hurts? Vott Fonn!",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct spelling 'Fonn' (alternate form of Finn) with onomatopoetic exclamation 'Vott' suggesting colloquial Irish-English",
+      "confidence": "high"
+    },
+    {
+      "global_line": 15723,
+      "matched_text": "his obras / his egondoom / pulversporochs",
+      "snippet": "after his obras / after another time about the itch in his egondoom he was legging boldylugged from some pulversporochs",
+      "variant_type": "fall-resurrection",
+      "reasoning": "Echoes the mythic attributes of Finn: 'egondoom' suggests ego/self-undoing (fall motif), 'boldylugged' suggests body-dragging, 'pulversporochs' suggests dust/powder of an old tale—Finnegan's fall and recumbent state",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 15723,
+      "matched_text": "nemesisplotsch",
+      "snippet": "for to nemesisplotsch allafranka and for to salubrate himself / with an ultradungs heavenly mass",
+      "variant_type": "fall-resurrection",
+      "reasoning": "Pun on 'nemesis' + '-plotsch' (splash/plot): suggests Finnegan's fall (nemesis) and the whiskey/water splash that revives the corpse in the ballad",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 15824,
+      "matched_text": "Finnland / serf Finnland",
+      "snippet": "and he conforted samp, tramp and marchint out of the drumbume of a narse. Guards, serf Finnland, serve we all!",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct spelling 'Finnland' (Finn + land): likely a pun conflating Finn (the hero) with Ireland itself or 'Finland'; 'serf' suggests servitude and service motif",
+      "confidence": "high"
+    },
+    {
+      "global_line": 15789,
+      "matched_text": "pollex priced",
+      "snippet": "where he sees Bishop Ribboncake plus his pollex priced going forth on his visitations of mirrage",
+      "variant_type": "mythic-attribute",
+      "reasoning": "'Pollex' = thumb in Latin; direct reference to Finn's thumb of wisdom and knowledge (Salmon of Knowledge myth); 'priced' may suggest its value/sacred status",
+      "confidence": "high"
+    },
+    {
+      "global_line": 15797,
+      "matched_text": "bones / ivory girl and ebony boy",
+      "snippet": "obliges with a two stopyogacoga sumphoiyon the bones for ivory girl and ebony boy",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Musical reference to 'bones' suggests Fianna warriors' instrumental/martial context; 'ivory and ebony' may evoke the cosmic duality of the hero's world",
+      "confidence": "low"
+    },
+    {
+      "global_line": 15820,
+      "matched_text": "his tommuck and rueckenased the fates of a bosser",
+      "snippet": "with die weight of his arge fullin upon him from the travaillings of his tommuck and rueckenased the fates of a bosser",
+      "variant_type": "giant-landscape",
+      "reasoning": "'arge' (arg/large) = giant's size; 'tommuck' = stomach; 'weight falling upon him' and 'fates of a bosser' suggest the recumbent giant-as-landscape motif; body burdened under travails",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 15766,
+      "matched_text": "his boney bogey braggs",
+      "snippet": "The lyewdsky so so sewn of a fitchid! With his walshbrushup. And his boney bogey braggs.",
+      "variant_type": "giant-landscape",
+      "reasoning": "'Boney bogey' evokes bog and bone—the corpse-like giant; 'braggs' suggests bones sticking up from the landscape of Dublin terrain",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 15735,
+      "matched_text": "stool-eazy / nemesis",
+      "snippet": "from some pulversporochs and lyoking for a stool-eazy for to nemesisplotsch allafranka",
+      "variant_type": "fall-resurrection",
+      "reasoning": "'Stool' suggests chair/seat of authority (Finn's seat) or the bodily collapse; 'eazy' suggests ease/ease of fall; combined with nemesis pun = Finnegan's toppling and revivification cycle",
+      "confidence": "medium"
+    }
+  ]
+}

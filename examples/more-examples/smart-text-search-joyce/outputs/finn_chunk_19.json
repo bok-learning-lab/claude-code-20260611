@@ -1,0 +1,30 @@
+{
+  "chunk": "chunk_19",
+  "global_line_offset": 11400,
+  "matches": [
+    {
+      "global_line": 11480,
+      "matched_text": "Hannibal mac Hamiltan the Hegerite",
+      "snippet": "daring Dunderhead to shiver his timbers and Hannibal mac Hamiltan the Hegerite (more livepower elbow him !)",
+      "variant_type": "direct-spelling",
+      "reasoning": "mac Hamiltan echoes mac Cumhaill / 'mac' (son of) marker from Fionn mac Cumhaill; Joyce obscures via Hannibal/Hamiltan but the genealogical marker persists",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 11559,
+      "matched_text": "Standfest, our topiocal sagon hero, or any otther macotther",
+      "snippet": "Standfest, our topiocal sagon hero, or any otther macotther, signs is on the bellyguds bastille",
+      "variant_type": "direct-spelling",
+      "reasoning": "macotther is a scrambled/garbled 'mac' construction; sagon (saga + on) evokes the Finn legend cycles; 'topical' hero puns on Finn as the recumbent giant whose body is the landscape",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 11520,
+      "matched_text": "Dagobert is in Clane's clean hometown prepping up his prepueratory",
+      "snippet": "years Dagobert is in Clane's clean hometown prepping up his prepueratory and learning how to put",
+      "variant_type": "avatar-epithet",
+      "reasoning": "Dagobert is a historical king; 'Clane' is a townland in Co. Kildare near the Pale; the entire passage (lines 476-504) evokes HCE as a recumbent giant figure ('datetree doloriferous,' 'frayed nerves,' architectural and geographical references) fusing hero and landscape in Finnegan wake idiom",
+      "confidence": "low"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "chunk": "chunk_06",
+  "global_line_offset": 3600,
+  "matches": [
+    {
+      "global_line": 3763,
+      "matched_text": "up Finn, threehatted ladder",
+      "snippet": "a shirt of two shifts macoghamade or up Finn, threehatted ladder? That a head in thighs",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct invocation of 'Finn' in context of riddle and wordplay; unclear referent but strong phonetic match",
+      "confidence": "high"
+    },
+    {
+      "global_line": 3935,
+      "matched_text": "Timm Finn again's weak tribes",
+      "snippet": "from Timm Finn again's weak tribes loss of strenghth to his sowheel, from the wedding",
+      "variant_type": "direct-spelling",
+      "reasoning": "Explicit 'Finn again' variant; suggests resurrection/recurrence motif; 'weak tribes' alludes to Fianna; plays on homophony of 'Finn' and 'again'",
+      "confidence": "high"
+    },
+    {
+      "global_line": 3958,
+      "matched_text": "finfin funfun, a sitting arrows",
+      "snippet": "and that was how framm Sin fromm Son, acity arose, finfin funfun, a sitting arrows",
+      "variant_type": "pun",
+      "reasoning": "Repetitive 'finfin' echoes Finn's name doubled; situated near wordplay about city origins; suggests cyclical/recursive Finnic presence in Dublin's founding",
+      "confidence": "high"
+    },
+    {
+      "global_line": 3892,
+      "matched_text": "halfkneed castleknocker's",
+      "snippet": "upon the halfkneed castleknocker's attempting kithoguishly to lilt his holymess",
+      "variant_type": "pun",
+      "reasoning": "Castleknock is a Dublin locality associated with Howth/giant-landscape motif; 'halfkneed' suggests kneeling/fallen posture and bodily corruption; Finn's recumbent form spans Dublin",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 3516,
+      "matched_text": "S.S. Finlandia",
+      "snippet": "stowed away and ankered in a dutch bottom tank the Arsa, hod S.S. Finlandia, and was",
+      "variant_type": "direct-spelling",
+      "reasoning": "Ship name embedding 'Finlandia'; hero flees in exile and assumes new bodily form in Asia Major; echoes Finn's magical transformations and recurrence",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 3857,
+      "matched_text": "Hg C Eg that would take a township's breath",
+      "snippet": "Sure, 'tis well I can telesmell him Hg C Eg that would take a township's breath away",
+      "variant_type": "pun",
+      "reasoning": "Cryptic initials; 'H' may invoke HCE (the protagonist fused with Finn); elixir/breath imagery echoes Salmon of Knowledge and magical regeneration",
+      "confidence": "low"
+    },
+    {
+      "global_line": 3925,
+      "matched_text": "great Howdoyoucallem",
+      "snippet": "Ah ho! And do you remember, Singabob, the badfather, the same, the great Howdoyoucallem, and his old nickname",
+      "variant_type": "avatar-epithet",
+      "reasoning": "HCE 'Howdoyoucallem' conflates identity; 'badfather' and epithetic naming strategy aligns with Finnegan's sleep-death-resurrection and avatar-shifting",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 3958,
+      "matched_text": "framm Sin fromm Son",
+      "snippet": "and that was how framm Sin fromm Son, acity arose, finfin funfun, a sitting arrows",
+      "variant_type": "pun",
+      "reasoning": "Pun on Sinn/Sin (Irish identity/sin); proximity to 'finfin' and city origin myth; Finn-like recurrence in generational cycle",
+      "confidence": "low"
+    }
+  ]
+}

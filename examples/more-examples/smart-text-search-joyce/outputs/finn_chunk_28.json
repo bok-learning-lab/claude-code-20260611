@@ -1,0 +1,54 @@
+{
+  "chunk": "chunk_28",
+  "global_line_offset": 16800,
+  "matches": [
+    {
+      "global_line": 16841,
+      "matched_text": "the fionnling and dubhlet",
+      "snippet": "seized his pullets and primed their plumages, the fionnling and dubhlet, the dun and the fire",
+      "variant_type": "direct-spelling",
+      "reasoning": "fionnling is diminutive/variant of Fionn; appears with dubhlet (dub = dark, dialectal for 'black'), reinforcing the binary structure of Fianna warrior pairs",
+      "confidence": "high"
+    },
+    {
+      "global_line": 16932,
+      "matched_text": "Fingool MacKishgmard",
+      "snippet": "Fingool MacKishgmard Obesume Burgearse Benefice, He was bowen hem and scrapin him",
+      "variant_type": "direct-spelling",
+      "reasoning": "Fingool is transparent garbling of Fingal/Finn + MacCool; the patronymic structure (Mac+) invokes Fionn mac Cumhaill directly",
+      "confidence": "high"
+    },
+    {
+      "global_line": 16970,
+      "matched_text": "Finsbury Follies",
+      "snippet": "He knows his Finsbury Follies backwoods so you batter see to your regent refutation",
+      "variant_type": "pun",
+      "reasoning": "Finsbury (London street/area) puns on Finn + bury; follies compound the pun (follies = jester's pranks, Finn's trickster aspect)",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 16963,
+      "matched_text": "Finnish Make Goal!",
+      "snippet": "Two stick hoist. Lucky! Finnish Make Goal! First you were Nomad, next you were Namar",
+      "variant_type": "direct-spelling",
+      "reasoning": "Finnish invokes Finn directly; Make Goal likely puns on MacCool/Mac + goal; part of series of identity transformations (Nomad/Namar/Numah/Nomon)",
+      "confidence": "high"
+    },
+    {
+      "global_line": 16891,
+      "matched_text": "The Fenn, the Fenn, the finn of all Fenns",
+      "snippet": "Clanruckard for ever! The Fenn, the Fenn, the finn of all Fenns! Deaf to the winds",
+      "variant_type": "direct-spelling",
+      "reasoning": "Explicit invocation of Fenn/Fenns (the Fianna band); 'finn of all Fenns' is direct reference to Fionn as chief of the Fianna; triple repetition emphasizes mythic status",
+      "confidence": "high"
+    },
+    {
+      "global_line": 16891,
+      "matched_text": "finnecies of poetry",
+      "snippet": "Drawg us out Ivy Eve in the Hall of Alum! The finnecies of poetry wed music. Feeling the jitters?",
+      "variant_type": "pun",
+      "reasoning": "finnecies puns on Finn + finesse/fancies; in context of poetry/music/wedding, invokes Finn's role as poet-warrior and courtly figure",
+      "confidence": "medium"
+    }
+  ]
+}

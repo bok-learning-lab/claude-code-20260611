@@ -1,0 +1,38 @@
+{
+  "chunk": "chunk_47",
+  "global_line_offset": 28200,
+  "matches": [
+    {
+      "global_line": 28208,
+      "matched_text": "Finvara",
+      "snippet": "Still I'll take me owld Finvara for my shawlders.",
+      "variant_type": "avatar-epithet",
+      "reasoning": "Finvara is a fairy king in Irish mythology, and Joyce conflates this with Finn; the 'owld' (old) epithet connects to the ancient hero trope",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 28345,
+      "matched_text": "Captain Fin sen",
+      "snippet": "When that hark from the air said it was Captain Fin sen makes cumhelments",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct invocation of 'Fin' as a character name; 'sen' could be a variant suffix or epithet",
+      "confidence": "high"
+    },
+    {
+      "global_line": 28370,
+      "matched_text": "Finglas",
+      "snippet": "saying they're the best relicts of Conal O'Daniel and writing Finglas since the Flood",
+      "variant_type": "direct-spelling",
+      "reasoning": "Finglas is a Dublin locality but also contains 'Fing-' root; Joyce often uses place names to invoke Finn; 'since the Flood' suggests mythic antiquity",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 28291,
+      "matched_text": "Finn, again!",
+      "snippet": "End here. Us then. Finn, again! Take. Bussoftlhee, mememormee!",
+      "variant_type": "direct-spelling",
+      "reasoning": "Explicit invocation of Finn with 'again' - the cyclical return motif; final pages of Finnegans Wake where the narrative loops back; this is THE key cyclical moment",
+      "confidence": "high"
+    }
+  ]
+}

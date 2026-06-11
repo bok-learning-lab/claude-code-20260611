@@ -1,0 +1,46 @@
+{
+  "chunk": "chunk_45",
+  "global_line_offset": 27000,
+  "matches": [
+    {
+      "global_line": 27025,
+      "matched_text": "Fangaluvu",
+      "snippet": "Helusbelus in the boshiman brush on this our peneplain by Fangaluvu Bight whence the horned",
+      "variant_type": "pun",
+      "reasoning": "Disguised Finn reference via sound-play: Fangaluvu contains 'Fang' + 'aluvu', echoing the Irish 'Fionn' and the landscape-giant motif (boshiman brush, peneplain as HCE's body)",
+      "confidence": "low"
+    },
+    {
+      "global_line": 27048,
+      "matched_text": "Hill of Hafid",
+      "snippet": "But Hfe wends and the dombs spake! Whake? Hill of Hafid, knock and knock, nachasach, gives relief",
+      "variant_type": "giant-landscape",
+      "reasoning": "Hafid appears to reference Howth (HCE as recumbent giant); 'knock and knock' echoes knocking/striking, the fall-motif; Hafid may contain 'Ha' (laughter/exclamation) + landscape",
+      "confidence": "low"
+    },
+    {
+      "global_line": 27126,
+      "matched_text": "Fingal",
+      "snippet": "inherited wish. The drops upon that mantle rained never around Fingal. Goute! Loughlin's",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct reference to Fingal (Irish: Fionn mac Cumhaill), the mythological Finn; the mantle/drops evoke the Salmon of Knowledge (mythic attribute)",
+      "confidence": "high"
+    },
+    {
+      "global_line": 27271,
+      "matched_text": "Funn and Nin",
+      "snippet": "of the incarnations of the emanations of the apparentations of Funn and Nin in Cleethabala, the",
+      "variant_type": "direct-spelling",
+      "reasoning": "Garbled Finn (Funn); paired with Nin (feminine principle); suggests a bifurcated/emanative version of Finnegan's dual nature",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 27584,
+      "matched_text": "Finnegan's Wake",
+      "snippet": "their partners lovesoftfun at Finnegan's Wake.",
+      "variant_type": "fall-resurrection",
+      "reasoning": "Direct explicit reference to 'Finnegan's Wake'—the ballad's wake motif and the hero's resurrection; this is the eponymous title event of the book",
+      "confidence": "high"
+    }
+  ]
+}

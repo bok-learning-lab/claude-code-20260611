@@ -1,0 +1,86 @@
+{
+  "chunk": "chunk_46",
+  "global_line_offset": 27600,
+  "matches": [
+    {
+      "global_line": 27911,
+      "matched_text": "Finnius the old One",
+      "snippet": "...the sameold gamebold adomic structure of our Finnius the old One, as highly charged with electrons...",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct variant of Finn/Finnegan. Finnius is the Latinate form of the hero's name, representing the ancient/primordial figure.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 27957,
+      "matched_text": "Fennsense, finnsonse",
+      "snippet": "Fennsense, finnsonse, awom! Tuck upp those wide shorts.",
+      "variant_type": "pun",
+      "reasoning": "Playful garbling mixing Fenian/Fenn + sense, then finn + sonse (obsolete form of prosperity). Evokes both Finn and the Fianna (Fenians).",
+      "confidence": "high"
+    },
+    {
+      "global_line": 28009,
+      "matched_text": "funn make called Foon MacCrawl",
+      "snippet": "...like funn make called Foon MacCrawl brothers, mystery man of the pork martyrs?",
+      "variant_type": "direct-spelling",
+      "reasoning": "Garbled variant of MacCool/Finn MacCool. 'Foon' phonetically echoes Finn, 'MacCrawl' is deformed MacCool. The 'brothers' reference suggests the Fianna warrior band.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 28010,
+      "matched_text": "Fing! One must simply laugh. Fing him aging!",
+      "snippet": "...Music, me ouldstrow, please! We'll have a brand rehearsal. Fing! One must simply laugh. Fing him aging!",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct shortening of Finn. 'Fing him aging' contains the pun 'Finn again', invoking the cyclical resurrection/aging motif central to the wake.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 27995,
+      "matched_text": "old Fintona",
+      "snippet": "...We are all at home in old Fintona, thank Danis, for ourselfsake...",
+      "variant_type": "direct-spelling",
+      "reasoning": "Fintona is a Dublin place name containing Fin-. Also echoes both Finn and Finnegan, situating the hero in the landscape.",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 27974,
+      "matched_text": "Finnlatter",
+      "snippet": "...to Adam, our former first Finnlatter and our grocerest churcher...",
+      "variant_type": "avatar-epithet",
+      "reasoning": "Compound epithet: 'Finnlatter' combines Finn + later/latter, suggesting Finn as the foundational/ancient figure ('Adam, our former first'), an avatar of primal man.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 27865,
+      "matched_text": "all theMacCrawls",
+      "snippet": "...If all theMacCrawls would only handle virgils like Armsworks, Limited!",
+      "variant_type": "direct-spelling",
+      "reasoning": "MacCrawl = garbled MacCool. Used as a plural family name, echoing the extended clan/warrior band of Finn and the Fianna.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 27902,
+      "matched_text": "wake",
+      "snippet": "...In the wake of the blackshape, Nattenden Sone; whenat, hindled firth and bundled furth, the week of wakes is out and over...",
+      "variant_type": "fall-resurrection",
+      "reasoning": "The 'wake' motif is central: the corpse-watching ritual that frames Finnegan's resurrection. 'Week of wakes' puns on Finnegans Wake itself.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 27904,
+      "matched_text": "Phoenican wakes",
+      "snippet": "...the Phoenican wakes.",
+      "variant_type": "fall-resurrection",
+      "reasoning": "Phoenix (Phoenix Park, associated with HCE's recumbent body) waking/rising. Evokes resurrection and cyclical renewal tied to the Finn/HCE figure.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 27931,
+      "matched_text": "the rise of the man, of the booths",
+      "snippet": "Away! Rise up, man of the booths, you have slept so long!",
+      "variant_type": "fall-resurrection",
+      "reasoning": "The sleeping giant awakening after the fall/death. 'Booths' may echo HCE the publican. Central to Finnegan's wake narrative of fall and resurrection.",
+      "confidence": "medium"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "chunk": "chunk_35",
+  "global_line_offset": 21000,
+  "matches": [
+    {
+      "global_line": 21301,
+      "matched_text": "Seaborne Fingale",
+      "snippet": "And the bould one that quickened her the seaborne Fingale.",
+      "variant_type": "direct-spelling",
+      "reasoning": "Fingale is a direct variant of Fingal, a garbled form of Fionn; this references Finn in the context of a seaborne figure",
+      "confidence": "high"
+    },
+    {
+      "global_line": 21429,
+      "matched_text": "Hauneen",
+      "snippet": "had you but been spared to us, Hauneen lad, but sure where's the use",
+      "variant_type": "avatar-epithet",
+      "reasoning": "Hauneen is a diminutive of Haun/Jhaun, which is an avatar of HCE and Finn; the context of 'spared to us' and resurrection echoes the wake motif",
+      "confidence": "high"
+    },
+    {
+      "global_line": 21431,
+      "matched_text": "Gone is Haun",
+      "snippet": "Gone is Haun! My grief, my ruin! Our Joss-el-Jovan!",
+      "variant_type": "fall-resurrection",
+      "reasoning": "The lamentation over Haun's departure and resurrection is central to the Finnegan wake motif; Haun represents the fallen hero",
+      "confidence": "high"
+    },
+    {
+      "global_line": 21493,
+      "matched_text": "Pure Yawn lay low",
+      "snippet": "Lowly, longly, a wail went forth. Pure Yawn lay low. On the mead of the hillock lay",
+      "variant_type": "giant-landscape",
+      "reasoning": "Yawn's recumbent form on the mead/hillock echoes the sleeping giant motif of Finn as Dublin landscape; the 'hillock' evokes Howth",
+      "confidence": "high"
+    },
+    {
+      "global_line": 21529,
+      "matched_text": "Conn's half...Owenmore's five quarters",
+      "snippet": "length by breadth nonplussing his thickness...one half of him in Conn's half but the whole of him nevertheless in Owenmore's five quarters",
+      "variant_type": "giant-landscape",
+      "reasoning": "The recumbent giant's body spans multiple Irish territorial divisions (Conn, Owenmore), placing him as landscape—a Finn avatar as Dublin terrain",
+      "confidence": "high"
+    }
+  ]
+}

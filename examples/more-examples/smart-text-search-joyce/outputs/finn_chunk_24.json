@@ -1,0 +1,38 @@
+{
+  "chunk": "chunk_24",
+  "global_line_offset": 14400,
+  "matches": [
+    {
+      "global_line": 14469,
+      "matched_text": "finnence",
+      "snippet": "a buUyon gauger, stowed stivers pengapung in bulk in hold (fight great finnence!",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct garbling of 'Finn' + 'essence/finance' pun. The 'finnence' evokes Finn + finance/essence; placed in commercial/material context",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 14477,
+      "matched_text": "hodden son of a pookal",
+      "snippet": "rubbing the hodden son of a pookal, leaden be light, lather be dry",
+      "variant_type": "avatar-epithet",
+      "reasoning": "Obscure avatar reference: 'hodden' (hard/solid) + 'pookal' echoes 'Pooka' (Irish folklore), composite epithet for a fallen giant figure",
+      "confidence": "low"
+    },
+    {
+      "global_line": 14480,
+      "matched_text": "funicking or finicking",
+      "snippet": "how the camel and where the deiffel or when the finicking or why the funicking",
+      "variant_type": "pun",
+      "reasoning": "Playful paronyms: 'finicking' and 'funicking' echo 'Finn' while meaning fussy/delicate; double alliteration masks a Finn-name reference",
+      "confidence": "low"
+    },
+    {
+      "global_line": 14577,
+      "matched_text": "Finucane-Lee, Finucane-Law",
+      "snippet": "callen hom: Finucane-Lee, Finucane-Law",
+      "variant_type": "direct-spelling",
+      "reasoning": "Clear direct reference: 'Finucane' contains 'Fin' and evokes Finnegan; surname garbled as law/legal terms, linking fall and judgment",
+      "confidence": "high"
+    }
+  ]
+}

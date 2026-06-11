@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Day 2 — Top 10 Key Takeaways</title>
+<style>
+/*__FONTS__*/
+/*__HOUSE_STYLE__*/
+/*__PATTERNS__*/
+  /* ---- PAGE SETUP: portrait 11x17 ---- */
+  @page { size: 11in 17in; margin: 0.5in; }
+  .sheet { width:10in; height:16in; padding:0.55in 0.6in 0.8in; display:flex; flex-direction:column; }
+  .footer { bottom:0.34in; }
+  /* handout-specific tweaks */
+  ol.top10 { list-style:none; counter-reset:take; margin:12px 0 0; padding:0; }
+  ol.top10 > li { position:relative; padding-left:38px; margin:0 0 9px; font-size:12.7px; line-height:1.42; font-weight:500; counter-increment:take; }
+  ol.top10 > li::before { content:counter(take) "."; position:absolute; left:0; top:-2px; font-size:18px; font-weight:900; color:var(--accent); width:32px; }
+  ol.top10 > li b { color:var(--ink); font-weight:800; }
+  ol.top10 > li i, ol.top10 > li em { font-style:italic; }
+  ol.top10 > li code { font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace; font-size:11.5px; font-weight:600; background:#f0f0f0; padding:0 4px; border-radius:3px; }
+  .provenance { font-size:12px; line-height:1.42; font-style:italic; font-weight:500; color:var(--muted); margin:11px 0 0; }
+  .provenance a { color:var(--muted); text-decoration:underline; }
+  ul.sec { list-style:none; margin:9px 0 0; padding:0; }
+  ul.sec > li { position:relative; padding-left:18px; margin:0 0 5px; font-size:11.8px; line-height:1.38; font-weight:500; }
+  ul.sec > li::before { content:""; position:absolute; left:2px; top:8px; width:8px; height:2px; background:var(--accent); }
+  ul.sec > li b { color:var(--ink); font-weight:800; }
+  ul.sec > li code { font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace; font-size:11.5px; font-weight:600; background:#f0f0f0; padding:0 4px; border-radius:3px; }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <p class="kicker">Day 2 · 9 June 2026 · Top 10 Takeaways</p>
+  <h1>Top 10 Key Takeaways
+    <span class="sub">Chunks 1–9 · 14:03–15:26 · Instructors Marlon Kuzmick (MK) and Madeleine Woods (MW), with Marlon on the repo tour and Becca on Git</span>
+  </h1>
+
+  <p class="provenance">Distilled from the diarized session transcript at <a href="../../day-2-recap/20260609-transcript.md">day-2-recap/20260609-transcript.md</a>. Conceptual Git explainer from Becca, the Learning Lab's executive director; faculty projects from Jordan, Jungyoon, and Lindsay.</p>
+
+  <ol class="top10">
+    <li><b>Day 2 is the bridge — from chat and Cowork into Claude Code, and the desktop app's Code panel is the democratic on-ramp.</b> "Today we are finally crossing the bridge from chat and Cowork into Code" — flick to the third panel on the right. You can do "ninety-nine percent of everything Claude can do" in the desktop app's Code tab, so the whole room stays there; developers who want the CLI / VS Code (IDE) path set it up after class (~30 min). New names for one idea: a new <i>chat</i> (Chat), a new <i>task</i> (Cowork), a new <i>session</i> (Code).</li>
+    <li><b>Three ways to get the repo onto your machine — the easiest is to just ask Claude to clone it.</b> Download the green <b>Code &rarr; zip</b> and unzip it; run <code>git clone &lt;url&gt;</code> in the terminal; or, in the desktop app, create a folder, select it, and say <i>"can you clone this repo here?"</i>, then paste the URL and hit allow. One catch: copy the URL from the green <b>Code</b> button's clipboard icon, not the plain emailed link — "it's not smart enough to change the syntax" otherwise.</li>
+    <li><b>One dedicated <code>Development</code> folder — never your desktop or root drive.</b> The Day-1 discipline carries into Code: make one folder you'll remember, clone into it, and point Claude there. "I wouldn't give it access to my desktop or, you know, my root drive." Cowork and Code ask permission per file, so a contained folder keeps that manageable.</li>
+    <li><b>Becca's conceptual Git: Google Docs version history, but for a whole project.</b> Git was built by coders to track collaborative versions of code — but it's "a very general system for keeping track of collaborative work that has multiple versions." The analogy: how useful Google Docs version history is, except for an entire folder of files, tracking every change <i>and</i> the human comments about <i>why</i> a batch of changes was made.</li>
+    <li><b>Three reasons Git matters even if you never write code.</b> (1) <b>History</b> — pull something back out of your project's past. (2) <b>Claude reads it first</b> — "Claude is built to look very first thing at the Git repository to understand the history of the project," getting around the limited context window across sessions. (3) <b>Safety net</b> — when AI changes a file in a direction you didn't intend, a tracked repo makes it "extremely easy to go back to the earlier versions and pull those back out."</li>
+    <li><b>How Git works: a hidden <code>.git</code> folder, snapshots, and a remote on GitHub.</b> Editing does nothing until you decide <i>"now's the moment to take a picture"</i> — choose the changes, add a message saying what they mean, and <b>commit</b>. GitHub is "a remote repository out on the internet which stores a copy of what's locally on your machine" — private or public — a second layer of protection and the way you share. Even if you deleted your local <code>.git</code>, the GitHub copy survives.</li>
+    <li><b><code>.gitignore</code> keeps secrets out — never push API keys or passwords.</b> Some files (an API key, a password, proprietary or very large files) are "really only for you." Don't put them in your chats with Claude, and definitely don't push them to GitHub. A special <code>.gitignore</code> file tells Git never to include them — and you can just ask Claude to make one.</li>
+    <li><b>You don't learn Git commands — Claude is fluent, and "Create PR" basically means commit.</b> Claude Code surfaces buttons (create a repo, commit, push), or you ask in plain language. The one bit of jargon: it offers to <b>"create a pull request,"</b> which "essentially means create it, commit it, and pull it onto the main branch." The on-screen counter of additions/subtractions since your last commit is a nudge — <b>commit often</b>; each commit is a more granular memory and a point to jump back to.</li>
+    <li><b>Even solo, you're now doing collaborative work — agents commit on your behalf.</b> Ask Claude to "summarise the work people did on this branch today" and it shows every commit down to the minute, who made it, and which branches merged in. Picture a <b>tree</b>: a contributor's work arrives as a <b>branch</b>, a pull request "knocks on the door of the main repository," and you open the door, review, and merge — so many people (or many Claude agents) work without overwriting each other. Demo: a first-time contributor's spelling-fix PR merged in, then <code>git pull</code> ("hey Claude, there was a change on GitHub, can you pull?").</li>
+    <li><b>Point Claude at one file by its path — and remember it's all just text, "turtles all the way down."</b> The core move: click the <b>three dots</b> next to a file &rarr; <b>copy path</b> &rarr; paste it into your prompt ("the unique path to that resource on your computer," like a URL). Students could query a transcript you've vetted — <i>"top five takeaways from Day 1"</i> — and ask their own questions. In the Code tab you can also <b>edit files yourself</b> (unlike chat/Cowork artifacts you must ask to change) — what you want for "intellectual work you care about." Handing over a specific path is far cheaper than making Claude search the whole repo against your 200K–1M-token window.</li>
+  </ol>
+
+  <p class="beat-h" style="margin-top:14px;">Secondary points worth keeping</p>
+  <ul class="sec">
+    <li><b>The Homebrew tax for some Macs.</b> Git was missing on some older Macs; install <b>Homebrew</b> (<code>brew.sh</code>), run the two lines it prints, then <code>brew install git</code>. In Terminal your password types invisibly — "use the force and just keep typing."</li>
+    <li><b>Find your files in the Code tab.</b> The views icon (top-right) only appears <i>after</i> you ask a question; click it &rarr; <b>Files</b> to see the whole repo. VS Code shows files by default; in Claude Code you nudge it.</li>
+    <li><b><code>.docx</code> / <code>.xlsx</code> are proprietary, not text.</b> Claude reads them in and writes them out via skills, but works best with <b>simple text / markdown</b>. A folder of PDFs or <code>.docx</code> files can be batch-converted.</li>
+    <li><b>Recipes are remixable starting points.</b> Copy a recipe's path and say <i>"make me a folder using this scaffolding in faculty-recipes for [my course], and search the internet for starter papers."</i> Shown live: gradebook visualization, a video word-frequency search (the Shia LaBeouf "just do it" corpus, built in ~9 min), a reworked Math course, a pared-down bioengineering course pack.</li>
+    <li><b>Keep big stuff local, share small stuff.</b> A full Canvas download can be worked on locally but needn't be pushed to GitHub — the shared course packs were kept deliberately small.</li>
+    <li><b>HTML opens in the browser.</b> Any <code>.html</code> file in the repo can be viewed in Claude or by pasting its path into Chrome/Edge; later days cover publishing it for students.</li>
+    <li><b>Tomorrow (Day 3):</b> the file types higher in the context hierarchy that load automatically — <b>CLAUDE.md</b> and <b>skills</b>.</li>
+  </ul>
+
+  <div class="footer">
+    <span>Summer of Claude · Faculty Workshop · 2026-06-09</span>
+    <span>Bok Center · Learning Lab</span>
+  </div>
+</div>
+</body>
+</html>

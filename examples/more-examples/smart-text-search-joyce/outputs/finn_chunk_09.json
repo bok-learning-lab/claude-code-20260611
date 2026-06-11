@@ -1,0 +1,54 @@
+{
+  "chunk": "chunk_09",
+  "global_line_offset": 5400,
+  "matches": [
+    {
+      "global_line": 5422,
+      "matched_text": "Answer: Finn MacCool!",
+      "snippet": "was  lost  for  the  want  of  his  wan  wubblin  wall? Answer: Finn MacCool!",
+      "variant_type": "direct-spelling",
+      "reasoning": "Direct explicit naming of Finn MacCool as the answer to the riddle. The entire preceding passage (lines 5401-5421) is an exhaustive catalogue of attributes describing HCE as Finn.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 5409,
+      "matched_text": "a  saumon  taken  with  a  lance",
+      "snippet": "who  could  see  at  one  blick  a  saumon  taken  with  a  lance,  hunters  pursuing  a  doe",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Reference to the Salmon of Knowledge (saumon = salmon), the central mythic attribute of Fionn mac Cumhaill, who gains wisdom by cooking/consuming the salmon. Directly evokes Finn's legendary encounter.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 5496,
+      "matched_text": "Holy  eel  and  Sainted  Salmon",
+      "snippet": "Tuam  I  take,  Sligo's  sleek  but  Galway's  grace.  Holy  eel  and  Sainted  Salmon,",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Salmon again invoked in sacred/elevated language (sainted), reinforcing Fionn's mythic connection to the Salmon of Knowledge as a sanctified figure.",
+      "confidence": "high"
+    },
+    {
+      "global_line": 5553,
+      "matched_text": "Finglas  fields",
+      "snippet": "Ashtown  fields  and  Cabra  fields  and  Finglas  fields  and  Santry  fields",
+      "variant_type": "pun",
+      "reasoning": "Finglas (Fingall in Irish, meaning 'fair/bright hair') echoes 'Fingal,' an Old Norse name for Ireland and a direct alias of Fionn. The field location also suggests Finn-as-landscape, though subtle here.",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 5567,
+      "matched_text": "Jakes  Mac  Carty",
+      "snippet": "Philly,  Jamesy  Mor  and  Tom,  Matt  and  Jakes  Mac  Carty",
+      "variant_type": "avatar-epithet",
+      "reasoning": "'Mac Carty' (Mac Carthaigh) is an Irish surname, but in Joyce's onomastic method, this may echo 'MacCool' / 'mac Cumhaill' genealogies. Jakes is a common man's name suggesting everyman/HCE fusion. Low confidence due to distance from clear Finn markers.",
+      "confidence": "low"
+    },
+    {
+      "global_line": 5408,
+      "matched_text": "with  one  touch  of  nature  set  a  veiled  world  agrin",
+      "snippet": "who  could  see  at  one  blick  a  saumon  taken  with  a  lance,  hunters  pursuing  a  doe,  a  swallowship  in  full  sail",
+      "variant_type": "mythic-attribute",
+      "reasoning": "The immediate context of line 5410—seeing in one glance multiple scenes (hunters, doe, ship, host)—recalls the druidic/prophetic powers associated with Fionn mac Cumhaill and his supernatural sight. The Salmon scene is explicitly about acquired wisdom/vision.",
+      "confidence": "medium"
+    }
+  ]
+}

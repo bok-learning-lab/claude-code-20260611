@@ -1,0 +1,22 @@
+{
+  "chunk": "chunk_10",
+  "global_line_offset": 6000,
+  "matches": [
+    {
+      "global_line": 6070,
+      "matched_text": "Funny spot to have a fingey!",
+      "snippet": "Sail I puhim in momou. Mummum. Funny spot to have a fingey! I'm terribly sorry, I swear to you I am!",
+      "variant_type": "mythic-attribute",
+      "reasoning": "\"fingey\" (finger) alludes to Finn's thumb of wisdom, the magical digit that granted him knowledge when he bit it. The casual mention of 'finger' in this intimate/confessional context invokes the mythic attribute of Finn's wisdom-bearing thumb.",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 6220,
+      "matched_text": "MacHammud's",
+      "snippet": "Ofter thousand yores, amsered Gripes the gregary, be the goat of MacHammud's, yours may be still, O Mookse, more botheared.",
+      "variant_type": "pun",
+      "reasoning": "\"MacHammud's\" is a pun on 'Mac-' (Irish 'son of') merged with 'Hammed' or 'Hammud'. While ostensibly referencing Muhammad, the 'Mac-' prefix specifically evokes Mac Cumhaill / MacCool, the patronymic structure of Finn's name. Joyce layers multiple mythologies by using the Mac- formant.",
+      "confidence": "low"
+    }
+  ]
+}

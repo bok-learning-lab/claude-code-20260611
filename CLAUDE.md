@@ -1,0 +1,72 @@
+# CLAUDE.md
+
+Project-level instructions loaded when Claude Code starts in this folder.
+
+## What this repo is
+
+A curated gallery of worked Claude Code examples and supporting workshop materials, drawn from the **"Claude for Teaching, Course Development, and Research"** workshop series run by Marlon Kuzmick (Director of the Learning Lab at Harvard's Bok Center). It is a docs/materials repo — no build system, no package manager, no tests.
+
+Two top-level folders carry the substance:
+
+- [examples/](examples/) — two new projects being built live in this series ([handout-formatting](examples/handout-formatting/) and [admin-email-drafter](examples/admin-email-drafter/)), plus [more-examples/](examples/more-examples/), a gallery of self-contained worked examples from earlier series. Each example is meant to be opened as its own Claude Code project (`cd` into the example, run `claude`). Each has its own `CLAUDE.md`, `summary.md`, `inputs/`, `operations/`, and `outputs/`.
+- [resources/](resources/) — workshop-recap material, handouts, and the AI glossary in both HTML and Markdown variants.
+
+## The examples
+
+Each example is a standalone project demonstrating one Claude Code move applied to a real teaching, research, or course-development task. They share a structure — `inputs/` (read-only source), `operations/` (the prompt and/or skills that do the work), `outputs/` (generated artifacts), plus `CLAUDE.md` / `summary.md` / `index.md` documentation at the root.
+
+Two new examples sit at the top of [examples/](examples/) as scaffolds awaiting Day 4 content:
+
+| Example | The move it will demonstrate |
+|---|---|
+| [handout-formatting](examples/handout-formatting/) | Turning rough workshop material into print-ready, house-style handouts |
+| [admin-email-drafter](examples/admin-email-drafter/) | Drafting routine administrative email from structured source material |
+
+The worked gallery lives in [examples/more-examples/](examples/more-examples/):
+
+| Example | The move it demonstrates |
+|---|---|
+| [class-summarizer](examples/more-examples/class-summarizer/) | Forced-count distillation of a workshop transcript into a Top 10 Key Takeaways doc + portable HTML |
+| [exam-makeup-generator](examples/more-examples/exam-makeup-generator/) | **Standalone Claude Code skill** (no deployed URL) that turns an existing exam into a curated make-up via a three-mode state machine (Generation → Iteration → Assembly) driven by a single editable markdown file. CS20-tested worked run included. Install: `cp` into `.claude/skills/` |
+| [film-course-concepts-website](examples/more-examples/film-course-concepts-website/) | Course-concepts website for GENED 1049 *East Asian Cinema*: glossary + workshop overview + interactive concept demos (three-point lighting on *Rashomon* stills; scroll-synced video essay). General content engine, specific course content, no LLM call. [Live demo](https://gened-1049.vercel.app/) |
+| [image-API-widget](examples/more-examples/image-API-widget/) | Stable-Diffusion image-generation webapp ("The Virtual Camera") with a critical-framework sidebar (Kluge's rules) tied to specific UI controls. Provider-agnostic: Replicate + HuggingFace. [Live demo](https://stable-diffusion-widget-interface.vercel.app/) |
+| [interview-coding](examples/more-examples/interview-coding/) | Mary-Waters-aligned flexible coding of qualitative interview transcripts at scale |
+| [literature-course-concept-website](examples/more-examples/literature-course-concept-website/) | CompLit 126x *Love Songs at the Learning Lab* webapp (Prof. Moira Weigel) — three pre-workshop demos that each try to capture *voice* by a different mechanism (trait scoring, full-source stuffing, voice cloning) and each fail differently. Includes an ElevenLabs voice-cloning step on the instructor's own voice. [Live demo](https://complit126x-lovesongs.vercel.app/) |
+| [oral-exam-practice-bot](examples/more-examples/oral-exam-practice-bot/) | Reflective-tutor webapp (Claude + Whisper) for rehearsing a final oral exam — explicitly forbidden from grading. [Live demo](https://complit126-quizzer-interface.vercel.app/) |
+| [paper-to-teaching-materials](examples/more-examples/paper-to-teaching-materials/) | Skill toolkit (`/teaching-case`, `/discussion-plan`, `/objection-audit`, `/quiz`) built around a single defining paper |
+| [physics-interactives](examples/more-examples/physics-interactives/) | PhET-style single-file HTML simulations a faculty member can build and ship without a build step |
+| [recentering-academics](examples/more-examples/recentering-academics/) | Discipline-specific curricular recommendations grounded in Bok guidance, Harvard data, and the grading research |
+| [research-helper](examples/more-examples/research-helper/) | Faithful research-paper summaries with an explicit "pedagogical bridge" interpretive layer |
+| [research-white-paper-website](examples/more-examples/research-white-paper-website/) | Thin Next.js viewer (~150 lines) over a research-in-progress folder. Section folders at the repo root + safe-prefix routing + **agent-output firebreak** (AI-generated artifacts kept structurally distinct from human-authored research). Drawn from a real Anglo-Saxon ethnopharmacology project. [Live demo](https://harvest-times.vercel.app/) |
+| [simple-art-history-lecture](examples/more-examples/simple-art-history-lecture/) | A custom MCP gives Claude live, sourced access to the Harvard Art Museums — turning plain lecture notes into an illustrated page where every image and fact is fetched, not remembered |
+| [smart-text-search](examples/more-examples/smart-text-search/) | LLM as close reader at scale — naming every writer cited in 538 Dylan songs |
+| [smart-text-search-joyce](examples/more-examples/smart-text-search-joyce/) | Parallel close-reading subagents finding Fionn in *Finnegans Wake* |
+| [text-analysis-and-datavis](examples/more-examples/text-analysis-and-datavis/) | Calvino *Six Memos* webapp: deterministic textual stats (hand-rolled SVG bar charts) + 2D UMAP embedding map (offline corpus, live student-draft projection via k-NN) + composer where the student writes the unwritten 6th memo (Consistency). Plus an LLM-mediated OCR pipeline (three-engine vote + Claude-vision judge) that produced the cleaned corpus. [Live demo](https://a-project-on-calvino-interface-3kqu.vercel.app/memos) |
+| [texts-and-translation](examples/more-examples/texts-and-translation/) | Comparative translation and figure-identification across non-English primary texts (Homeric Greek, Sanskrit) |
+
+## Conventions inside examples
+
+Every example follows the same structure so faculty can move between them without re-learning the layout:
+
+- **`CLAUDE.md`** at the root of each example — project-level instructions loaded on session start.
+- **`inputs/`** — read-only source material. Don't modify it.
+- **`operations/`** — the prompt(s) and/or skills that drive the work. Skills, when used, live at `operations/skills/<skill-name>/`, project-scoped so they travel with the example.
+- **`outputs/`** — generated artifacts. Regenerating overwrites.
+- **`summary.md`** — what the project is, how it was built, what you can translate it to.
+- **`index.md` / `index.html`** — a map of the folder.
+- **No emojis** in any file (workshop-wide convention).
+- **Markdown link syntax** for file references — `[file](path/to/file.md)`.
+
+## Conventions at this repo level
+
+- **Don't create top-level markdown files** (READMEs, plans, summaries) unless explicitly asked. New content goes inside an example or in `resources/`.
+- **No build system.** This is a static docs and prompts repo; if tooling ever does appear, the preference is `pnpm` over `npm` or `yarn`.
+- **Generated artifacts belong inside the example that produced them**, in that example's `outputs/`.
+- **No emojis** in any file unless explicitly requested.
+
+## If you just opened this folder
+
+- Looking for a specific example? Start with [examples/more-examples/](examples/more-examples/) and read the `summary.md` of the one that matches your task.
+- Working on this series' new projects? They are [examples/handout-formatting/](examples/handout-formatting/) and [examples/admin-email-drafter/](examples/admin-email-drafter/).
+- Looking for the workshop recap material? Start in [resources/](resources/).
+- Building a new example? Copy the structure of an existing one (`paper-to-teaching-materials` and `texts-and-translation` are the most fully-developed multi-skill examples; `research-helper` and `smart-text-search` are the simplest single-prompt examples).

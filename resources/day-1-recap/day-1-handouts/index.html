@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Claude: Three Interfaces</title>
+  <style>
+
+    /* ── Print setup ───────────────────────────────────────────── */
+    @page {
+      size: 11in 17in;
+      margin: 0.6in 0.65in;
+    }
+
+    /* Flip note pinned to the bottom margin of page 1 only */
+    @page :first {
+      @bottom-center {
+        content: "Reasonable responses to what Claude knows about your work. (over)";
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        font-size: 9pt;
+        font-style: italic;
+        color: #4B5563;
+      }
+    }
+
+    /* ── Reset ─────────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --chat:   #1D4ED8;
+      --cowork: #B45309;
+      --code:   #166534;
+      --border: #D1D5DB;
+      --text:   #111827;
+      --muted:  #4B5563;
+      --faint:  #9CA3AF;
+      --font:   -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      --mono:   "SF Mono", "Fira Code", Menlo, monospace;
+    }
+
+    html { font-size: 11.5pt; }
+
+    body {
+      font-family: var(--font);
+      color: var(--text);
+      line-height: 1.45;
+      background: white;
+      /* Screen preview approximates 11×17 portrait proportions */
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 2.5rem 2.5rem 4rem;
+    }
+
+    /* ── Page title ────────────────────────────────────────────── */
+    .page-title {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .page-title h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .page-title p {
+      font-size: 0.85rem;
+      color: var(--faint);
+      margin-top: 0.25rem;
+    }
+
+    /* ── Top panels ────────────────────────────────────────────── */
+    .panels {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 0;
+    }
+
+    .panel {
+      border: 1.5px solid var(--border);
+      border-top: 4px solid transparent;
+      border-radius: 8px;
+      padding: 1rem 1.1rem 1rem;
+    }
+    .panel.chat   { border-top-color: var(--chat);   }
+    .panel.cowork { border-top-color: var(--cowork); }
+    .panel.code   { border-top-color: var(--code);   }
+
+    /* Fixed-height block so the interface name lands at the same
+       level across all three panels regardless of text wrapping */
+    .panel .env-block {
+      min-height: 8rem;
+    }
+
+    .panel .env-label {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--faint);
+      margin-bottom: 0.2rem;
+    }
+    .panel .env-name {
+      font-size: 1.7rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      color: var(--text);
+      margin-bottom: 0.3rem;
+    }
+    .panel .env-detail {
+      font-size: 0.75rem;
+      color: var(--faint);
+    }
+
+    .panel .connector {
+      text-align: center;
+      color: var(--border);
+      font-size: 1.1rem;
+      padding: 0.25rem 0;
+      line-height: 1;
+    }
+
+    .panel .iface-name {
+      font-size: 1.7rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+    .panel.chat  .iface-name { color: var(--chat); }
+    .panel.cowork .iface-name { font-size: 1.3rem; }   /* longer label needs more room */
+    .panel.code  .iface-name { color: var(--code); }
+
+    /* Mode-name spans inside the cowork panel's iface-name */
+    .m-chat   { color: var(--chat); }
+    .m-cowork { color: var(--cowork); }
+    .m-code   { color: var(--code); }
+    .m-sep    { color: var(--faint); font-weight: 400; }
+
+    .panel .product {
+      display: block;
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      color: var(--faint);
+      margin-top: 0.1rem;
+    }
+
+    .panel .tagline {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-top: 0.5rem;
+      line-height: 1.5;
+    }
+
+    /* ── Bridge connector ──────────────────────────────────────── */
+    /*
+      Each .bridge-point draws its own horizontal bar segment with
+      ::before — no parent-relative calc() needed.
+        left:   bar runs from the column midpoint rightward
+        center: full bar (plus cowork color)
+        right:  bar runs from left to the column midpoint
+      Together the three segments form one continuous line.
+    */
+    .bridge {
+      display: flex;
+      margin: 0.5rem 0 0.6rem;
+    }
+
+    .bridge-point {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      padding-top: 0.6rem;
+    }
+
+    /* Horizontal bar segments */
+    .bridge-point::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1.5px;
+      background: var(--border);
+    }
+    .bridge-point.left::before  { left: 50%; }
+    .bridge-point.right::before { right: 50%; }
+
+    /* Vertical tick dropping from the bar */
+    .bridge-tick {
+      width: 1.5px;
+      height: 0.6rem;
+      background: var(--border);
+    }
+    .bridge-point.center .bridge-tick {
+      background: var(--cowork);
+      height: 0.8rem;
+    }
+
+    .bridge-note {
+      font-size: 0.68rem;
+      text-align: center;
+      line-height: 1.4;
+      color: var(--faint);
+      margin-top: 0.15rem;
+    }
+    .bridge-point.left  .bridge-note { color: var(--chat); }
+    .bridge-point.right .bridge-note { color: var(--code); }
+    .bridge-point.center .bridge-note {
+      color: var(--cowork);
+      font-weight: 600;
+      font-size: 0.72rem;
+    }
+
+    /* ── Section header (shared centered label + rules) ─────────── */
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      margin: 0.9rem 0 0.5rem;
+    }
+    .section-header::before,
+    .section-header::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+    .section-label {
+      font-size: 0.62rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.11em;
+      color: var(--faint);
+      white-space: nowrap;
+    }
+
+    /* ── Mode column headers ───────────────────────────────────── */
+    .mode-headers {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .mode-header {
+      padding: 0.35rem 0.75rem;
+      border: 1.5px solid var(--border);
+      border-left: 3px solid transparent;
+      border-radius: 8px;
+    }
+    .mode-header.chat   { border-left-color: var(--chat);   }
+    .mode-header.cowork { border-left-color: var(--cowork); }
+    .mode-header.code   { border-left-color: var(--code);   }
+
+    .mode-header-name {
+      font-size: 1.7rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+    .mode-header.chat   .mode-header-name { color: var(--chat);   }
+    .mode-header.cowork .mode-header-name { color: var(--cowork); }
+    .mode-header.code   .mode-header-name { color: var(--code);   }
+
+    .mode-header-note {
+      font-size: 0.68rem;
+      color: var(--faint);
+      font-style: italic;
+      line-height: 1.4;
+    }
+
+    /* ── Content rows ──────────────────────────────────────────── */
+    .row-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .cell {
+      padding: 0.45rem 0.75rem;
+      border: 1.5px solid var(--border);
+      border-left: 3px solid transparent;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+    .cell.chat   { border-left-color: var(--chat);   }
+    .cell.cowork { border-left-color: var(--cowork); }
+    .cell.code   { border-left-color: var(--code);   }
+
+    .cell ul {
+      padding-left: 1.1rem;
+      list-style: disc;
+    }
+    .cell ul li { margin-bottom: 0.2rem; }
+
+    .cell p { line-height: 1.55; }
+
+    .cell.italic p { font-style: italic; }
+
+    /* ── "When to switch" — coda treatment ────────────────────── */
+    .section-header.switch {
+      margin-top: 1.2rem;
+    }
+    .section-header.switch .section-label {
+      font-weight: 400;
+      font-style: italic;
+      letter-spacing: 0.07em;
+    }
+    .cell.aside {
+      border-style: dashed;
+      border-left-style: solid;
+      background: #F9FAFB;
+    }
+
+    /* ── Page break + flip note ────────────────────────────────── */
+
+    /* On screen: show the flip note in flow as a preview */
+    .flip-note {
+      margin-top: 1.2rem;
+      padding: 0.55rem 1rem;
+      border: 1.5px dashed var(--border);
+      border-radius: 8px;
+      text-align: center;
+      font-size: 0.78rem;
+      font-style: italic;
+      color: var(--muted);
+    }
+
+    /* On print: hide in-flow div — the @page margin box takes over */
+    @media print {
+      .flip-note { display: none; }
+    }
+
+    /* Security section starts on page 2 */
+    .section-header.security {
+      break-before: page;
+      page-break-before: always; /* legacy fallback */
+    }
+
+    /* ── Security section ──────────────────────────────────────── */
+
+    /* Section header variant — warm amber rules + highlighted label */
+    .section-header.security::before,
+    .section-header.security::after {
+      background: #D97706;
+      height: 1.5px;
+    }
+    .section-header.security .section-label {
+      background: #FEF9C3;
+      color: #78350F;
+      border: 1px solid #FCD34D;
+      padding: 0.15rem 0.55rem;
+      border-radius: 3px;
+    }
+
+    /* Two-tier subheadings within each security cell */
+    .sec-head {
+      font-size: 0.62rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin: 0.55rem 0 0.2rem;
+    }
+    .sec-head:first-child { margin-top: 0; }
+    .sec-head.ok   { color: #166534; }
+    .sec-head.warn { color: #92400E; }
+
+  </style>
+</head>
+<body>
+
+  <!-- Title -->
+  <header class="page-title">
+    <h1>Claude: Three Interfaces</h1>
+    <p>Choosing the right environment for your work</p>
+  </header>
+
+  <!-- Top panels -->
+  <div class="panels">
+
+    <div class="panel chat">
+      <div class="env-block">
+        <div class="env-label">Environment</div>
+        <div class="env-name">Web UI</div>
+        <div class="env-detail">Chrome, Safari, or any browser — nothing to install</div>
+      </div>
+      <div class="connector">↕</div>
+      <div class="iface-name">Chat</div>
+      <span class="product">claude.ai</span>
+      <p class="tagline">Ask questions, get answers. Open a browser tab and start.</p>
+    </div>
+
+    <div class="panel cowork">
+      <div class="env-block">
+        <div class="env-label">Environment</div>
+        <div class="env-name">Desktop app</div>
+        <div class="env-detail">Installed on your computer — works alongside your files</div>
+      </div>
+      <div class="connector">↕</div>
+      <div class="iface-name">
+        <span class="m-chat">Chat</span><span class="m-sep"> / </span><span class="m-cowork">Cowork</span><span class="m-sep"> / </span><span class="m-code">Code</span>
+      </div>
+      <span class="product">Claude Code (desktop app)</span>
+      <p class="tagline">A desktop app that contains all three modes: chat, file-connected cowork, and code-level access. More capable than the browser — and more to be thoughtful about.</p>
+    </div>
+
+    <div class="panel code">
+      <div class="env-block">
+        <div class="env-label">Environment</div>
+        <div class="env-name">Terminal + IDE/CLI</div>
+        <div class="env-detail">The terminal (command-line interface) and a code editor like VS Code</div>
+      </div>
+      <div class="connector">↕</div>
+      <div class="iface-name">Code</div>
+      <span class="product">Claude Code (CLI)</span>
+      <p class="tagline">Build workflows that run on your files automatically, at scale.</p>
+    </div>
+
+  </div>
+
+  <!-- Bridge connector -->
+  <div class="bridge">
+    <div class="bridge-point left">
+      <div class="bridge-tick"></div>
+      <div class="bridge-note">Chat mode<br>available here too</div>
+    </div>
+    <div class="bridge-point center">
+      <div class="bridge-tick"></div>
+      <div class="bridge-note">Desktop app runs all three modes</div>
+    </div>
+    <div class="bridge-point right">
+      <div class="bridge-tick"></div>
+      <div class="bridge-note">Code-level access<br>available here too</div>
+    </div>
+  </div>
+
+  <!-- Mode column headers -->
+  <div class="row-grid mode-headers">
+    <div class="mode-header chat">
+      <div class="mode-header-name">Chat</div>
+      <div class="mode-header-note">(also available in desktop app)</div>
+    </div>
+    <div class="mode-header cowork">
+      <div class="mode-header-name">Cowork</div>
+      <div class="mode-header-note">(only available in desktop app)</div>
+    </div>
+    <div class="mode-header code">
+      <div class="mode-header-name">Code</div>
+      <div class="mode-header-note">(also available in desktop app)</div>
+    </div>
+  </div>
+
+  <!-- Row: What you can do -->
+  <div class="section-header">
+    <span class="section-label">What you can do</span>
+  </div>
+  <div class="row-grid">
+    <div class="cell chat">
+      <ul>
+        <li>Brainstorm, draft, and think through problems</li>
+        <li>Get feedback on text you paste in</li>
+        <li>Summarize, translate, or explain anything</li>
+        <li>Quick Q&amp;A on any topic</li>
+      </ul>
+    </div>
+    <div class="cell cowork">
+      <ul>
+        <li>Have Claude read and work with your actual files</li>
+        <li>Work iteratively on a project across multiple sessions</li>
+        <li>Build reusable workflows (skills) for tasks you do repeatedly</li>
+        <li>Run code-level commands — with more oversight than the full CLI</li>
+      </ul>
+    </div>
+    <div class="cell code">
+      <ul>
+        <li>Build workflows that run automatically and repeatedly</li>
+        <li>Process hundreds of files at once</li>
+        <li>Connect to Google Drive, GitHub, Airtable, and more</li>
+        <li>Build tools your colleagues can use without any setup</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Row: What it requires -->
+  <div class="section-header">
+    <span class="section-label">What it requires</span>
+  </div>
+  <div class="row-grid">
+    <div class="cell chat">
+      <p>A browser and a Claude account (free or Pro). Nothing to install, nothing to configure. Open a tab and start.</p>
+    </div>
+    <div class="cell cowork">
+      <p>Claude Code installed as a desktop application. A project folder connected on your computer. Roughly an afternoon to configure well.</p>
+    </div>
+    <div class="cell code">
+      <p>Comfort with the terminal and a code editor like VS Code. Longer-term investment for payoff.</p>
+    </div>
+  </div>
+
+  <!-- Row: What Claude knows -->
+  <div class="section-header">
+    <span class="section-label">What Claude knows about your work</span>
+  </div>
+  <div class="row-grid">
+    <div class="cell chat">
+      <p>Only what you type or paste. Every new conversation starts fresh — no memory between sessions, no access to your files.</p>
+    </div>
+    <div class="cell cowork">
+      <p>The files in the folder you connect. Your preferences and project context, if you set up a CLAUDE.md file. Persistent across sessions with the right configuration.</p>
+    </div>
+    <div class="cell code">
+      <p>Your files, your preferences, your workflow history — and whatever external services you connect. The most persistent and configurable memory of any interface.</p>
+    </div>
+  </div>
+
+  <!-- Row: When to switch (coda) -->
+  <div class="section-header switch">
+    <span class="section-label">When to switch interfaces</span>
+  </div>
+  <div class="row-grid">
+    <div class="cell chat italic aside">
+      <p>Move to <strong>Cowork</strong> when you keep pasting the same file every session. Move to <strong>Code</strong> when you want automation or scale.</p>
+      <p>Step back to Chat from either: when the task is a quick one-off — a brainstorm, a draft, a lookup — that doesn't need your files. The browser tab is always the fastest path for a fast question.</p>
+    </div>
+    <div class="cell cowork italic aside">
+      <p>Move to <strong>Code</strong> when you want a workflow to run without you, or need to operate on many files at once.</p>
+      <p>Step back to <strong>Cowork</strong> from Code when a task calls for back-and-forth with your files rather than a running script. Step back to <strong>Chat</strong> when the task is simple enough that it doesn't need your connected project — don't invoke the desktop app for a quick question.</p>
+    </div>
+    <div class="cell code italic aside">
+      <p>No higher interface — but that doesn't mean every task belongs here. Step back to <strong>Cowork</strong> when you want interactive conversation with your files. Step back to <strong>Chat</strong> when you just need a quick answer. Even experienced Code users keep a browser tab open for simple questions. Not every task warrants a pipeline.</p>
+    </div>
+  </div>
+
+  <!-- Flip note (bottom of page 1) -->
+  <div class="flip-note">
+    Reasonable responses to what Claude knows about your work. (over)
+  </div>
+
+  <!-- Row: Security implications (page 2) -->
+  <div class="section-header security">
+    <span class="section-label">Security implications</span>
+  </div>
+  <div class="row-grid">
+    <div class="cell chat">
+      <div class="sec-head ok">No need to worry about</div>
+      <ul>
+        <li>Claude accessing files on your computer</li>
+        <li>Claude running code or commands</li>
+        <li>Anything persisting after you close the tab</li>
+      </ul>
+      <div class="sec-head warn">Be thoughtful about</div>
+      <ul>
+        <li>Anything you paste or type leaves your computer — treat sensitive content (student records, unpublished work, personal data) as you would an email to a third party</li>
+      </ul>
+    </div>
+    <div class="cell cowork">
+      <div class="sec-head ok">No need to worry about</div>
+      <ul>
+        <li>Claude accessing files outside the folder you connect</li>
+        <li>Claude acting without your awareness — the desktop app shows you what it's doing</li>
+      </ul>
+      <div class="sec-head warn">Be thoughtful about</div>
+      <ul>
+        <li>Be intentional about which folder you connect — Claude can read and edit everything inside it, including sensitive files</li>
+        <li>Code-level commands run on your actual computer — understand what you're approving</li>
+      </ul>
+    </div>
+    <div class="cell code">
+      <div class="sec-head ok">No need to worry about</div>
+      <ul>
+        <li>Claude acting without a confirmation step — Claude Code asks before running significant commands by default</li>
+      </ul>
+      <div class="sec-head warn">Be thoughtful about</div>
+      <ul>
+        <li>Claude can read, write, and delete files and run terminal commands — review its plan before approving actions on important data</li>
+        <li>MCP connections grant real access to external services (Drive, GitHub, etc.) — understand what each one does before enabling it</li>
+        <li>Automated workflows that run unattended need to be designed carefully before you trust them at scale</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

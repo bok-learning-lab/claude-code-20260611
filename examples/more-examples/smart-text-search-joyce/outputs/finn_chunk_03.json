@@ -1,0 +1,86 @@
+{
+  "chunk": "chunk_03",
+  "global_line_offset": 1800,
+  "matches": [
+    {
+      "global_line": 1818,
+      "matched_text": "Some vote him Vike, some mote him Mike, some dub him Llyn and Phin",
+      "snippet": "Some vote him Vike, some mote him Mike, some dub him Llyn and Phin while others hail him Lug",
+      "variant_type": "direct-spelling",
+      "reasoning": "Phin is a direct garbled variant of Finn; appears in a catalogue of names for the hero HCE",
+      "confidence": "high"
+    },
+    {
+      "global_line": 1932,
+      "matched_text": "Fenn Mac Call",
+      "snippet": "choir of the O'Daley O'Doyles doublesixing the chorus in Fenn Mac Call and the Serven Feeries",
+      "variant_type": "direct-spelling",
+      "reasoning": "Fenn Mac Call is garbled form of Finn MacCool; appears as title of mythic tale-fragment",
+      "confidence": "high"
+    },
+    {
+      "global_line": 1841,
+      "matched_text": "Fingal Mac Oscar",
+      "snippet": "Where from? roars Poolbeg. Fingal Mac Oscar Onesine Bargearse Boniface",
+      "variant_type": "direct-spelling",
+      "reasoning": "Fingal is direct variant of Fionn/Finn (Irish Fionngheal); Mac Oscar invokes Finn's son Oisin/Ossian from Fenian tradition",
+      "confidence": "high"
+    },
+    {
+      "global_line": 1854,
+      "matched_text": "Humpty Dumpty... fell with a roll and a rumble... curled up like Lord Olofa Crumple By the butt of the Magazine Wall",
+      "snippet": "Have you heard of one Humpty Dumpty How he fell with a roll and a rumble And curled up like Lord Olofa Crumple By the butt of the Magazine Wall",
+      "variant_type": "fall-resurrection",
+      "reasoning": "The ballad of Humpty Dumpty mirrors Finnegan's Fall; the great man falling, recumbent by a wall (Dublin terrain motif); implies resurrection/wake",
+      "confidence": "high"
+    },
+    {
+      "global_line": 1859,
+      "matched_text": "He was one time our King of the Castle Now he's kicked about like a rotten old parsnip",
+      "snippet": "He was one time our King of the Castle Now he's kicked about like a rotten old parsnip",
+      "variant_type": "fall-resurrection",
+      "reasoning": "Fall from kingship and degradation; Finnegan/HCE motif of former greatness now diminished",
+      "confidence": "high"
+    },
+    {
+      "global_line": 1875,
+      "matched_text": "He was fafafather of all schemes",
+      "snippet": "He was fafafather of all schemes for to bother us Slow coaches and immaculate contraceptives",
+      "variant_type": "avatar-epithet",
+      "reasoning": "fafafather invokes Finn/father archetype; the generative, world-making ancestor figure",
+      "confidence": "medium"
+    },
+    {
+      "global_line": 1933,
+      "matched_text": "Serven Feeries of Loch Neach",
+      "snippet": "doublesixing the chorus in Fenn Mac Call and the Serven Feeries of Loch Neach Galloper Troppler",
+      "variant_type": "mythic-attribute",
+      "reasoning": "Fianna/Fenians motif: the warrior band and magical dwelling; Seven Feeries = Fenian tradition of Otherworld helpers",
+      "confidence": "high"
+    },
+    {
+      "global_line": 2009,
+      "matched_text": "Before he fell hill he filled heaven: a stream, alplapping streamlet, coyly coiled um, cool of her curls",
+      "snippet": "Before he fell hill he filled heaven: a stream, alplapping streamlet, coyly coiled um, cool of her curls",
+      "variant_type": "fall-resurrection",
+      "reasoning": "Fall motif (before he fell); hill/terrain metamorphosis; paradoxical cosmic filling (before falling) invokes Finn's cosmic/landscape body",
+      "confidence": "high"
+    },
+    {
+      "global_line": 2010,
+      "matched_text": "Hill of Allen... Jotnursfjaell",
+      "snippet": "Our antheap we sensed as a Hill of Allen, the Barrow for an People, one Jotnursfjaell",
+      "variant_type": "giant-landscape",
+      "reasoning": "Hill of Allen: Finn's seat in Irish mythology; Jotnursfjaell: giant's mountain (Norse); metonymic landscape body of the sleeping giant",
+      "confidence": "high"
+    },
+    {
+      "global_line": 1907,
+      "matched_text": "Bygning",
+      "snippet": "Not olderwise Inn the days of the Bygning would our Traveller remote",
+      "variant_type": "avatar-epithet",
+      "reasoning": "Bygning echoes Bygmester Finnegan (the bricklayer/builder from Finnegan's Wake opening); builder archetype",
+      "confidence": "high"
+    }
+  ]
+}
