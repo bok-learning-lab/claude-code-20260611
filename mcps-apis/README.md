@@ -8,6 +8,7 @@ automatically; the plain API clients are just scripts Claude runs directly.
 
 | Server | Language | Entry | What it does |
 |---|---|---|---|
+| [academic-search](academic-search/) | Python | `academic-search/server.py` | Search Semantic Scholar: papers, details, recommendations (key optional — raises rate limits) |
 | [arxiv](arxiv/) | Python | `arxiv/server.py` | Search arXiv and retrieve e-print metadata + full text |
 | [gemini-vision](gemini-vision/) | Python | `gemini-vision/server.py` | Send images to Google Gemini for vision/description (needs `GEMINI_API_KEY`) |
 | [replicate-image](replicate-image/) | Python | `replicate-image/server.py` | Generate images via Replicate models (needs `REPLICATE_API_TOKEN`) |
@@ -45,7 +46,9 @@ Servers that ship a `requirements.txt` instead of a `pyproject.toml` (e.g. `gemi
 `replicate-image`) install with `pip install -r requirements.txt` after creating the venv. The
 servers needing API keys read them from the `env` block in `.mcp.json` (see step 2).
 
-**Node servers:** each is self-contained — install inside its own folder (a root-level
+**Node servers:** `harvard-art-museums-mcp` ships its compiled `dist/` committed, so it runs
+straight from a clone with only `node` installed — no build step. Rebuild only if you edit
+`src/`; each Node server is self-contained — install inside its own folder (a root-level
 `pnpm i` will **not** reach subfolders; this repo is not a pnpm workspace):
 
 ```bash

@@ -1,5 +1,9 @@
 {
   "mcpServers": {
+    "academic-search": {
+      "command": "mcps-apis/academic-search/.venv/bin/python",
+      "args": ["mcps-apis/academic-search/server.py"]
+    },
     "arxiv": {
       "command": "mcps-apis/arxiv/.venv/bin/python",
       "args": ["mcps-apis/arxiv/server.py"]

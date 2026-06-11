@@ -84,6 +84,9 @@ out
 .nuxt
 dist
 .output
+# exception: the HAM MCP server ships prebuilt so .mcp.json works from a clone
+!mcps-apis/harvard-art-museums-mcp/dist/
+!mcps-apis/harvard-art-museums-mcp/dist/**
 
 # Gatsby files
 .cache/

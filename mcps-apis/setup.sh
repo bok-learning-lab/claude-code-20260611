@@ -52,7 +52,7 @@ if [ -z "$PYTHON" ]; then
   SKIPPED_ANY=1
 else
   ok "found $("$PYTHON" --version 2>&1)"
-  for server in arxiv gemini-vision replicate-image; do
+  for server in academic-search arxiv gemini-vision replicate-image; do
     dir="$MCPS_DIR/$server"
     [ -d "$dir" ] || { fail "$server: folder missing"; continue; }
     printf '  building %s ...\n' "$server"
@@ -107,21 +107,25 @@ echo
 # --- Step 4: API keys reminder ---------------------------------------------
 bold "4. API keys"
 cat <<'EOF'
-  Open .mcp.json at the repo root and paste the keys from the secure
-  Google Doc we sent. Replace each ${PLACEHOLDER} with the matching value:
+  The committed .mcp.json holds no keys — each ${PLACEHOLDER} is an
+  environment variable that Claude Code resolves at startup. Export them
+  in your shell profile (~/.zshenv on macOS), using the values from the
+  secure Google Doc we sent:
 
-    gemini-vision        GEMINI_API_KEY
-    replicate-image      REPLICATE_API_TOKEN
-    Canvas               X-Canvas-API-Token   (header)
-    harvard-art-museums  HAM_API_KEY
+    export GEMINI_API_KEY=...        (gemini-vision)
+    export REPLICATE_API_TOKEN=...   (replicate-image)
+    export CANVAS_API_TOKEN=...      (Canvas)
+    export HAM_API_KEY=...           (harvard-art-museums)
 
-  (arxiv needs no key. Canvas is a hosted server — no local install.)
+  (academic-search and arxiv need no key. Canvas is a hosted server — no
+  local install. If you paste values directly into .mcp.json instead,
+  that works too — but NEVER commit that change; the file is tracked.)
 EOF
 echo
 
 # --- Done -------------------------------------------------------------------
 bold "Next steps"
-echo "  - Finish pasting your keys into .mcp.json (step 4 above)."
+echo "  - Export your keys in your shell profile (step 4 above)."
 echo "  - Restart Claude Code so it reloads .mcp.json, approve the servers,"
 echo "    then run /mcp to confirm each one is connected."
 if [ "$SKIPPED_ANY" -eq 1 ]; then
