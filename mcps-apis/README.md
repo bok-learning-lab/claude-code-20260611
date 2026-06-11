@@ -16,10 +16,14 @@ automatically; the plain API clients are just scripts Claude runs directly.
 
 ## Setup for cloners
 
-Nothing here runs straight after a `git clone`. Two things are deliberately **not** committed:
+The repo ships a working [`.mcp.json`](../.mcp.json) at the root — it holds no secrets (every
+key arrives via an `${ENV_VAR}` reference resolved from your shell environment), so it is
+committed and Claude Code picks it up on startup with no copying step. Two things still won't
+run straight after a `git clone`:
 
-- **The real `.mcp.json`** (gitignored — it may hold absolute paths or API keys). You get
-  [`.mcp.json.example`](../.mcp.json.example) instead and copy it.
+- **Your API keys.** Set the env vars the servers need (`GEMINI_API_KEY`,
+  `REPLICATE_API_TOKEN`, `CANVAS_API_TOKEN`, `HAM_API_KEY`) in your shell before launching
+  Claude Code; servers whose key is missing simply fail to connect.
 - **Each server's installed dependencies** (`.venv/`, `node_modules/` — gitignored). A venv in
   particular hardcodes absolute paths and platform-specific binaries, so it could never be
   shared anyway; you rebuild it from the committed manifest (`pyproject.toml` / `package.json`).
@@ -50,15 +54,11 @@ pnpm i
 pnpm build   # if it compiles TypeScript → dist/
 ```
 
-### 2. Create your `.mcp.json`
+### 2. Check `.mcp.json` (already committed)
 
-From the repo root:
-
-```bash
-cp .mcp.json.example .mcp.json
-```
-
-The example already points `arxiv` at the in-repo copy using paths relative to the repo root:
+Nothing to copy — the repo root's `.mcp.json` is committed and ready
+([`.mcp.json.example`](../.mcp.json.example) remains as an identical reference).
+It already points `arxiv` at the in-repo copy using paths relative to the repo root:
 
 ```json
 "arxiv": {
