@@ -1,0 +1,121 @@
+%% coursestyle.sty
+%% ---------------------------------------------------------------------------
+%% Visual layer for the worksheets/problem sets. This packages exactly the
+%% preamble that the original template kept *inline* in every document (colors,
+%% blue section banners, the trapezoid title block, \numbox, pgfplots config),
+%% plus a couple of convenience macros (\handouttitle, \calloutbox) and the
+%% accessibility settings.
+%%
+%% Pair it with the provided environment package:
+%%     \usepackage{../coursestyle}        % this file (look & feel)
+%%     \usepackage[<options>]{../handout} % problem/solution/note/... environments
+%%
+%% Keeping the two separate means handout.sty stays exactly as provided, and all
+%% styling lives in one shared place instead of being copied into every file.
+%%
+%% Accessibility (institution policy -> WCAG 2.1 AA):
+%%   * color1 on white is ~5.4:1 contrast (passes AA); color2 is always paired
+%%     with black text.
+%%   * PDF language + display-title metadata are set for screen readers.
+%%   * Solution/Grading boxes (from handout.sty) carry TEXT titles, not color
+%%     alone. See ACCESSIBILITY.md for the tagged-PDF gap.
+%% ---------------------------------------------------------------------------
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{coursestyle}[2026/06/10 Visual layer for DE worksheets/PSets]
+
+\RequirePackage{amsmath, amssymb}
+\RequirePackage[margin=1in]{geometry}
+\RequirePackage{enumitem}
+\RequirePackage{tikz}
+\usetikzlibrary{shapes.geometric, backgrounds, calc}
+\RequirePackage{calc}
+\RequirePackage{multicol}
+\RequirePackage{xcolor}
+
+\definecolor{color1}{RGB}{0, 99, 178}   % Electric Blue (headers, links)
+\definecolor{color2}{RGB}{193, 228, 242} % Sky Blue (callout fills)
+
+\setlength{\parskip}{1ex}
+\setlength{\parindent}{0pt}
+
+\newlength{\topedge}
+\newlength{\bottomedge}
+
+% ---- section / subsection banners ------------------------------------------
+\RequirePackage{titlesec, titletoc}
+\titleformat{\section}[display]{}{}{0pt}{%
+    \bfseries\Large\color{white}%
+    \setlength{\topedge}{0.9\baselineskip}%
+    \setlength{\bottomedge}{-0.4\baselineskip}%
+    \begin{tikzpicture}[overlay, x=1in, y=1in]
+        \fill[color1] (-1, \bottomedge) -- (6.5, \bottomedge) -- (6.2, \topedge) -- (-1, \topedge) -- cycle;
+    \end{tikzpicture}%
+}[]
+\titlespacing*{\section}{0pt}{-3ex}{1ex}
+
+\titleformat{\subsection}[display]{}{}{0pt}{%
+    \bfseries\large\color{white}%
+    \setlength{\topedge}{0.9\baselineskip}%
+    \setlength{\bottomedge}{-0.4\baselineskip}%
+    \begin{tikzpicture}[overlay, x=1in, y=1in]
+        \fill[color1] (-1, \bottomedge) -- (2.75, \bottomedge) -- (2.5, \topedge) -- (-1, \topedge) -- cycle;
+    \end{tikzpicture}%
+}[]
+\titlespacing*{\subsection}{0pt}{-2ex}{0pt}
+
+% ---- pgfplots defaults ------------------------------------------------------
+\RequirePackage{pgfplots}
+\pgfplotsset{compat=1.16}
+\pgfplotsset{
+    cycle list=black,
+    every axis plot/.style={no marks, thick},
+    tick label style = {font=\footnotesize, inner sep=0pt},
+    scaled ticks=false,
+    samples=101,
+    width=3in,
+}
+
+% ---- hyperlinks + PDF metadata (accessibility) ------------------------------
+\RequirePackage[colorlinks, linkcolor=color1, urlcolor=color1, citecolor=color1]{hyperref}
+\hypersetup{pdflang={en-US}, pdfdisplaydoctitle=true}
+% Equation alt text (axessibility) needs the LaTeX PDF-management layer /
+% lualatex and fails under the xetex-based tectonic engine; see ACCESSIBILITY.md.
+% \RequirePackage{axessibility}
+
+% ---- list styling -----------------------------------------------------------
+\RequirePackage{fdsymbol}
+\setlist{itemsep=1ex, parsep=1ex, topsep=1ex}
+\setlist[itemize]{label={\color{color1} $\smallblackdiamond$}}
+
+% ---- trapezoid problem numbers ---------------------------------------------
+\DeclareRobustCommand{\numbox}[1]{\tikz[overlay, baseline=-10pt, trapezium stretches=true] \node[trapezium, trapezium left angle=45, trapezium right angle=90, shape border rotate=90, anchor=north, text depth=1cm, inner ysep=8pt, fill=color1, text=white, font=\Large]{#1}; \,}
+\DeclareRobustCommand{\shortnumbox}[1]{\tikz[overlay, baseline=-10pt, trapezium stretches=true] \node[trapezium, trapezium left angle=45, trapezium right angle=90, shape border rotate=90, anchor=north, inner ysep=8pt, fill=color1, text=white, font=\Large]{#1}; \,}
+
+% ---- title block + callout helpers -----------------------------------------
+% \handouttitle{<subject>}{<kind, e.g. Worksheet 1>}{<date>}
+\newcommand{\handouttitle}[3]{%
+    \begin{center}
+        \begin{tikzpicture}
+            \node (title) [trapezium, trapezium left angle=60, trapezium right angle=120, align=center, inner sep=10pt, fill=color1, text=white] at (0, 0) {\bfseries\LARGE #1};
+            \node[trapezium, trapezium left angle=120, trapezium right angle=60, align=center, inner sep=6pt, fill=color2, text=black]
+                at ($(title.top left corner) + (0,0.2)$) {\large #2};
+            \node[trapezium, trapezium left angle=120, trapezium right angle=60, align=center, inner sep=6pt, fill=color2, text=black]
+                at ($(title.bottom right corner) + (0,-0.2)$) {\large #3};
+        \end{tikzpicture}
+    \end{center}%
+}
+
+% \calloutbox{<heading>}{<body>} -- the "Today's Goals" / "PSet Tips" box
+\newcommand{\calloutbox}[2]{%
+    \begin{center}
+        \hspace*{-1in}
+        \begin{tikzpicture}
+            \node (cb) [trapezium, trapezium left angle=100, trapezium right angle=80, align=center, inner sep=8pt, fill=color2, text=black] at (0, 0)
+                {\begin{minipage}{\textwidth}#2\end{minipage}};
+            \node[trapezium, trapezium left angle=60, trapezium right angle=120, align=center, anchor=bottom left corner, inner sep=6pt, fill=color1, text=white] at ($(cb.top left corner) + (0.8, -0.15)$) {\bfseries #1};
+        \end{tikzpicture}
+        \hspace*{-1in}
+    \end{center}%
+}
+
+\endinput

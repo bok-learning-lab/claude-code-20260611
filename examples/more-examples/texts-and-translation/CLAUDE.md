@@ -11,7 +11,7 @@ Two corpora bundled, each set up as a standalone demo target:
 - [inputs/the-odyssey/](inputs/the-odyssey/) — Homer's *Odyssey* in 14 translations spanning Greek, Latin, Spanish, French, Swedish, and English (Bryant, Butcher/Lang, Butler, Cotterill, Cowper, Merry/Riddell, Monro, Pope), plus the Homeric original in TEI/XML (PerseusDL, Murray edition). Designed for *comparative translation*.
 - [inputs/early-modern-sanskrit/](inputs/early-modern-sanskrit/) — Jagannātha Paṇḍitarāja's *Rasagaṅgādhara* (17th c.), Ānana 1, from the GRETIL etext archive. Designed for *close work on a non-Roman-script primary text*, including identifying figures of speech in a treatise that is itself about figures of speech.
 
-Skills live under `operations/skills/` so the project travels as a self-contained bundle.
+Skills live under `.claude/skills/` so the project travels as a self-contained bundle.
 
 ## If you just opened this folder
 
@@ -19,16 +19,16 @@ Read in this order:
 
 1. [summary.md](summary.md) — what this is, how we built it, what you can translate it to.
 2. [index.md](index.md) — a map of the folder.
-3. The skill SKILL.md files in [operations/skills/](operations/skills/) for the specific skill you want to invoke.
+3. The skill SKILL.md files in [.claude/skills/](.claude/skills/) for the specific skill you want to invoke.
 
 ## The skills
 
 | Skill | File | What it does |
 |---|---|---|
-| `/split-into-books` | [operations/skills/split-into-books/SKILL.md](operations/skills/split-into-books/SKILL.md) | Splits translation files into 24 per-book files for fast passage queries |
-| `/show-passage` | [operations/skills/show-passage/SKILL.md](operations/skills/show-passage/SKILL.md) | Displays a passage with original Homeric Greek at top and chosen translations below |
-| `/identify-figures-sanskrit` | [operations/skills/identify-figures-sanskrit/SKILL.md](operations/skills/identify-figures-sanskrit/SKILL.md) | Identifies candidate alaṃkāras in a passage from the *Rasagaṅgādhara* |
-| `/identify-figures-greek` | [operations/skills/identify-figures-greek/SKILL.md](operations/skills/identify-figures-greek/SKILL.md) | Identifies rhetorical figures in a passage of Homeric Greek |
+| `/split-into-books` | [.claude/skills/split-into-books/SKILL.md](.claude/skills/split-into-books/SKILL.md) | Splits translation files into 24 per-book files for fast passage queries |
+| `/show-passage` | [.claude/skills/show-passage/SKILL.md](.claude/skills/show-passage/SKILL.md) | Displays a passage with original Homeric Greek at top and chosen translations below |
+| `/identify-figures-sanskrit` | [.claude/skills/identify-figures-sanskrit/SKILL.md](.claude/skills/identify-figures-sanskrit/SKILL.md) | Identifies candidate alaṃkāras in a passage from the *Rasagaṅgādhara* |
+| `/identify-figures-greek` | [.claude/skills/identify-figures-greek/SKILL.md](.claude/skills/identify-figures-greek/SKILL.md) | Identifies rhetorical figures in a passage of Homeric Greek |
 
 Run `/split-into-books all` once before using `/show-passage`.
 
@@ -41,7 +41,7 @@ If unsure which mode applies, ask one question to disambiguate.
 
 ## Conventions
 
-- **Skills live in `operations/skills/<skill-name>/`** — project-scoped, so they travel with this folder.
+- **Skills live in `.claude/skills/<skill-name>/`** — project-scoped, so they travel with this folder.
 - **Source texts are read-only.** Don't modify files in `inputs/`. Generated artifacts go in `outputs/` (using the same sub-corpus nesting — `outputs/the-odyssey/`, `outputs/early-modern-sanskrit/`).
 - **Preserve script and diacritics exactly.** Do not silently transliterate, romanize, or strip diacritics. If a transformation is needed, produce a separate file and label it explicitly (e.g. `passage-iast.txt`).
 - **No emojis** in any file.

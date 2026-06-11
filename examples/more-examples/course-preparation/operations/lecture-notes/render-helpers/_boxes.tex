@@ -1,0 +1,31 @@
+% Box styles for CS1200 lecture notes (pandoc --include-in-header).
+% Requires: \usepackage[most]{tcolorbox}
+\usepackage[most]{tcolorbox}
+
+% Captured board content: solid blue, rounded.
+\newtcolorbox{boardbox}{
+  breakable,
+  colback=blue!4,
+  colframe=blue!55!black,
+  coltitle=white,
+  title=On the board,
+  fonttitle=\bfseries\small,
+  boxrule=0.6pt,
+  arc=3pt,
+  left=6pt, right=6pt, top=4pt, bottom=4pt,
+}
+
+% Reconstructed (uncaptured) board content: red, dashed, sharp corners.
+\newtcolorbox{guessbox}{
+  breakable,
+  enhanced,
+  colback=red!4,
+  colframe=red!60!black,
+  coltitle=white,
+  title=GENERATED \textemdash{} reconstructed; board not captured on camera,
+  fonttitle=\bfseries\small,
+  boxrule=0.9pt,
+  sharp corners,
+  borderline={0.5pt}{2pt}{red!60!black, dashed},
+  left=6pt, right=6pt, top=4pt, bottom=4pt,
+}

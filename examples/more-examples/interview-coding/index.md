@@ -26,19 +26,19 @@ The synthetic four-respondent corpus and the interview protocol.
 Prompts and skills that run against `inputs/`.
 
 - [operations/deep-research-prompt.md](operations/deep-research-prompt.md) — prompt used to commission the background research that produced `outputs/research-result.md`
-- operations/skills/
-  - operations/skills/[index-transcript/](operations/skills/index-transcript/) — Waters' Stage 1 indexing
-    - [SKILL.md](operations/skills/index-transcript/SKILL.md)
-    - [reference/protocol-mapping.md](operations/skills/index-transcript/reference/protocol-mapping.md)
-    - [reference/diff-check.md](operations/skills/index-transcript/reference/diff-check.md)
+- .claude/skills/
+  - .claude/skills/[index-transcript/](.claude/skills/index-transcript/) — Waters' Stage 1 indexing
+    - [SKILL.md](.claude/skills/index-transcript/SKILL.md)
+    - [reference/protocol-mapping.md](.claude/skills/index-transcript/reference/protocol-mapping.md)
+    - [reference/diff-check.md](.claude/skills/index-transcript/reference/diff-check.md)
     - examples/ — four indexed transcripts + four coverage reports
-  - operations/skills/[find-negative-cases/](operations/skills/find-negative-cases/) — Waters' Stage 3 validation
-    - [SKILL.md](operations/skills/find-negative-cases/SKILL.md)
-    - [reasoning-guide.md](operations/skills/find-negative-cases/reasoning-guide.md)
-    - [memo-template.md](operations/skills/find-negative-cases/memo-template.md)
+  - .claude/skills/[find-negative-cases/](.claude/skills/find-negative-cases/) — Waters' Stage 3 validation
+    - [SKILL.md](.claude/skills/find-negative-cases/SKILL.md)
+    - [reasoning-guide.md](.claude/skills/find-negative-cases/reasoning-guide.md)
+    - [memo-template.md](.claude/skills/find-negative-cases/memo-template.md)
     - examples/ — worked memos for the two demo claims
-  - operations/skills/[methods-paragraph/](operations/skills/methods-paragraph/) — transparency artifact generator
-    - [SKILL.md](operations/skills/methods-paragraph/SKILL.md)
+  - .claude/skills/[methods-paragraph/](.claude/skills/methods-paragraph/) — transparency artifact generator
+    - [SKILL.md](.claude/skills/methods-paragraph/SKILL.md)
     - examples/ — empty-project and full-project sample outputs
 
 ## outputs/

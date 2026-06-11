@@ -8,7 +8,7 @@ The companion essays that previously sat in `overview/` — a longer summary, a 
 
 ## What it is
 
-Four Claude Code skills, scoped to this project's `operations/skills/` directory.
+Four Claude Code skills, scoped to this project's `.claude/skills/` directory.
 
 - **`/split-into-books`** splits the Odyssey translation files into 24 per-book files for fast passage queries. Run it once before using `/show-passage`.
 - **`/show-passage`** displays a passage (by primary coordinate, e.g. *Odyssey* 1.1–10) with the original Homeric Greek at the top and chosen translations below, quoted verbatim. Shows what each translator chose to preserve or let go.

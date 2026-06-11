@@ -16,13 +16,13 @@ Read in this order:
 
 ## What you might be here to do
 
-- **Running the demo end-to-end** — `/index-transcript` on the four transcripts, then `/find-negative-cases` on the demo claim, then `/methods-paragraph`. Worked examples are already in each skill's `examples/` directory under `operations/skills/`, and validated outputs live in `outputs/`.
-- **Reading the skills as references** — every skill in `operations/skills/<skill-name>/` ships its `SKILL.md`, supporting templates, and worked examples.
+- **Running the demo end-to-end** — `/index-transcript` on the four transcripts, then `/find-negative-cases` on the demo claim, then `/methods-paragraph`. Worked examples are already in each skill's `examples/` directory under `.claude/skills/`, and validated outputs live in `outputs/`.
+- **Reading the skills as references** — every skill in `.claude/skills/<skill-name>/` ships its `SKILL.md`, supporting templates, and worked examples.
 - **Translating the pattern** — see the "What you can translate this to" section of summary.md.
 
 ## Conventions for this project
 
-- **Skills live in `operations/skills/<skill-name>/`** — project-scoped, not user-scoped, so they travel with this folder.
+- **Skills live in `.claude/skills/<skill-name>/`** — project-scoped, not user-scoped, so they travel with this folder.
 - **Sample data is read-only.** Don't modify files in `inputs/`. New artifacts go in `outputs/`.
 - **Respondent IDs and pseudonyms are stable.** R001–R004 and their pseudonyms (Tasha, Marisol, Carla, Denise) must be preserved consistently across every skill output, memo, and report.
 - **No emojis in any file.** Workshop-wide convention.

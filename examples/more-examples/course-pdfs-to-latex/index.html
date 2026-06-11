@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Course PDFs to a LaTeX template — index</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+         max-width: 760px; margin: 2.5rem auto; padding: 0 1.2rem; line-height: 1.55;
+         color: #1a1a1a; }
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.15rem; margin-top: 1.8rem; border-bottom: 2px solid #0063b2;
+       padding-bottom: .2rem; color: #0063b2; }
+  a { color: #0063b2; }
+  code { background: #eef3f8; padding: .1rem .3rem; border-radius: 3px; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .3rem 0; }
+  .note { background: #c1e4f2; padding: .8rem 1rem; border-radius: 6px; }
+</style>
+</head>
+<body>
+<h1>Course PDFs to a LaTeX template</h1>
+<p>A recipe: turn a course's Word-exported worksheet and homework PDFs into clean
+<code>.tex</code> files that follow a house template, with accessibility baked into
+the template. Read <a href="summary.md">summary.md</a> for the full story, or
+<a href="CLAUDE.md">CLAUDE.md</a> for session instructions.</p>
+
+<p class="note"><strong>The move worth noticing:</strong> reconstruct a missing
+dependency from how it is used so you stay unblocked — then keep the provided
+package untouched and own your additions (the visual layer and accessibility) in
+a companion file, so each concern has one source of truth.</p>
+
+<h2>inputs/ (read-only source)</h2>
+<ul>
+  <li><a href="inputs/handoff.md">handoff.md</a> — the original anonymized request.</li>
+  <li><a href="inputs/template-to-follow/worksheet-template.tex">worksheet-template.tex</a> — worksheet style to match.</li>
+  <li><a href="inputs/template-to-follow/problem-set-template.tex">problem-set-template.tex</a> — problem-set style to match.</li>
+  <li><a href="inputs/source-materials/Worksheets/03-First-Order-Linear-Differential-Equations.pdf">Worksheets/03-First-Order-Linear-Differential-Equations.pdf</a> — representative worksheet source.</li>
+  <li><a href="inputs/source-materials/Homework/03-First-Order-Linear-Differential-Equations.pdf">Homework/03-First-Order-Linear-Differential-Equations.pdf</a> — representative homework source.</li>
+</ul>
+
+<h2>operations/ (the process)</h2>
+<ul>
+  <li><a href="operations/handout.sty">handout.sty</a> — the provided environment package (used as-is).</li>
+  <li><a href="operations/coursestyle.sty">coursestyle.sty</a> — the companion visual + accessibility layer.</li>
+  <li><a href="operations/prompts/convert-worksheet-prompt.md">convert-worksheet-prompt.md</a></li>
+  <li><a href="operations/prompts/convert-homework-prompt.md">convert-homework-prompt.md</a></li>
+  <li><a href="operations/prompts/accessibility-audit-prompt.md">accessibility-audit-prompt.md</a></li>
+  <li><a href="operations/scripts/build.sh">build.sh</a> — rebuild every example.</li>
+</ul>
+
+<h2>outputs/ (rebuildable)</h2>
+<ul>
+  <li><a href="outputs/Worksheets/">Worksheets/</a> — converted worksheets (.tex + .pdf).</li>
+  <li><a href="outputs/Homework/">Homework/</a> — converted problem sets (.tex + .pdf).</li>
+  <li><a href="outputs/ACCESSIBILITY.md">ACCESSIBILITY.md</a> — the accessibility audit and gap.</li>
+</ul>
+
+<h2>To run end-to-end</h2>
+<p>Install <code>tectonic</code> (and <code>pdftotext</code>/poppler). Extract a
+source PDF with <code>pdftotext -layout</code>, follow the matching prompt in
+<code>operations/prompts/</code> to write a <code>.tex</code> into
+<code>outputs/</code>, then compile with <code>tectonic</code>. To rebuild all
+committed examples, run <a href="operations/scripts/build.sh">operations/scripts/build.sh</a>.</p>
+</body>
+</html>

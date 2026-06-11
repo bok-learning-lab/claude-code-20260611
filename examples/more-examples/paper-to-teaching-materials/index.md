@@ -20,18 +20,18 @@ The source paper, in two forms.
 The Deep Research prompt that produced the contextualizing essay, plus the skills that operate on the paper.
 
 - [operations/deep-research-prompt.md](operations/deep-research-prompt.md) — the prompt for an LLM Deep Research tool (Claude Deep Research, ChatGPT Deep Research, Perplexity Deep Research). Produces a 2,500–3,500-word contextualizing essay on decision-subject ethics, the Grant-Behrends-Basl framework, and how it lands across adjacent fields. The artifact for workshop participants who want the methodological tradition the paper sits in.
-- operations/skills/
-  - [teaching-case/](operations/skills/teaching-case/) — generate a student-facing case + instructor notes, engineered to surface a specific move in the framework
-    - [SKILL.md](operations/skills/teaching-case/SKILL.md)
+- .claude/skills/
+  - [teaching-case/](.claude/skills/teaching-case/) — generate a student-facing case + instructor notes, engineered to surface a specific move in the framework
+    - [SKILL.md](.claude/skills/teaching-case/SKILL.md)
     - examples/ — `case-medical-bail-5.2.md` (a §5.2 case) and `case-decoy-admissions.md` (the construct-validity stress test, designed to pass)
-  - [discussion-plan/](operations/skills/discussion-plan/) — Socratic sequence around a case, anticipating student positions and routing toward the move in the paper that answers them
-    - [SKILL.md](operations/skills/discussion-plan/SKILL.md)
+  - [discussion-plan/](.claude/skills/discussion-plan/) — Socratic sequence around a case, anticipating student positions and routing toward the move in the paper that answers them
+    - [SKILL.md](.claude/skills/discussion-plan/SKILL.md)
     - examples/ — `discussion-plan-C1.md` (a plan built around the C1 recidivism case)
-  - [objection-audit/](operations/skills/objection-audit/) — steelman a student argument, then diagnose against the framework with section citations
-    - [SKILL.md](operations/skills/objection-audit/SKILL.md)
+  - [objection-audit/](.claude/skills/objection-audit/) — steelman a student argument, then diagnose against the framework with section citations
+    - [SKILL.md](.claude/skills/objection-audit/SKILL.md)
     - examples/ — `audit-S1.md`, `audit-S2.md`, `audit-S3.md` (audits of the three corpus student arguments)
-  - [quiz/](operations/skills/quiz/) — short-answer comprehension check on the core argument, with student version and instructor answer key
-    - [SKILL.md](operations/skills/quiz/SKILL.md)
+  - [quiz/](.claude/skills/quiz/) — short-answer comprehension check on the core argument, with student version and instructor answer key
+    - [SKILL.md](.claude/skills/quiz/SKILL.md)
     - examples/ — `end-of-class-quiz.md`
 
 ## outputs/

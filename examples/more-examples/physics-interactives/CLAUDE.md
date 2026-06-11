@@ -6,7 +6,7 @@ Project-level instructions loaded when Claude Code starts in this folder.
 
 A self-contained bundle for making **PhET-style interactive simulations** — single-file HTML pages that a faculty member can build with Claude Code, double-click to open in Chrome, and share with students without any setup. See [summary.md](summary.md) for what the project ships, the tradition it sits in, and what LLMs change about it.
 
-This folder is designed to be **grabbable**: a physics faculty member can take just this directory, open Claude Code inside it, and start making teaching interactives without needing the rest of the workshop repo. Skills live in the project's own `operations/skills/` directory.
+This folder is designed to be **grabbable**: a physics faculty member can take just this directory, open Claude Code inside it, and start making teaching interactives without needing the rest of the workshop repo. Skills live in the project's own `.claude/skills/` directory.
 
 ## If you just opened this folder
 
@@ -18,7 +18,7 @@ Read in this order:
 
 ## Audience modes
 
-- **Faculty making their own interactive.** May never have touched a code editor. Default to plain-English explanations; do not assume CLI or git fluency. Natural first move: invoke `/phet-sim` and answer its questions, or fill out [operations/skills/phet-sim/rubrics/pedagogical-design-worksheet.md](operations/skills/phet-sim/rubrics/pedagogical-design-worksheet.md) on paper first.
+- **Faculty making their own interactive.** May never have touched a code editor. Default to plain-English explanations; do not assume CLI or git fluency. Natural first move: invoke `/phet-sim` and answer its questions, or fill out [.claude/skills/phet-sim/rubrics/pedagogical-design-worksheet.md](.claude/skills/phet-sim/rubrics/pedagogical-design-worksheet.md) on paper first.
 - **Marlon (or another collaborator) iterating on the skill itself or its examples.** Terse responses, no hand-holding.
 
 If unclear which mode applies, ask one question to disambiguate.
@@ -36,22 +36,22 @@ Every simulation produced by this project must satisfy these properties:
 
 If a user explicitly overrides one of these rules, proceed but mark the deviation in the file's header.
 
-## The skills (live in `operations/skills/`)
+## The skills (live in `.claude/skills/`)
 
-- **`/phet-sim`** — author a new simulation from a learning goal. See [operations/skills/phet-sim/SKILL.md](operations/skills/phet-sim/SKILL.md).
-- **`/phet-activity`** — Wieman-style classroom lesson plan (Predict → Observe → Explain → Synthesize) around an existing sim. See [operations/skills/phet-activity/SKILL.md](operations/skills/phet-activity/SKILL.md).
-- **`/phet-accessibility-audit`** — categorized audit report (Blockers / Warnings / Notes) against the accessibility floor. See [operations/skills/phet-accessibility-audit/SKILL.md](operations/skills/phet-accessibility-audit/SKILL.md).
-- **`/phet-rationale`** — 600–1,000-word department-facing rationale. See [operations/skills/phet-rationale/SKILL.md](operations/skills/phet-rationale/SKILL.md).
+- **`/phet-sim`** — author a new simulation from a learning goal. See [.claude/skills/phet-sim/SKILL.md](.claude/skills/phet-sim/SKILL.md).
+- **`/phet-activity`** — Wieman-style classroom lesson plan (Predict → Observe → Explain → Synthesize) around an existing sim. See [.claude/skills/phet-activity/SKILL.md](.claude/skills/phet-activity/SKILL.md).
+- **`/phet-accessibility-audit`** — categorized audit report (Blockers / Warnings / Notes) against the accessibility floor. See [.claude/skills/phet-accessibility-audit/SKILL.md](.claude/skills/phet-accessibility-audit/SKILL.md).
+- **`/phet-rationale`** — 600–1,000-word department-facing rationale. See [.claude/skills/phet-rationale/SKILL.md](.claude/skills/phet-rationale/SKILL.md).
 
 ## Conventions
 
 - **Generated simulations go in `outputs/`** alongside the project's other produced artifacts (the essays, the research-basis note, the deep-research report).
 - **Source artifacts in `inputs/` are read-only** for skills (faculty edit them by hand if at all).
-- **Skills live in `operations/skills/<skill-name>/`** — project-scoped, so they travel with this folder.
+- **Skills live in `.claude/skills/<skill-name>/`** — project-scoped, so they travel with this folder.
 
 ## Session-start checks
 
-1. Check whether `operations/skills/phet-sim/SKILL.md` exists. If it does, silence is correct.
+1. Check whether `.claude/skills/phet-sim/SKILL.md` exists. If it does, silence is correct.
 2. Make sure an `outputs/` directory exists.
 
 If both are in place and the user hasn't asked a question, say nothing.

@@ -1,0 +1,2625 @@
+1
+00:00:04,780 --> 00:00:08,830
+[Auto-generated transcript. Edits may have been applied for clarity.]
+All right, so let's get started. Can everyone hear me clearly?
+
+2
+00:00:09,610 --> 00:00:12,850
+Okay, great. So welcome to CSE 1200.
+
+3
+00:00:12,910 --> 00:00:16,420
+Uh, this is the first time we are offering it in spring 26.
+
+4
+00:00:17,110 --> 00:00:27,100
+Uh, I'm Anurag. Uh, I'll be your instructor and I'll spend a couple of minutes, uh, helping you navigate through the course a little bit.
+
+5
+00:00:27,160 --> 00:00:34,450
+Um, introduce you to the teaching fellows who are not here and also, you know,
+
+6
+00:00:34,450 --> 00:00:40,510
+tell you a bit about how would you go about with the logistics of the course and so on and some very useful resources online.
+
+7
+00:00:41,380 --> 00:00:45,100
+Once you do that, we'll get started with the lecture. So.
+
+8
+00:00:50,030 --> 00:01:04,370
+Let's see if this works. So we'll go over the just very briefly, I'll give you a sort of view of the syllabus of the course.
+
+9
+00:01:04,580 --> 00:01:11,299
+I strongly recommend everyone to just in their spare time, uh, just go over the syllabus, go over the main points.
+
+10
+00:01:11,300 --> 00:01:16,830
+But if you're really busy, uh, I can show you a little bit what what are the key things to navigate there?
+
+11
+00:01:16,850 --> 00:01:23,840
+Um, so first of all, uh, to start with the course, uh, the easiest thing you can do is go to canvas over here.
+
+12
+00:01:24,560 --> 00:01:27,940
+Uh. Scroll down. And go to the course website.
+
+13
+00:01:29,520 --> 00:01:39,360
+And of course, website uh, in the spring 26 part, you pretty much have the starting point for all the materials you need to navigate the course.
+
+14
+00:01:39,630 --> 00:01:49,030
+All right. So first thing is the syllabus. Now it's a pretty long syllabus, you know.
+
+15
+00:01:49,060 --> 00:01:53,170
+I mean, it took me a while to train. I didn't read it in that in the first offering.
+
+16
+00:01:53,170 --> 00:01:59,200
+I read in the second offering. To be honest, completely, because it's a lot of details from from several years of teaching.
+
+17
+00:02:00,190 --> 00:02:06,520
+Now, uh, let me point out the, uh, teaching, teaching stuff.
+
+18
+00:02:06,550 --> 00:02:14,260
+Uh, so Ana is the head teaching fellow, and, uh, we are accompanied by Audrey, Bridget, Emily and and Vihaan.
+
+19
+00:02:14,980 --> 00:02:24,340
+Uh, you should be hearing about, uh, announcement about their office hours and so on, uh, on edX and also information about my office hours as well.
+
+20
+00:02:25,030 --> 00:02:26,670
+So, uh, in the syllabus.
+
+21
+00:02:26,680 --> 00:02:33,430
+Well, uh, certainly you should go over all the material, but some of the key things are, uh, the prerequisites for the course.
+
+22
+00:02:33,520 --> 00:02:43,510
+Uh, uh, some of the expectations in the format of the course, especially read about similarities with exercises, read about,
+
+23
+00:02:43,780 --> 00:02:50,530
+uh, attendance requirements and so on, and how, uh, what if you can't attend some lectures, can't attend these exercises?
+
+24
+00:02:50,860 --> 00:02:56,560
+How do you go about the governance? So all the information is over here, which where we detail.
+
+25
+00:02:56,570 --> 00:02:59,090
+How should you kind of proceed with each circumstance?
+
+26
+00:03:00,130 --> 00:03:08,800
+Uh sections will be announced soon, if they haven't been already, and the information will show up on Add as we go forward.
+
+27
+00:03:09,340 --> 00:03:14,350
+Office hours as well. Uh, finally, do spend some time going over.
+
+28
+00:03:14,680 --> 00:03:16,630
+Uh, the discussion on the problem sets.
+
+29
+00:03:17,170 --> 00:03:23,620
+Uh, about participation, which would be a significant part of your grade and also about, uh, you know, grading policy itself.
+
+30
+00:03:23,920 --> 00:03:27,250
+The grading policy in this course is a little bit different from what you may see in other courses.
+
+31
+00:03:27,280 --> 00:03:35,620
+Uh, uh, some of the numerical grading, uh, formats we have, uh, uh, discarded them long back and we follow some,
+
+32
+00:03:35,620 --> 00:03:40,899
+uh, more, uh, a notion that tells you more about how prepared you are with the material so far.
+
+33
+00:03:40,900 --> 00:03:47,290
+So we'll be following the scale of n l r minus r and R plus, uh, go over these start and c um,
+
+34
+00:03:47,290 --> 00:03:53,770
+and of course, ask any questions on edX if you feel confused about it. There is a scope for revising the material that you submit.
+
+35
+00:03:54,130 --> 00:03:57,760
+And uh, here is the discussion about that, that you can vote and so on.
+
+36
+00:03:58,570 --> 00:04:03,010
+The participation grade also follows in similar rubric which I discussed over here and so on.
+
+37
+00:04:04,260 --> 00:04:09,719
+So, uh. These are some of the some of the pieces that you should certainly focus on.
+
+38
+00:04:09,720 --> 00:04:12,900
+And, and uh. Uh, if you do have more time, go over.
+
+39
+00:04:13,050 --> 00:04:23,070
+Wait a minute. All right. So now, uh, on this, uh, same course website, you'll see a page which has the course schedule.
+
+40
+00:04:24,150 --> 00:04:29,280
+And here you can pretty much see our current plan for what, uh, the course would look like.
+
+41
+00:04:30,000 --> 00:04:36,210
+The piece at zero has already been released on GitHub. I'm assuming, uh, people have access them by now.
+
+42
+00:04:36,900 --> 00:04:39,930
+Great. Uh, the great scope link is open.
+
+43
+00:04:40,080 --> 00:04:45,390
+Uh, how do you access? Great scope. Well, uh, you can just do it from here, from the website and.
+
+44
+00:04:46,620 --> 00:04:51,750
+Uh, the PZ0 is due this Saturday. So hopefully, you know, everyone is on track.
+
+45
+00:04:53,700 --> 00:05:00,270
+Uh, over here, there are the dates for the sender receiver exercises that you see listed, uh,
+
+46
+00:05:00,810 --> 00:05:05,400
+and will very likely not deviate from this thing unless another snow emergency comes in.
+
+47
+00:05:05,400 --> 00:05:09,210
+And we really have to close the university. Um, but otherwise, this is the plan.
+
+48
+00:05:10,490 --> 00:05:13,670
+The section. The sections are recorded here and also on the course calendar.
+
+49
+00:05:14,330 --> 00:05:17,569
+Now course calendar is a mystery to me as well. How to access.
+
+50
+00:05:17,570 --> 00:05:21,410
+But I think Ana has a post on edX which you can access.
+
+51
+00:05:22,220 --> 00:05:25,370
+Uh, let us know if you are not able to access the course calendar.
+
+52
+00:05:25,760 --> 00:05:28,819
+So Ana's, uh, right post here it is.
+
+53
+00:05:28,820 --> 00:05:33,820
+Everything about what you need about the course and also the. Also the zero information.
+
+54
+00:05:35,190 --> 00:05:35,580
+All right.
+
+55
+00:05:36,090 --> 00:05:43,620
+Now, here's a very useful, uh uh, uh link that will help you, uh, certainly help you in the time of the need, which is the effect for the course.
+
+56
+00:05:44,720 --> 00:05:49,240
+Uh. Before sending us sending the email to the good stuff.
+
+57
+00:05:49,900 --> 00:05:55,150
+Just go, well, uh uh, the search for these items and see if your question has already been answered here or not.
+
+58
+00:05:55,690 --> 00:06:00,190
+And this is just extremely helpful. Uh, resources to get us, you know, if you have question mine.
+
+59
+00:06:00,190 --> 00:06:04,000
+Okay. I'm I'm sick today. What should I do? There is answered here for that question.
+
+60
+00:06:05,050 --> 00:06:11,320
+I think. Uh, if. If not, then we should probably answer that question.
+
+61
+00:06:11,620 --> 00:06:19,000
+But one other thing. For example, uh uh uh uh uh, issues with the problem set and so on are all answered over here for us.
+
+62
+00:06:19,330 --> 00:06:19,750
+So. Yeah.
+
+63
+00:06:19,810 --> 00:06:27,940
+Uh, but if you don't find the answer here, you can email us on the following on the following, uh, email address, which is listed in the syllabus.
+
+64
+00:06:28,720 --> 00:06:34,270
+That's what we're here to send an email to this address. If you have any questions about questions that you can't find answer to immediately.
+
+65
+00:06:34,930 --> 00:06:39,900
+All right. Any questions that. Is not there in the queue.
+
+66
+00:06:42,430 --> 00:06:51,820
+Okay. Okay. Okay. Sounds good. So now let's get started with, uh, with, uh, uh, with the first lecture.
+
+67
+00:06:52,900 --> 00:06:56,470
+So today we'll talk about sorting algorithms.
+
+68
+00:06:56,950 --> 00:07:02,590
+Okay. But before that I would like to spend some time, take a step back and tell you, uh, briefly what this course is about.
+
+69
+00:07:03,100 --> 00:07:06,130
+And why are we starting off with sorting algorithms? All right.
+
+70
+00:07:06,160 --> 00:07:10,059
+And of course, please feel free to ask me any questions. Uh, just to make sure that I get to know everyone.
+
+71
+00:07:10,060 --> 00:07:15,340
+Well. Uh, before asking questions, just just say say your name loud as well, so that I know.
+
+72
+00:07:16,240 --> 00:07:20,740
+I know who you are. Or at least after enough tries, I will converge to a state where I know everyone's name.
+
+73
+00:07:22,360 --> 00:07:28,150
+Especially with the class size of 53, uh, among you, it should be quite possible then, in previous offerings.
+
+74
+00:07:28,720 --> 00:07:34,299
+All right. So this is the, uh. This is a lost account.
+
+75
+00:07:34,300 --> 00:07:38,050
+It's either fifth or sixth offering of this course, and it's still evolving.
+
+76
+00:07:38,060 --> 00:07:47,380
+Uh, the the things that you see in the course right now are our best guess of what it should look like to tell you about algorithms and complexity.
+
+77
+00:07:47,860 --> 00:07:51,910
+But, uh, we are very, very open to modifications.
+
+78
+00:07:51,940 --> 00:07:56,000
+Uh, uh, just to, uh, offer it in a better way to the future.
+
+79
+00:07:56,320 --> 00:08:02,470
+For future class. So, uh, your engagement is really important, and that's why the participation has such high value in the course.
+
+80
+00:08:02,980 --> 00:08:08,470
+All right. So in class discussions and the receiver exercises and so on, we really prioritize them.
+
+81
+00:08:08,950 --> 00:08:11,530
+In fact, as much as problem sets and exams. All right.
+
+82
+00:08:12,130 --> 00:08:21,490
+So before I get started, I would like to, uh, kind of get a sense of the class, uh, as to what your view of algorithm is.
+
+83
+00:08:22,030 --> 00:08:28,510
+So, so the question is from all of you. What is an algorithm?
+
+84
+00:08:32,590 --> 00:08:36,210
+Bom bom bom and and or and ones.
+
+85
+00:08:37,690 --> 00:08:46,870
+What do you think is an algorithm? Yeah, that's solving a problem.
+
+86
+00:08:47,350 --> 00:08:53,470
+Okay. Uh, steps to solve a problem.
+
+87
+00:08:57,160 --> 00:09:09,000
+All right. Uh. More ideas. Yeah, it's like a procedure, except I'm not.
+
+88
+00:09:09,560 --> 00:09:24,290
+That's just okay. It's a procedure. Uh uh, given inputs gives out a certain point.
+
+89
+00:09:24,740 --> 00:09:27,990
+Okay. Uh. More answers. There's no correct answer.
+
+90
+00:09:28,010 --> 00:09:31,760
+I'm just, uh, trying to get a sense of, uh, why you sitting here?
+
+91
+00:09:32,460 --> 00:09:46,400
+Let's call it what it is. Well before that.
+
+92
+00:09:46,400 --> 00:09:52,130
+Sorry. Can I catch your name? The first one you for in Gordon.
+
+93
+00:09:53,320 --> 00:09:56,890
+Okay. And maybe.
+
+94
+00:09:56,950 --> 00:10:01,850
+Okay. Sounds good. All right. Anymore.
+
+95
+00:10:04,070 --> 00:10:09,980
+Yes. Go ahead. Yes. Application of some steps to solve a problem that makes it computationally.
+
+96
+00:10:10,700 --> 00:10:16,630
+Okay. Uh huh. The definition.
+
+97
+00:10:19,030 --> 00:10:24,550
+Of maybe what you referring to is, uh, sort of real world ways to solve problems.
+
+98
+00:10:32,710 --> 00:10:36,790
+Okay, great. Yeah.
+
+99
+00:10:37,420 --> 00:10:43,660
+Uh, maybe a methodology to manage a deficit, um, methodology to manage it and suggest.
+
+100
+00:10:51,460 --> 00:10:56,170
+Okay. Okay.
+
+101
+00:10:56,500 --> 00:10:59,620
+Okay. All right. Uh. And your name? Joy.
+
+102
+00:10:59,890 --> 00:11:07,210
+Joy. And you are good. Okay, so, like I said, uh, there is no single correct answer to this question.
+
+103
+00:11:07,240 --> 00:11:08,469
+All these answers are reasonable.
+
+104
+00:11:08,470 --> 00:11:15,610
+They reflect your view on, uh, algorithm and also probably how you think of computer science, uh, in a few, in a surgical sense.
+
+105
+00:11:16,060 --> 00:11:19,660
+So these are all sort of, uh, different ways to think about algorithms.
+
+106
+00:11:20,050 --> 00:11:23,110
+Now, what do you mean? What do you mean? Notice in these answers?
+
+107
+00:11:23,470 --> 00:11:25,060
+Is that the getting to the right concept?
+
+108
+00:11:25,540 --> 00:11:37,540
+What maybe, uh, uh, needs some time is to really get to the heart of, you know, what an algorithm is from a precise mathematical point that maybe,
+
+109
+00:11:37,540 --> 00:11:43,060
+uh, is something that you may want or may not want to do, but, you know, these are these are, uh, good ideas.
+
+110
+00:11:43,300 --> 00:11:47,920
+So here, for example, you may want to say, okay, a problem, but what is the problem in the first place?
+
+111
+00:11:47,950 --> 00:11:52,750
+You know, what does it mean to like, you know, uh, is it a problem that is supposed to be,
+
+112
+00:11:53,230 --> 00:11:56,980
+you know, a general problem in real world, or is it a very precise mechanical problem?
+
+113
+00:11:57,400 --> 00:12:01,420
+Or if so, how do you define it? Now, in this case, for instance, a procedure.
+
+114
+00:12:02,020 --> 00:12:09,430
+What what is the procedure like? Is it, you know, uh, is it something, uh, from nature or is it something in your laptop and so on.
+
+115
+00:12:09,700 --> 00:12:15,010
+So those, those considerations come in, uh, simplification of real world ways to solve problem.
+
+116
+00:12:15,280 --> 00:12:21,700
+What does this integration mean and why and why is this important. And similarly, you know, a mathematic methodology to manage data set here.
+
+117
+00:12:21,700 --> 00:12:30,190
+The methodology uh, methodology and procedure have similar question as in, uh, what does this really mean?
+
+118
+00:12:30,790 --> 00:12:37,240
+So we'll take, uh, a significant part of this course, trying to get to the heart of, you know, what all these really mean?
+
+119
+00:12:37,450 --> 00:12:40,090
+Uh, uh, these are all pointing in the right direction.
+
+120
+00:12:40,750 --> 00:12:45,970
+And, uh, it'll take us a couple of units, uh, at least, uh uh, uh, unit 1 or 2 to get to the course.
+
+121
+00:12:46,300 --> 00:12:55,780
+So the first unit of this course, uh, is going to be, uh, introduction, uh, of these problems and so on.
+
+122
+00:12:55,780 --> 00:13:02,740
+So the first unit is going to be about storing and search synthesis.
+
+123
+00:13:03,730 --> 00:13:08,770
+Unit two will be on, uh, computational models.
+
+124
+00:13:15,750 --> 00:13:20,280
+Unit three will be on graph and logic algorithms.
+
+125
+00:13:22,320 --> 00:13:25,510
+Just to make sure. Can everyone read my handwriting? Okay.
+
+126
+00:13:25,510 --> 00:13:30,190
+Sounds great. Sometimes I interpret critical graph and logic algorithms.
+
+127
+00:13:31,360 --> 00:13:37,210
+Unit four will be on actual unit four and five are quite related.
+
+128
+00:13:38,170 --> 00:13:42,400
+And they'll be about computational complexity and on computability.
+
+129
+00:13:57,900 --> 00:14:05,830
+All right, so we'll spend, uh, some time on unit one, and this will be laying our foundations and of how we move forward.
+
+130
+00:14:06,160 --> 00:14:09,250
+So the first unit will be covering a couple of important things.
+
+131
+00:14:10,960 --> 00:14:14,500
+And in fact, we'll start right away, uh, with the sorting problem.
+
+132
+00:14:15,500 --> 00:14:21,440
+So in unit one will be starting off with a very important thing, which is, uh.
+
+133
+00:14:26,090 --> 00:14:34,740
+Which will be, uh, abstracting. Uh, computational problem.
+
+134
+00:14:41,940 --> 00:14:45,280
+That you want to solve. Okay. That's where we start.
+
+135
+00:14:46,450 --> 00:14:54,580
+The next step that we'll do is we'll, uh, think about, of course, whenever there's a problem, there's an algorithm that you want to use.
+
+136
+00:14:55,000 --> 00:14:58,960
+We think about what does it mean to, you know, for an algorithm.
+
+137
+00:14:59,980 --> 00:15:07,960
+How do you prove that an algorithm. Solves a problem.
+
+138
+00:15:12,640 --> 00:15:21,400
+This is the reason why this is going to be a proofs heavy course. Uh, and in fact, we'll try to leave little, as little as possible under the rug.
+
+139
+00:15:21,940 --> 00:15:25,780
+Now, uh, we can't be too precise about anything.
+
+140
+00:15:25,810 --> 00:15:31,150
+I mean, we can't be writing a book that Bertrand Russell and all the writing on what it means.
+
+141
+00:15:31,150 --> 00:15:34,180
+Do we have a B, a proof? We can't do all that. We can define numbers and so on.
+
+142
+00:15:34,600 --> 00:15:39,160
+But we will at least start with some, uh, some level of, you know, mathematical rigor.
+
+143
+00:15:39,460 --> 00:15:49,390
+And you'll see some examples of that in today's lectures. The next thing what that will do is, uh, analyzing and comparing the efficiencies.
+
+144
+00:15:52,990 --> 00:16:00,460
+There's nothing against algorithms, but, uh, given the amount of impatience humans have, faster is always better.
+
+145
+00:16:02,200 --> 00:16:11,170
+So, you know, uh, we want to understand at in what sense two different algorithms are faster or slower at each other.
+
+146
+00:16:11,530 --> 00:16:20,630
+So we want to develop a sense of that. So we'll be doing that. Uh, and finally, we'll be trying to formalize.
+
+147
+00:16:21,230 --> 00:16:25,920
+This is kind of. Uh, gets to some of the many of the answers that you give here.
+
+148
+00:16:26,560 --> 00:16:41,920
+Formalize. What is an algorithm? So you will see these two things, uh, right away today, uh, this will be a recurring theme throughout the course.
+
+149
+00:16:41,930 --> 00:16:48,940
+You will be seeing multiple times, which I will do a very I'll try to do as rigorous, rigorous proof as the class time allows.
+
+150
+00:16:48,950 --> 00:16:56,750
+But you should really go back to the, uh, Hester Bergen within lecture, uh, textbook and try to, uh, read carefully the proof.
+
+151
+00:16:57,410 --> 00:17:01,690
+This part will do, uh, in the next lecture on Wednesday. And this will take more time.
+
+152
+00:17:01,700 --> 00:17:06,739
+As I mentioned, this will, uh, at least take the second unit, but also, uh,
+
+153
+00:17:06,740 --> 00:17:09,920
+you know, it's kind of a journey on its own that, in fact, is also evolving.
+
+154
+00:17:09,920 --> 00:17:14,600
+You know, computer scientists are still trying to refine the notion of algorithm because new things come up all the time.
+
+155
+00:17:15,470 --> 00:17:19,010
+So all right, so I'll pause here. That's the introduction.
+
+156
+00:17:19,340 --> 00:17:27,780
+Very brief introduction to the course. Uh, questions. What am I speaking to first?
+
+157
+00:17:28,620 --> 00:17:31,770
+I tend to do that. Okay. Sounds good. Let me know if I am missing the first.
+
+158
+00:17:32,760 --> 00:17:42,420
+But, you know. Uh, yeah. Okay, so now, uh, if you want to think about abstracting computation problem,
+
+159
+00:17:43,140 --> 00:17:51,440
+there's nothing better to start than probably the most impactful algorithm, uh, in our current era, that's Google search algorithm.
+
+160
+00:17:51,450 --> 00:17:57,149
+I mean, it's hard to find an algorithm that has made an impact on humanity compared to Google search,
+
+161
+00:17:57,150 --> 00:18:01,860
+a search algorithm, at least, at least in the past couple of decades.
+
+162
+00:18:02,490 --> 00:18:07,140
+So let's start there. But I can do it here.
+
+163
+00:18:09,120 --> 00:18:15,620
+Um. So search algorithm, as you know, uh, what it does is that, uh,
+
+164
+00:18:15,630 --> 00:18:23,790
+whenever you query some keyword, um, on Google, it gives you a list of, uh, URLs or web pages.
+
+165
+00:18:23,790 --> 00:18:31,470
+URLs are kind of identifier of a webpage, and it basically sorts them in certain order that is more relevant to you.
+
+166
+00:18:32,190 --> 00:18:39,210
+It's probably done in a very complicated way right now. But back in the day, uh, uh, there was a very natural procedure.
+
+167
+00:18:39,870 --> 00:18:45,970
+So whenever you search. Searching a keyword.
+
+168
+00:18:49,930 --> 00:18:54,790
+On Google. Corresponded to a couple of things.
+
+169
+00:18:54,800 --> 00:18:57,879
+So some of the things were done in advance.
+
+170
+00:18:57,880 --> 00:19:04,720
+I mean, given the set of webpages out there, first thing that was done is that it was this computation of what is known as a page rank.
+
+171
+00:19:07,180 --> 00:19:17,390
+Of a URL. It's basically a number that's assigned to each web page or assigned to each other.
+
+172
+00:19:17,410 --> 00:19:22,690
+So it's gone into a page rank of a certain URL.
+
+173
+00:19:23,900 --> 00:19:27,580
+Which let's say it's a number between 0 and 1. Yeah.
+
+174
+00:19:27,800 --> 00:19:39,680
+It's very intuitive okay. Okay. So it's any real number between 0 and 1 for all URLs on or on the web.
+
+175
+00:19:40,130 --> 00:19:46,100
+All right. So that is the first thing. The second thing would be to uh.
+
+176
+00:19:50,870 --> 00:20:01,769
+Do the keyword search. Which was that if you are given a keyboard, let us say, uh, given W is some keyword,
+
+177
+00:20:01,770 --> 00:20:07,770
+any, any thing you enter into the will output as considered don't output yet.
+
+178
+00:20:09,930 --> 00:20:13,560
+A set s w because all URLs.
+
+179
+00:20:16,730 --> 00:20:20,600
+There is found that is.
+
+180
+00:20:20,600 --> 00:20:24,230
+That is how I remember using Google.
+
+181
+00:20:24,590 --> 00:20:28,640
+At least it seems since I've been using it. I mean, things are much more complicated right now.
+
+182
+00:20:28,670 --> 00:20:32,540
+Uh, but at least this is what we know happens behind the scene.
+
+183
+00:20:33,320 --> 00:20:36,830
+And the last thing is, this is the started.
+
+184
+00:20:38,140 --> 00:20:43,990
+List, which is, uh, basically return.
+
+185
+00:20:46,480 --> 00:20:54,310
+URLs in this set S for the keyword w that you entered in.
+
+186
+00:20:55,560 --> 00:21:04,190
+Decreasing orders. Off the page rank.
+
+187
+00:21:04,640 --> 00:21:13,550
+Just. So the URLs with higher page rank go up in the in the, in the, uh, uh,
+
+188
+00:21:14,000 --> 00:21:19,280
+in what you see on Google and load and then the and the URLs with load page rank are deep down.
+
+189
+00:21:19,280 --> 00:21:23,510
+So if you ever found yourself clicking page number ten and 11 on Google,
+
+190
+00:21:24,050 --> 00:21:27,970
+you might have noticed some very small based on a few edits, which I don't think anyone ever does.
+
+191
+00:21:28,790 --> 00:21:37,279
+All right. So now. These two pieces are in fact out of the scope of this of this class.
+
+192
+00:21:37,280 --> 00:21:39,140
+But it is just worth mentioning to you right now.
+
+193
+00:21:39,740 --> 00:21:49,780
+Uh, computing a page rank is a very interesting algorithm on its own, which in fact might be covered in the lecture that happened just now with.
+
+194
+00:21:49,970 --> 00:21:54,830
+But professor with him. Um, or maybe he would go at it at some point.
+
+195
+00:21:55,370 --> 00:22:00,740
+But this something that will will not do keyword search is also we will not discuss this in the lecture.
+
+196
+00:22:00,800 --> 00:22:06,740
+Uh, uh, but there are introductory courses on data structures that talk about this.
+
+197
+00:22:07,820 --> 00:22:14,900
+What we'll do today is we'll talk about probably this, arguably the simplest, but also one of the most very interesting steps that's sorting.
+
+198
+00:22:15,620 --> 00:22:18,650
+How do you return a sorted array of us. All right.
+
+199
+00:22:19,310 --> 00:22:25,940
+So given given this, uh, setup, uh, there are three problems, uh, right here.
+
+200
+00:22:26,210 --> 00:22:37,140
+And if we focus on the third one. So now what we'll do is that, as I mentioned here in this step to discuss this third step of Google search,
+
+201
+00:22:37,650 --> 00:22:42,360
+we're going to take a step back and abstract and kind of abstract away from the context of Google.
+
+202
+00:22:42,690 --> 00:22:48,720
+Okay. We'll try to formulate the sorting problem in a manner that's much more widely applicable.
+
+203
+00:22:48,750 --> 00:22:50,700
+And in fact, the way we'll phrase it,
+
+204
+00:22:51,000 --> 00:22:56,790
+you can immediately see that this is sort of the right definition of sorting problem that doesn't just apply to to Google,
+
+205
+00:22:56,790 --> 00:23:00,689
+but applies to, you know, anything you want to sort out there, you know,
+
+206
+00:23:00,690 --> 00:23:05,130
+it will apply to all sorts, all sorts of database, database queries and so on.
+
+207
+00:23:05,670 --> 00:23:12,510
+Uh, there are many, many applications and so on. So, so so the way we'll phrase it will be as an abstract management problem.
+
+208
+00:23:28,060 --> 00:23:31,450
+All right. So here is the sorting problem.
+
+209
+00:23:38,860 --> 00:23:45,670
+In sorting problem. What we're given is, uh, collection of uh.
+
+210
+00:23:47,000 --> 00:23:50,210
+Is given as an array containing some keys.
+
+211
+00:23:50,720 --> 00:23:58,790
+There are some numbers that you have to arrange in the order from in the ascending order, to what you are given as input.
+
+212
+00:24:02,630 --> 00:24:05,850
+Is an array which is a collection of key value pairs.
+
+213
+00:24:05,870 --> 00:24:12,620
+So for example it has key k zero. Some value V0K1V1.
+
+214
+00:24:15,110 --> 00:24:21,930
+K n minus 1VN minus one. Where each.
+
+215
+00:24:23,980 --> 00:24:31,310
+Okay. I is a real number. Okay.
+
+216
+00:24:31,750 --> 00:24:35,680
+That's the input. And the output is.
+
+217
+00:24:38,100 --> 00:24:46,980
+Supposed to be, uh, this gets a little bit, uh, notation heavy, but, uh, let's go through it slowly.
+
+218
+00:24:46,990 --> 00:24:55,950
+Output an array. It's going into a prime, which is a collection of.
+
+219
+00:24:57,720 --> 00:25:03,420
+Key value pairs k0 Prime visual prime k1 prime v1 prime.
+
+220
+00:25:11,480 --> 00:25:16,780
+Okay, there are as many elements as before, but this is not just anything.
+
+221
+00:25:16,790 --> 00:25:21,080
+It is related to what is given to you as input. And the conditions are.
+
+222
+00:25:22,700 --> 00:25:31,010
+Such that, uh, a problem is, uh, what will define very quickly a valid sort.
+
+223
+00:25:33,140 --> 00:25:37,040
+Of a. And what does that mean more precisely?
+
+224
+00:25:43,970 --> 00:25:53,720
+Okay. Sorry. This this doesn't go higher. Um, well, it sort means that, first of all, these keyframes are supposed to be in ascending order.
+
+225
+00:25:54,050 --> 00:25:58,100
+All right, so keyframe zero is less than equal to k prime one.
+
+226
+00:26:01,670 --> 00:26:05,970
+That's the first condition. And the second condition is that.
+
+227
+00:26:07,830 --> 00:26:13,350
+This should be related to what you see earlier. That means there exists a permutation.
+
+228
+00:26:13,380 --> 00:26:24,870
+Let me know if it right here is confusing to you, because this is sort of a notation that, uh, that we computer scientists like to use a lot.
+
+229
+00:26:25,290 --> 00:26:29,630
+But it doesn't have to be the notation that everyone uses all the time. So if anything is confusing on the board, just let me know.
+
+230
+00:26:29,640 --> 00:26:33,860
+But this is sort of a first formal definition of a computation problem that we are seeing.
+
+231
+00:26:35,240 --> 00:26:38,660
+Pi is a permutation from end to end.
+
+232
+00:26:39,350 --> 00:26:45,080
+What's this end? I'll read in a moment. It's like, uh, such that.
+
+233
+00:26:46,610 --> 00:26:53,660
+Here, prime AI and v prime AI is actually obtained from the previous one.
+
+234
+00:26:57,650 --> 00:27:01,490
+Okay. And, uh, just a quick note on some of the things that you see here.
+
+235
+00:27:02,390 --> 00:27:06,830
+Oh, no, that's I can sort this. Uh, anyway.
+
+236
+00:27:07,760 --> 00:27:14,180
+All right. This is essentially the set of natural numbers from zero to n minus one.
+
+237
+00:27:15,740 --> 00:27:19,190
+Okay. Uh, keys are real numbers.
+
+238
+00:27:19,250 --> 00:27:22,820
+These can be anything, in fact. Okay.
+
+239
+00:27:23,120 --> 00:27:28,670
+And pi is a permutation, which is sort of a, you know, it tells you start from zero one to n minus one.
+
+240
+00:27:29,300 --> 00:27:32,780
+Rearrange them among each other. And where? What goes where.
+
+241
+00:27:33,050 --> 00:27:37,870
+Okay. So this is this is the definition of a sorting problem. Uh, yeah.
+
+242
+00:27:37,880 --> 00:27:42,950
+Hold on, I can I can fix that problem. I think something should work.
+
+243
+00:27:43,580 --> 00:27:46,700
+Okay. I'm going to block someone else. Does it help? Yeah.
+
+244
+00:27:46,850 --> 00:27:52,879
+Okay, great. All right. So. What you can do.
+
+245
+00:27:52,880 --> 00:27:57,680
+Now, I would like to, uh, just make sure that everyone has sort of a sense of, uh, what this definition is.
+
+246
+00:27:58,280 --> 00:28:07,880
+So could you pair up, uh, with the nearest neighbor forum for a moment and try to state the Google sorting problem,
+
+247
+00:28:08,120 --> 00:28:15,410
+what you saw earlier on the upper board as, uh, as sort of a very Google specific problem.
+
+248
+00:28:15,860 --> 00:28:20,270
+And could you, uh, work out the state two minutes?
+
+249
+00:28:20,780 --> 00:28:26,930
+What about what would the input to the sorting problem be under this definition for what you see on the Google program?
+
+250
+00:28:27,440 --> 00:28:32,210
+So more precisely, um, I mean, it is basically it is this what we're here?
+
+251
+00:28:44,280 --> 00:28:50,610
+For Google's. Search.
+
+252
+00:28:51,750 --> 00:28:57,120
+Step three. What is key and what is?
+
+253
+00:28:57,620 --> 00:29:03,600
+Yeah. So yeah. Take two minutes, find friends and, uh.
+
+254
+00:29:03,960 --> 00:29:08,220
+Yeah, just figure out. If you don't have a friend.
+
+255
+00:29:10,290 --> 00:29:15,540
+Uh. Yeah.
+
+256
+00:29:18,580 --> 00:29:25,950
+Yeah yeah yeah yeah yeah yeah.
+
+257
+00:29:29,170 --> 00:29:32,880
+Yeah, yeah. Right? Right.
+
+258
+00:29:37,130 --> 00:29:41,030
+Right. Right.
+
+259
+00:29:41,110 --> 00:29:46,550
+Yeah. Oh, yeah.
+
+260
+00:29:48,700 --> 00:29:58,560
+I feel like. Yeah, yeah.
+
+261
+00:30:00,680 --> 00:30:04,140
+Work hard. So. Yeah.
+
+262
+00:30:04,290 --> 00:30:10,360
+But I'm starting. So we are going. To.
+
+263
+00:30:13,760 --> 00:30:17,910
+See? You all right?
+
+264
+00:30:19,320 --> 00:30:26,670
+I feel like I'm going. To someone else.
+
+265
+00:30:28,590 --> 00:30:31,930
+Like. I know.
+
+266
+00:30:38,940 --> 00:30:43,380
+As it stands now. Yeah. That's a great time.
+
+267
+00:30:43,400 --> 00:30:48,470
+That's. All. Oh, no.
+
+268
+00:30:49,010 --> 00:30:52,950
+Oh no oh no.
+
+269
+00:30:54,920 --> 00:30:59,490
+Oh, no. Oh, okay.
+
+270
+00:31:00,660 --> 00:31:12,870
+Why don't you just get. Excited I guess so, um.
+
+271
+00:31:13,320 --> 00:31:27,030
+Yeah. Yeah, I this tourist I think couple of times, and then, um, um, the value would be the URL and the, uh, the page.
+
+272
+00:31:28,890 --> 00:31:42,390
+Mhm. Okay. So, so one of the cities that I would be page rank of u r l I let us say, I mean where this comes from uh, from.
+
+273
+00:31:43,700 --> 00:31:48,410
+S s w the set of URLs consistent with the keyword w.
+
+274
+00:31:48,860 --> 00:31:52,730
+So the answer and VI would be well, just a URL, which makes sense in it.
+
+275
+00:31:53,150 --> 00:31:56,810
+Um. Uh, or the rest of the content of that page.
+
+276
+00:31:56,930 --> 00:32:00,080
+Um, you know, even dissappointed. Right. All right.
+
+277
+00:32:00,560 --> 00:32:08,390
+More more ideas. Yes, similar, but one of the projects similar to mine is the basic.
+
+278
+00:32:08,570 --> 00:32:12,290
+Okay. So indeed, uh. Uh, you got it there.
+
+279
+00:32:12,290 --> 00:32:13,130
+Except the minus sign.
+
+280
+00:32:13,580 --> 00:32:23,480
+The thing is that under the definition of the competition problem, what is it that we want to sort the, uh, the, uh, error in the ascending order?
+
+281
+00:32:24,170 --> 00:32:28,580
+But this would sort the error in the ascending order of page rank, but we prefer a higher page rank.
+
+282
+00:32:28,820 --> 00:32:31,940
+So that's it. So we make a small change. We call it one minus the basic.
+
+283
+00:32:32,390 --> 00:32:37,420
+And um, uh, so far we could also put the minus page rank.
+
+284
+00:32:37,430 --> 00:32:40,460
+It doesn't really matter because we are allowing keys to be any real number.
+
+285
+00:32:41,240 --> 00:32:46,160
+I just want to highlight one thing though, that, uh, uh, computer scientists are really scared of real numbers.
+
+286
+00:32:46,170 --> 00:32:48,350
+You know, we stay in the world of integers and fractions.
+
+287
+00:32:48,830 --> 00:32:55,700
+So you'll see at some point in the course we'll talk about how to really represent the input.
+
+288
+00:32:56,420 --> 00:33:02,840
+And then in that case, real numbers will not be allowed. Uh, rather some fraction that approximates the real numbers, things like that.
+
+289
+00:33:02,930 --> 00:33:07,070
+But modulo those uh, sort of kind of nit picking.
+
+290
+00:33:07,550 --> 00:33:14,300
+This is pretty much how you would view the, the Google. Uh, Google's search step as a sorting problem.
+
+291
+00:33:15,650 --> 00:33:20,980
+Okay. Yes. I'm looking for any real number between zero one could be rational number.
+
+292
+00:33:21,590 --> 00:33:25,729
+So, uh, the way I set it up there, it's any real number zero and one.
+
+293
+00:33:25,730 --> 00:33:30,290
+But in practice, it has to be a rational number between 0 and 1. Because real numbers.
+
+294
+00:33:30,830 --> 00:33:35,090
+Uh, where do they exist? I mean, it kind of that as abstract as they get.
+
+295
+00:33:35,180 --> 00:33:39,050
+Very powerful. But we really can only manipulate rational numbers in on our computers.
+
+296
+00:33:39,450 --> 00:33:44,650
+So, you know, so page rank would be have to be very precise and a bit nitpicky.
+
+297
+00:33:44,660 --> 00:33:47,730
+It would really be a rational number, but. Yeah. Yeah. And your name please. Right.
+
+298
+00:33:48,320 --> 00:33:53,660
+Okay. Yeah. All right. Now what we'll do is there will.
+
+299
+00:33:53,750 --> 00:33:59,570
+So we have defined a computation problem. Uh, as I mentioned somewhere.
+
+300
+00:34:00,550 --> 00:34:06,320
+And I erased it conveniently. So we discussed how do you abstract a competition problem.
+
+301
+00:34:06,860 --> 00:34:08,770
+And now we want to start to solve this problem.
+
+302
+00:34:08,780 --> 00:34:17,630
+We would like to kind of given an array of key value pairs, we would like to sort that area in ascending order of the keys.
+
+303
+00:34:18,660 --> 00:34:21,710
+Now, uh, there are a couple of things that come to mind that one could do.
+
+304
+00:34:21,720 --> 00:34:26,730
+And we'll go over that, and we'll pretty much try to do at least two algorithms and try to do,
+
+305
+00:34:26,860 --> 00:34:31,020
+uh, sketch of how does a proof of correctness look like, at least the steps.
+
+306
+00:34:31,740 --> 00:34:36,300
+Uh, so let's just get started on that front. Uh, any questions before that?
+
+307
+00:34:40,160 --> 00:34:44,330
+Questions about anything we covered so far. All right.
+
+308
+00:34:45,430 --> 00:34:54,520
+So let's look at the first algorithm, uh, for sorting, which we'll call the exhaustive.
+
+309
+00:34:57,280 --> 00:35:01,870
+Search sort. Uh, in grief.
+
+310
+00:35:01,870 --> 00:35:07,150
+We call it SS for normal. Okay. Uh, why is it exhaustive?
+
+311
+00:35:07,180 --> 00:35:11,080
+You'll see how to headings it once I define it. All right.
+
+312
+00:35:11,380 --> 00:35:17,290
+So the algorithm is as follows. Uh, essentially for all.
+
+313
+00:35:20,110 --> 00:35:26,510
+Permutations. Pi. By.
+
+314
+00:35:35,930 --> 00:35:41,570
+If. K pi zero is less than one.
+
+315
+00:35:48,910 --> 00:36:14,580
+Returned. All right.
+
+316
+00:36:15,120 --> 00:36:18,600
+So what? This exhaustive search sort.
+
+317
+00:36:20,450 --> 00:36:29,600
+Does, uh, is that it just goes over all the permutations possible for from end to end,
+
+318
+00:36:30,500 --> 00:36:36,560
+and then it just checks which one arranges the keys in the right order, just takes that and outputs that.
+
+319
+00:36:37,460 --> 00:36:43,310
+Uh, now you would not you would find the last line to be silly, but I would put it anyway.
+
+320
+00:36:44,090 --> 00:36:47,090
+If this didn't work, then return bot.
+
+321
+00:36:47,720 --> 00:36:50,990
+Bot is a special character for us to kind of return.
+
+322
+00:36:51,560 --> 00:36:54,770
+I didn't get anything, you know, kind of. It didn't work out.
+
+323
+00:36:54,770 --> 00:37:00,740
+That kind of answer. So bot means there's no answer. Um, so that's what the this algorithm does.
+
+324
+00:37:01,220 --> 00:37:04,650
+Okay. So let's do a quick example to see how this would work.
+
+325
+00:37:04,670 --> 00:37:08,780
+Uh, I can't push myself beyond n equals three.
+
+326
+00:37:08,960 --> 00:37:14,480
+I would probably die of boredom. But, uh, you know, why?
+
+327
+00:37:14,490 --> 00:37:23,940
+Don't insist on that. Uh, all right, so let's do a quick example of how this thing would look like for a very small set.
+
+328
+00:37:24,770 --> 00:37:28,489
+Um, so let's say my array looks like this.
+
+329
+00:37:28,490 --> 00:37:32,870
+That is being consistent here. Um. Okay.
+
+330
+00:37:33,740 --> 00:37:38,950
+There's an edit is six. A is some value.
+
+331
+00:37:38,960 --> 00:37:42,020
+We don't care about what it is. It could be anything. It could be cats and dogs.
+
+332
+00:37:42,620 --> 00:37:48,680
+It's fine. One B, six, C and 90.
+
+333
+00:37:49,190 --> 00:37:55,610
+All right. This is my edit. The algorithm will basically go over all the permutations out there.
+
+334
+00:37:56,540 --> 00:38:03,140
+In what order. That's up to you to decide. So in this algorithm I haven't specified how would you go over all that, all the permutations.
+
+335
+00:38:03,800 --> 00:38:06,950
+Um, but you know, but, uh, let's do some ordering.
+
+336
+00:38:06,960 --> 00:38:16,130
+So for example, you know, uh, let's say here's my permutation by I'm going to list it out as where does it take, uh, zero.
+
+337
+00:38:16,760 --> 00:38:20,480
+Where does it take one. Where does it take two?
+
+338
+00:38:22,460 --> 00:38:25,910
+And three. So the first thing you do is just don't do anything.
+
+339
+00:38:25,940 --> 00:38:29,270
+So the first step is just not to promote anything at all.
+
+340
+00:38:29,850 --> 00:38:36,740
+Second step is to kind of permute the last two. Third step is two, three, three, two.
+
+341
+00:38:37,640 --> 00:38:42,540
+Um. Yeah. So no, no you would probably do.
+
+342
+00:38:42,560 --> 00:38:48,800
+02130231 and so on.
+
+343
+00:38:50,750 --> 00:38:56,770
+And then you might go 0312. 321.
+
+344
+00:38:57,160 --> 00:39:02,170
+It's some ordering kind of increase this part and then when you're done increase this part and so on.
+
+345
+00:39:02,770 --> 00:39:06,040
+And if I knew increase to one. Um.
+
+346
+00:39:07,300 --> 00:39:10,630
+And then 1023.
+
+347
+00:39:11,850 --> 00:39:18,009
+And so on. All right. It kind of. It's it's a long list of four factorial things.
+
+348
+00:39:18,010 --> 00:39:22,570
+Okay? 24 of them, I just thought. Seven. Now let's see the first one.
+
+349
+00:39:23,350 --> 00:39:26,890
+The first one doesn't do anything to this array. Does that sort the array.
+
+350
+00:39:28,120 --> 00:39:31,120
+No it won't. Okay. So this string work will continue.
+
+351
+00:39:31,720 --> 00:39:36,040
+The second step just flipped the last two numbers. Did that sort the array?
+
+352
+00:39:37,060 --> 00:39:41,590
+Not really. I mean, I know you would be tired of nodding as well, so let's move on.
+
+353
+00:39:42,370 --> 00:39:46,629
+The third step also doesn't do anything. It just moves two to the moves.
+
+354
+00:39:46,630 --> 00:39:50,530
+Two over here and one over here. That is not sort of the array because one didn't go over there.
+
+355
+00:39:50,980 --> 00:39:55,210
+This didn't work. This is not work. Two will not work. Two and so on.
+
+356
+00:39:55,540 --> 00:39:59,590
+Finally, when you go over here, it will work out by coincidence.
+
+357
+00:40:00,580 --> 00:40:03,940
+Uh, because one will go ahead and six will go over here.
+
+358
+00:40:03,940 --> 00:40:07,780
+So it'll become one, six, six, nine. The keys to get started.
+
+359
+00:40:08,080 --> 00:40:12,250
+All right. So. So now, once the album reaches here, it will find the.
+
+360
+00:40:12,260 --> 00:40:19,270
+The keys are sorted in the if condition. If condition will be satisfied, the return will be given.
+
+361
+00:40:19,270 --> 00:40:25,090
+You would the the array one be six, a 1690 will be returned.
+
+362
+00:40:25,630 --> 00:40:30,040
+And the algorithm will be just treat algorithm to stop after return something.
+
+363
+00:40:30,430 --> 00:40:36,190
+Okay. It doesn't do anything of that. All right. So this is an example of exhaustive search sort.
+
+364
+00:40:37,810 --> 00:40:43,870
+Now, uh, you went to thinking, why are we doing this? I mean, it kind of arguably takes too long, right?
+
+365
+00:40:44,590 --> 00:40:53,410
+Um, so. The reason why we are doing this is sort of gives you a sense of, uh, you know, uh, when the problems get more complicated,
+
+366
+00:40:54,040 --> 00:40:58,750
+you might start off with some of the most obvious algorithms out there and then try to refine them.
+
+367
+00:40:59,710 --> 00:41:08,690
+So that's sort of the philosophy here. But of course, uh, uh, I wouldn't be surprised if, uh, this is if it seems too simple for people.
+
+368
+00:41:08,710 --> 00:41:11,830
+Yeah. Or just too complicated. All right.
+
+369
+00:41:12,970 --> 00:41:17,120
+So now let's do something. Let us try to do a proof of correctness for this algorithm.
+
+370
+00:41:17,140 --> 00:41:21,490
+So what we'll do is that we'll try to, uh, see that this algorithm actually works.
+
+371
+00:41:21,520 --> 00:41:26,800
+Okay. So that, uh, becomes a theorem in this course and prove correctness.
+
+372
+00:41:27,700 --> 00:41:35,470
+The theorem is that this algorithm correctly sorts every array if a sorting exists.
+
+373
+00:41:35,680 --> 00:41:41,830
+Okay. So the this algorithm correctly.
+
+374
+00:41:44,620 --> 00:41:50,140
+So, uh, maybe I should be more precise here. This algorithm output.
+
+375
+00:41:54,470 --> 00:42:03,140
+Uh, well, it's sort which if you go all the way back to the definition of sorting, uh, in the courts, you'll see.
+
+376
+00:42:03,140 --> 00:42:07,670
+What does it mean to be a valid sort? Uh, and that's what I'm using here.
+
+377
+00:42:07,700 --> 00:42:12,170
+Outputs a valid sort of. Okay.
+
+378
+00:42:13,460 --> 00:42:16,720
+If. It. Exists.
+
+379
+00:42:17,540 --> 00:42:22,639
+Okay, now you're thinking, well, what is the point of stating this thing if it exists?
+
+380
+00:42:22,640 --> 00:42:31,170
+I mean, obviously it exists. But it turns out that, you know, if you just try to push yourself a little bit more and say,
+
+381
+00:42:31,380 --> 00:42:35,940
+let me prove that there is always a valid sorting for every, you know, array.
+
+382
+00:42:36,900 --> 00:42:40,680
+That is not that easy. I mean, it's not as easy as it seems. So that then.
+
+383
+00:42:41,460 --> 00:42:45,120
+I mean, of course, proving things to regular session. Don't get into your heads.
+
+384
+00:42:45,720 --> 00:42:47,850
+You shouldn't do too much of that, but not too little as well.
+
+385
+00:42:48,270 --> 00:42:55,530
+Okay, so this theorem is only applicable if a valid sorting exists based on things that you've ever on the board.
+
+386
+00:42:56,070 --> 00:43:03,240
+But proving it is you can imagine not that hard and will do that actually in the next algorithm that we see.
+
+387
+00:43:03,300 --> 00:43:07,990
+Okay. So just bear with me with this sentence over here, which I'm sure everyone here knows that.
+
+388
+00:43:07,990 --> 00:43:11,660
+Well, there is obviously a valid sorting of anything in the world. So what's so special?
+
+389
+00:43:11,670 --> 00:43:18,180
+But we'll just keep this sentence for. Okay. So if the valid sorting exists, what the proof would look like as follows.
+
+390
+00:43:18,690 --> 00:43:25,140
+Uh, you know, uh, well by that fact that let a prime be a valid sort.
+
+391
+00:43:31,570 --> 00:43:39,250
+Sort of a okay. By definition, this means that there exists a permutation pie.
+
+392
+00:43:39,260 --> 00:43:44,230
+Let us call it a special permutation pi star, because it's given by this algorithm such that,
+
+393
+00:43:44,590 --> 00:43:53,290
+you know, uh, you know, uh, k pi star zero less than or equal to and so on this condition, you know.
+
+394
+00:43:56,420 --> 00:44:02,270
+And so on. So now, uh, this algorithm is going to go over all permutations.
+
+395
+00:44:02,750 --> 00:44:08,660
+So it will stop. By the time it reaches by start, it's going to get there at some point.
+
+396
+00:44:09,050 --> 00:44:12,170
+Okay. So, uh, so algorithm. SS.
+
+397
+00:44:13,410 --> 00:44:17,160
+Definitely stops. I definitely don't.
+
+398
+00:44:20,670 --> 00:44:26,830
+Uh, before. By stories reached.
+
+399
+00:44:26,860 --> 00:44:34,460
+There might be other sort. Are there some? There may be other sorting algorithms out there.
+
+400
+00:44:35,150 --> 00:44:43,280
+Uh, that might also, uh, sort this array. Uh, the algorithm s might reach them before reaching pi star.
+
+401
+00:44:43,790 --> 00:44:45,770
+So it'll definitely output before that, at least by this time.
+
+402
+00:44:46,280 --> 00:44:51,500
+And by the time it returns, by the condition you see in the return condition is going to output the correct sorting.
+
+403
+00:44:51,650 --> 00:44:59,600
+Okay. So, um, this is sort of a formal way of proving this theorem over here.
+
+404
+00:45:00,110 --> 00:45:03,110
+Again, uh, don't feel surprised if you think it's too simple.
+
+405
+00:45:03,530 --> 00:45:09,830
+You know, the purpose here is just to give you a first sense of what it means to kind of try to prove something,
+
+406
+00:45:10,400 --> 00:45:13,360
+uh, not rigorous enough, because that's for the for the notes.
+
+407
+00:45:13,370 --> 00:45:19,070
+I don't have time for making it too rigorous, but in the off time, go and check out the check out the,
+
+408
+00:45:19,640 --> 00:45:26,170
+uh, I should have said earlier, actually, what you should check out is essentially the, uh.
+
+409
+00:45:28,250 --> 00:45:33,140
+Just check out the. The Westerberg.
+
+410
+00:45:36,980 --> 00:45:43,100
+Button. Uh, this textbook that's been written by, uh, professor with an interesting work.
+
+411
+00:45:45,320 --> 00:45:50,690
+Um, this textbook, uh, is accessible on perusal.
+
+412
+00:45:53,510 --> 00:45:59,360
+Which you can either access from the code subset that I showed you or from canvas.
+
+413
+00:46:00,230 --> 00:46:09,469
+Uh, we highly, uh, encourage comments on the textbook, but for now, you have a read for sorting of today's lecture sections.
+
+414
+00:46:09,470 --> 00:46:15,620
+1.1 to 1.5 is what you should see. And in particular, this proof is in one of the pages over there.
+
+415
+00:46:16,130 --> 00:46:21,190
+All right. Um. As I mentioned, this course is evolving.
+
+416
+00:46:21,190 --> 00:46:28,890
+So you know, comments, feedback or improvement points for this textbook are strongly encouraged by me, but invited by the authors.
+
+417
+00:46:28,900 --> 00:46:35,860
+So, you know, to send them out. So in perusal you can always make comments and we'll be regularly checking for comments.
+
+418
+00:46:36,310 --> 00:46:42,430
+All right. So what you did not do in this theorem, uh, as trivial as it might seem,
+
+419
+00:46:42,790 --> 00:46:51,220
+we did not prove this thing that there is always a, a sorting always exists for uh, for, uh, you know, for an array.
+
+420
+00:46:51,790 --> 00:46:57,430
+But before that, what the question is, why is this algorithm not taught in.
+
+421
+00:46:58,410 --> 00:47:04,790
+Courses like, you know, just like what's annoying or what feels wrong about this algorithm.
+
+422
+00:47:05,600 --> 00:47:09,260
+There's nothing wrong with it. But what feels wrong about it? Yes.
+
+423
+00:47:09,500 --> 00:47:12,980
+Are you really inefficient? Right. Because you have to calculate permutation every single time.
+
+424
+00:47:13,280 --> 00:47:16,400
+Yes. So this, uh. So you name it.
+
+425
+00:47:16,610 --> 00:47:26,900
+Yes. So, uh, the fact that you have to search over all permutations can be, in the worst case, a really inefficient process.
+
+426
+00:47:27,470 --> 00:47:32,960
+The permutation you are looking for might be in the end of all n factorial permutations.
+
+427
+00:47:33,530 --> 00:47:36,110
+And that's too long. You spend a lot of time to get there.
+
+428
+00:47:36,680 --> 00:47:44,180
+So in fact, the runtime of this algorithm, uh, which we will be more careful about in the next lecture,
+
+429
+00:47:44,180 --> 00:47:47,240
+but just very briefly speaking, this argument takes too long.
+
+430
+00:47:54,500 --> 00:47:58,020
+Too long. It takes, in fact, real estate.
+
+431
+00:47:58,190 --> 00:48:02,510
+For something as elementary as sorting. There shouldn't be so much better ways to do it.
+
+432
+00:48:03,080 --> 00:48:10,460
+Okay. And in fact, you know, this kind of algorithm, which is kind of a trivial thing that you think of when a problem,
+
+433
+00:48:10,740 --> 00:48:14,330
+when a competition problem comes in, it's still a not a bad starting point.
+
+434
+00:48:14,330 --> 00:48:17,720
+And then you have to start refining your thought to come up with a more efficient algorithm.
+
+435
+00:48:18,530 --> 00:48:22,190
+But this is often something you can start, uh, when you think about a problem,
+
+436
+00:48:23,120 --> 00:48:27,080
+but not next thing that will do will be the insertion sort that you might have heard of.
+
+437
+00:48:27,380 --> 00:48:32,210
+I don't know how many of you heard of it, but we'll go over it carefully, which is much more efficient.
+
+438
+00:48:32,540 --> 00:48:38,580
+And there's something very nice about insertion sort. You will not have to assume that the permission exists.
+
+439
+00:48:38,610 --> 00:48:41,670
+The insertion sort also proves that there is a permutation.
+
+440
+00:48:42,240 --> 00:48:43,840
+So maybe there's something very nice happening here.
+
+441
+00:48:43,860 --> 00:48:51,420
+This inefficient algorithm is also not ideal, as in it's not really giving you the full view of sorting.
+
+442
+00:48:51,990 --> 00:49:00,060
+And when you go to insert the shot, it gets you efficiency and also gives you a better picture of why that is sorting in the first place.
+
+443
+00:49:00,630 --> 00:49:03,960
+Okay, so let's talk about insertion sort.
+
+444
+00:49:05,730 --> 00:49:13,310
+Any questions before that? Okay.
+
+445
+00:49:13,640 --> 00:49:24,470
+Sounds great. And just rechecking.
+
+446
+00:49:24,480 --> 00:49:28,020
+Am I speaking slow enough? Is the handwriting legible enough?
+
+447
+00:49:29,030 --> 00:49:32,630
+Okay. So think. Okay.
+
+448
+00:49:32,900 --> 00:49:37,310
+So now we'll talk about insertion sort, which is, uh, a very.
+
+449
+00:49:39,830 --> 00:49:43,590
+Simple and elegant way to solve sorting fast.
+
+450
+00:49:43,640 --> 00:49:48,590
+And it also gives you, tells you what permutation really should be.
+
+451
+00:49:50,660 --> 00:49:58,480
+Doing the job. All right.
+
+452
+00:50:00,550 --> 00:50:04,340
+So. Let's talk about the insertion sort.
+
+453
+00:50:08,500 --> 00:50:14,150
+Which we'll call AI. I guess for now that means, uh, it's as follows.
+
+454
+00:50:18,540 --> 00:50:22,500
+Okay. Right. So what we'll do in this process is that.
+
+455
+00:50:23,470 --> 00:50:34,150
+For all. I know from zero one and minus one is go over all these locations in the array.
+
+456
+00:50:34,930 --> 00:50:44,080
+What you do is that. Find uh, j that's going to go to I.
+
+457
+00:50:47,590 --> 00:51:00,980
+Find j less than equal to I such that. E of J is, um, greater than simply of I.
+
+458
+00:51:01,640 --> 00:51:07,280
+Um. I think it should be. Yeah. LJ is the a of the key actually of J.
+
+459
+00:51:07,290 --> 00:51:14,390
+So this by this I mean the key. The key at the editing.
+
+460
+00:51:14,690 --> 00:51:17,780
+That's the zeroth interview is.
+
+461
+00:51:18,940 --> 00:51:23,080
+Greater than. Equal to. Zero.
+
+462
+00:51:24,580 --> 00:51:28,600
+And then. Insert.
+
+463
+00:51:30,670 --> 00:51:40,030
+Um, but actually more precise about here. Let me set insert your I at jth place.
+
+464
+00:51:41,680 --> 00:51:49,000
+That's a little bit informally but that's what. And but but we'll make it more precise as we go forward and.
+
+465
+00:51:50,030 --> 00:51:58,450
+Move. A of the here to I minus one.
+
+466
+00:51:59,780 --> 00:52:04,040
+£0.02 of Z plus one.
+
+467
+00:52:04,440 --> 00:52:08,270
+Do I? Um, just to clarify what this means.
+
+468
+00:52:08,810 --> 00:52:11,870
+This notation over here is just my shorthand. Um.
+
+469
+00:52:13,400 --> 00:52:22,340
+For the array. You know, the sub part of the array of J plus one.
+
+470
+00:52:25,200 --> 00:52:30,110
+You know. I minus one. Okay.
+
+471
+00:52:31,970 --> 00:52:36,770
+So what you do is that for every I starting from zero, you find.
+
+472
+00:52:37,980 --> 00:52:41,730
+Uh, find. In fact, you should find this size here.
+
+473
+00:52:42,270 --> 00:52:51,740
+Find the smallest. Find the smallest G.
+
+474
+00:52:51,770 --> 00:52:57,950
+Start from the beginning. Find the smallest G for which the key at the jth location.
+
+475
+00:52:58,100 --> 00:53:02,120
+Location is larger or equal to the key that is vacation. And let's move it over.
+
+476
+00:53:02,690 --> 00:53:07,010
+Okay. Um, we'll do an example in a bit, but, uh, that's what you face it.
+
+477
+00:53:08,870 --> 00:53:13,340
+So in fact let's go ahead and do an example. So let's say the example is.
+
+478
+00:53:17,560 --> 00:53:22,780
+It's the following array, which is, uh, a.
+
+479
+00:53:25,930 --> 00:53:29,890
+To B and C and let's say 40.
+
+480
+00:53:32,470 --> 00:53:40,060
+Okay. Um, this is the error. Let me see if you all want to take some time to talk to your neighbors.
+
+481
+00:53:40,060 --> 00:53:46,690
+And, uh, in fact, let's follow what you neighbors and figure out.
+
+482
+00:53:47,980 --> 00:53:51,220
+Uh, for I equals zero, I equals one.
+
+483
+00:53:54,610 --> 00:54:00,310
+I equals two, and I equals three. What are the error look like in this algorithm?
+
+484
+00:54:02,410 --> 00:54:15,970
+And. Yeah, the second two, three minutes. 58080.
+
+485
+00:54:17,990 --> 00:54:30,330
+Uh, yeah. So I guess this is hard.
+
+486
+00:54:33,470 --> 00:54:36,500
+Enough for you, I think.
+
+487
+00:54:39,840 --> 00:54:46,290
+So. Yes.
+
+488
+00:54:49,690 --> 00:54:53,990
+Yes. Anyway.
+
+489
+00:54:56,720 --> 00:55:01,590
+I got to you for.
+
+490
+00:55:01,610 --> 00:55:08,510
+Because I was coming, and then I was like, I.
+
+491
+00:55:10,820 --> 00:55:15,270
+I, I don't I was so successful.
+
+492
+00:55:16,760 --> 00:55:22,850
+Thank you. Uh, I think I just, I.
+
+493
+00:55:26,540 --> 00:55:33,020
+Understand why. You're like, oh, you like something that I think you like?
+
+494
+00:55:33,200 --> 00:55:45,680
+Yes. I was like, what do you want to. Say so it's like, I, I go to school and I guess it's like.
+
+495
+00:55:47,690 --> 00:55:51,560
+26. 32.
+
+496
+00:55:53,990 --> 00:55:57,480
+Laps. To.
+
+497
+00:55:59,820 --> 00:56:06,290
+Go and just go I. Want to.
+
+498
+00:56:08,090 --> 00:56:14,810
+I want this homework responsibly. So you.
+
+499
+00:56:17,090 --> 00:56:21,350
+Know. Oh in that case, you want to go over here.
+
+500
+00:56:22,010 --> 00:56:34,910
+So. I was like I was like, oh yes.
+
+501
+00:56:35,120 --> 00:56:39,680
+Well, I guess you want to.
+
+502
+00:56:41,840 --> 00:56:43,590
+Know what you want?
+
+503
+00:56:43,610 --> 00:56:59,870
+And I know you're, you know, uh, just like you want to do it because it's funny, but you're, like, competing for the weight or, like, when I like to.
+
+504
+00:57:02,030 --> 00:57:16,399
+Talk about it. I think, you know, I think I was like, rest and then a check, which I was like, it's like if you were to to like, it's not like the.
+
+505
+00:57:16,400 --> 00:57:21,360
+I had no right, I was watching I just want.
+
+506
+00:57:29,700 --> 00:57:34,729
+To. See eye to eye minus one.
+
+507
+00:57:34,730 --> 00:57:40,450
+Which was just like what I want. Do you like that I guess from like, you know, so that now it's true.
+
+508
+00:57:40,450 --> 00:57:48,220
+I was. I was not expecting that. Okay.
+
+509
+00:57:49,150 --> 00:57:54,940
+Um. Like, how could ever. Justify.
+
+510
+00:57:54,940 --> 00:57:58,450
+Maybe. Should we just, uh, work it out? But it's.
+
+511
+00:58:00,440 --> 00:58:06,290
+So now let's say I equals zero. Well the value one j less than zero.
+
+512
+00:58:06,290 --> 00:58:10,280
+The zero. So. Well this condition doesn't really do much.
+
+513
+00:58:11,000 --> 00:58:16,159
+Well zero zero is of course greater than equal to zero zero. Uh, so this step does not change anything.
+
+514
+00:58:16,160 --> 00:58:20,090
+So you still get the same idea. Six A stays at the same place.
+
+515
+00:58:20,780 --> 00:58:27,090
+That's a zero. Uh, entry of the area and other provinces are.
+
+516
+00:58:29,130 --> 00:58:31,470
+On the second step. But I equals one.
+
+517
+00:58:32,430 --> 00:58:40,620
+Find the smallest J less than one or less than equal to one, for which the key at that place is more than I equals one key.
+
+518
+00:58:41,130 --> 00:58:42,750
+Indeed, six is more than two.
+
+519
+00:58:43,650 --> 00:58:53,070
+So what this step will do is that this step will basically move two comma, be at the place of six A and move this forward just like this.
+
+520
+00:58:54,030 --> 00:59:01,890
+So what you get is basically two comma B6A, one comma c.
+
+521
+00:59:02,430 --> 00:59:06,810
+And there is no change that happened in the remaining part of three.
+
+522
+00:59:08,130 --> 00:59:12,050
+Okay. Is it good?
+
+523
+00:59:12,440 --> 00:59:19,510
+That's it. Okay, now I equals two, but I equals two.
+
+524
+00:59:19,700 --> 00:59:27,360
+Now keep in mind we are staring at the current array. So when I say here, uh, maybe I should have clarified it, but I think that makes sense.
+
+525
+00:59:27,370 --> 00:59:31,240
+I mean, we are looking at the array at the start of algorithm at this stage.
+
+526
+00:59:31,720 --> 00:59:36,010
+Now I equals to at this stage I equals two.
+
+527
+00:59:37,000 --> 00:59:47,590
+What's the smallest J in this part of the array for which the key at that j is more than or equal to the key at one j equals zero.
+
+528
+00:59:47,680 --> 00:59:56,170
+All right. So in this case we find j equals zero. So what we'll do we'll move one and one comma c at the place of j equals zero.
+
+529
+00:59:56,680 --> 01:00:04,120
+And move this sub array forward. So what we're doing in this case is basically move one comma C at this location.
+
+530
+01:00:05,020 --> 01:00:09,580
+And then move two comma be six comma a forward.
+
+531
+01:00:10,540 --> 01:00:15,040
+And for comedy uh that stays where it was.
+
+532
+01:00:15,850 --> 01:00:19,760
+Nothing happened to that particular. And the last step for comedy.
+
+533
+01:00:19,780 --> 01:00:26,970
+Okay. So I equals three. What is J. Just two.
+
+534
+01:00:27,190 --> 01:00:30,900
+Yeah. Two. Which means that, uh.
+
+535
+01:00:31,770 --> 01:00:35,790
+Uh, for comedy movies, at the place of G equals, uh, the place of two.
+
+536
+01:00:37,870 --> 01:00:45,000
+Stays here for many more. So here. And this sub added as a single thing was forward.
+
+537
+01:00:47,250 --> 01:00:52,710
+All right. So this looks like a valid sort of this error to me okay.
+
+538
+01:00:52,800 --> 01:00:55,970
+All the keys in the right order. Yes. Yeah.
+
+539
+01:00:57,290 --> 01:01:01,699
+I just wondering how important it was. That's like lesser than or equal to or greater than or equal to.
+
+540
+01:01:01,700 --> 01:01:07,520
+Like. Like what'll happen if we take away the people? It's very important because suppose, uh.
+
+541
+01:01:08,710 --> 01:01:13,750
+A of. I was third largest entry up to that point, then I think should move.
+
+542
+01:01:15,390 --> 01:01:23,460
+So if there is no G. I mean, uh, you know, uh, here, uh, J might be equal to I.
+
+543
+01:01:25,130 --> 01:01:31,730
+Yeah. You mean, uh, otherwise you will not find something. I mean, if you do not have greater than good, you remember to find a J less than I.
+
+544
+01:01:31,760 --> 01:01:35,990
+If it exists. If it doesn't exist, then don't do anything thanks to that.
+
+545
+01:01:36,320 --> 01:01:40,880
+So it is a short way to collect all that sentence in the. Yeah.
+
+546
+01:01:41,510 --> 01:01:46,220
+So it will be. Yeah. That's why this equal to sign was intentionally put here.
+
+547
+01:01:48,920 --> 01:01:54,050
+All right. So this is a this seems like a right algorithm. You know intuitively what is doing is that it's kind of starting from the beginning,
+
+548
+01:01:54,500 --> 01:02:00,680
+sorting things out and moving forward and kind of consuming the next element, sorting it correctly and keep moving forward.
+
+549
+01:02:00,950 --> 01:02:06,589
+Okay. That's what it's doing intuitively. And now what we'll do is we'll do the following proof of correctness.
+
+550
+01:02:06,590 --> 01:02:09,409
+That will be much nicer in that proof of correctness.
+
+551
+01:02:09,410 --> 01:02:15,559
+Uh, that wasn't very, you know, appealing in my opinion, because it had some of these missing pieces.
+
+552
+01:02:15,560 --> 01:02:19,400
+If it exists here, we don't need any of that here.
+
+553
+01:02:20,210 --> 01:02:24,770
+We'll just write a single theorem that this algorithm correctly solves the sorting problems.
+
+554
+01:02:27,670 --> 01:02:36,820
+So. Um. The theorem that that we have.
+
+555
+01:02:38,980 --> 01:02:46,080
+Is that the insertion sort. Solve the sorting problem.
+
+556
+01:02:49,470 --> 01:03:00,450
+Okay. That's theorem. And the proof of this will be sure to be as formal as possible.
+
+557
+01:03:00,510 --> 01:03:08,020
+Uh. What? What is it going to do is exactly reflect that intuition we had that this algorithm kind of fixes things at some point,
+
+558
+01:03:08,380 --> 01:03:11,950
+and then picks the next one and fixes things to the larger scale. Okay.
+
+559
+01:03:12,460 --> 01:03:16,180
+Um, so a quick notation. Let me see if I already introduce that.
+
+560
+01:03:17,590 --> 01:03:23,190
+Um. Right.
+
+561
+01:03:23,820 --> 01:03:34,440
+So let me introduce the notation here. Let me call a superscript I as the array in this algorithm.
+
+562
+01:03:35,600 --> 01:03:46,780
+At the right before the eighth step. Before.
+
+563
+01:03:49,020 --> 01:03:54,600
+Sidestep. Okay, so a superscript zero is the first input array.
+
+564
+01:03:55,230 --> 01:03:59,490
+A superscript one is the next one. Zero one, two and three.
+
+565
+01:03:59,880 --> 01:04:06,390
+That's what I mean. Okay. And what we'll do is that will basically prove certain property of a suffix array.
+
+566
+01:04:06,840 --> 01:04:18,170
+Okay. Um, also, by the way, I'll call the key K of pi with j as the jth key.
+
+567
+01:04:20,450 --> 01:04:25,040
+Of. Okay. Okay.
+
+568
+01:04:25,540 --> 01:04:31,750
+Um, a little bit pressed on time, so let me. Uh, give you a I just do a quick proof sketch again, go back to the notes to see it.
+
+569
+01:04:31,840 --> 01:04:36,280
+Uh, completely. Uh, but, uh, the proof of this will work by induction.
+
+570
+01:04:38,650 --> 01:04:41,770
+Which you might be doing right now in your problem set.
+
+571
+01:04:42,910 --> 01:04:45,490
+Uh, if not, then you should probably get started soon.
+
+572
+01:04:46,530 --> 01:04:54,540
+Uh, but this is sort of a very clean way of formalizing this proof, basically collecting all the intuition that you had in a very nice set.
+
+573
+01:04:54,990 --> 01:05:00,660
+So what we'll do is I will basically prove that this algorithm has some property.
+
+574
+01:05:01,290 --> 01:05:04,830
+That property stays unchanged throughout the whole process.
+
+575
+01:05:05,910 --> 01:05:09,000
+It's famously called, uh, the loop invariant.
+
+576
+01:05:09,660 --> 01:05:16,770
+So in what you show that will show. Show uh loop invariant.
+
+577
+01:05:18,870 --> 01:05:27,590
+Basically it's something that stays unchanged or invariant throughout the for loop, which is over there for all I.
+
+578
+01:05:27,770 --> 01:05:32,790
+So and that's the statement that will establish which is going to be an intuitive
+
+579
+01:05:32,790 --> 01:05:36,240
+statement of what we just discussed and what you're thinking about running.
+
+580
+01:05:36,990 --> 01:05:43,770
+So the statement let's call it p of J is a statement that, uh.
+
+581
+01:05:45,160 --> 01:05:52,090
+P of I. Sorry. The sermon is that right before the eighth step.
+
+582
+01:05:52,900 --> 01:05:59,710
+Everything is sorted up to I minus one. And nothing has changed from onwards.
+
+583
+01:06:00,610 --> 01:06:03,820
+That's what we are trying to maintain. Right. That's what is really happening in this case.
+
+584
+01:06:04,510 --> 01:06:09,070
+And I equals zero. Well, nothing has changed in this case.
+
+585
+01:06:09,670 --> 01:06:13,900
+Right? Well this piece has changed zero and one has changed.
+
+586
+01:06:14,320 --> 01:06:18,310
+I equals two, zero, one and two changed. And finally everything changed.
+
+587
+01:06:19,120 --> 01:06:22,980
+Oh, so maybe I missed something. Yes. Yeah. Is that. Yeah.
+
+588
+01:06:23,290 --> 01:06:26,740
+A I from 02I.
+
+589
+01:06:28,770 --> 01:06:33,600
+Um, I'm going to make sure that I don't get the numbers wrong.
+
+590
+01:06:38,320 --> 01:06:46,100
+Oh yeah. Zero I minus one. So make sure. I think I plus one to.
+
+591
+01:07:18,020 --> 01:07:25,400
+Right. So a I from zero to I minus you know I is the room is sorted.
+
+592
+01:07:32,390 --> 01:07:45,440
+And. I plus one to n minus one is unchanged.
+
+593
+01:07:49,660 --> 01:07:55,810
+Uh, with respect to it is the same as this one.
+
+594
+01:07:59,090 --> 01:08:02,450
+Some study nervous about missing of these I and I plus one.
+
+595
+01:08:02,450 --> 01:08:05,510
+But to make progress, let's keep moving forward and see what might go wrong.
+
+596
+01:08:06,050 --> 01:08:12,470
+But I think that's slightly the right statement. But anyway let's see. So when I equal zero this is a correct statement.
+
+597
+01:08:12,650 --> 01:08:21,800
+Right. So so the base case. I equals zero.
+
+598
+01:08:22,280 --> 01:08:24,980
+Well let's see B zero is correct.
+
+599
+01:08:28,370 --> 01:08:34,370
+Correct statement because well in the beginning a zero is where it is is just a single element that is always sorted.
+
+600
+01:08:35,000 --> 01:08:39,530
+And from a one to the rest of the array is same as before.
+
+601
+01:08:39,620 --> 01:08:46,220
+That's just true. All right. That's fine. Now what we'll try to do is we'll try to prove that.
+
+602
+01:08:50,240 --> 01:09:04,700
+Here, let me prove that for all AI greater than equal to zero, the inductive step, which is that if p is true, then it implies p of I plus one.
+
+603
+01:09:05,030 --> 01:09:11,780
+Okay. This is what you want to prove. And once we do that we are done because p zero is true then p one is true, then p two is true and so on.
+
+604
+01:09:12,020 --> 01:09:17,520
+And that's what this the strategy. So let's do that and let's see if the sentence is correct.
+
+605
+01:09:17,530 --> 01:09:24,530
+If I'm missing something here. Um.
+
+606
+01:09:25,220 --> 01:09:33,440
+Okay. So we'll try to prove this thing in, uh uh uh, so the formal proof again will skip in the interest of time.
+
+607
+01:09:34,220 --> 01:09:37,370
+We're going to do a kind of a picture proof for now.
+
+608
+01:09:37,400 --> 01:09:40,970
+Uh, but again, read the notes for a more precise statement.
+
+609
+01:09:42,380 --> 01:09:49,290
+So let's do that. And essentially what the statement says.
+
+610
+01:09:49,320 --> 01:10:01,890
+Uh, for PC, what is PC? Pictorially, if you look at the array, uh, and the first two pieces from zero to I.
+
+611
+01:10:03,350 --> 01:10:11,420
+I hear zero radar. This is why the PA says that this whole piece is correctly sorted.
+
+612
+01:10:14,030 --> 01:10:17,810
+And it's true. When p equals zero, p equals one. It's true as well. And two and three.
+
+613
+01:10:19,190 --> 01:10:24,260
+I saw it already here. And then it says that this whole piece.
+
+614
+01:10:25,870 --> 01:10:32,980
+Is unchanged, which also includes I plus one. Okay.
+
+615
+01:10:33,310 --> 01:10:36,430
+And here is your, uh, element.
+
+616
+01:10:37,980 --> 01:10:41,760
+Hey, can you read this? Can everyone read? Okay, I got.
+
+617
+01:10:43,120 --> 01:10:49,250
+So a step. Sorry, I plus one.
+
+618
+01:10:49,280 --> 01:10:53,900
+Okay, uh, let me make it bigger. Sorry. I like it, too. Let's push it a little bit.
+
+619
+01:10:54,230 --> 01:11:00,130
+So it's like. So here is a I.
+
+620
+01:11:01,940 --> 01:11:06,530
+Element number one. That's over here and others are over here.
+
+621
+01:11:06,740 --> 01:11:13,370
+All right. So everything so that's the hypothesis and everything is fine.
+
+622
+01:11:13,940 --> 01:11:17,810
+And let's say J is your, uh, some index over here.
+
+623
+01:11:18,800 --> 01:11:22,400
+Let's call it a eye of J.
+
+624
+01:11:23,430 --> 01:11:28,290
+Says that this is the smallest such that for which, uh.
+
+625
+01:11:29,340 --> 01:11:35,620
+Uh, you know. That that's the condition over there, which is that, you know.
+
+626
+01:11:39,020 --> 01:11:43,460
+In the i3 J is the smallest, J smallest.
+
+627
+01:11:46,230 --> 01:11:51,480
+So that this element is at least as large as.
+
+628
+01:11:53,490 --> 01:12:02,310
+At hypersonic. So the key. For which I to use the notation k over there, which I did not.
+
+629
+01:12:02,970 --> 01:12:06,390
+So consider this as a kind of for inefficient use of notation.
+
+630
+01:12:07,260 --> 01:12:14,490
+But yes. So I should have called it. All. And now what happens at the what is the £0.07 of I plus one that I want to prove assuming p of I.
+
+631
+01:12:15,990 --> 01:12:22,560
+The statement is that I take this I plus one move it right before a j and push the whole thing forward.
+
+632
+01:12:23,250 --> 01:12:26,490
+So what do I do? Is that the piece that you see here?
+
+633
+01:12:31,260 --> 01:12:34,530
+These pieces don't change. Okay.
+
+634
+01:12:36,010 --> 01:12:41,690
+Over here. Comes. Um, let me use a different color here.
+
+635
+01:12:46,820 --> 01:12:53,220
+I plus one. Moves over here. The rest of the array gets shifted forward.
+
+636
+01:12:54,850 --> 01:13:01,020
+Which we are denoting by, uh, the. So here is your.
+
+637
+01:13:02,030 --> 01:13:07,460
+A ij. And here is your.
+
+638
+01:13:08,400 --> 01:13:13,950
+I. I. I. And everything else does not change.
+
+639
+01:13:15,000 --> 01:13:18,450
+And the rest of the. You know you look down here.
+
+640
+01:13:19,470 --> 01:13:30,120
+The rest of the array stays unchanged. Okay, now the claim is that is that the pi plus one holds, which is that, uh.
+
+641
+01:13:32,360 --> 01:13:41,440
+The array up to. You know this index is now I plus first index of this error I plus one the column.
+
+642
+01:13:41,560 --> 01:13:45,490
+This is sorted. So it looks like what you wrote there was correct.
+
+643
+01:13:46,180 --> 01:13:47,560
+And this piece is unchanged.
+
+644
+01:13:50,790 --> 01:13:59,070
+And indeed that's true, because what I did in this piece is that I found the correct place where I should be inserting this key value pair.
+
+645
+01:13:59,730 --> 01:14:01,950
+It came to the place. So everything was sorted here.
+
+646
+01:14:02,460 --> 01:14:06,510
+There was a place where this was supposed to be, and I put it there and I moved everything forward.
+
+647
+01:14:06,930 --> 01:14:12,620
+So there is a bit of maths that goes in saying that this is sorted as well, which you can prove it by a few steps.
+
+648
+01:14:12,630 --> 01:14:15,300
+They can consider keys here. They are less than this key.
+
+649
+01:14:15,720 --> 01:14:21,110
+It is going to be true because J is the smallest, uh index for which this is larger than this.
+
+650
+01:14:21,250 --> 01:14:26,070
+So everything else has to be smaller than this. That part follows. And this is larger than that because of sorting.
+
+651
+01:14:26,670 --> 01:14:32,729
+Okay. So these couple of lines of thinking, uh, go into, uh, the rest of the proof,
+
+652
+01:14:32,730 --> 01:14:39,300
+but in saying that this is sorted, uh, kind of out of time now, but look over at the proof.
+
+653
+01:14:39,600 --> 01:14:45,479
+Um, of, you know, like of this piece, why this is sorted and everything else is unchanged.
+
+654
+01:14:45,480 --> 01:14:49,350
+It's kind of obvious from the picture. Uh, you can you can write it formally.
+
+655
+01:14:49,710 --> 01:14:55,160
+Okay. So we are set for today. Uh, thanks for attention. We will, uh, resume again on Wednesday.
+
+656
+01:14:55,170 --> 01:14:56,790
+Hopefully no more snow emergencies.
+

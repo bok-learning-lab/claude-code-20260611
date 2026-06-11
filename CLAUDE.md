@@ -26,7 +26,10 @@ The worked gallery lives in [examples/more-examples/](examples/more-examples/):
 
 | Example | The move it demonstrates |
 |---|---|
+| [class-processor](examples/more-examples/class-processor/) | Pipeline from the raw materials a live course throws off (transcripts, board work, audio, papers) to faculty-ready artifacts in one house style — folds in `class-summarizer` as its first fully worked path |
 | [class-summarizer](examples/more-examples/class-summarizer/) | Forced-count distillation of a workshop transcript into a Top 10 Key Takeaways doc + portable HTML |
+| [course-pdfs-to-latex](examples/more-examples/course-pdfs-to-latex/) | Re-issuing a course's inherited Word-exported PDFs as clean, accessible LaTeX from one template — student versions, solution keys, and teacher notes from a single source |
+| [course-preparation](examples/more-examples/course-preparation/) | The before-class counterpart to `class-processor` — syllabus redesign via skill, source-grounded curricular recommendations (folds in `recentering-academics`), and lecture recordings turned into reusable lecture notes |
 | [exam-makeup-generator](examples/more-examples/exam-makeup-generator/) | **Standalone Claude Code skill** (no deployed URL) that turns an existing exam into a curated make-up via a three-mode state machine (Generation → Iteration → Assembly) driven by a single editable markdown file. CS20-tested worked run included. Install: `cp` into `.claude/skills/` |
 | [film-course-concepts-website](examples/more-examples/film-course-concepts-website/) | Course-concepts website for GENED 1049 *East Asian Cinema*: glossary + workshop overview + interactive concept demos (three-point lighting on *Rashomon* stills; scroll-synced video essay). General content engine, specific course content, no LLM call. [Live demo](https://gened-1049.vercel.app/) |
 | [image-API-widget](examples/more-examples/image-API-widget/) | Stable-Diffusion image-generation webapp ("The Virtual Camera") with a critical-framework sidebar (Kluge's rules) tied to specific UI controls. Provider-agnostic: Replicate + HuggingFace. [Live demo](https://stable-diffusion-widget-interface.vercel.app/) |

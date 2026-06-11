@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Handout Title</title>
+<style>
+/*__FONTS__*/
+/*__HOUSE_STYLE__*/
+  /* ---- PAGE SETUP: portrait 11x17 ---- */
+  @page { size: 11in 17in; margin: 0.5in; }
+  .sheet { width:10in; height:16in; padding:0.55in 0.6in 0.8in; display:flex; flex-direction:column; }
+  .footer { bottom:0.34in; }
+  /* ---- key-takeaways tweaks (this example's main use) ---- */
+  ol.top10 { list-style:none; counter-reset:take; margin:12px 0 0; padding:0; }
+  ol.top10 > li { position:relative; padding-left:38px; margin:0 0 9px; font-size:12.7px; line-height:1.42; font-weight:500; counter-increment:take; }
+  ol.top10 > li::before { content:counter(take) "."; position:absolute; left:0; top:-2px; font-size:18px; font-weight:900; color:var(--accent); width:32px; }
+  ol.top10 > li b { color:var(--ink); font-weight:800; }
+  ol.top10 > li i, ol.top10 > li em { font-style:italic; }
+  ol.top10 > li code { font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace; font-size:11.5px; font-weight:600; background:#f0f0f0; padding:0 4px; border-radius:3px; }
+  .provenance { font-size:12px; line-height:1.42; font-style:italic; font-weight:500; color:var(--muted); margin:11px 0 0; }
+  .provenance a { color:var(--muted); text-decoration:underline; }
+  ul.sec { list-style:none; margin:9px 0 0; padding:0; }
+  ul.sec > li { position:relative; padding-left:18px; margin:0 0 5px; font-size:11.8px; line-height:1.38; font-weight:500; }
+  ul.sec > li::before { content:""; position:absolute; left:2px; top:8px; width:8px; height:2px; background:var(--accent); }
+  ul.sec > li b { color:var(--ink); font-weight:800; }
+  ul.sec > li code { font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace; font-size:11.5px; font-weight:600; background:#f0f0f0; padding:0 4px; border-radius:3px; }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <p class="kicker">Day N · DD Month 2026 · Top 10 Takeaways</p>
+  <h1>Top 10 Key Takeaways
+    <span class="sub">chunk/time range · instructors</span>
+  </h1>
+
+  <p class="provenance">Distilled from the diarized session transcript at <a href="../inputs/day_N_transcript.md">day_N_transcript.md</a>. One line of provenance.</p>
+
+  <ol class="top10">
+    <li><b>Headline mantra.</b> One to three sentences grounded in what happened in the room — name the demo, quote the line.</li>
+    <!-- exactly ten <li> -->
+  </ol>
+
+  <p class="beat-h" style="margin-top:14px;">Secondary points worth keeping</p>
+  <ul class="sec">
+    <li><b>Lead-in.</b> A smaller detail that didn't make the top 10.</li>
+  </ul>
+
+  <div class="footer">
+    <span>Summer of Claude · Faculty Workshop · 2026-06-DD</span>
+    <span>Bok Center · Learning Lab</span>
+  </div>
+</div>
+</body>
+</html>

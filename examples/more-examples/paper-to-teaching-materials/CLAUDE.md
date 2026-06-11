@@ -31,16 +31,16 @@ Read in this order:
 3. [outputs/case-study.html](outputs/case-study.html) — the published landing page for the project, suitable for sharing with a colleague who is not going to clone the folder.
 4. The source paper: [inputs/grant_behrends_basl.pdf](inputs/grant_behrends_basl.pdf) or its markdown digest [inputs/grant_behrends_basl.md](inputs/grant_behrends_basl.md).
 
-## The skills (live in `operations/skills/`)
+## The skills (live in `.claude/skills/`)
 
-- **`/teaching-case`** — generate a student-facing case + instructor notes, engineered to surface a specific move in the framework. See [operations/skills/teaching-case/SKILL.md](operations/skills/teaching-case/SKILL.md).
-- **`/discussion-plan`** — Socratic sequence around a case, anticipating student positions and routing toward the move in the paper that answers them. See [operations/skills/discussion-plan/SKILL.md](operations/skills/discussion-plan/SKILL.md).
-- **`/objection-audit`** — steelman a student argument, then diagnose against the framework with section citations. See [operations/skills/objection-audit/SKILL.md](operations/skills/objection-audit/SKILL.md).
-- **`/quiz`** — short-answer comprehension check on the core argument, with student version + answer key. See [operations/skills/quiz/SKILL.md](operations/skills/quiz/SKILL.md).
+- **`/teaching-case`** — generate a student-facing case + instructor notes, engineered to surface a specific move in the framework. See [.claude/skills/teaching-case/SKILL.md](.claude/skills/teaching-case/SKILL.md).
+- **`/discussion-plan`** — Socratic sequence around a case, anticipating student positions and routing toward the move in the paper that answers them. See [.claude/skills/discussion-plan/SKILL.md](.claude/skills/discussion-plan/SKILL.md).
+- **`/objection-audit`** — steelman a student argument, then diagnose against the framework with section citations. See [.claude/skills/objection-audit/SKILL.md](.claude/skills/objection-audit/SKILL.md).
+- **`/quiz`** — short-answer comprehension check on the core argument, with student version + answer key. See [.claude/skills/quiz/SKILL.md](.claude/skills/quiz/SKILL.md).
 
 ## Conventions
 
-- **Skills live in `operations/skills/<skill-name>/`** — project-scoped, so they travel.
+- **Skills live in `.claude/skills/<skill-name>/`** — project-scoped, so they travel.
 - **`inputs/` is the read-only source paper.** Don't modify it. Generated artifacts — cases, student arguments, plans, audits, the landing page — go in `outputs/`.
 - **Case and argument IDs are stable.** C1–C4 (cases) and S1–S3 (student arguments) must be preserved consistently across every skill output.
 - **No emojis** in any file.

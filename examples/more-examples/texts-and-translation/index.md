@@ -29,11 +29,11 @@ Two demo corpora, each set up as a standalone target.
 Prompts and skills.
 
 - [operations/deep-research-prompt.md](operations/deep-research-prompt.md) — prompt that commissioned the background research at `outputs/research-result.md`
-- operations/skills/
-  - [split-into-books/](operations/skills/split-into-books/) — utility: pre-splits translation files into per-book files
-  - [show-passage/](operations/skills/show-passage/) — display a passage (by primary coordinate) with Greek original + chosen translations
-  - [identify-figures-greek/](operations/skills/identify-figures-greek/) — identify rhetorical figures in a Homeric Greek passage
-  - [identify-figures-sanskrit/](operations/skills/identify-figures-sanskrit/) — identify candidate *alaṃkāras* in a *Rasagaṅgādhara* passage
+- .claude/skills/
+  - [split-into-books/](.claude/skills/split-into-books/) — utility: pre-splits translation files into per-book files
+  - [show-passage/](.claude/skills/show-passage/) — display a passage (by primary coordinate) with Greek original + chosen translations
+  - [identify-figures-greek/](.claude/skills/identify-figures-greek/) — identify rhetorical figures in a Homeric Greek passage
+  - [identify-figures-sanskrit/](.claude/skills/identify-figures-sanskrit/) — identify candidate *alaṃkāras* in a *Rasagaṅgādhara* passage
 
 ## outputs/
 

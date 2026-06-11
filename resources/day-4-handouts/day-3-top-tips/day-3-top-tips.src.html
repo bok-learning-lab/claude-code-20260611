@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Top Tips &amp; Tricks from Day 3</title>
+<style>
+/*__FONTS__*/
+/*__HOUSE_STYLE__*/
+/*__PATTERNS__*/
+  /* ---- PAGE SETUP: portrait 11x17 ---- */
+  @page { size: 11in 17in; margin: 0.5in; }
+  .sheet { width:10in; height:16in; padding:0.55in 0.6in 0.8in; display:flex; flex-direction:column; }
+  .footer { bottom:0.34in; }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <p class="kicker">Day 4 · Recap</p>
+  <h1>Top Tips &amp; Tricks from Day 3
+    <span class="sub">cloning anything, organizing everything, and the two files that teach a folder how to behave</span>
+  </h1>
+
+  <p class="lede">
+    Day 3 moved us from <i>getting Claude Code working</i> to <i>working well inside it</i>.
+    The big idea: a project is just a folder, and two special documents — <b>CLAUDE.md</b> and
+    <b>skills</b> — let that folder tell Claude who you are and how you like things done.
+  </p>
+
+  <div class="beat">
+    <p class="beat-h">Repos &amp; GitHub</p>
+    <ul class="list">
+      <li><b>Cloning is a core skill — three ways.</b> Download the ZIP from the green Code button;
+        <i>git clone</i> in the terminal; or open a session in the parent folder and just ask Claude
+        to clone the URL. Then the catch everyone hits: start a <b>new session inside the cloned folder</b> —
+        cloning and working are two different sessions.</li>
+      <li><b>git pull makes a repo a living document.</b> If we add files after you cloned, don't
+        re-download — ask Claude to "do a git pull" and only the changes come down. That's what makes
+        a repo more like a Google Doc than a ZIP.</li>
+      <li><b>GitHub is a context goldmine for your discipline.</b> Search "github repo <i>your topic</i>":
+        all of Shakespeare from MIT, Berkeley courses, papers shipping their data and scripts, and the
+        ed-tech tools you already use (TimelineJS, Scalar) — finally openable instead of black boxes.</li>
+      <li><b>Judge a repo before you clone it.</b> Stars, forks, and watchers; a trusted institution;
+        and age — never install something brand-new that no one has ever used. Then ask Claude itself:
+        <i>look around — how safe do you think this is?</i></li>
+    </ul>
+  </div>
+
+  <div class="beat">
+    <p class="beat-h">Sessions, models &amp; staying organized</p>
+    <ul class="list">
+      <li><b>Pick the model deliberately.</b> New top-tier <b>Fable 5</b> is powerful but burns credits
+        faster and refuses readily near sensitive topics. For nearly everything here, <b>Opus 4.8</b> (or
+        Sonnet) is the workhorse. Check <i>/usage</i>; if it feels slow, turn thinking down before switching.</li>
+      <li><b>Decoder ring.</b> Session = chat = task = thread — <b>each is one context window</b>. And in
+        Code and Cowork, a "project" is simply <b>a folder on your computer</b>: the unit of work.</li>
+      <li><b>Group your chats.</b> Recents settings → <i>Group by project</i> sorts chats by folder; or use
+        a chat's three-dots menu → <i>Move to group</i> for custom groups ("writing zone"). Cosmetic — it
+        organizes you, not the model.</li>
+      <li><b>Start new sessions early and often — context rot is real.</b> The start and the most recent
+        turns carry the most weight; quality sags in the middle. Don't wait for auto-compact, and don't
+        live in one thread for months — that's the road to a diluted system prompt and strange behavior.</li>
+    </ul>
+  </div>
+
+  <div class="beat">
+    <p class="beat-h">Two documents that teach a folder</p>
+    <ul class="list">
+      <li><b>CLAUDE.md — things that are always true.</b> A file named CLAUDE.md at a project's root is
+        read automatically every session. Proof from class: one line at the bottom — "end everything with
+        a limerick" — and every reply arrived in verse. Use it for who you are, how you want output styled,
+        what the project is. Make one in every folder: <i>"please create a CLAUDE.md in this folder that…"</i>
+        (Edits load in <i>new</i> sessions.)</li>
+      <li><b>Skills — things that are sometimes true.</b> A SKILL.md is "just a prompt … a conditional
+        prompt": a reusable description of how you like a recurring process done, living in
+        <b>.claude/skills/&lt;name&gt;/</b>. Claude loads just the names + descriptions — a map of your prompt
+        library — and proposes the right one when your request matches. If you'd paste the same prompt
+        twice, make it a skill; it can even point at a script you trust so known-good code runs every time.
+        (Your daily handouts? A formatting skill.)</li>
+    </ul>
+  </div>
+
+  <div class="beat">
+    <p class="beat-h">Working patterns worth stealing</p>
+    <ul class="list">
+      <li><b>Run any worked example on your own material.</b> Drag your syllabus into the example's
+        <i>inputs/</i>, three-dots → <i>copy path</i>, paste it and say "run these operations on just this
+        file." Or go big: "loop through all twenty syllabi in inputs." A million tokens is a lot.</li>
+      <li><b>Build a harvesting workflow.</b> Keep a folder where you toss PDFs as you find them, plus a
+        standing CLAUDE.md instruction to convert and summarize it on request — then "harvest my downloads."
+        For web pages: select-all, copy, paste, "make this a clean markdown doc."</li>
+      <li><b>PDFs are a view layer.</b> Do the thinking in text the model reads natively — markdown, or
+        LaTeX when equations matter — and render to PDF only at the end. Text in, text out: no hallucinated
+        equations.</li>
+    </ul>
+  </div>
+
+  <p class="takehome"><b>Next up — Day 4:</b> APIs and MCPs. API keys are "little secret passwords" that let
+    services talk to each other: pull documents in, push results out, bring other models (Claude + Gemini on
+    the same blackboard photo) into the loop and compare. That — plus MCPs — is today.</p>
+
+  <div class="footer">
+    <span>Summer of Claude · Faculty Workshop</span>
+    <span>Bok Center · Learning Lab</span>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+{
+  "numberOfResults": 18,
+  "results": [
+    {
+      "meta": {
+        "ordnungsnummer": "9",
+        "zettel_type": "Notizzettel",
+        "logical_zettelkasten": "2",
+        "scan-in-drawer": "05147",
+        "page_type": "Zettelvorderseite",
+        "abteilung": "Normaler Bestand"
+      },
+      "flags": {
+        "hasBranchVisualization": true,
+        "hasCorrectedImage": false
+      },
+      "ekin": "ZK_2_NB_9-8_V",
+      "pubDate": "2021-04-20",
+      "auszug": "15",
+      "transcription": {
+        "readyForPublication": true
+      },
+      "is_front": true,
+      "luhmann_number": "9-8",
+      "transcriptionPreview": "\n\t\t\t\t\n\t\t\t\t9/8\n\t\t\t\t\tZettelkasten\n\t\t\t\t\t1  \n    als kybernetisches System\n\t\t\t\tKombination von Unordnung und Ordnung,  \n    von Klumpenbildung und unvorhersehbarer,  \n    im ad hoc Zugriff realisierter Kombination.\n\t\t\t\tVorbedingung: Verzicht auf festgelegte Ordnung.  \n    Die vorgeschaltete Differenzierung: Suchhilfen  \n    vs. Inhalt; Register, Fragestellungen, Einfälle  \n    vs. Vorhandenes überformt und macht z.T.  \n    entbehrlich, das, was an innerer Ordnung  \n    vorausgesetzt werden muss.\n\t\t\t",
+      "zk_number": "2",
+      "subtitle": "",
+      "title": "ZK II Zettel 9/8",
+      "availability": "free",
+      "image": {
+        "change": "rotate_0",
+        "id": "ZK_2_15_52_047_V_N_NB_9-8"
+      },
+      "file": {
+        "filename": "ZK_2_15_52_047_V_N_NB_9-8.xml",
+        "dir-auszug": "15",
+        "dir-zettelkasten": "2",
+        "dir-batch": "52",
+        "id": "ZK_2_15_52_047_V_N_NB_9-8"
+      },
+      "shortTitle": "9/8",
+      "isDummy": false
+    },
+    {
+      "meta": {
+        "ordnungsnummer": "9",
+        "zettel_type": "Notizzettel",
+        "logical_zettelkasten": "2",
+        "scan-in-drawer": "05149",
+        "page_type": "Zettelvorderseite",
+        "abteilung": "Normaler Bestand"
+      },
+      "flags": {
+        "hasBranchVisualization": true,
+        "hasCorrectedImage": false
+      },
+      "ekin": "ZK_2_NB_9-8-1_V",
+      "pubDate": "2021-04-20",
+      "auszug": "15",
+      "transcription": {
+        "readyForPublication": true
+      },
+      "is_front": true,
+      "luhmann_number": "9-8-1",
+      "transcriptionPreview": "\n\t\t\t\t\n\t\t\t\t9/8,1\n\t\t\t\t\t1 Thema: Kommunikation mit dem Zettelkasten: Wie kommt man zu einem adaequaten  \n    Partner, Junior-Partner?  \n    – wichtig, nachdem das Arbeiten mit Personal  \n    immer schwieriger und immer teurer wird.\n\t\t\t\tZettels Wirklichkeit\n\t\t\t",
+      "zk_number": "2",
+      "subtitle": "",
+      "title": "ZK II Zettel 9/8,1",
+      "availability": "free",
+      "image": {
+        "change": "rotate_0",
+        "id": "ZK_2_15_52_049_V_N_NB_9-8-1"
+      },
+      "file": {
+        "filename": "ZK_2_15_52_049_V_N_NB_9-8-1.xml",
+        "dir-auszug": "15",
+        "dir-zettelkasten": "2",
+        "dir-batch": "52",
+        "id": "ZK_2_15_52_049_V_N_NB_9-8-1"
+      },
+      "shortTitle": "9/8,1",
+      "isDummy": false
+    },
+    {
+      "meta": {
+        "ordnungsnummer": "9",
+        "zettel_type": "Notizzettel",
+        "logical_zettelkasten": "2",
+        "scan-in-drawer": "05151",
+        "page_type": "Zettelvorderseite",
+        "abteilung": "Normaler Bestand"
+      },
+      "flags": {
+        "hasBranchVisualization": true,
+        "hasCorrectedImage": false
+      },
+      "ekin": "ZK_2_NB_9-8-2_V",
+      "pubDate": "2021-04-20",
+      "auszug": "15",
+      "transcription": {
+        "readyForPublication": true
+      },
+      "is_front": true,
+      "luhmann_number": "9-8-2",
+      "transcriptionPreview": "\n\t\t\t\t\n\t\t\t\t9/8,2 Personal ist schon lange knapp und  \n    teuer, jetzt wird es zusätzlich ungebärdig  \n    und unleitbar. \n\t\t\t\tDie Mikroprozessoren sind angekündigt,  \n    aber noch nicht wirklich verfügbar.\n\t\t\t\tDas eigene Gedächtnis mangelhaft und  \n    entlastungsbedürftig.\n\t\t\t\tÜberlegungen zu einem Versuch, sich ein  \n    Zweitgedächtnis zu schaffen.\n\t\t\t",
+      "zk_number": "2",
+      "subtitle": "",
+      "title": "ZK II Zettel 9/8,2",
+      "availability": "free",
+      "image": {
+        "change": "rotate_0",
+        "id": "ZK_2_15_52_051_V_N_NB_9-8-2"
+      },
+      "file": {
+        "filename": "ZK_2_15_52_051_V_N_NB_9-8-2.xml",
+        "dir-auszug": "15",
+        "dir-zettelkasten": "2",
+        "dir-batch": "52",
+        "id": "ZK_2_15_52_051_V_N_NB_9-8-2"
+      },
+      "shortTitle": "9/8,2",
+      "isDummy": false
+    }
+  ]
+}

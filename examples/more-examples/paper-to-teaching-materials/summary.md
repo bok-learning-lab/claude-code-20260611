@@ -24,7 +24,7 @@ If a skill or output ever positions Claude as the *decider* about how a person s
 
 ## What it is
 
-Four Claude Code skills, scoped to this project's `operations/skills/` directory, plus the source paper in `inputs/` and the published landing page in `outputs/`.
+Four Claude Code skills, scoped to this project's `.claude/skills/` directory, plus the source paper in `inputs/` and the published landing page in `outputs/`.
 
 - **`/teaching-case`** generates a student-facing case (a system dossier or a thought experiment) plus separate instructor notes that name the target move, tie it to a section of the paper, and flag the trap. Given a target move (accuracy §5.1, ignoring-evidence §5.2, inadmissible-evidence §5.3, decision-rules §7.1, or agential-consideration §7.2–7.3) and optionally a domain (bail, hiring, lending, admissions, medicine), it produces a case a seminar can read cold and instructor notes that defend every claim by section. Offers to generate a "decoy" variant (a case that should *pass* the audit — the construct-validity stress test) when asked.
 - **`/discussion-plan`** generates a Socratic sequence for a given case or section of the paper: warm-up that elicits the intuitive transparency answer, the core dilemma, the positions students will likely take (anticipating S1–S3), the objection to steer toward (one of the three named Problems), the move in the paper that addresses it, and an honest note on what the case can and cannot show. Walks students *from* transparency *to* due consideration rather than asserting the destination.
@@ -63,7 +63,7 @@ The brainstorm-and-build sequence mirrors the [interview-coding](../interview-co
 
 **Step 3 — Convert the brainstorm into a parallelizable plan.** Three self-contained skill-build tasks, each copy-pasteable into a fresh Claude Code session, with shared context (required reading, hard constraints, output conventions) and per-task scope (skill behavior, what good output looks like, what to avoid, how to validate).
 
-**Step 4 — Run parallel sessions, audit, promote.** Each session built its skill at `operations/skills/<name>/` with a `SKILL.md` and a `examples/` directory of validated runs. After the returns, an audit pass against the corpus — the most common failure mode for these skills is plausible-but-overclaimed citations (page numbers given without verification against the PDF). Every section/page reference verified before promotion.
+**Step 4 — Run parallel sessions, audit, promote.** Each session built its skill at `.claude/skills/<name>/` with a `SKILL.md` and a `examples/` directory of validated runs. After the returns, an audit pass against the corpus — the most common failure mode for these skills is plausible-but-overclaimed citations (page numbers given without verification against the PDF). Every section/page reference verified before promotion.
 
 **Step 5 — Build a synthetic corpus to demo against.** Four cases (C1–C4) and three student arguments (S1–S3), each engineered to surface a specific move in the framework. C3 in particular is the construct-validity stress test — a case designed to *pass* the audit, so the skill is forced to discriminate. The three student arguments are designed to be instructively wrong in ways the paper diagnoses, so `/objection-audit` has clean targets.
 

@@ -8,7 +8,7 @@ The companion docs that previously sat in `overview/` — a longer summary, a pi
 
 ## What it is
 
-Three Claude Code skills, scoped to this project's `operations/skills/` directory, each implementing one move from Deterding & Waters' three-stage workflow.
+Three Claude Code skills, scoped to this project's `.claude/skills/` directory, each implementing one move from Deterding & Waters' three-stage workflow.
 
 - **`/index-transcript`** applies broad index codes to a single transcript, anchored to the interview protocol's sections. Produces an indexed copy of the transcript and a coverage report flagging where the conversation drifted away from the protocol. This is Waters' Stage 1 — scaffolding, not analysis.
 - **`/find-negative-cases`** takes a claim and the indexed corpus and returns respondents whose evidence cuts against the claim, with verbatim excerpts, line references, and reasoning. Closes with an "implications for the theory" recommendation: narrow, abandon, or keep-but-report. This is Waters' Stage 3 validation move, drawing on Katz, Luker, and Blee.
